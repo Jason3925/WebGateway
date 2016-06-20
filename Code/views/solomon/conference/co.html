@@ -50,11 +50,11 @@
                 <td><%=data.mode===1?'Audio Conference':data.mode===2?'Video Conference':data.mode %></td>
                 <td><%=data.participants %></td>
                 <td>
-                  <% if(data.status=='online'){ %>
+                  <% if(data.status=='Online'){ %>
                   <span class="label label-primary">Online</span>
                   <% } %>
-                  <% if(data.status=='offline'){ %>
-                  <span class="label label-danger">offline</span>
+                  <% if(data.status=='Offline'){ %>
+                  <span class="label label-danger">Offline</span>
                   <% } %>
                 </td>
                 <td>

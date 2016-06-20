@@ -3678,6 +3678,7 @@ $.components.register("mMenu", {
             {id: 'rg-name', describe: 'name'},
             {id: 'rg-ring-time', describe: 'ring_time', type: 'Number'},
             {id: 'rg-ring-strategy', describe: 'ring_strategy', type: 'Number'},
+            {id: 'rg-busy-member', describe: 'enable_skip_busy_member'},
             {id: 'rg-members-active', describe: 'members'},
             {
               name: "rg-radio-answer",

@@ -15,14 +15,14 @@
               <dl class="dl-horizontal">
                 <dt>Destination:</dt>
                 <dd><%=detail.destination%></dd>
-                <dt>Add Time:</dt>
-                <dd><%=trimDate(detail,['add_time'], 'YYYY-MM-DD HH:mm:ss')%></dd>
+                <dt>Start Time:</dt>
+                <dd><%=detail.add_time>0?trimDate(detail,['add_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
                 <dt>Answer Time:</dt>
-                <dd><%=trimDate(detail,['answer_time'], 'YYYY-MM-DD HH:mm:ss')%></dd>
+                <dd><%=detail.answer_time>0?trimDate(detail,['answer_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
                 <dt>End Time:</dt>
-                <dd><%=trimDate(detail,['end_time'], 'YYYY-MM-DD HH:mm:ss')%></dd>
+                <dd><%=detail.end_time>0?trimDate(detail,['end_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
                 <dt>Talk Time:</dt>
-                <dd><%=trimDate(detail,['talk_time'], 'YYYY-MM-DD HH:mm:ss')%></dd>
+                <dd><%=detail.talk_time>0?trimDate(detail,['talk_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
                 <dt>End Reason:</dt>
                 <dd><%=detail.end_reason%></dd>
                 <dt>Fail Code:</dt>
