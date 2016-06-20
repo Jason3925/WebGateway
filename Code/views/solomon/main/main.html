@@ -1,0 +1,93 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Unified Communications System Information
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+
+    <div class="row">
+      <div class="col-md-12 padding-0">
+        <div class="col-md-4">
+          <div class="widget widget-shadow" style="height:150px">
+            <div class="widget-content padding-10">
+              <h3 class="margin-0">Information</h3>
+
+              <h5 class="padding-left-20">Version : <span>2.0.0</span></h5>
+              <h5 class="padding-left-20">License : <span>200 SC Edition</span></h5>
+              <h5 class="padding-left-20"><a href="#" id="main-wizard">Launch Setup Wizard</a></h5>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="widget widget-shadow" style="height:150px">
+            <div class="widget-content padding-10" id="main-news">
+              <h3 class="margin-0">News</h3>
+
+              <h5 class="padding-left-20"><a href="#">Feb 20, 2016: PortSIP released the PortSIP PBX v2.0.</a></h5>
+              <h5 class="padding-left-20"><a href="#">Feb 22, 2016: PortSIP released the PortSIP WebRTC Gateway.</a>
+              </h5>
+              <h5 class="padding-left-20"><a href="#">Feb 22, 2016: PortSIP released the PortSIP VoIP SDK v12.</a></h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="col-md-6 padding-0">
+
+          <div class="widget widget-shadow">
+            <div class="widget-content padding-10">
+              <h3 class="margin-0">Current calls :
+                <span class="counter-number red-600" id="current-calls-number">0</span>
+              </h3>
+
+              <canvas id="line-calls" class="padding-10" style="height: 200px;width: 100%;"></canvas>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+
+          <div class="widget widget-shadow">
+            <div class="widget-content padding-10">
+              <h3 class="margin-0">Online extensions :
+                <span class="counter-number red-600" id="current-extensions-number">0</span>
+              </h3>
+
+              <canvas id="line-extensions" class="padding-10" style="height: 200px;width: 100%;"></canvas>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="widget widget-shadow">
+          <div class="widget-content padding-10">
+            <h3 class="margin-0">Resource Utilization</h3>
+
+            <div class="col-xs-6">
+              <p>CPU : <span class="counter-number red-600" id="current-cpu-number">0</span></p>
+            </div>
+            <div class="col-xs-6">
+              <p>Memory : <span class="counter-number red-600" id="current-memory-number">0</span></p>
+            </div>
+
+            <canvas id="line-resource" class="padding-10" style="height: 400px;width: 100%;"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

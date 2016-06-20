@@ -1,0 +1,1242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-10-18 15:00:00</time>
+    <name>Polycom Phones</name>
+    <url>http://www.polycom.com</url>
+    <models>
+      <model ua="SPIP_320">Polycom SPIP320 (Firmware 3)</model>
+      <model ua="SPIP_330">Polycom SPIP330 (Firmware 3)</model>
+	  <model ua="SPIP_321">Polycom SPIP321 (Firmware 4)</model>
+      <model ua="SPIP_331">Polycom SPIP331 (Firmware 4)</model>
+	  <model ua="SPIP_335">Polycom SPIP335 (Firmware 4)</model>
+      <model ua="SPIP_450">Polycom SPIP450 (Firmware 4)</model>
+      <model ua="SPIP_550">Polycom SPIP550 (Firmware 4)</model>
+      <model ua="SPIP_560">Polycom SPIP560 (Firmware 4)</model>
+      <model ua="SPIP_650">Polycom SPIP650 (Firmware 4)</model>
+      <model ua="SPIP_670">Polycom SPIP670 (Firmware 4)</model>
+      <model ua="SSIP_5000">Polycom SSIP5000 (Firmware 4)</model>
+      <model ua="SSIP_6000">Polycom SSIP6000 (Firmware 4)</model>
+      <model ua="SSIP_7000">Polycom SSIP7000 (Firmware 4)</model>
+	  <!-- <model ua="VVX-VVX_300">Polycom VVX300 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_310">Polycom VVX310 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_400">Polycom VVX400 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_410">Polycom VVX410 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_500">Polycom VVX500 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_600">Polycom VVX600 (Firmware 5)</model> -->
+	  <!-- <model ua="VVX-VVX_1500">Polycom VVX1500 (Firmware 5)</model> -->
+    </models>
+    <description>Polycom Phones</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+      <event-name>check-sync</event-name>
+    </rebootParams>
+    <resyncParams>
+      <event-name>check-sync</event-name>
+    </resyncParams>
+    <firmwareParams>
+      <event-name>check-sync</event-name>
+    </firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+    </AllowedNetworkConfig>
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+    <dst variableName="dstEnableDisable" enable="1" disable="0">
+    </dst>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English (en-us)">
+			<item name="langwebUI">English_United_States</item>
+      </option>
+	  <option value="Deutsch (de-de)">
+			<item name="langwebUI">German_Germany</item>
+      </option>
+	  <option value="Français (fr-fr)">
+			<item name="langwebUI">French_France</item>
+      </option>
+	  <option value="Nederlands (nl-nl)">
+			<item name="langwebUI">Dutch_Netherlands</item>
+      </option>
+	  <option value="Dansk (da-dk)">
+			<item name="langwebUI">Danish_Denmark</item>
+      </option>
+	  <option value="Italiano (it-it)">
+			<item name="langwebUI">Italian_Italy</item>
+      </option>
+	  <option value="日本語 (ja-jp)">
+			<item name="langwebUI">Japanese_Japan</item>
+      </option>
+	  <option value="Português (pt-br)">
+			<item name="langwebUI">Portuguese_Portugal</item>
+      </option>
+	  <option value="Русский (ru-ru)">
+			<item name="langwebUI">Russian_Russia</item>
+      </option>
+	  <option value="Español (es-es)">
+			<item name="langwebUI">Spanish_Spain</item>
+      </option>
+    </languages>
+    <timezoneParams param="time_utc_offset_seconds">
+      <!--The first entry is the selected entry in management console-->
+      <option value="-18000" id="0" zone="-5:00">GMT-5:00 (US Eastern Time, New York)</option>
+      <option value="-43200" id="121" zone="-12:00">GMT-12:00 (International Date Line West)</option>
+      <option value="-39600" id="120" zone="-11:00">GMT-11:00 (Midway Island, Samoa)</option>
+      <option value="-36000" id="1" zone="-10:00">GMT-10:00 (US Hawaiian Time)</option>
+      <option value="-32400" id="3" zone="-9:00">GMT-9:00 (US Alaska Time)</option>
+      <option value="-28800" id="6" zone="-8:00">GMT-8:00 (US Pacific Time, Los Angeles)</option>
+      <option value="-25200" id="9" zone="-7:00">GMT-7:00 (US Mountain Time, Denver)</option>
+      <option value="-21600" id="14" zone="-6:00">GMT-6:00 (US Central Time, Chicago)</option>
+      <option value="-16200" id="18" zone="-4:30">GMT-4:30 (Venezuela)</option>
+      <option value="-14400" id="19" zone="-4:00">GMT-4:00 (Atlantic Time, Quebec)</option>
+      <option value="-12600" id="25" zone="-3:30">GMT-3:30 (Newfoundland)</option>
+      <option value="-10800" id="27" zone="-3:00">GMT-3:00 (Greenland)</option>
+      <option value="-7200" id="123" zone="-2:00">GMT-2:00 (Mid-Atlantic)</option>
+      <option value="-3600" id="31" zone="-1:00">GMT-1:00 (Azores, Cape Verdi Is.)</option>
+      <option value="0" id="36" zone="0:00">GMT(London, Dublin, Edinburgh, Lisbon, Casablanca, Monrovia)</option>
+      <option value="3600" id="61" zone="1:00">GMT+1:00 (Paris,Amsterdam, Berlin, Rome, Vienna, Madrid, Warsaw, Brussels)</option>
+      <option value="7200" id="65" zone="2:00">GMT+2:00 (Israel, Cairo, Athens, Helsinki, Istanbul, Buchrest)</option>
+      <option value="10800" id="81" zone="3:00">GMT+3:00 (Moscow, Kuwait, Baghdad, Tehran, Nairobi)</option>
+      <option value="12600" id="84" zone="3:30">GMT+3:30 (Tehran)</option>
+      <option value="14400" id="86" zone="4:00">GMT+4:00 (Abu Dhabi, Baku)</option>
+      <option value="16200" id="91" zone="4:30">GMT+4:30 (Kabul)</option>
+      <option value="18000" id="94" zone="5:00">GMT+5:00 (Islamabad, Ekaterinburg, Karachi, Tashkent)</option>
+      <option value="19800" id="96" zone="5:30">GMT+5:30 (Chennai, New Delhi, Mumbai)</option>
+      <option value="20700" id="97" zone="5:45">GMT+5:45 (Kathmandu)</option>
+      <option value="21600" id="98" zone="6:00">GMT+6:00 (Almaty, Astana. Dhaka, Novosibirsk)</option>
+      <option value="23400" id="100" zone="6:30">GMT+6:30 (Rangoon)</option>
+      <option value="25200" id="102" zone="7:00">GMT+7:00 (Bankok, Jakarta, Hanoi, Krasnoyarsk)</option>
+      <option value="28800" id="104" zone="8:00">GMT+8:00 (Beijing, Singapore, Taipei, Kuala Lumpur, Irkutsk, Perth)</option>
+      <option value="32400" id="107" zone="9:00">GMT+9:00 (Japan, Korea, Yakutsk)</option>
+      <option value="34200" id="108" zone="9:30">GMT+9:30 (Adelaide, Darwin)</option>
+      <option value="36000" id="110" zone="10:00">GMT+10:00 (Brisbane, Sydney, Melbourne, Canberra, Guam, Hobart)</option>
+      <option value="39600" id="115" zone="11:00">GMT+11:00 (Magadan, Solomon Is., New Caledonia)</option>
+      <option value="43200" id="116" zone="12:00">GMT+12:00 (Auckland, Wellington, Fiji)</option>
+      <option value="46800" id="119" zone="13:00">GMT+13:00 (Nuku'alofa)</option>
+    </timezoneParams>
+	<Codecspriorities>
+	  <Codecspriority variableName="codec1" priority="1" >
+        <!--The first entry is the selected entry in management console-->
+        <option value="voice.codecPref.G711_Mu=&quot;1&quot;">PCMU</option>
+		<option value="voice.codecPref.G711_A=&quot;1&quot;">PCMA</option>
+		<option value="voice.codecPref.G722=&quot;1&quot;">G722</option>
+		<option value="voice.codecPref.G729_AB=&quot;1&quot;">G729A/B</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+		<option value="voice.codecPref.G711_A=&quot;2&quot;">PCMA</option>
+		<option value="voice.codecPref.G711_Mu=&quot;2&quot;">PCMU</option>
+		<option value="voice.codecPref.G722=&quot;2&quot;">G722</option>
+		<option value="voice.codecPref.G729_AB=&quot;2&quot;">G729A/B</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="voice.codecPref.G722=&quot;3&quot;">G722</option>
+		<option value="voice.codecPref.G711_Mu=&quot;3&quot;">PCMU</option>
+		<option value="voice.codecPref.G711_A=&quot;3&quot;">PCMA</option>
+		<option value="voice.codecPref.G729_AB=&quot;3&quot;">G729A/B</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="voice.codecPref.G729_AB=&quot;4&quot;">G729A/B</option>
+		<option value="voice.codecPref.G711_Mu=&quot;4&quot;">PCMU</option>
+		<option value="voice.codecPref.G711_A=&quot;4&quot;">PCMA</option>
+		<option value="voice.codecPref.G722=&quot;4&quot;">G722</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">%%mac_address%%-config.cfg</field>
+      <deviceconfig filename="%%mac_address%%-config.cfg">
+<![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<polycomConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="polycomConfig.xsd">
+	
+	<call 
+		call.callsPerLineKey="24"
+		call.parkedCallRetrieveMethod="legacy"
+		call.parkedCallRetrieveString=""
+		call.directedCallPickupMethod="native"
+		call.directedCallPickupString1="">
+	</call>
+	
+	<feature>
+		<feature.callPark feature.callPark.enabled="1"/>
+		<feature.directedCallPickup feature.directedCallPickup.enabled="1"/>
+		<feature.urlDialing feature.urlDialing.enabled="0"/>
+	</feature>
+	
+	 <!-- Registration Settings -->
+	<reg 
+		reg.1.telephony="1" 
+		reg.1.server.1.register="1"  
+		reg.1.server.1.address="%%pbx_ip%%"
+		reg.1.server.1.port="%%param::sipport%%"
+		reg.1.outboundProxy.address="%%pbx_ip%%"
+		reg.1.outboundProxy.port="%%param::sipport%%"
+		
+		reg.1.useCompleteUriForRetrieve="1" 
+		reg.1.useLocalTargetUriForLegacyPickup="1" 
+		reg.1.server.1.expires="120" 
+		reg.1.server.1.expires.lineSeize="30" 
+		reg.1.server.1.expires.overlap="60" 
+		reg.1.server.1.retryMaxCount="3" 
+		reg.1.server.1.retryTimeOut="0"
+		
+		reg.1.address="%%extension_number%%" 
+		reg.1.auth.password="%%extension_auth_pw%%" 
+		reg.1.auth.userId="%%extension_auth_id%%" 
+		reg.1.label="Ext: %%extension_number%%" 
+		reg.1.displayName="%%extension_first_name%% %%extension_last_name%%" 
+			
+		reg.1.ringType="default" 
+		
+		reg.1.lineKeys="1"
+		reg.1.lineKeys.SPIP320="2"
+		reg.1.lineKeys.SPIP321="2"
+		reg.1.lineKeys.SPIP330="2"
+		reg.1.lineKeys.SPIP331="2"
+		reg.1.lineKeys.SPIP335="2"
+		reg.1.lineKeys.SPIP450="2"
+		reg.1.lineKeys.SPIP550="2"
+		reg.1.lineKeys.SPIP560="2"
+		reg.1.lineKeys.SPIP650="2"
+		reg.1.lineKeys.SPIP670="2">
+	</reg>
+	
+	<!-- Subscribe to VM System -->
+	<msg.mwi
+		msg.bypassInstantMessage="1"
+		msg.mwi.1.subscribe="%%extension_number%%"
+		msg.mwi.1.callBackMode="contact"
+		msg.mwi.1.callBack="%%vm_number%%"
+	/>
+
+  <voice.codecPref
+		%%codec1%%
+		%%codec2%%
+		%%codec3%%
+		%%codec4%%
+		voice.codecPref.G719.32kbps=""
+		voice.codecPref.G719.48kbps=""
+		voice.codecPref.G719.64kbps=""
+		voice.codecPref.G7221.16kbps=""
+		voice.codecPref.G7221.24kbps=""
+		voice.codecPref.G7221.32kbps=""
+		voice.codecPref.G7221_C.24kbps=""
+		voice.codecPref.G7221_C.32kbps=""
+		voice.codecPref.G7221_C.48kbps=""
+		voice.codecPref.iLBC.13_33kbps=""
+		voice.codecPref.iLBC.15_2kbps=""
+		voice.codecPref.Lin16.8ksps=""
+		voice.codecPref.Lin16.16ksps=""
+		voice.codecPref.Lin16.32ksps=""
+		voice.codecPref.Lin16.44_1ksps=""
+		voice.codecPref.Lin16.48ksps=""
+		voice.codecPref.Siren14.24kbps=""
+		voice.codecPref.Siren14.32kbps=""
+		voice.codecPref.Siren14.48kbps=""
+		voice.codecPref.Siren14.64kbps=""
+	/>
+	
+	<voice.volume
+		voice.volume.persist.handset="1"
+		voice.volume.persist.headset="1"
+		voice.volume.persist.handsfree="1"
+	/>
+  
+	<voIpProt.SIP
+		voIpProt.SIP.allowTransferOnProceeding="0"
+		voIpProt.SIP.use486forReject="1"
+		voIpProt.SIP.specialEvent.checkSync.alwaysReboot="1"
+	/>
+  
+	<!-- Langauge Settings and Clock Format -->
+	<lcl>
+		<lcl.ml lcl.ml.lang="%%langwebUI%%">
+			<lcl.ml.lang 
+				lcl.ml.lang.list="All" 
+				lcl.ml.lang.list.SPIP235T="1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19" 
+				lcl.ml.lang.list.SPIP321="1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19" 
+				lcl.ml.lang.list.SPIP331="1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19" 
+				lcl.ml.lang.list.SPIP335="1,2,3,4,5,6,7,8,9,12,13,14,15,16,17,18,19">
+			 <lcl.ml.lang.menu 
+				lcl.ml.lang.menu.1="../firmware/polycom/SoundPointIPLocalization/Chinese_China" lcl.ml.lang.menu.1.label="简体中文 (zh-cn)" 
+				lcl.ml.lang.menu.2="../firmware/polycom/SoundPointIPLocalization/Danish_Denmark" lcl.ml.lang.menu.2.label="Dansk (da-dk)" 
+				lcl.ml.lang.menu.3="../firmware/polycom/SoundPointIPLocalization/Dutch_Netherlands" lcl.ml.lang.menu.3.label="Nederlands (nl-nl)" 
+				lcl.ml.lang.menu.4="../firmware/polycom/SoundPointIPLocalization/English_Canada" lcl.ml.lang.menu.4.label="English (en-ca)" 
+				lcl.ml.lang.menu.5="../firmware/polycom/SoundPointIPLocalization/English_United_Kingdom" lcl.ml.lang.menu.5.label="English (en-gb)" 
+				lcl.ml.lang.menu.6="../firmware/polycom/SoundPointIPLocalization/English_United_States" lcl.ml.lang.menu.6.label="English (en-us)" 
+				lcl.ml.lang.menu.7="../firmware/polycom/SoundPointIPLocalization/French_France" lcl.ml.lang.menu.7.label="Français (fr-fr)" 
+				lcl.ml.lang.menu.8="../firmware/polycom/SoundPointIPLocalization/German_Germany" lcl.ml.lang.menu.8.label="Deutsch (de-de)" 
+				lcl.ml.lang.menu.9="../firmware/polycom/SoundPointIPLocalization/Italian_Italy" lcl.ml.lang.menu.9.label="Italiano (it-it)" 
+				lcl.ml.lang.menu.10="../firmware/polycom/SoundPointIPLocalization/Japanese_Japan" lcl.ml.lang.menu.10.label="日本語 (ja-jp)" 
+				lcl.ml.lang.menu.11="../firmware/polycom/SoundPointIPLocalization/Korean_Korea" lcl.ml.lang.menu.11.label="한국어 (ko-kr)" 
+				lcl.ml.lang.menu.12="../firmware/polycom/SoundPointIPLocalization/Norwegian_Norway" lcl.ml.lang.menu.12.label="Norsk (no-no)" 
+				lcl.ml.lang.menu.13="../firmware/polycom/SoundPointIPLocalization/Polish_Poland" lcl.ml.lang.menu.13.label="Polski (pl-pl)" 
+				lcl.ml.lang.menu.14="../firmware/polycom/SoundPointIPLocalization/Portuguese_Portugal" lcl.ml.lang.menu.14.label="Português (pt-br)" 
+				lcl.ml.lang.menu.15="../firmware/polycom/SoundPointIPLocalization/Russian_Russia" lcl.ml.lang.menu.15.label="Русский (ru-ru)" 
+				lcl.ml.lang.menu.16="../firmware/polycom/SoundPointIPLocalization/Slovenian_Slovenia" lcl.ml.lang.menu.16.label="Slovenski (sl-si)" 
+				lcl.ml.lang.menu.17="../firmware/polycom/SoundPointIPLocalization/Spanish_Spain" lcl.ml.lang.menu.17.label="Español (es-es)" 
+				lcl.ml.lang.menu.18="../firmware/polycom/SoundPointIPLocalization/Swedish_Sweden" lcl.ml.lang.menu.18.label="Svenska (sv-se)" 
+				lcl.ml.lang.menu.19="../firmware/polycom/SoundPointIPLocalization/Chinese_Taiwan" lcl.ml.lang.menu.19.label="繁體中文 (zh-tw)" 
+				lcl.ml.lang.menu.20="../firmware/polycom/SoundPointIPLocalization/Arabic_AE" lcl.ml.lang.menu.20.label="العربية (ar-ae)"/>
+			<lcl.ml.lang.font 
+				lcl.ml.lang.font.1="" 
+				lcl.ml.lang.font.2="">
+			</lcl.ml.lang.font>
+		</lcl.ml.lang>
+    </lcl.ml>
+  </lcl>
+  
+  <!-- NTP and DST Settings -->
+	<tcpIpApp>
+		<tcpIpApp.sntp 
+			lcl.datetime.time.24HourClock="1"
+			tcpIpApp.sntp.address="%%param::time_ntp_server%%" 
+			tcpIpApp.sntp.AQuery="0" 
+			tcpIpApp.sntp.gmtOffset="%%param::time_utc_offset_seconds%%" 
+			tcpIpApp.sntp.resyncPeriod="86400">
+		<tcpIpApp.sntp.address tcpIpApp.sntp.address.overrideDHCP="0"/>
+		<tcpIpApp.sntp.gmtOffset tcpIpApp.sntp.gmtOffset.overrideDHCP="0"/>
+		<tcpIpApp.sntp.daylightSavings 
+				tcpIpApp.sntp.daylightSavings.enable="%%dstEnableDisable%%" 
+				tcpIpApp.sntp.daylightSavings.fixedDayEnable="1">
+			<tcpIpApp.sntp.daylightSavings.start 
+				tcpIpApp.sntp.daylightSavings.start.date="%%param::time_dst_start_day%%" 
+				tcpIpApp.sntp.daylightSavings.start.dayOfWeek="1" 
+				tcpIpApp.sntp.daylightSavings.start.month="%%param::time_dst_start_month%%" 
+				tcpIpApp.sntp.daylightSavings.start.time="%%param::time_dst_start_hour%%">
+			<tcpIpApp.sntp.daylightSavings.start.dayOfWeek 
+				tcpIpApp.sntp.daylightSavings.start.dayOfWeek.lastInMonth="0"/>
+			</tcpIpApp.sntp.daylightSavings.start>
+			<tcpIpApp.sntp.daylightSavings.stop 
+				tcpIpApp.sntp.daylightSavings.stop.date="%%param::time_dst_end_day%%" 
+				tcpIpApp.sntp.daylightSavings.stop.dayOfWeek="1" 
+				tcpIpApp.sntp.daylightSavings.stop.month="%%param::time_dst_end_month%%" 
+				tcpIpApp.sntp.daylightSavings.stop.time="%%param::time_dst_end_hour%%">
+			<tcpIpApp.sntp.daylightSavings.stop.dayOfWeek 
+				tcpIpApp.sntp.daylightSavings.stop.dayOfWeek.lastInMonth="0"/>
+			</tcpIpApp.sntp.daylightSavings.stop>
+		</tcpIpApp.sntp.daylightSavings>
+		</tcpIpApp.sntp>
+	</tcpIpApp>
+
+  <!-- Logo Background-->	
+  <bg
+	 {IF ua=SPIP_450}
+	  bg.hiRes.gray.selection="3,1"
+	  bg.medRes.gray.selection="3,1"
+	  bg.hiRes.gray.bm.1.name="%%PROVLINKLOCAL%%/logo/Palm256x116.jpg"
+	  bg.medRes.gray.bm.1.name="%%PROVLINKLOCAL%%/logo/Palm256x116.jpg"
+	  {ENDIF}
+  
+	  {IF ua=SPIP_550}
+	  bg.hiRes.gray.selection="3,1"
+	  bg.hiRes.gray.bm.1.name="%%PROVLINKLOCAL%%/logo/polycomspip550.jpg"
+	  bg.hiRes.gray.bm.1.em.name="%%PROVLINKLOCAL%%/logo/polycomspip550EM.jpg"
+	  {ENDIF}
+	  
+	  {IF ua=SPIP_650}
+	  bg.hiRes.gray.selection="3,1"
+	  bg.hiRes.gray.bm.1.name="%%PROVLINKLOCAL%%/logo/polycomspip550.jpg"
+	  bg.hiRes.gray.bm.1.em.name="%%PROVLINKLOCAL%%/logo/polycomspip550EM.jpg"
+	  {ENDIF}
+	  
+	/>
+  
+	<!-- Auto. Frwd if no Answer-->	
+	<divert>
+		<noanswer divert.noanswer.1.enabled="0"/>
+	</divert>
+	
+	<!-- Dial Plan settings-->	
+	<dialplan
+		dialplan.digitmap=""
+		dialplan.digitmap.timeout=""
+		dialplan.1.digitmap=""
+		dialplan.1.digitmap.timeout=""
+	/>
+	
+	<se
+    se.rt.custom1.name="3CX Auto Answer"
+    se.rt.custom1.ringer="default"
+    se.rt.custom1.type="answer"
+    />
+	
+	<!-- voIpProt.SIP.alertInfo.2 intentionally not used -->
+    <voIpProt.SIP.alertInfo
+    voIpProt.SIP.alertInfo.1.class="custom1"
+    voIpProt.SIP.alertInfo.1.value="auto-answer"
+    /> 
+
+
+	<!-- Distingtive Ring Tone & Voice Mail Sound-->	
+	<se>
+		<se.pat>
+			<se.pat.misc>
+				<se.pat.misc.messageWaiting>
+					<se.pat.misc.messageWaiting.inst 
+						se.pat.misc.messageWaiting.inst.1.value="0"/>
+				</se.pat.misc.messageWaiting>
+			</se.pat.misc>
+		</se.pat>
+
+	</se>
+	 
+	<!-- Admin Password -->	
+	<device device.set="1"/> 
+	<auth device.auth.localAdminPassword.set="1" device.auth.localAdminPassword="%%DESKPHONE_PASSWORD%%"/>
+	<!--  <auth device.auth.localAdminPassword.set="1" device.auth.localAdminPassword="%%DESKPHONE_PASSWORD%%"/> -->
+
+ 	<!-- BLF Setup-->		
+	<attendant 
+		attendant.reg="1" 
+		attendant.ringType="ringer1" 
+		attendant.uri="">
+		<attendant.behaviors>
+			<attendant.behaviors.display>
+				<attendant.behaviors.display.remoteCallerID 
+					attendant.behaviors.display.remoteCallerID.automata="1" 
+					attendant.behaviors.display.remoteCallerID.normal="1"/>
+			<attendant.behaviors.display.spontaneousCallAppearances 
+				attendant.behaviors.display.spontaneousCallAppearances.automata="0" 
+				attendant.behaviors.display.spontaneousCallAppearances.normal="1"/>
+			</attendant.behaviors.display>
+		</attendant.behaviors>
+		{IF blf1}
+			<attendant 
+				attendant.resourceList.1.address="%%blf1%%" 
+				attendant.resourceList.1.label="%%blffirstname1%% %%blflastname1%%" 
+				attendant.resourceList.1.type="automata"/>
+		{ELSE}
+			<attendant 
+				attendant.resourceList.1.address="" 
+				attendant.resourceList.1.label="" 
+				attendant.resourceList.1.type=""/>
+		{ENDIF}
+		
+		{IF blf2}
+			<attendant 
+				attendant.resourceList.2.address="%%blf2%%" 
+				attendant.resourceList.2.label="%%blffirstname2%% %%blflastname2%%" 
+				attendant.resourceList.2.type="automata"/>
+		{ELSE}
+			<attendant 
+				attendant.resourceList.2.address="" 
+				attendant.resourceList.2.label="" 
+				attendant.resourceList.2.type=""/>
+		{ENDIF}
+
+		{IF blf3}
+		<attendant 
+			attendant.resourceList.3.address="%%blf3%%" 
+			attendant.resourceList.3.label="%%blffirstname3%% %%blflastname3%%" 
+			attendant.resourceList.3.type="automata"/>
+		{ELSE}
+		<attendant
+			attendant.resourceList.3.address="" 
+			attendant.resourceList.3.label="" 
+			attendant.resourceList.3.type=""/>
+		{ENDIF}
+
+		{IF blf4}
+		<attendant 
+			attendant.resourceList.4.address="%%blf4%%" 
+			attendant.resourceList.4.label="%%blffirstname4%% %%blflastname4%%" 
+			attendant.resourceList.4.type="automata"/>
+		{ELSE}
+		<attendant 
+			attendant.resourceList.4.address="" 
+			attendant.resourceList.4.label="" 
+			attendant.resourceList.4.type=""/>
+		{ENDIF}
+
+		{IF blf5}
+		<attendant 
+			attendant.resourceList.5.address="%%blf5%%" 
+			attendant.resourceList.5.label="%%blffirstname5%% %%blflastname5%%" 
+			attendant.resourceList.5.type="automata"/>
+		{ELSE}
+		<attendant 
+			attendant.resourceList.5.address=""
+			attendant.resourceList.5.label="" 
+			attendant.resourceList.5.type=""/>
+		{ENDIF}
+
+		{IF blf6}
+		<attendant attendant.resourceList.6.address="%%blf6%%" attendant.resourceList.6.label="%%blffirstname6%% %%blflastname6%%" attendant.resourceList.6.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.6.address="" attendant.resourceList.6.label="" attendant.resourceList.6.type=""/>
+		{ENDIF}
+
+		{IF blf7}
+		<attendant attendant.resourceList.7.address="%%blf7%%" attendant.resourceList.7.label="%%blffirstname7%% %%blflastname7%%" attendant.resourceList.7.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.7.address="" attendant.resourceList.7.label="" attendant.resourceList.7.type=""/>
+		{ENDIF}
+
+		{IF blf8}
+		<attendant attendant.resourceList.8.address="%%blf8%%" attendant.resourceList.8.label="%%blffirstname8%% %%blflastname8%%" attendant.resourceList.8.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.8.address="" attendant.resourceList.8.label="" attendant.resourceList.8.type=""/>
+		{ENDIF}
+
+		{IF blf9}
+		<attendant attendant.resourceList.9.address="%%blf9%%" attendant.resourceList.9.label="%%blffirstname9%% %%blflastname9%%" attendant.resourceList.9.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.9.address="" attendant.resourceList.9.label="" attendant.resourceList.9.type=""/>
+		{ENDIF}
+
+		{IF blf10}
+		<attendant attendant.resourceList.10.address="%%blf10%%" attendant.resourceList.10.label="%%blffirstname10%% %%blflastname10%%" attendant.resourceList.10.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.10.address="" attendant.resourceList.10.label="" attendant.resourceList.10.type=""/>
+		{ENDIF}
+
+		{IF blf11}
+		<attendant attendant.resourceList.11.address="%%blf11%%" attendant.resourceList.11.label="%%blffirstname11%% %%blflastname11%%" attendant.resourceList.11.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.11.address="" attendant.resourceList.11.label="" attendant.resourceList.11.type=""/>
+		{ENDIF}
+
+		{IF blf12}
+		<attendant attendant.resourceList.12.address="%%blf12%%" attendant.resourceList.12.label="%%blffirstname12%% %%blflastname12%%" attendant.resourceList.12.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.12.address="" attendant.resourceList.12.label="" attendant.resourceList.12.type=""/>
+		{ENDIF}
+
+		{IF blf13}
+		<attendant attendant.resourceList.13.address="%%blf13%%" attendant.resourceList.13.label="%%blffirstname13%% %%blflastname13%%" attendant.resourceList.13.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.13.address="" attendant.resourceList.13.label="" attendant.resourceList.13.type=""/>
+		{ENDIF}
+
+		{IF blf14}
+		<attendant attendant.resourceList.14.address="%%blf14%%" attendant.resourceList.14.label="%%blffirstname14%% %%blflastname14%%" attendant.resourceList.14.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.14.address="" attendant.resourceList.14.label="" attendant.resourceList.14.type=""/>
+		{ENDIF}
+
+		{IF blf15}
+		<attendant attendant.resourceList.15.address="%%blf15%%" attendant.resourceList.15.label="%%blffirstname15%% %%blflastname15%%" attendant.resourceList.15.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.15.address="" attendant.resourceList.15.label="" attendant.resourceList.15.type=""/>
+		{ENDIF}
+
+		{IF blf16}
+		<attendant attendant.resourceList.16.address="%%blf16%%" attendant.resourceList.16.label="%%blffirstname16%% %%blflastname16%%" attendant.resourceList.16.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.16.address="" attendant.resourceList.16.label="" attendant.resourceList.16.type=""/>
+		{ENDIF}
+
+		{IF blf17}
+		<attendant attendant.resourceList.17.address="%%blf17%%" attendant.resourceList.17.label="%%blffirstname17%% %%blflastname17%%" attendant.resourceList.17.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.17.address="" attendant.resourceList.17.label="" attendant.resourceList.17.type=""/>
+		{ENDIF}
+
+		{IF blf18}
+		<attendant attendant.resourceList.18.address="%%blf18%%" attendant.resourceList.18.label="%%blffirstname18%% %%blflastname18%%" attendant.resourceList.18.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.18.address="" attendant.resourceList.18.label="" attendant.resourceList.18.type=""/>
+		{ENDIF}
+
+		{IF blf19}
+		<attendant attendant.resourceList.19.address="%%blf19%%" attendant.resourceList.19.label="%%blffirstname19%% %%blflastname19%%" attendant.resourceList.19.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.19.address="" attendant.resourceList.19.label="" attendant.resourceList.19.type=""/>
+		{ENDIF}
+
+		{IF blf20}
+		<attendant attendant.resourceList.20.address="%%blf20%%" attendant.resourceList.20.label="%%blffirstname20%% %%blflastname20%%" attendant.resourceList.20.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.20.address="" attendant.resourceList.20.label="" attendant.resourceList.20.type=""/>
+		{ENDIF}
+
+		{IF blf21}
+		<attendant attendant.resourceList.21.address="%%blf21%%" attendant.resourceList.21.label="%%blffirstname21%% %%blflastname21%%" attendant.resourceList.21.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.21.address="" attendant.resourceList.21.label="" attendant.resourceList.21.type=""/>
+		{ENDIF}
+
+		{IF blf22}
+		<attendant attendant.resourceList.22.address="%%blf22%%" attendant.resourceList.22.label="%%blffirstname22%% %%blflastname22%%" attendant.resourceList.22.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.22.address="" attendant.resourceList.22.label="" attendant.resourceList.22.type=""/>
+		{ENDIF}
+
+		{IF blf23}
+		<attendant attendant.resourceList.23.address="%%blf23%%" attendant.resourceList.23.label="%%blffirstname23%% %%blflastname23%%" attendant.resourceList.23.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.23.address="" attendant.resourceList.23.label="" attendant.resourceList.23.type=""/>
+		{ENDIF}
+
+		{IF blf24}
+		<attendant attendant.resourceList.24.address="%%blf24%%" attendant.resourceList.24.label="%%blffirstname24%% %%blflastname24%%" attendant.resourceList.24.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.24.address="" attendant.resourceList.24.label="" attendant.resourceList.24.type=""/>
+		{ENDIF}
+
+		{IF blf25}
+		<attendant attendant.resourceList.25.address="%%blf25%%" attendant.resourceList.25.label="%%blffirstname25%% %%blflastname25%%" attendant.resourceList.25.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.25.address="" attendant.resourceList.25.label="" attendant.resourceList.25.type=""/>
+		{ENDIF}
+
+		{IF blf26}
+		<attendant attendant.resourceList.26.address="%%blf26%%" attendant.resourceList.26.label="%%blffirstname26%% %%blflastname26%%" attendant.resourceList.26.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.26.address="" attendant.resourceList.26.label="" attendant.resourceList.26.type=""/>
+		{ENDIF}
+
+		{IF blf27}
+		<attendant attendant.resourceList.27.address="%%blf27%%" attendant.resourceList.27.label="%%blffirstname27%% %%blflastname27%%" attendant.resourceList.27.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.27.address="" attendant.resourceList.27.label="" attendant.resourceList.27.type=""/>
+		{ENDIF}
+
+		{IF blf28}
+		<attendant attendant.resourceList.28.address="%%blf28%%" attendant.resourceList.28.label="%%blffirstname28%% %%blflastname28%%" attendant.resourceList.28.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.28.address="" attendant.resourceList.28.label="" attendant.resourceList.28.type=""/>
+		{ENDIF}
+
+		{IF blf29}
+		<attendant attendant.resourceList.29.address="%%blf29%%" attendant.resourceList.29.label="%%blffirstname29%% %%blflastname29%%" attendant.resourceList.29.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.29.address="" attendant.resourceList.29.label="" attendant.resourceList.29.type=""/>
+		{ENDIF}
+
+		{IF blf30}
+		<attendant attendant.resourceList.30.address="%%blf30%%" attendant.resourceList.30.label="%%blffirstname30%% %%blflastname30%%" attendant.resourceList.30.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.30.address="" attendant.resourceList.30.label="" attendant.resourceList.30.type=""/>
+		{ENDIF}
+
+		{IF blf31}
+		<attendant attendant.resourceList.31.address="%%blf31%%" attendant.resourceList.31.label="%%blffirstname31%% %%blflastname31%%" attendant.resourceList.31.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.31.address="" attendant.resourceList.31.label="" attendant.resourceList.31.type=""/>
+		{ENDIF}
+
+		{IF blf32}
+		<attendant attendant.resourceList.32.address="%%blf32%%" attendant.resourceList.32.label="%%blffirstname32%% %%blflastname32%%" attendant.resourceList.32.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.32.address="" attendant.resourceList.32.label="" attendant.resourceList.32.type=""/>
+		{ENDIF}
+
+		{IF blf33}
+		<attendant attendant.resourceList.33.address="%%blf33%%" attendant.resourceList.33.label="%%blffirstname33%% %%blflastname33%%" attendant.resourceList.33.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.33.address="" attendant.resourceList.33.label="" attendant.resourceList.33.type=""/>
+		{ENDIF}
+
+		{IF blf34}
+		<attendant attendant.resourceList.34.address="%%blf34%%" attendant.resourceList.34.label="%%blffirstname34%% %%blflastname34%%" attendant.resourceList.34.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.34.address="" attendant.resourceList.34.label="" attendant.resourceList.34.type=""/>
+		{ENDIF}
+
+		{IF blf35}
+		<attendant attendant.resourceList.35.address="%%blf35%%" attendant.resourceList.35.label="%%blffirstname35%% %%blflastname35%%" attendant.resourceList.35.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.35.address="" attendant.resourceList.35.label="" attendant.resourceList.35.type=""/>
+		{ENDIF}
+
+		{IF blf36}
+		<attendant attendant.resourceList.36.address="%%blf36%%" attendant.resourceList.36.label="%%blffirstname36%% %%blflastname36%%" attendant.resourceList.36.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.36.address="" attendant.resourceList.36.label="" attendant.resourceList.36.type=""/>
+		{ENDIF}
+
+		{IF blf37}
+		<attendant attendant.resourceList.37.address="%%blf37%%" attendant.resourceList.37.label="%%blffirstname37%% %%blflastname37%%" attendant.resourceList.37.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.37.address="" attendant.resourceList.37.label="" attendant.resourceList.37.type=""/>
+		{ENDIF}
+
+		{IF blf38}
+		<attendant attendant.resourceList.38.address="%%blf38%%" attendant.resourceList.38.label="%%blffirstname38%% %%blflastname38%%" attendant.resourceList.38.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.38.address="" attendant.resourceList.38.label="" attendant.resourceList.38.type=""/>
+		{ENDIF}
+
+		{IF blf39}
+		<attendant attendant.resourceList.39.address="%%blf39%%" attendant.resourceList.39.label="%%blffirstname39%% %%blflastname39%%" attendant.resourceList.39.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.39.address="" attendant.resourceList.39.label="" attendant.resourceList.39.type=""/>
+		{ENDIF}
+
+		{IF blf40}
+		<attendant attendant.resourceList.40.address="%%blf40%%" attendant.resourceList.40.label="%%blffirstname40%% %%blflastname40%%" attendant.resourceList.40.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.40.address="" attendant.resourceList.40.label="" attendant.resourceList.40.type=""/>
+		{ENDIF}
+
+		{IF blf41}
+		<attendant attendant.resourceList.41.address="%%blf41%%" attendant.resourceList.41.label="%%blffirstname41%% %%blflastname41%%" attendant.resourceList.41.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.41.address="" attendant.resourceList.41.label="" attendant.resourceList.41.type=""/>
+		{ENDIF}
+
+		{IF blf42}
+		<attendant attendant.resourceList.42.address="%%blf42%%" attendant.resourceList.42.label="%%blffirstname42%% %%blflastname42%%" attendant.resourceList.42.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.42.address="" attendant.resourceList.42.label="" attendant.resourceList.42.type=""/>
+		{ENDIF}
+
+		{IF blf43}
+		<attendant attendant.resourceList.43.address="%%blf43%%" attendant.resourceList.43.label="%%blffirstname43%% %%blflastname43%%" attendant.resourceList.43.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.43.address="" attendant.resourceList.43.label="" attendant.resourceList.43.type=""/>
+		{ENDIF}
+
+		{IF blf44}
+		<attendant attendant.resourceList.44.address="%%blf44%%" attendant.resourceList.44.label="%%blffirstname44%% %%blflastname44%%" attendant.resourceList.44.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.44.address="" attendant.resourceList.44.label="" attendant.resourceList.44.type=""/>
+		{ENDIF}
+
+		{IF blf45}
+		<attendant attendant.resourceList.45.address="%%blf45%%" attendant.resourceList.45.label="%%blffirstname45%% %%blflastname45%%" attendant.resourceList.45.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.45.address="" attendant.resourceList.45.label="" attendant.resourceList.45.type=""/>
+		{ENDIF}
+
+		{IF blf46}
+		<attendant attendant.resourceList.46.address="%%blf46%%" attendant.resourceList.46.label="%%blffirstname46%% %%blflastname46%%" attendant.resourceList.46.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.46.address="" attendant.resourceList.46.label="" attendant.resourceList.46.type=""/>
+		{ENDIF}
+
+		{IF blf47}
+		<attendant attendant.resourceList.47.address="%%blf47%%" attendant.resourceList.47.label="%%blffirstname47%% %%blflastname47%%" attendant.resourceList.47.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.47.address="" attendant.resourceList.47.label="" attendant.resourceList.47.type=""/>
+		{ENDIF}
+
+		{IF blf48}
+		<attendant attendant.resourceList.48.address="%%blf48%%" attendant.resourceList.48.label="%%blffirstname48%% %%blflastname48%%" attendant.resourceList.48.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.48.address="" attendant.resourceList.48.label="" attendant.resourceList.48.type=""/>
+		{ENDIF}
+
+		{IF blf49}
+		<attendant attendant.resourceList.49.address="%%blf49%%" attendant.resourceList.49.label="%%blffirstname49%% %%blflastname49%%" attendant.resourceList.49.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.49.address="" attendant.resourceList.49.label="" attendant.resourceList.49.type=""/>
+		{ENDIF}
+
+		{IF blf50}
+		<attendant attendant.resourceList.50.address="%%blf50%%" attendant.resourceList.50.label="%%blffirstname50%% %%blflastname50%%" attendant.resourceList.50.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.50.address="" attendant.resourceList.50.label="" attendant.resourceList.50.type=""/>
+		{ENDIF}
+
+		{IF blf51}
+		<attendant attendant.resourceList.51.address="%%blf51%%" attendant.resourceList.51.label="%%blffirstname51%% %%blflastname51%%" attendant.resourceList.51.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.51.address="" attendant.resourceList.51.label="" attendant.resourceList.51.type=""/>
+		{ENDIF}
+
+		{IF blf52}
+		<attendant attendant.resourceList.52.address="%%blf52%%" attendant.resourceList.52.label="%%blffirstname52%% %%blflastname52%%" attendant.resourceList.52.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.52.address="" attendant.resourceList.52.label="" attendant.resourceList.52.type=""/>
+		{ENDIF}
+
+		{IF blf53}
+		<attendant attendant.resourceList.53.address="%%blf53%%" attendant.resourceList.53.label="%%blffirstname53%% %%blflastname53%%" attendant.resourceList.53.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.53.address="" attendant.resourceList.53.label="" attendant.resourceList.53.type=""/>
+		{ENDIF}
+
+		{IF blf54}
+		<attendant attendant.resourceList.54.address="%%blf54%%" attendant.resourceList.54.label="%%blffirstname54%% %%blflastname54%%" attendant.resourceList.54.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.54.address="" attendant.resourceList.54.label="" attendant.resourceList.54.type=""/>
+		{ENDIF}
+
+		{IF blf55}
+		<attendant attendant.resourceList.55.address="%%blf55%%" attendant.resourceList.55.label="%%blffirstname55%% %%blflastname55%%" attendant.resourceList.55.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.55.address="" attendant.resourceList.55.label="" attendant.resourceList.55.type=""/>
+		{ENDIF}
+
+		{IF blf56}
+		<attendant attendant.resourceList.56.address="%%blf56%%" attendant.resourceList.56.label="%%blffirstname56%% %%blflastname56%%" attendant.resourceList.56.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.56.address="" attendant.resourceList.56.label="" attendant.resourceList.56.type=""/>
+		{ENDIF}
+
+		{IF blf57}
+		<attendant attendant.resourceList.57.address="%%blf57%%" attendant.resourceList.57.label="%%blffirstname57%% %%blflastname57%%" attendant.resourceList.57.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.57.address="" attendant.resourceList.57.label="" attendant.resourceList.57.type=""/>
+		{ENDIF}
+
+		{IF blf58}
+		<attendant attendant.resourceList.58.address="%%blf58%%" attendant.resourceList.58.label="%%blffirstname58%% %%blflastname58%%" attendant.resourceList.58.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.58.address="" attendant.resourceList.58.label="" attendant.resourceList.58.type=""/>
+		{ENDIF}
+
+		{IF blf59}
+		<attendant attendant.resourceList.59.address="%%blf59%%" attendant.resourceList.59.label="%%blffirstname59%% %%blflastname59%%" attendant.resourceList.59.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.59.address="" attendant.resourceList.59.label="" attendant.resourceList.59.type=""/>
+		{ENDIF}
+
+		{IF blf60}
+		<attendant attendant.resourceList.60.address="%%blf60%%" attendant.resourceList.60.label="%%blffirstname60%% %%blflastname60%%" attendant.resourceList.60.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.60.address="" attendant.resourceList.60.label="" attendant.resourceList.60.type=""/>
+		{ENDIF}
+
+		{IF blf61}
+		<attendant attendant.resourceList.61.address="%%blf61%%" attendant.resourceList.61.label="%%blffirstname61%% %%blflastname61%%" attendant.resourceList.61.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.61.address="" attendant.resourceList.61.label="" attendant.resourceList.61.type=""/>
+		{ENDIF}
+
+		{IF blf62}
+		<attendant attendant.resourceList.62.address="%%blf62%%" attendant.resourceList.62.label="%%blffirstname62%% %%blflastname62%%" attendant.resourceList.62.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.62.address="" attendant.resourceList.62.label="" attendant.resourceList.62.type=""/>
+		{ENDIF}
+
+		{IF blf63}
+		<attendant attendant.resourceList.63.address="%%blf63%%" attendant.resourceList.63.label="%%blffirstname63%% %%blflastname63%%" attendant.resourceList.63.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.63.address="" attendant.resourceList.63.label="" attendant.resourceList.63.type=""/>
+		{ENDIF}
+
+		{IF blf64}
+		<attendant attendant.resourceList.64.address="%%blf64%%" attendant.resourceList.64.label="%%blffirstname64%% %%blflastname64%%" attendant.resourceList.64.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.64.address="" attendant.resourceList.64.label="" attendant.resourceList.64.type=""/>
+		{ENDIF}
+
+		{IF blf65}
+		<attendant attendant.resourceList.65.address="%%blf65%%" attendant.resourceList.65.label="%%blffirstname65%% %%blflastname65%%" attendant.resourceList.65.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.65.address="" attendant.resourceList.65.label="" attendant.resourceList.65.type=""/>
+		{ENDIF}
+
+		{IF blf66}
+		<attendant attendant.resourceList.66.address="%%blf66%%" attendant.resourceList.66.label="%%blffirstname66%% %%blflastname66%%" attendant.resourceList.66.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.66.address="" attendant.resourceList.66.label="" attendant.resourceList.66.type=""/>
+		{ENDIF}
+
+		{IF blf67}
+		<attendant attendant.resourceList.67.address="%%blf67%%" attendant.resourceList.67.label="%%blffirstname67%% %%blflastname67%%" attendant.resourceList.67.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.67.address="" attendant.resourceList.67.label="" attendant.resourceList.67.type=""/>
+		{ENDIF}
+
+		{IF blf68}
+		<attendant attendant.resourceList.68.address="%%blf68%%" attendant.resourceList.68.label="%%blffirstname68%% %%blflastname68%%" attendant.resourceList.68.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.68.address="" attendant.resourceList.68.label="" attendant.resourceList.68.type=""/>
+		{ENDIF}
+
+		{IF blf69}
+		<attendant attendant.resourceList.69.address="%%blf69%%" attendant.resourceList.69.label="%%blffirstname69%% %%blflastname69%%" attendant.resourceList.69.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.69.address="" attendant.resourceList.69.label="" attendant.resourceList.69.type=""/>
+		{ENDIF}
+
+		{IF blf70}
+		<attendant attendant.resourceList.70.address="%%blf70%%" attendant.resourceList.70.label="%%blffirstname70%% %%blflastname70%%" attendant.resourceList.70.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.70.address="" attendant.resourceList.70.label="" attendant.resourceList.70.type=""/>
+		{ENDIF}
+
+		{IF blf71}
+		<attendant attendant.resourceList.71.address="%%blf71%%" attendant.resourceList.71.label="%%blffirstname71%% %%blflastname71%%" attendant.resourceList.71.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.71.address="" attendant.resourceList.71.label="" attendant.resourceList.71.type=""/>
+		{ENDIF}
+
+		{IF blf72}
+		<attendant attendant.resourceList.72.address="%%blf72%%" attendant.resourceList.72.label="%%blffirstname72%% %%blflastname72%%" attendant.resourceList.72.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.72.address="" attendant.resourceList.72.label="" attendant.resourceList.72.type=""/>
+		{ENDIF}
+
+		{IF blf73}
+		<attendant attendant.resourceList.73.address="%%blf73%%" attendant.resourceList.73.label="%%blffirstname73%% %%blflastname73%%" attendant.resourceList.73.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.73.address="" attendant.resourceList.73.label="" attendant.resourceList.73.type=""/>
+		{ENDIF}
+
+		{IF blf74}
+		<attendant attendant.resourceList.74.address="%%blf74%%" attendant.resourceList.74.label="%%blffirstname74%% %%blflastname74%%" attendant.resourceList.74.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.74.address="" attendant.resourceList.74.label="" attendant.resourceList.74.type=""/>
+		{ENDIF}
+
+		{IF blf75}
+		<attendant attendant.resourceList.75.address="%%blf75%%" attendant.resourceList.75.label="%%blffirstname75%% %%blflastname75%%" attendant.resourceList.75.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.75.address="" attendant.resourceList.75.label="" attendant.resourceList.75.type=""/>
+		{ENDIF}
+
+		{IF blf76}
+		<attendant attendant.resourceList.76.address="%%blf76%%" attendant.resourceList.76.label="%%blffirstname76%% %%blflastname76%%" attendant.resourceList.76.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.76.address="" attendant.resourceList.76.label="" attendant.resourceList.76.type=""/>
+		{ENDIF}
+
+		{IF blf77}
+		<attendant attendant.resourceList.77.address="%%blf77%%" attendant.resourceList.77.label="%%blffirstname77%% %%blflastname77%%" attendant.resourceList.77.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.77.address="" attendant.resourceList.77.label="" attendant.resourceList.77.type=""/>
+		{ENDIF}
+
+		{IF blf78}
+		<attendant attendant.resourceList.78.address="%%blf78%%" attendant.resourceList.78.label="%%blffirstname78%% %%blflastname78%%" attendant.resourceList.78.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.78.address="" attendant.resourceList.78.label="" attendant.resourceList.78.type=""/>
+		{ENDIF}
+
+		{IF blf79}
+		<attendant attendant.resourceList.79.address="%%blf79%%" attendant.resourceList.79.label="%%blffirstname79%% %%blflastname79%%" attendant.resourceList.79.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.79.address="" attendant.resourceList.79.label="" attendant.resourceList.79.type=""/>
+		{ENDIF}
+
+		{IF blf80}
+		<attendant attendant.resourceList.80.address="%%blf80%%" attendant.resourceList.80.label="%%blffirstname80%% %%blflastname80%%" attendant.resourceList.80.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.80.address="" attendant.resourceList.80.label="" attendant.resourceList.80.type=""/>
+		{ENDIF}
+
+		{IF blf81}
+		<attendant attendant.resourceList.81.address="%%blf81%%" attendant.resourceList.81.label="%%blffirstname81%% %%blflastname81%%" attendant.resourceList.81.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.81.address="" attendant.resourceList.81.label="" attendant.resourceList.81.type=""/>
+		{ENDIF}
+
+		{IF blf82}
+		<attendant attendant.resourceList.82.address="%%blf82%%" attendant.resourceList.82.label="%%blffirstname82%% %%blflastname82%%" attendant.resourceList.82.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.82.address="" attendant.resourceList.82.label="" attendant.resourceList.82.type=""/>
+		{ENDIF}
+
+		{IF blf83}
+		<attendant attendant.resourceList.83.address="%%blf83%%" attendant.resourceList.83.label="%%blffirstname83%% %%blflastname83%%" attendant.resourceList.83.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.83.address="" attendant.resourceList.83.label="" attendant.resourceList.83.type=""/>
+		{ENDIF}
+
+		{IF blf84}
+		<attendant attendant.resourceList.84.address="%%blf84%%" attendant.resourceList.84.label="%%blffirstname84%% %%blflastname84%%" attendant.resourceList.84.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.84.address="" attendant.resourceList.84.label="" attendant.resourceList.84.type=""/>
+		{ENDIF}
+
+		{IF blf85}
+		<attendant attendant.resourceList.85.address="%%blf85%%" attendant.resourceList.85.label="%%blffirstname85%% %%blflastname85%%" attendant.resourceList.85.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.85.address="" attendant.resourceList.85.label="" attendant.resourceList.85.type=""/>
+		{ENDIF}
+
+		{IF blf86}
+		<attendant attendant.resourceList.86.address="%%blf86%%" attendant.resourceList.86.label="%%blffirstname86%% %%blflastname86%%" attendant.resourceList.86.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.86.address="" attendant.resourceList.86.label="" attendant.resourceList.86.type=""/>
+		{ENDIF}
+
+		{IF blf87}
+		<attendant attendant.resourceList.87.address="%%blf87%%" attendant.resourceList.87.label="%%blffirstname87%% %%blflastname87%%" attendant.resourceList.87.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.87.address="" attendant.resourceList.87.label="" attendant.resourceList.87.type=""/>
+		{ENDIF}
+
+		{IF blf88}
+		<attendant attendant.resourceList.88.address="%%blf88%%" attendant.resourceList.88.label="%%blffirstname88%% %%blflastname88%%" attendant.resourceList.88.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.88.address="" attendant.resourceList.88.label="" attendant.resourceList.88.type=""/>
+		{ENDIF}
+
+		{IF blf89}
+		<attendant attendant.resourceList.89.address="%%blf89%%" attendant.resourceList.89.label="%%blffirstname89%% %%blflastname89%%" attendant.resourceList.89.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.89.address="" attendant.resourceList.89.label="" attendant.resourceList.89.type=""/>
+		{ENDIF}
+
+		{IF blf90}
+		<attendant attendant.resourceList.90.address="%%blf90%%" attendant.resourceList.90.label="%%blffirstname90%% %%blflastname90%%" attendant.resourceList.90.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.90.address="" attendant.resourceList.90.label="" attendant.resourceList.90.type=""/>
+		{ENDIF}
+
+		{IF blf91}
+		<attendant attendant.resourceList.91.address="%%blf91%%" attendant.resourceList.91.label="%%blffirstname91%% %%blflastname91%%" attendant.resourceList.91.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.91.address="" attendant.resourceList.91.label="" attendant.resourceList.91.type=""/>
+		{ENDIF}
+
+		{IF blf92}
+		<attendant attendant.resourceList.92.address="%%blf92%%" attendant.resourceList.92.label="%%blffirstname92%% %%blflastname92%%" attendant.resourceList.92.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.92.address="" attendant.resourceList.92.label="" attendant.resourceList.92.type=""/>
+		{ENDIF}
+
+		{IF blf93}
+		<attendant attendant.resourceList.93.address="%%blf93%%" attendant.resourceList.93.label="%%blffirstname93%% %%blflastname93%%" attendant.resourceList.93.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.93.address="" attendant.resourceList.93.label="" attendant.resourceList.93.type=""/>
+		{ENDIF}
+
+		{IF blf94}
+		<attendant attendant.resourceList.94.address="%%blf94%%" attendant.resourceList.94.label="%%blffirstname94%% %%blflastname94%%" attendant.resourceList.94.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.94.address="" attendant.resourceList.94.label="" attendant.resourceList.94.type=""/>
+		{ENDIF}
+
+		{IF blf95}
+		<attendant attendant.resourceList.95.address="%%blf95%%" attendant.resourceList.95.label="%%blffirstname95%% %%blflastname95%%" attendant.resourceList.95.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.95.address="" attendant.resourceList.95.label="" attendant.resourceList.95.type=""/>
+		{ENDIF}
+
+		{IF blf96}
+		<attendant attendant.resourceList.96.address="%%blf96%%" attendant.resourceList.96.label="%%blffirstname96%% %%blflastname96%%" attendant.resourceList.96.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.96.address="" attendant.resourceList.96.label="" attendant.resourceList.96.type=""/>
+		{ENDIF}
+
+		{IF blf97}
+		<attendant attendant.resourceList.97.address="%%blf97%%" attendant.resourceList.97.label="%%blffirstname97%% %%blflastname97%%" attendant.resourceList.97.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.97.address="" attendant.resourceList.97.label="" attendant.resourceList.97.type=""/>
+		{ENDIF}
+
+		{IF blf98}
+		<attendant attendant.resourceList.98.address="%%blf98%%" attendant.resourceList.98.label="%%blffirstname98%% %%blflastname98%%" attendant.resourceList.98.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.98.address="" attendant.resourceList.98.label="" attendant.resourceList.98.type=""/>
+		{ENDIF}
+
+		{IF blf99}
+		<attendant attendant.resourceList.99.address="%%blf99%%" attendant.resourceList.99.label="%%blffirstname99%% %%blflastname99%%" attendant.resourceList.99.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.99.address="" attendant.resourceList.99.label="" attendant.resourceList.99.type=""/>
+		{ENDIF}
+
+		{IF blf100}
+		<attendant attendant.resourceList.100.address="%%blf100%%" attendant.resourceList.100.label="%%blffirstname100%% %%blflastname100%%" attendant.resourceList.100.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.100.address="" attendant.resourceList.100.label="" attendant.resourceList.100.type=""/>
+		{ENDIF}
+
+		{IF blf101}
+		<attendant attendant.resourceList.101.address="%%blf101%%" attendant.resourceList.101.label="%%blffirstname101%% %%blflastname101%%" attendant.resourceList.101.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.101.address="" attendant.resourceList.101.label="" attendant.resourceList.101.type=""/>
+		{ENDIF}
+
+		{IF blf102}
+		<attendant attendant.resourceList.102.address="%%blf102%%" attendant.resourceList.102.label="%%blffirstname102%% %%blflastname102%%" attendant.resourceList.102.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.102.address="" attendant.resourceList.102.label="" attendant.resourceList.102.type=""/>
+		{ENDIF}
+
+		{IF blf103}
+		<attendant attendant.resourceList.103.address="%%blf103%%" attendant.resourceList.103.label="%%blffirstname103%% %%blflastname103%%" attendant.resourceList.103.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.103.address="" attendant.resourceList.103.label="" attendant.resourceList.103.type=""/>
+		{ENDIF}
+
+		{IF blf104}
+		<attendant attendant.resourceList.104.address="%%blf104%%" attendant.resourceList.104.label="%%blffirstname104%% %%blflastname104%%" attendant.resourceList.104.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.104.address="" attendant.resourceList.104.label="" attendant.resourceList.104.type=""/>
+		{ENDIF}
+
+		{IF blf105}
+		<attendant attendant.resourceList.105.address="%%blf105%%" attendant.resourceList.105.label="%%blffirstname105%% %%blflastname105%%" attendant.resourceList.105.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.105.address="" attendant.resourceList.105.label="" attendant.resourceList.105.type=""/>
+		{ENDIF}
+
+		{IF blf106}
+		<attendant attendant.resourceList.106.address="%%blf106%%" attendant.resourceList.106.label="%%blffirstname106%% %%blflastname106%%" attendant.resourceList.106.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.106.address="" attendant.resourceList.106.label="" attendant.resourceList.106.type=""/>
+		{ENDIF}
+
+		{IF blf107}
+		<attendant attendant.resourceList.107.address="%%blf107%%" attendant.resourceList.107.label="%%blffirstname107%% %%blflastname107%%" attendant.resourceList.107.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.107.address="" attendant.resourceList.107.label="" attendant.resourceList.107.type=""/>
+		{ENDIF}
+
+		{IF blf108}
+		<attendant attendant.resourceList.108.address="%%blf108%%" attendant.resourceList.108.label="%%blffirstname108%% %%blflastname108%%" attendant.resourceList.108.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.108.address="" attendant.resourceList.108.label="" attendant.resourceList.108.type=""/>
+		{ENDIF}
+
+		{IF blf109}
+		<attendant attendant.resourceList.109.address="%%blf109%%" attendant.resourceList.109.label="%%blffirstname109%% %%blflastname109%%" attendant.resourceList.109.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.109.address="" attendant.resourceList.109.label="" attendant.resourceList.109.type=""/>
+		{ENDIF}
+
+		{IF blf110}
+		<attendant attendant.resourceList.110.address="%%blf110%%" attendant.resourceList.110.label="%%blffirstname110%% %%blflastname110%%" attendant.resourceList.110.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.110.address="" attendant.resourceList.110.label="" attendant.resourceList.110.type=""/>
+		{ENDIF}
+
+		{IF blf111}
+		<attendant attendant.resourceList.111.address="%%blf111%%" attendant.resourceList.111.label="%%blffirstname111%% %%blflastname111%%" attendant.resourceList.111.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.111.address="" attendant.resourceList.111.label="" attendant.resourceList.111.type=""/>
+		{ENDIF}
+
+		{IF blf112}
+		<attendant attendant.resourceList.112.address="%%blf112%%" attendant.resourceList.112.label="%%blffirstname112%% %%blflastname112%%" attendant.resourceList.112.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.112.address="" attendant.resourceList.112.label="" attendant.resourceList.112.type=""/>
+		{ENDIF}
+
+		{IF blf113}
+		<attendant attendant.resourceList.113.address="%%blf113%%" attendant.resourceList.113.label="%%blffirstname113%% %%blflastname113%%" attendant.resourceList.113.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.113.address="" attendant.resourceList.113.label="" attendant.resourceList.113.type=""/>
+		{ENDIF}
+
+		{IF blf114}
+		<attendant attendant.resourceList.114.address="%%blf114%%" attendant.resourceList.114.label="%%blffirstname114%% %%blflastname114%%" attendant.resourceList.114.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.114.address="" attendant.resourceList.114.label="" attendant.resourceList.114.type=""/>
+		{ENDIF}
+
+		{IF blf115}
+		<attendant attendant.resourceList.115.address="%%blf115%%" attendant.resourceList.115.label="%%blffirstname115%% %%blflastname115%%" attendant.resourceList.115.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.115.address="" attendant.resourceList.115.label="" attendant.resourceList.115.type=""/>
+		{ENDIF}
+
+		{IF blf116}
+		<attendant attendant.resourceList.116.address="%%blf116%%" attendant.resourceList.116.label="%%blffirstname116%% %%blflastname116%%" attendant.resourceList.116.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.116.address="" attendant.resourceList.116.label="" attendant.resourceList.116.type=""/>
+		{ENDIF}
+
+		{IF blf117}
+		<attendant attendant.resourceList.117.address="%%blf117%%" attendant.resourceList.117.label="%%blffirstname117%% %%blflastname117%%" attendant.resourceList.117.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.117.address="" attendant.resourceList.117.label="" attendant.resourceList.117.type=""/>
+		{ENDIF}
+
+		{IF blf118}
+		<attendant attendant.resourceList.118.address="%%blf118%%" attendant.resourceList.118.label="%%blffirstname118%% %%blflastname118%%" attendant.resourceList.118.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.118.address="" attendant.resourceList.118.label="" attendant.resourceList.118.type=""/>
+		{ENDIF}
+
+		{IF blf119}
+		<attendant attendant.resourceList.119.address="%%blf119%%" attendant.resourceList.119.label="%%blffirstname119%% %%blflastname119%%" attendant.resourceList.119.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.119.address="" attendant.resourceList.119.label="" attendant.resourceList.119.type=""/>
+		{ENDIF}
+
+		{IF blf120}
+		<attendant attendant.resourceList.120.address="%%blf120%%" attendant.resourceList.120.label="%%blffirstname120%% %%blflastname120%%" attendant.resourceList.120.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.120.address="" attendant.resourceList.120.label="" attendant.resourceList.120.type=""/>
+		{ENDIF}
+
+		{IF blf121}
+		<attendant attendant.resourceList.121.address="%%blf121%%" attendant.resourceList.121.label="%%blffirstname121%% %%blflastname121%%" attendant.resourceList.121.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.121.address="" attendant.resourceList.121.label="" attendant.resourceList.121.type=""/>
+		{ENDIF}
+
+		{IF blf122}
+		<attendant attendant.resourceList.122.address="%%blf122%%" attendant.resourceList.122.label="%%blffirstname122%% %%blflastname122%%" attendant.resourceList.122.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.122.address="" attendant.resourceList.122.label="" attendant.resourceList.122.type=""/>
+		{ENDIF}
+
+		{IF blf123}
+		<attendant attendant.resourceList.123.address="%%blf123%%" attendant.resourceList.123.label="%%blffirstname123%% %%blflastname123%%" attendant.resourceList.123.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.123.address="" attendant.resourceList.123.label="" attendant.resourceList.123.type=""/>
+		{ENDIF}
+
+		{IF blf124}
+		<attendant attendant.resourceList.124.address="%%blf124%%" attendant.resourceList.124.label="%%blffirstname124%% %%blflastname124%%" attendant.resourceList.124.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.124.address="" attendant.resourceList.124.label="" attendant.resourceList.124.type=""/>
+		{ENDIF}
+
+		{IF blf125}
+		<attendant attendant.resourceList.125.address="%%blf125%%" attendant.resourceList.125.label="%%blffirstname125%% %%blflastname125%%" attendant.resourceList.125.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.125.address="" attendant.resourceList.125.label="" attendant.resourceList.125.type=""/>
+		{ENDIF}
+
+		{IF blf126}
+		<attendant attendant.resourceList.126.address="%%blf126%%" attendant.resourceList.126.label="%%blffirstname126%% %%blflastname126%%" attendant.resourceList.126.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.126.address="" attendant.resourceList.126.label="" attendant.resourceList.126.type=""/>
+		{ENDIF}
+
+		{IF blf127}
+		<attendant attendant.resourceList.127.address="%%blf127%%" attendant.resourceList.127.label="%%blffirstname127%% %%blflastname127%%" attendant.resourceList.127.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.127.address="" attendant.resourceList.127.label="" attendant.resourceList.127.type=""/>
+		{ENDIF}
+
+		{IF blf128}
+		<attendant attendant.resourceList.128.address="%%blf128%%" attendant.resourceList.128.label="%%blffirstname128%% %%blflastname128%%" attendant.resourceList.128.type="automata"/>
+		{ELSE}
+		<attendant attendant.resourceList.128.address="" attendant.resourceList.128.label="" attendant.resourceList.128.type=""/>
+		{ENDIF}		
+		
+		
+	</attendant>
+	
+</polycomConfig>
+]]></deviceconfig>
+</device>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">%%mac_address%%.cfg</field>
+      <deviceconfig filename="%%mac_address%%.cfg"><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- polycom [MACADDRESS].cfg file for firmware and bootrom/updater donloader-->
+
+<polycomConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="polycomConfig.xsd">
+
+<APPLICATION 
+	APP_FILE_PATH="sip.ld" 
+	CONFIG_FILES="[PHONE_MAC_ADDRESS]-config.cfg" 
+	MISC_FILES="" 
+	LOG_FILE_DIRECTORY="http://dummypolycomlogserver.com/"
+	OVERRIDES_DIRECTORY="" 
+	CONTACTS_DIRECTORY="" 
+	LICENSE_DIRECTORY="" 
+	USER_PROFILES_DIRECTORY="" 
+	CALL_LISTS_DIRECTORY="http://dummypolycomlogserver.com/"
+	COREFILE_DIRECTORY="">
+</APPLICATION>
+
+</polycomConfig>
+]]></deviceconfig>
+</device>
+  </data>
+</doc>

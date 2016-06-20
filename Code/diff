@@ -1,0 +1,8 @@
+rm -rf public
+rm -rf views
+rm -rf routes
+
+
+cp -rf ../NewPUCSWeb/public ./
+cp -rf ../NewPUCSWeb/views ./
+cp -rf ../NewPUCSWeb/routes ./

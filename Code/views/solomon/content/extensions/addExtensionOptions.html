@@ -1,0 +1,123 @@
+<div class="tab-pane" id="exampleTabsOptions" role="tabpanel">
+
+  <h5 class="margin-top-10">
+    Options
+  </h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Record calls</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="eo-record-calls"
+                 data-checked="<%=trimValue(data.eData, ['options', 'record_all_calls'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Disable Extension</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="eo-disable-extension" data-reverse="default"
+                 data-checked="<%=!trimValue(data.eData, ['options', 'enable_extension'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Allow Paging/Intercom</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="eo-allow-paging-intercom"
+                 data-checked="<%=trimValue(data.eData, ['options', 'enable_paging_intercom'])%>"
+                 disabled="disabled">
+          <label></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Allow External Calls</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="eo-disable-extension-calls"
+                 data-checked="<%=trimValue(data.eData, ['options', 'enable_external_call'])%>"
+                 disabled="disabled">
+          <label></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Allow Management Console Access</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="eo-console-access"
+                 data-checked="<%=trimValue(data.eData, ['options', 'enable_management_console_access'])%>"
+                 disabled="disabled">
+          <label></label>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div data-init="hidden">
+    <h5 class="margin-top-20">
+      Extension Groups
+    </h5>
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">Extension in these groups</label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <!-- 需重构次展示方式 -->
+          <table class="table table-bordered">
+            <thead>
+            <tr>
+              <th>GroupName</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%
+            if(data && data.eData && data.eData.belong_groups) {
+            data.eData.belong_groups.map(function(gName) {
+            %>
+            <tr>
+              <td ><%=gName%></td>
+            </tr>
+            <%
+            });
+            }
+            %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+  </div>
+  <hr>
+
+
+</div>

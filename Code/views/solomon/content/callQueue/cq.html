@@ -1,0 +1,86 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Call Queue
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="add-queue">
+              Add Queue
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Queue Number</th>
+                <th>Queue Name</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.cqsData && data.cqsData.queues ) {
+              data.cqsData.queues.forEach(function(data, key){
+              %>
+              <tr>
+                <td><%=(key+1)%></td>
+                <td><%=data.queue_number %></td>
+                <td><%=data.name %></td>
+                <td>
+                  <% if(data.status=='online' || data.status == 'Online') { %>
+                  <span class="label label-primary">Online</span>
+                  <% } %>
+                  <% if(data.status=='offline' || data.status=='Offline') { %>
+                  <span class="label label-danger">offline</span>
+                  <% } %>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Edit" data-cq="<%=data.queue_number%>" name="cq-edit">
+                    <i class="icon wb-wrench" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Delete"
+                          name="cq-btn-delete" data-value="<%=data.queue_number%>">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

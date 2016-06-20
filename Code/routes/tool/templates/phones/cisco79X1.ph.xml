@@ -1,0 +1,410 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-04-18 15:00:00</time>
+    <name>Cisco 79X1</name>
+    <url>http://www.cisco.com</url>
+    <models>
+	  <model ua="Cisco-CP7941G">Cisco 7941</model>
+	  <model ua="Cisco-CP7961G">Cisco 7961</model>	  
+    </models>
+    <description>Cisco SCCP SIP Phones</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+    </rebootParams>
+    <resyncParams>
+    </resyncParams>
+    <firmwareParams>
+    </firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">0</option>
+        <option value="REMOTESPM">0</option>
+		<option value="SBC">0</option>
+    </AllowedNetworkConfig>
+    <dst variableName="dstEnableDisable" enable="1" disable="0">
+    </dst>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+        <item name="langwebUI">English</item>
+        <item name="langlcdUI">English</item>
+      </option>
+    </languages>
+    <timezoneParams param="time_timezone_cisco79x1">
+      <!--The first entry is the selected entry in management console-->
+      <option value="GMT Standard/Daylight Time" id="36" zone="0:00">GMT(London, Dublin, Edinburgh, Lisbon, Casablanca, Monrovia)</option>
+      <option value="W. Europe Standard/Daylight Time" id="38" zone="1:00">GMT+1:00 (Paris,Amsterdam, Berlin, Rome, Vienna, Madrid, Warsaw, Brussels)</option>
+      <option value="E. Europe Standard/Daylight Time" id="65" zone="2:00">GMT+2:00 (Israel, Cairo, Athens, Helsinki, Istanbul, Buchrest)</option>
+      <option value="Russian Standard/Daylight Time" id="83" zone="3:00">GMT+3:00 (Moscow, Kuwait, Baghdad, Tehran, Nairobi)</option>
+      <option value="Iran Standard/Daylight Time" id="84" zone="3:30">GMT+3:30 (Tehran)</option>
+      <option value="Caucasus Standard/Daylight TimeCaucasus Standard/Daylight Time" id="85" zone="4:00">GMT+4:00 (Abu Dhabi, Yerevan, Baku)</option>
+      <option value="Afghanistan Standard Time" id="91" zone="4:30">GMT+4:30 (Kabul)</option>
+      <option value="West Asia Standard Time" id="94" zone="5:00">GMT+5:00 (Islamabad, Ekaterinburg, Karachi, Tashkent)</option>
+      <option value="India Standard Time" id="96" zone="5:30">GMT+5:30 (Chennai, New Delhi, Mumbai)</option>
+      <option value="Central Asia Standard Time" id="98" zone="6:00">GMT+6:00 (Almaty, Astana. Dhaka, Novosibirsk)</option>
+      <option value="North Asia Standard Time" id="100" zone="6:30">GMT+6:30 (North Sumatra)</option>
+      <option value="SE Asia Standard Time" id="102" zone="7:00">GMT+7:00 (Bankok, Jakarta, Hanoi, Krasnoyarsk)</option>
+      <option value="China Standard/Daylight Time" id="104" zone="8:00">GMT+8:00 (Beijing, Singapore, Taipei, Kuala Lumpur, Irkutsk, Perth)</option>
+      <option value="Tokyo Standard Time" id="107" zone="9:00">GMT+9:00 (Japan, Korea, Yakutsk)</option>
+      <option value="Cen. Australia Standard/Daylight Time" id="108" zone="9:30">GMT+9:30 (Adelaide, Darwin)</option>
+      <option value="AUS Central Standard Time" id="110" zone="10:00">GMT+10:00 (Brisbane, Sydney, Melbourne, Canberra, Guam, Hobart)</option>
+      <option value="Central Pacific Standard Time" id="115" zone="11:00">GMT+11:00 (Magadan, Solomon Is., New Caledonia)</option>
+      <option value="New Zealand Standard/Daylight Time" id="116" zone="12:00">GMT+12:00 (Auckland, Wellington, Fiji)</option>
+      <option value="Dateline Standard Time" id="121" zone="-12:00">GMT-12:00 (International Date Line West)</option>
+      <option value="Samoa Standard Time" id="120" zone="-11:00">GMT-11:00 (Midway Island, Samoa)</option>
+      <option value="Hawaiian Standard Time" id="1" zone="-10:00">GMT-10:00 (US Hawaiian Time)</option>
+      <option value="Alaskan Standard/Daylight Time" id="122" zone="-9:30">GMT-9:30 (Isle Marquises)</option>
+      <option value="Alaskan Standard/Daylight Time" id="3" zone="-9:00">GMT-9:00 (US Alaska Time)</option>
+      <option value="Pacific Standard/Daylight Time" id="6" zone="-8:00">GMT-8:00 (US Pacific Time, Los Angeles)</option>
+      <option value="Mountain Standard/Daylight Time" id="9" zone="-7:00">GMT-7:00 (US Mountain Time, Denver)</option>
+      <option value="Central Standard/Daylight Time" id="14" zone="-6:00">GMT-6:00 (US Central Time, Chicago)</option>
+      <option value="Eastern Standard/Daylight Time" id="0" zone="-5:00">GMT-5:00 (US Eastern Time, New York)</option>
+      <option value="Atlantic Standard/Daylight Time" id="19" zone="-4:00">GMT-4:00 (Atlantic Time, Quebec)</option>
+      <option value="Newfoundland Standard/Daylight Time" id="25" zone="-3:30">GMT-3:30 (Newfoundland)</option>
+      <option value="SA Eastern Standard Time" id="26" zone="-3:00">GMT-3:00 (Greenland)</option>
+      <option value="Mid-Atlantic Standard/Daylight Time" id="123" zone="-2:00">GMT-2:00 (Mid-Atlantic)</option>
+      <option value="Azores Standard/Daylight Time" id="31" zone="-1:00">GMT-1:00 (Azores, Cape Verdi Is.)</option>
+    </timezoneParams>
+	<Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="g711ulaw">G711u</option>
+        <option value="g711alaw">G711a</option>
+		<option value="g729a">G729a</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <option value="g711alaw">G711a</option>
+		<option value="g711ulaw">G711u</option>
+		<option value="g729a">G729a</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <option value="g729a">G729a</option>
+		<option value="g711ulaw">G711u</option>
+        <option value="g711alaw">G711a</option>
+      </Codecspriority>
+	  <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="NA">N/A</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  <blftype>
+  </blftype>
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Cisco 7941 Device Config</field>
+      <deviceconfig filename="SEP%%mac_address%%.cnf.xml">
+<![CDATA[
+<device xsi:type="axl:XIPPhone" ctiid="3CX Phone System">
+  <deviceProtocol>SIP</deviceProtocol>
+  <sshUserId></sshUserId>
+  <sshPassword></sshPassword>
+  <devicePool>
+    <dateTimeSetting>
+      <dateTemplate>D-M-Y</dateTemplate>
+      <timeZone>%%param::time_timezone_cisco79x1%%</timeZone>
+      <ntps>
+        <ntp>
+          <name>204.2.134.162</name>
+          <ntpMode>Unicast</ntpMode>
+        </ntp>
+      </ntps>
+    </dateTimeSetting>
+    <callManagerGroup>
+      <members>
+        <member priority="0">
+          <callManager>
+            <ports>
+              <ethernetPhonePort>2000</ethernetPhonePort>
+              <sipPort>%%param::sipport%%</sipPort>
+              <securedSipPort>5061</securedSipPort>
+            </ports>
+            <processNodeName>%%pbx_ip%%</processNodeName>
+          </callManager>
+        </member>
+     </members>
+    </callManagerGroup>
+  </devicePool>
+    <sipProfile>
+      <sipProxies>
+        <backupProxy></backupProxy>
+        <backupProxyPort></backupProxyPort>
+        <emergencyProxy></emergencyProxy>
+        <emergencyProxyPort></emergencyProxyPort>
+        <outboundProxy></outboundProxy>
+        <outboundProxyPort></outboundProxyPort>
+        <registerWithProxy>true</registerWithProxy>
+      </sipProxies>
+      <sipCallFeatures>
+        <cnfJoinEnabled>true</cnfJoinEnabled>
+        <callForwardURI>x--serviceuri-cfwdall</callForwardURI>
+        <callPickupURI>x-cisco-serviceuri-pickup</callPickupURI>
+        <callPickupListURI>x-cisco-serviceuri-opickup</callPickupListURI>
+        <callPickupGroupURI>x-cisco-serviceuri-gpickup</callPickupGroupURI>
+        <meetMeServiceURI>x-cisco-serviceuri-meetme</meetMeServiceURI>
+        <abbreviatedDialURI>x-cisco-serviceuri-abbrdial</abbreviatedDialURI>
+        <rfc2543Hold>false</rfc2543Hold>
+        <callHoldRingback>2</callHoldRingback>
+        <localCfwdEnable>true</localCfwdEnable>
+        <semiAttendedTransfer>true</semiAttendedTransfer>
+        <anonymousCallBlock>2</anonymousCallBlock>
+        <callerIdBlocking>2</callerIdBlocking>
+        <dndControl>0</dndControl>
+        <remoteCcEnable>true</remoteCcEnable>
+      </sipCallFeatures>
+      <sipStack>
+        <sipInviteRetx>6</sipInviteRetx>
+        <sipRetx>10</sipRetx>
+        <timerInviteExpires>180</timerInviteExpires>
+        <timerRegisterExpires>600</timerRegisterExpires>
+        <timerRegisterDelta>5</timerRegisterDelta>
+        <timerKeepAliveExpires>120</timerKeepAliveExpires>
+        <timerSubscribeExpires>120</timerSubscribeExpires>
+        <timerSubscribeDelta>5</timerSubscribeDelta>
+        <timerT1>500</timerT1>
+        <timerT2>4000</timerT2>
+        <maxRedirects>70</maxRedirects>
+        <remotePartyID>false</remotePartyID>
+        <userInfo>None</userInfo>
+      </sipStack>
+      <autoAnswerTimer>1</autoAnswerTimer>
+      <autoAnswerAltBehavior>false</autoAnswerAltBehavior>
+      <autoAnswerOverride>true</autoAnswerOverride>
+      <transferOnhookEnabled>false</transferOnhookEnabled>
+      <enableVad>false</enableVad>
+      <preferredCodec>%%codec1%%</preferredCodec>
+      <dtmfAvtPayload>101</dtmfAvtPayload>
+      <dtmfDbLevel>3</dtmfDbLevel>
+      <dtmfOutofBand>avt</dtmfOutofBand>
+      <alwaysUsePrimeLine>false</alwaysUsePrimeLine>
+      <alwaysUsePrimeLineVoiceMail>false</alwaysUsePrimeLineVoiceMail>
+      <kpml>3</kpml>
+      <natEnabled>false</natEnabled>
+      <natAddress></natAddress>
+      <phoneLabel>3CX</phoneLabel>
+      <stutterMsgWaiting>1</stutterMsgWaiting>
+      <callStats>true</callStats>
+      <silentPeriodBetweenCallWaitingBursts>10</silentPeriodBetweenCallWaitingBursts>
+      <disableLocalSpeedDialConfig>false</disableLocalSpeedDialConfig>
+      <startMediaPort>16384</startMediaPort>
+      <stopMediaPort>32766</stopMediaPort>
+      <sipLines>
+        <line button="1">
+          <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+        </line>
+        <line button="2">
+         <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+      </line>
+	  {IF ua=Cisco-CP7961G}
+	     <line button="3">
+         <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+      </line>
+	     <line button="4">
+         <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+      </line>
+	     <line button="5">
+         <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+      </line>
+	     <line button="6">
+         <featureID>9</featureID>
+          <featureLabel>%%extension_first_name%% %%extension_last_name%%</featureLabel>
+          <proxy>USECALLMANAGER</proxy>
+          <port>%%param::sipport%%</port>
+          <name>%%extension_number%%</name>
+          <displayName>%%extension_first_name%% %%extension_last_name%%</displayName>
+          <autoAnswer>
+            <autoAnswerEnabled>2</autoAnswerEnabled>
+          </autoAnswer>
+          <callWaiting>3</callWaiting>
+          <authName>%%extension_auth_id%%</authName>
+          <authPassword>%%extension_auth_pw%%</authPassword>
+          <sharedLine>false</sharedLine>
+          <messageWaitingLampPolicy>1</messageWaitingLampPolicy>
+          <messagesNumber>%%vm_number%%</messagesNumber>
+          <ringSettingIdle>4</ringSettingIdle>
+          <ringSettingActive>5</ringSettingActive>
+          <contact>%%extension_number%%</contact>
+          <forwardCallInfoDisplay>
+            <callerName>true</callerName>
+            <callerNumber>false</callerNumber>
+            <redirectedNumber>false</redirectedNumber>
+            <dialedNumber>true</dialedNumber>
+          </forwardCallInfoDisplay>
+      </line>
+	  {ENDIF}
+	</sipLines>
+    <voipControlPort>5060</voipControlPort>
+    <dscpForAudio>184</dscpForAudio>
+    <ringSettingBusyStationPolicy>0</ringSettingBusyStationPolicy>
+    <dialTemplate>cisco_dialplan.xml</dialTemplate>
+    <softKeyFile></softKeyFile>
+  </sipProfile>
+  <commonProfile>
+    <phonePassword></phonePassword>
+    <backgroundImageAccess>true</backgroundImageAccess>
+    <callLogBlfEnabled>2</callLogBlfEnabled>
+  </commonProfile>
+  <loadInformation309>SIP41.8-5-4S</loadInformation309>
+  <loadInformation115>SIP41.8-5-4S</loadInformation115>
+  <vendorConfig>
+    <disableSpeaker>false</disableSpeaker>
+    <disableSpeakerAndHeadset>false</disableSpeakerAndHeadset>
+    <pcPort>0</pcPort>
+    <settingsAccess>1</settingsAccess>
+    <garp>0</garp>
+    <voiceVlanAccess>1</voiceVlanAccess>
+    <videoCapability>0</videoCapability>
+    <autoSelectLineEnable>0</autoSelectLineEnable>
+    <webAccess>0</webAccess>
+    <spanToPCPort>0</spanToPCPort>
+    <loggingDisplay>1</loggingDisplay>
+    <loadServer></loadServer>
+  </vendorConfig>
+  <versionStamp></versionStamp>
+  <deviceSecurityMode>1</deviceSecurityMode>
+  <authenticationURL></authenticationURL>
+  <directoryURL>%%PROVLINKLOCAL%%/cisco_phonebook.xml?menu=1</directoryURL>
+  <idleURL></idleURL>
+  <informationURL></informationURL>
+  <messagesURL></messagesURL>
+  <proxyServerURL></proxyServerURL>
+  <servicesURL>%%PROVLINKLOCAL%%/cisco_phonebook.xml?menu=1</servicesURL>
+  <dscpForSCCPPhoneConfig>96</dscpForSCCPPhoneConfig>
+  <dscpForSCCPPhoneServices>0</dscpForSCCPPhoneServices>
+  <dscpForCm2Dvce>96</dscpForCm2Dvce>
+  <transportLayerProtocol>1</transportLayerProtocol>
+  <capfAuthMode>0</capfAuthMode>
+  <capfList>
+    <capf>
+      <phonePort>3804</phonePort>
+    </capf>
+  </capfList>
+  <certHash></certHash>
+  <encrConfig>false</encrConfig>
+</device>
+]]></deviceconfig>
+    </device>
+  </data>
+</doc>

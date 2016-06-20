@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2016-22-02 15:00:00</time>
+    <name>Motto Mobile GSM</name>
+    <url>https://www.motto.nl/</url>
+    <models>
+	  <model>Motto Mobile GSM</model>
+    </models>
+	<!--Firmware version--> 
+    <description>Motto Mobile GSM</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+    </AllowedNetworkConfig>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+      </option>
+    </languages>
+    <timezoneParams param="time_timezone_yealink">
+      <!--The first entry is the selected entry in management console
+      <option value="-5" displaytext="Default" id="0" zone="-5:00">
+      </option>-->
+    </timezoneParams>
+  </header>
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Motto Mobile GSM</field>
+      <deviceconfig filename="%%mac_address%%.xml">
+	  
+	  <![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config>
+<!--Configure the SIP server address.-->
+<sip_server>%%pbx_ip%%</sip_server>
+
+<!--Specify the port for the SIP server.-->
+<sip_server_port>%%param::sipport%%</sip_server_port>
+
+<!--Configure the register user name.-->
+<user_name>%%extension_number%%</user_name>
+
+<!--Configure the username and password for register authentication.-->
+<auth_name>%%extension_auth_id%%</auth_name>
+<auth_password>%%extension_auth_pw%%</auth_password>
+
+<!--Configure the Provisioning URL to download the "MOBILENUMBER.xml" provisioning file.-->
+<prov_url>%%PROVLINKLOCAL%%</prov_url>
+
+</config>
+]]>
+</deviceconfig>
+    </device>
+  </data>
+</doc>

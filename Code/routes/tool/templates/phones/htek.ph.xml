@@ -1,0 +1,4213 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-11-20 15:00:00</time>
+    <name>Htek UC8XX</name>
+    <url>http://www.hanlongtek.com</url>
+    <models>
+      <model ua="UC804">Htek UC804</model><!--Group1-->
+      <model ua="UC840">Htek UC840</model><!--Group1-->
+      <model ua="UC842">Htek UC842</model><!--Group1-->
+      <model ua="UC802">Htek UC802</model><!--Group2-->
+      <model ua="UC803">Htek UC803</model><!--Group2-->
+      <model ua="UC806">Htek UC806</model><!--Group3-->
+      <model ua="UC860">Htek UC860</model><!--Group3-->
+      <model ua="UC862">Htek UC862</model><!--Group3-->
+    </models>
+    <description>Htek SIP Phone</description>
+
+    <parsers>
+      <parser>BLF</parser>
+      <parser>Grandstream</parser>
+    </parsers>
+    
+    <rebootParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </rebootParams>
+    <resyncParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </resyncParams>
+    <firmwareParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </firmwareParams>
+    
+    <AllowWebPasswordChange>1</AllowWebPasswordChange>
+	<AllowSSLProvisioning>1</AllowSSLProvisioning>
+    <dst variableName="dstEnableDisable" enable="1" disable="0"></dst>
+    
+    <AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">1</option>
+        <option value="SBC">1</option>
+    </AllowedNetworkConfig>
+    
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">0</item>
+      </option>
+      <option value="French">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">1</item>
+      </option>
+      <option value="German">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">2</item>
+      </option>
+      <option value="Spanish">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">3</item>
+      </option>
+      <option value="Portuguese">
+        <item name="langwebUI">1</item>
+        <item name="langlcdUI">4</item>
+      </option>
+      <option value="Russian">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">5</item>
+      </option>
+      <option value="Italian">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">6</item>
+      </option>
+      <option value="Polish">
+        <item name="langwebUI">2</item>
+        <item name="langlcdUI">7</item>
+      </option>
+      <option value="Turkish">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">8</item>
+      </option>
+      <option value="Serbian">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">9</item>
+      </option>
+      <option value="Chinese_S">
+        <item name="langwebUI">3</item>
+        <item name="langlcdUI">10</item>
+      </option>
+      <option value="Korean">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">11</item>
+      </option>
+      <option value="Slovenian">
+        <item name="langwebUI">0</item>
+        <item name="langlcdUI">12</item>
+      </option>   
+    </languages>
+    
+    <timezoneParams param="time_timezone_htek">
+      <!--The first entry is the selected entry in management console-->
+       <option value="18" id="0" zone="-5:00">GMT-5:00 United States-Eastern Time</option>
+      <option value="105" id="117" zone="-11:00">GMT-11:00 Samoa</option>
+      <option value="1" id="1" zone="-10:00">GMT-10:00 United States-Hawaii-Aleutian</option>
+      <option value="2" id="2" zone="-10:00">GMT-10:00 United States-Alaska-Aleutian</option>
+      <option value="3" id="3" zone="-9:00">GMT-9:00 United States-Alaska Time</option>
+      <option value="4" id="4" zone="-8:00">GMT-8:00 Canada(Vancouver,Whitehorse)</option>
+      <option value="5" id="5" zone="-8:00">GMT-8:00 Mexico(Tijuana,Mexicali)</option>
+      <option value="6" id="6" zone="-8:00">GMT-8:00 United States-Pacific Time</option>
+      <option value="7" id="7" zone="-7:00">GMT-7:00 Canada(Edmonton,Calgary)</option>
+      <option value="8" id="8" zone="-7:00">GMT-7:00 Mexico(Mazatlan,Chihuahua)</option>
+      <option value="9" id="9" zone="-7:00">GMT-7:00 United States-Mountain Time</option>
+      <option value="10" id="10" zone="-7:00">GMT-7:00 United States-MST no DST</option>
+      <option value="11" id="11" zone="-6:00">GMT-6:00 Canada-Manitoba(Winnipeg)</option>
+      <option value="12" id="12" zone="-6:00">GMT-6:00 Chile(Easter Islands)</option>
+      <option value="13" id="13" zone="-6:00">GMT-6:00 Mexico(Mexico City,Acapulco)</option>
+      <option value="14" id="14" zone="-6:00">GMT-6:00 United States-Central Time</option>
+      <option value="15" id="15" zone="-5:00">GMT-5:00 Bahamas(Nassau)</option>
+      <option value="16" id="16" zone="-5:00">GMT-5:00 Canada(Montreal,Ottawa,Quebec)</option>
+      <option value="17" id="17" zone="-5:00">GMT-5:00 Cuba(Havana)</option>
+      <option value="18" id="0" zone="-5:00">GMT-5:00 United States-Eastern Time</option>
+      <option value="19" id="18" zone="-4:30">GMT-04:30 Venezuela(Caracas)</option>
+      <option value="20" id="19" zone="-4:00">GMT-4:00 Canada(Halifax,Saint John)</option>
+      <option value="21" id="20" zone="-4:00">GMT-4:00 Chile(Santiago)</option>
+      <option value="22" id="21" zone="-4:00">GMT-4:00 Paraguay(Asuncion)</option>
+      <option value="23" id="22" zone="-4:00">GMT-4:00 United Kingdom-Bermuda(Bermuda)</option>
+      <option value="24" id="23" zone="-4:00">GMT-4:00 United Kingdom(Falkland Islands)</option>
+      <option value="25" id="24" zone="-4:00">GMT-4:00 Trinidad and Tobago</option>
+      <option value="26" id="25" zone="-3:30">GMT-3:30 Canada-Newfoundland(St.Johns)</option>
+      <option value="27" id="26" zone="-3:00">GMT-03:00 Denmark-Greenland(Nuuk)</option>
+      <option value="28" id="27" zone="-3:00">GMT-3:00 Argentina(Buenos Aires)</option>
+      <option value="29" id="28" zone="-3:00">GMT-3:00 Brazil(no DST)</option>
+      <option value="30" id="29" zone="-3:00">GMT-3:00 Brazil(DST)</option>
+      <option value="31" id="30" zone="-2:00">GMT-02:00 Brazil(no DST)</option>
+      <option value="32" id="31" zone="-1:00">GMT-01:00 Portugal(Azores, Cape Verdi)</option>
+      <option value="33" zone="0:00">GMT</option>
+      <option value="34" zone="0:00">GMT Greenland</option>
+      <option value="35" id="32" zone="0:00">GMT Denmark-Faroe Islands(Torshaven)</option>
+      <option value="36" id="33" zone="0:00">GMT Ireland(Dublin)</option>
+      <option value="37" id="34" zone="0:00">GMT Portugal(Lisbon,Porto,Funchal)</option>
+      <option value="38" id="35" zone="0:00">GMT Spain-Canary Islands(Las Palmas)</option>
+      <option value="39" id="36" zone="0:00">GMT United Kingdom(London)</option>
+      <option value="40" zone="0:00">GMT Morocco</option>
+      <option value="41" id="37" zone="1:00">GMT+1:00 Albania(Tirane)</option>
+      <option value="42" id="38" zone="1:00">GMT+1:00 Austria(Vienna)</option>
+      <option value="43" id="39" zone="1:00">GMT+1:00 Belgium(Brussels)</option>
+      <option value="44" id="40" zone="1:00">GMT+1:00 Caicos</option>
+      <option value="45" id="41" zone="1:00">GMT+1:00 Chatham</option>
+      <option value="46" id="42" zone="1:00">GMT+1:00 Croatia(Zagreb)</option>
+      <option value="47" id="43" zone="1:00">GMT+1:00 Czech Republic(Prague)</option>
+      <option value="48" id="44" zone="1:00">GMT+1:00 Denmark(Copenhagen)</option>
+      <option value="49" id="45" zone="1:00">GMT+1:00 France(Paris)</option>
+      <option value="50" id="46" zone="1:00">GMT+1:00 Germany(Berlin)</option>
+      <option value="51" id="47" zone="1:00">GMT+1:00 Hungary(Budapest)</option>
+      <option value="52" id="48" zone="1:00">GMT+1:00 Italy(Rome)</option>
+      <option value="53" id="49" zone="1:00">GMT+1:00 Luxembourg(Luxembourg)</option>
+      <option value="54" id="50" zone="1:00">GMT+1:00 Macedonia(Skopje)</option>
+      <option value="55" id="51" zone="1:00">GMT+1:00 Netherlands(Amsterdam)</option>
+      <option value="56" id="52" zone="1:00">GMT+1:00 Namibia(Windhoek)</option>
+      <option value="57" id="67" zone="2:00">GMT+2:00 Estonia(Tallinn)</option>
+      <option value="58" id="68" zone="2:00">GMT+2:00 Finland(Helsinki)</option>
+      <option value="59" id="69" zone="2:00">GMT+2:00 Gaza Strip(Gaza)</option>
+      <option value="106" id="70" zone="2:00">GMT+2:00 Greece(Athens)</option>
+      <option value="61" id="71" zone="2:00">GMT+2:00 Israel(Tel Aviv)</option>
+      <option value="62" id="72" zone="2:00">GMT+2:00 Jordan(Amman)</option>
+      <option value="63" id="73" zone="2:00">GMT+2:00 Latvia(Riga)</option>
+      <option value="64" id="74" zone="2:00">GMT+2:00 Lebanon(Beirut)</option>
+      <option value="65" id="75" zone="2:00">GMT+2:00 Moldova(Kishinev)</option>
+      <option value="66" id="76" zone="2:00">GMT+2:00 Russia(Kaliningrad)</option>
+      <option value="67" id="77" zone="2:00">GMT+2:00 Romania(Bucharest)</option>
+      <option value="68" id="78" zone="2:00">GMT+2:00 Syria(Damascus)</option>
+      <option value="69" id="79" zone="2:00">GMT+2:00 Turkey(Ankara)</option>
+      <option value="70" id="80" zone="2:00">GMT+2:00 Ukraine(Kyiv,Odessa)</option>
+      <option value="71" id="81" zone="3:00">GMT+3:00 East Africa Time</option>
+      <option value="72" id="82" zone="3:00">GMT+3:00 Iraq(Baghdad)</option>
+      <option value="73" id="83" zone="3:00">GMT+3:00 Russia(Moscow)</option>
+      <option value="74" id="84" zone="3:30">GMT+3:30 Iran(Tehran)</option>
+      <option value="75" id="85" zone="4:00">GMT+4:00 Armenia(Yerevan)</option>
+      <option value="76" id="86" zone="4:00">GMT+4:00 Azerbaijan(Baku)</option>
+      <option value="77" id="87" zone="4:00">GMT+4:00 Georgia(Tbilisi)</option>
+      <option value="78" id="88" zone="4:00">GMT+4:00 Kazakhstan(Aktau)</option>
+      <option value="79" id="89" zone="4:00">GMT+4:00 Russia(Samara)</option>
+      <option value="80" id="92" zone="5:00">GMT+5:00 Kazakhstan(Aktobe)</option>
+      <option value="81" id="93" zone="5:00">GMT+5:00 Kyrgyzstan(Bishkek)</option>
+      <option value="82" id="94" zone="5:00">GMT+5:00 Pakistan(Islamabad)</option>
+      <option value="83" id="95" zone="5:00">GMT+5:00 Russia(Chelyabinsk)</option>
+      <option value="84" id="96" zone="5:30">GMT+5:30 India(Calcutta)</option>
+      <option value="85" id="98" zone="6:00">GMT+6:00 Kazakhstan(Astana,Almaty)</option>
+      <option value="86" id="99" zone="6:00">GMT+6:00 Russia(Novosibirsk,Omsk)</option>
+      <option value="87" id="101" zone="7:00">GMT+7:00 Russia(Krasnoyarsk)</option>
+      <option value="88" id="102" zone="7:00">GMT+7:00 Thailand(Bangkok)</option>
+      <option value="89" id="103" zone="8:00">GMT+8:00 China(Beijing)</option>
+      <option value="90" id="104" zone="8:00">GMT+8:00 Singapore(Singapore)</option>
+      <option value="91" id="105" zone="8:00">GMT+8:00 Australia(Perth)</option>
+      <option value="92" id="106" zone="9:00">GMT+9:00 Korea(Seoul)</option>
+      <option value="93" id="107" zone="9:00">GMT+9:00 Japan(Tokyo)</option>
+      <option value="94" id="108" zone="9:30">GMT+9:30 Australia(Adelaide)</option>
+      <option value="95" id="109" zone="9:30">GMT+9:30 Australia(Darwin)</option>
+      <option value="96" id="110" zone="10:00">GMT+10:00 Australia(Sydney,Melbourne,Canberra)</option>
+      <option value="97" id="111" zone="10:00">GMT+10:00 Australia(Brisbane)</option>
+      <option value="98" id="112" zone="10:00">GMT+10:00 Australia(Hobart)</option>
+      <option value="99" id="113" zone="10:00">GMT+10:00 Russia(Vladivostok)</option>
+      <option value="100" id="114" zone="10:30">GMT+10:30 Australia(Lord Howe Islands)</option>
+      <option value="101" id="115" zone="11:00">GMT+11:00 New Caledonia(Noumea)</option>
+      <option value="102" id="116" zone="12:00">GMT+12:00 New Zealand(Wellington,Auckland)</option>
+      <option value="103" id="118" zone="12:45">GMT+12:45 New Zealand(Chatham Islands)</option>
+      <option value="104" id="119" zone="13:00">GMT+13:00 Tonga(Nukualofa)</option>
+    </timezoneParams>
+    
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="18">G729A/B</option>
+        <option value="9">G722</option>
+        <option value="3">GSM_FR</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="8">PCMA</option>
+        <option value="0">PCMU</option>
+        <option value="18">G729A/B</option>
+        <option value="9">G722</option>
+        <option value="3">GSM_FR</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="9">G722</option>
+        <option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="18">G729A/B</option>
+        <option value="3">GSM_FR</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="18">G729A/B</option>
+        <option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="9">G722</option>
+        <option value="3">GSM_FR</option>
+      </Codecspriority>
+	  <Codecspriority variableName="codec5" priority="5">
+        <!--The first entry is the selected entry in management console-->
+        <option value="3">GSM_FR</option>
+        <option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="9">G722</option>
+        <option value="18">G729A/B</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  
+  <blftype>
+    <extension>
+      <Line>0</Line>
+      <type>blf</type> 
+      <DKtype>3</DKtype>
+      <PickupValue>%%param::pickup%%</PickupValue>
+      <value>fnc=sd+blf+cp;</value>
+    </extension>
+    <speeddial>
+      <Line>0</Line>
+      <type></type>
+      <DKtype>2</DKtype>
+      <PickupValue></PickupValue>
+    </speeddial>
+    <customspeeddial>
+      <Line>0</Line>
+      <type></type>
+      <DKtype>2</DKtype>
+      <PickupValue></PickupValue>
+    </customspeeddial>
+    <queuelogin>
+      <Line>0</Line>
+      <type></type>
+      <DKtype>2</DKtype>
+      <PickupValue></PickupValue>
+    </queuelogin>
+    <profilestatus>
+      <Line>0</Line>
+      <type></type>
+      <DKtype>2</DKtype>
+      <PickupValue></PickupValue>
+    </profilestatus>
+    <parkextension>
+      <Line>0</Line>
+      <type></type>
+      <DKtype>8</DKtype>
+      <PickupValue></PickupValue>
+    </parkextension>
+  </blftype>
+  
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Htek</field>
+      <deviceconfig filename="cfg%%mac_address%%"><![CDATA[
+{IF ua=UC804}
+  {SET $uagroup="UCGroup1"}
+{ENDIF}
+{IF ua=UC840}
+  {SET $uagroup="UCGroup1"}
+{ENDIF}
+{IF ua=UC842}
+  {SET $uagroup="UCGroup1"}
+{ENDIF}
+{IF ua=UC802}
+  {SET $uagroup="UCGroup2"}
+{ENDIF}
+{IF ua=UC803}
+  {SET $uagroup="UCGroup2"}
+{ENDIF}
+{IF ua=UC806}
+  {SET $uagroup="UCGroup3"}
+{ENDIF}
+{IF ua=UC860}
+  {SET $uagroup="UCGroup3"}
+{ENDIF}
+{IF ua=UC862}
+  {SET $uagroup="UCGroup3"}
+{ENDIF}
+
+#########################################################################
+## Configuration template for UC860 firmware version 1.0.3.58 
+#########################################################################
+###################################################
+# Account Settings
+###################################################
+#---------------------------------------
+# Account 1--basic setting
+#---------------------------------------
+
+# Account Active (In Use). 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P271 = 1
+
+# Primary SIP Server(eg:sip.mycompany.com  or IP address)
+# String
+{IF network=LOCALLAN}
+P47 = %%pbx_ip%%:%%param::sipport%%
+{ENDIF}
+{IF network=REMOTESTUN}
+P47 = %%pbx_ip%%:%%param::sipport%%
+{ENDIF}
+{IF network=SBC}
+P47 = %%local_sbc_ip%%:%%local_sbc_port%%
+{ENDIF}
+
+
+# Failover SIP Server(Optional, used when primary server no response)
+# String
+P967 =
+
+# Prefer Primary SIP Server(Yes-will register to Primary SIP Server if Failover registration expires )
+# Prefer Primary SIP Server (In Use). 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P4567 = 1
+
+# Outbound Proxy(proxy.myprovider.com, or IP address, if any)
+# string
+{IF network=LOCALLAN}
+P48 = 
+{ENDIF}
+{IF network=REMOTESTUN}
+P48 = 
+{ENDIF}
+{IF network=SBC}
+P48 = %%local_sbc_ip%%:%%local_sbc_port%%
+{ENDIF}
+
+# SIP Transport
+# 0 - UDP, 1 - TCP, 2 - TLS
+P130 = 0
+
+# NAT Traversal. 0 - No, 2 - No,but send keep alive, 1 - STUN 
+#Number: 0-2
+# Mandatory
+{IF network=LOCALLAN}
+P52 = 0
+{ENDIF}
+{IF network=REMOTESTUN}
+P52 = 1
+{ENDIF}
+{IF network=SBC}
+P52 = 0
+{ENDIF}
+
+# SIP User ID 
+P35 = %%extension_number%%
+
+# Authenticate ID
+P36 = %%extension_auth_id%%
+
+# Authenticate password
+P34 = %%extension_auth_pw%%
+
+# Name
+P3 = %%extension_first_name%% %%extension_last_name%%
+
+# Label
+P20000 = %%extension_first_name%% %%extension_last_name%%
+
+# DNS Mode. 0 - A Record, 1 - SRV, 2 - NAPTR/SRV 
+# Number: 0-2
+# Mandatory
+P103 = 0
+
+# User ID Is Phone Number.0 - No, 1 - Yes
+# Number:0, 1
+P63 = 0
+
+# SIP Registration. 0 - No, 1 - Yes
+# Number:0, 1
+# Mandatory
+P31 = 1
+
+# Unregister On Reboot.0 - No, 1 - Yes
+# Number:0, 1
+# Mandatory
+P81 = 1
+
+# Register Expiration(in minutes. default 1 hour, max 45 days)
+P32 = 2
+
+# Outgoing Call Without Registration.0 - No, 1 - Yes
+# Number:0, 1
+# Mandatory
+P109 = 1
+
+# Local SIP Port(default 5060)
+{IF network=LOCALLAN}
+P40 = 5060 
+{ENDIF}
+{IF network=REMOTESTUN}
+P40 = %%phonesipport%%
+{ENDIF}
+{IF network=SBC}
+P40 = 5060
+{ENDIF}
+
+# Local RTP Port(1024-65535, default 5004)
+{IF network=LOCALLAN}
+P39 = 5004 
+P739 = 5104
+{ENDIF}
+{IF network=REMOTESTUN}
+P39 = %%rtp_port_min%%
+P739 = %%rtp_port_max%%
+{ENDIF}
+{IF network=SBC}
+P39 = 5004
+P739 = 5104
+{ENDIF}
+
+# Use Random Port.0 - No, 1 - Yes
+# Number:0, 1
+# Mandatory
+P78 = 0
+
+# Voice Mail UserID(UserID for voice mail system)
+P33 = %%vm_number%%
+
+#-------------------------------------------
+# Account 1--codec setting
+#-------------------------------------------
+# Preferred Vocoder In listed order
+# 0 - PCMU, 2 - G.726-32, 4 - G.723.1, 8 - PCMA, 
+# 9 - G.722, 18 - G.729A/B, 20 - iLBC, 3 - GSM_FR
+# choice 1.   
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P57 = %%codec1%%
+
+# choice 2.  
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P58 = %%codec2%%
+
+# choice 3.   
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P59 = %%codec3%%
+
+# choice 4.   
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P60 = %%codec4%%
+
+# choice 5.   
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P61 = %%codec5%%
+
+# choice 6.   
+# Number: 0, 2, 4, 8, 9, 18
+# Mandatory
+P62 = 20
+
+# Voice Frames Per TX
+P37 = 2
+
+# G723 Rate.0 - 6.3kbps encoding rate, 1 - 5.3kbps encoding rate
+P49 = 0
+
+#----------------------------------------
+# Account 1--advanced setting
+#----------------------------------------
+# DTMF Payload Type
+P79 = 101
+
+# DTMF IN Audio.0 - no, 1 - yes
+P850 = 0
+
+# DTMF Via RFC2833.0 - no, 1 - yes
+P851 = 1
+
+# DTMF Via SIP INFO.0 - no, 1 - yes
+P852 = 0
+
+#Send Flash Event.0 - no, 1 - yes
+P74 = 0
+
+#Enable Call Features.0 - no, 1 - yes
+P191 = 0
+
+# Proxy Require
+# string
+P197 =
+
+# Use NAT IP(use in SIP/SDP message if specified)
+P101 =
+
+# VAD.0 - no, 1 - yes
+P50 = 0
+
+# Symmetric RTP.0 - no, 1 - yes
+P291 = 0
+
+# Jitter Buffer Type.0 - fixed, 1 - adaptive
+P133 = 1
+
+# Jitter Buffer Length.0 - low, 1 - medium, 2 - high
+P132 = 1
+
+# Account Ring Tone
+# 0 - default, 1 - Ring1.bin, 2 - Ring2.bin, 
+# 3 - Ring3.bin, 4 - Ring4.bin, 5 - Ring5.bin, 
+# 6 - Ring6.bin, 7 - Ring7.bin, 8 - Ring8.bin
+P104 = 3
+
+# Ring Timeout(10-300 seconds,default is 60 seconds)
+P185 = 60
+
+# Use # As Dial Key.0 - no, 1 - yes
+P72 = 1
+
+# Dial Plan (dial plan prefix string).
+# String
+P4200 =
+
+# Subscribe for MWI.0 - no,do not send SUBSCRIBE for Message Waiting Indication, 1 - yes,send periodical SUBBSCRIBE for ,Message Waiting indication
+P99 = 1
+
+# Send Anonymous.0 - no, 1 - yes
+P65 = 0
+
+# Anonymous Call Rejection.0 - no, 1 - yes
+P129 = 0
+
+# Check SIP User ID.0 - no, 1 - yes
+P258 = 0
+
+# Auto Answer.0 - no, 1 - yes
+P90 = 0
+
+# Allow Auto Answer By Call-Info.0 - no, 1 - yes
+P298 = 1
+
+# Turn off Speaker on remote disconnect.0 - no, 1 - yes
+P299 = 0
+
+# Session Expiration(default is 180 seconds)
+P260 = 1800
+
+# Min-SE(default and minimum is 90 seconds)
+P261 = 90
+
+# Caller Request Timer (Request for timer when making outbound calls) 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P262 = 0
+
+# Callee Request Timer (when caller supports timer but did not request one) 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P263 = 0
+
+# Force Timer (use timer even when remote party does not support) 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P264 = 0
+
+# UAC Specify Refresher. 1 - UAC, 2 - UAS, 0 - omit(Recommended)
+# Number: 0-2
+# Mandatory
+P266 = 0
+
+# UAS Specify Refresher. 1 - UAC, 2 - UAS(When UAC did not)
+# Number: 1, 2
+# Mandatory
+P267 = 1
+
+# Force INVITE (Always refresh with INVITE instead of UPDATE ) 0 - No, 1 - Yes
+# Number: 0, 1
+# Mandatory
+P265 = 0
+
+# Hook Flash Timing
+P251 = 30
+P252 = 100
+
+# Special Feature
+# 100 - Standard, 104 - World Call, 106 - NETHID
+P198 = 100
+
+# Eventlist BLF URL
+P134 =
+
+# Share Line
+# 0 - Disable, 1 - Broadsoft, 2 - BLA
+P8771 = 0
+
+# SIP Server Type
+# 0 - Default, 1 - BroadSoft
+P8791 = 0
+
+# 100 reliable retransmission
+# 0 - Disable, 1 - Enable
+P8811 = 0
+
+# Early-Session
+# 0 - Disable, 1 - Enable
+P8841 = 0
+
+# Direct Call Pickup Code
+P4705 =
+
+# Group Call Pickup Code
+P4706 =
+
+
+############################################################################################
+# Network
+############################################################################################
+#################################
+# network--basic
+#################################
+# WAN. 0 - DHCP, 1 - Static IP Address, 2 - PPPoE
+# Number: 0-2
+P8 = 0
+
+#--------------------------------------
+# DHCP
+#--------------------------------------
+# DHCP HostName, DHCP option 12. Max length allowed is 64 characters. Default value is 0.
+# String
+P146 =
+
+# DHCP Domain
+P147 =
+
+# DHCP Vendor Class ID, DHCP option 60. Max length allowed is 64 characters. 
+# String
+P148 =
+
+# DHCP User Class
+P149 =
+#--------------------------------------
+# Static IP Address
+#--------------------------------------
+# IP Address
+P9 = 0 
+P10 = 0
+P11 = 0
+P12 = 0
+
+# Subnet Mask
+P13 = 0 
+P14 = 0
+P15 = 0
+P16 = 0
+
+# Default Gateway
+P17 = 0 
+P18 = 0
+P19 = 0
+P20 = 0
+
+# Primary DNS
+P21 = 0
+P22 = 0
+P23 = 0
+P24 = 0
+
+# Secondary DNS
+P25 = 0
+P26 = 0
+P27 = 0
+P28 = 0
+
+#--------------------------------------
+# PPPoE
+#--------------------------------------
+# PPPoE account ID
+# String
+P82 =
+
+# PPPoE password
+# String
+# Cannot contain ` or "
+P83 =
+
+# PPPoE Service Name
+# String
+P269 =
+
+# DNS Server 
+P92 = 0
+P93 = 0
+P94 = 0
+P95 = 0
+
+# Reply To ICMP
+# 0 - no, 1 - yes
+P189 = 1
+
+# Http Access
+# 0 - no, 1 - yes
+P190 = 1
+
+# PC Port
+# 1 - As Bridge, 0 - as Router, 2 - as Expansion Module
+
+{IF $uagroup=UCGroup1}
+# By default PC Port is in the Bridge mode. To change PC Port to work as a Expansion Module user SHOULD configure BLF number 1
+{IF blf1}
+P231 = 2
+{ELSE}
+P231 = 1
+{ENDIF}
+{ENDIF}
+
+{IF $uagroup=UCGroup2}
+# By default PC Port is in the Bridge mode. To change PC Port to work as a Expansion Module user SHOULD configure BLF number 6
+{IF blf6}
+P231 = 2
+{ELSE}
+P231 = 1
+{ENDIF}
+{ENDIF}
+
+{IF $uagroup=UCGroup3}
+# By default PC Port is in the Bridge mode. To change PC Port to work as a Expansion Module user SHOULD configure BLF number 11
+{IF blf11}
+P231 = 2
+{ELSE}
+P231 = 1
+{ENDIF}
+{ENDIF}
+
+# IP Address
+P111 = 192.168.66.1
+
+# Subnet Mask
+P110 = 255.255.255.0
+
+# IP Lease Time
+P112 = 24
+
+############################################
+# Network--advanced
+############################################
+#----------------------------------------
+# LLDP
+#----------------------------------------
+
+# Active
+# 0 - Disable, 1 - Enable
+P5438 = 0
+
+# Packed Interval
+# number:1-3600s
+P5439 = 16
+
+#----------------------------------------
+# Qos Set
+#----------------------------------------
+# Layer 3 QoS (Diff-Serv or Precedence value)
+# Number: 0-63
+# Mandatory
+P38 = 48
+
+# Layer 2 QoS. 802.1Q/VLAN Tag (VLAN classification for RTP)
+# Number: 0-4094
+# Mandatory
+P51 = 0
+
+# Layer 2 QoS. 802.1p priority value (0 - 7).
+# Number: 0-7
+# Mandatory
+P87 = 0
+
+# Data VLAN Tag (vaild only when Bridge mode) 
+P229 = 0
+
+#--------------------------------------
+# NTP Server
+#--------------------------------------
+# URL or IP address
+P30 = %%param::time_ntp_server%%
+
+# Allow DHCP Option 42 To Override NTP Server
+# 0 - no, 1 - yes
+P144 = 0
+
+#--------------------------------------
+# VPN
+#--------------------------------------
+# Active 
+# 0 - no, 1 - yes
+P8629 = 0
+
+#--------------------------------------
+# Web Server
+#--------------------------------------
+# HTTP Port
+P901 = 80
+ 
+# HTTPS Port
+P8724 = 443
+
+# Type
+# 0 - Disable, 1 - HTTP&HTTPS, 2 - HTTP Only, 3 - HTTPS Only
+P8725 = 1
+
+#--------------------------------------
+# 802.1X
+#--------------------------------------
+# 802.1X Mode 
+# 0 - Disable, 1 - EAP-MD5
+P8626 = 0
+
+# Identity
+P8627 =
+
+# MD5 Password
+P8628 =
+
+#--------------------------------------
+# Others
+#--------------------------------------
+# STUN Server (url or ip:port)
+{IF network=LOCALLAN}
+P76 = 
+{ENDIF}
+
+{IF network=REMOTESTUN}
+P76 = %%pbx_ip%%:%%param::sipport%%
+{ENDIF}
+
+{IF network=SBC}
+P76 = 
+{ENDIF}
+
+# Keep-ative Interval(seconds default:20)
+P84 = 20
+
+############################################################
+# Function Keys
+############################################################
+#---------------------------------
+# Function Keys--Line Key
+#---------------------------------
+# Line key 1
+# Key Type.
+# 0 -  N/A
+# 1 -  Line
+# 2 -  Speeddial, 3 - BLF, 4 - BLF List, 5 -  Voicemail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park
+# 9 -  Intercom, 10 - DTMF, 11 - Frefix, 12 - Local Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch
+# Number: 0-34
+# Mandatory
+P41200 = 1
+
+# Value 
+P41300 =
+
+# Label
+P41400 = 
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P41500 = 0
+
+# Pickup Code
+P41600 = %%param::pickup%%
+
+# Line key 2
+# Key Type
+# 0 -  N/A
+# 1 -  Line
+# 2 -  Speeddial, 3 - BLF, 4 - BLF List, 5 -  Voicemail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park
+# 9 -  Intercom, 10 - DTMF, 11 - Frefix, 12 - Local Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch
+# Number: 0-34
+# Mandatory
+P41201 = 1
+
+# Value 
+P41301 =
+
+# Label
+P41401 = 
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P41501 = 0
+
+# Pickup Code
+P41601 = %%param::pickup%%
+
+# Line key 3
+# Key Type
+# 0 -  N/A
+# 1 -  Line
+# 2 -  Speeddial, 3 - BLF, 4 - BLF List, 5 -  Voicemail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park
+# 9 -  Intercom, 10 - DTMF, 11 - Frefix, 12 - Local Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch
+# Number: 0-34
+# Mandatory
+P41202 = 1
+
+# Value 
+P41302 
+
+# Label
+P41402 = 
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P41502 = 0
+
+# Pickup Code
+P41602 = %%param::pickup%%
+
+# Line key 4
+# Key Type
+# 0 -  N/A
+# 1 -  Line
+# 2 -  Speeddial, 3 - BLF, 4 - BLF List, 5 -  Voicemail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park
+# 9 -  Intercom, 10 - DTMF, 11 - Frefix, 12 - Local Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch
+# Number: 0-34
+# Mandatory
+P41203 = 1
+
+# Value 
+P41303 = 
+
+# Label
+P41403 = 
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P41503 = 0
+
+# Pickup Code
+P41603 = %%param::pickup%%
+
+#---------------------------------
+# Memory Key
+#---------------------------------
+# Memory key 1
+# Memory key 1 Type.
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Local Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup1}
+
+{ELSE}
+{IF blf1}
+# Number: 0, 1
+# Mandatory
+P42200 = %%DKtype%%
+
+# Value
+P42300 = %%blf1%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42400 = %%Line%%
+
+# Pickup Code
+P42500 = %%PickupValue%%
+{ELSE}
+P42200 = 0
+P42300 = 
+P42400 = 0
+P42500 = 
+{ENDIF}
+{ENDIF}
+
+# Memory key 2
+# Memory key 2 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup1}
+
+{ELSE}
+{IF blf2}
+# Number: 0, 1
+# Mandatory
+P42201 = %%DKtype%%
+
+# Value
+P42301 = %%blf2%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42401 = %%Line%%
+
+# Pickup Code
+P42501 = %%PickupValue%%
+{ELSE}
+P42201 = 0
+P42301 =
+P42401 = 0
+P42501 =
+{ENDIF}
+{ENDIF}
+
+# Memory key 3
+# Memory key 3 Type.
+# 0 -  N/A, 0 - N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 -  Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup1}
+
+{ELSE}
+{IF blf3}
+# Number: 0, 1
+# Mandatory
+P42202 = %%DKtype%%
+
+# Value
+P42302 = %%blf3%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42402 = %%Line%%
+# Pickup Code
+P42502 = %%PickupValue%%
+{ELSE}
+P42202 = 0
+P42302 =
+P42402 = 0
+P42502 =
+{ENDIF}
+{ENDIF}
+
+# Memory key 4
+# Memory key 4 Type 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup1}
+
+{ELSE}
+{IF blf4}
+# Number: 0, 1
+# Mandatory
+P42203 = %%DKtype%%
+
+# Value
+P42303 = %%blf4%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42403 = %%Line%%
+# Pickup Code
+P42503 = %%PickupValue%%
+{ELSE}
+P42203 = 0
+P42303 =
+P42403 = 0
+P42503 =
+{ENDIF}
+{ENDIF}
+
+# Memory key 5
+# Memory key 5 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup1}
+
+{ELSE}
+{IF blf5}
+# Number: 0, 1
+# Mandatory
+P42204 = %%DKtype%%
+
+# Value
+P42304 = %%blf5%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42404 = %%Line%%
+
+# Pickup Code
+P42504 = %%PickupValue%%
+{ELSE}
+P42204 = 0
+P42304 =
+P42404 = 0
+P42504 =
+{ENDIF}
+{ENDIF}
+
+# Memory key 6
+# Memory key 6 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup3}
+
+{IF blf6}
+# Number: 0, 1
+# Mandatory
+P42205 = %%DKtype%%
+
+# Value
+P42305 = %%blf6%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42405 = %%Line%%
+
+# Pickup Code
+P42505 = %%PickupValue%%
+{ELSE}
+P42205 = 0
+P42305 =
+P42405 = 0
+P42505 =
+{ENDIF}
+{ELSE}
+
+{ENDIF}
+
+# Memory key 7
+# Memory key 7 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup3}
+
+{IF blf7}
+# Number: 0, 1
+# Mandatory
+P42206 = %%DKtype%%
+
+# Value
+P42306 = %%blf7%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42406 = %%Line%%
+
+# Pickup Code
+P42506 = %%PickupValue%%
+{ELSE}
+P42206 = 0
+P42306 =
+P42406 = 0
+P42506 =
+{ENDIF}
+{ELSE}
+
+{ENDIF}
+
+# Memory key 8
+# Memory key 8 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+# Auto Answer. 0 - No, 1 - Yes
+
+{IF $uagroup=UCGroup3}
+
+{IF blf8}
+# Number: 0, 1
+# Mandatory
+P42207 = %%DKtype%%
+
+# Value
+P42307 = %%blf8%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42407 = %%Line%%
+# Pickup Code
+P42507 = %%PickupValue%%
+{ELSE}
+P42207 = 0
+P42307 =
+P42407 = 0
+P42507 =
+{ENDIF}
+{ELSE}
+
+{ENDIF}
+
+# Memory key 9
+# Memory key 9 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup3}
+
+{IF blf9}
+# Number: 0, 1
+# Mandatory
+P42208 = %%DKtype%%
+
+# Value
+P42308 = %%blf9%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42408 = %%Line%%
+
+# Pickup Code
+P42508 = %%PickupValue%%
+{ELSE}
+P42208 = 0
+P42308 =
+P42408 = 0
+P42508 =
+{ENDIF}
+{ELSE}
+
+{ENDIF}
+
+# Memory key 10
+# Memory key 10 Type. 
+# 0 -  N/A, 1 - line, 2 - Speed Dial, 3- BLF, 4 - BLF List, 5 - Voice mail
+# 6 - Direct Pickup, 7 - Group Pickup, 8 - Call Park, 9 - Intercom, 10 - DTMF, 11 - Prefix
+# 12 - Lock Group
+# 13 - XML Group, 14 - XML Browser, 15 - LDAP, 16 - BroadSoft Group
+# 17 - Conference, 18 - Forward, 19 - Transfer, 20 - Hold
+# 21 - DND, 22 - Redial, 23 -  Call Return, 24 - SMS
+# 25 - Record, 26 -  URL Record, 27 - Paging
+# 28 - Group Listening, 29 - Public Hold, 30 - Private Hold, 31 - Shine Line
+# 32 - Hot Desking, 33 - ACD, 34 - Zero Touch, 35 - URL
+
+{IF $uagroup=UCGroup3}
+
+{IF blf10}
+# Number: 0, 1
+# Mandatory
+P42209 = %%DKtype%%
+
+# Value
+P42309 = %%blf10%%
+
+# Account 
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P42409 = %%Line%%
+
+# Pickup Code
+P42509 = %%PickupValue%%
+{ELSE}
+P42209 = 0
+P42309 =
+P42409 = 0
+P42509 =
+{ENDIF}
+{ELSE}
+
+{ENDIF}
+
+#------------------------------
+# Function keys--Programmable key
+#------------------------------
+# key.softkey1.type.
+# 0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43200 = 36
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43300 = 0
+
+# Value
+P43400 = 
+
+# key.softkey2.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43201 = 45
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43301 =
+
+# Lable
+P20044 = 3CX PBook
+
+# Value
+P43401 = 
+
+# key.softkey3.type.
+# 0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43202 = 21
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43302 = 0
+
+# Value
+P43402 = 
+
+# key.softkey4.type.
+# 0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43203 = 38
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43303 = 0
+
+# Value
+P43403 =
+
+# key.UP.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43204 = 36
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43304 =
+
+# Value
+P43404=
+
+# key.Down.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43205 = 37
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43305 = 
+
+# Value
+P43405 =
+
+# key.Left.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43206 = 41
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43306 =
+
+# Value
+P43406 = 
+
+# key.Right.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43207 = 42
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43307 = 
+
+# Value
+P43407 =
+
+# key.OK.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43208 = 40
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43308 = 
+
+# Value
+P43408 =
+
+# key.Cancel.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43209 = 0
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43309 = 
+# Value
+P43409 =
+
+# key.MUTE.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43212 = 0
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43312 = 0
+
+# Value
+P43412 = 
+
+# key.CONF.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43210 = 0
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43310 = 0
+
+# Value
+P43410 = 
+
+# key.TRAN.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43213 = 18
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43313 =
+
+# Value
+P43413 = 
+
+# key.HOLD.type.0 - N/A, 2 - Speed Dial, 6 - Direct Pickup
+# 7 - Group Pickup, 9 - Intercom, 12 - Local Group, 13 - XML Group
+# 14 - XML Browser, 16 - BroadSoft Group, 18 - Forward, 21 - DND
+# 22 - Redial, 23 - Call Return, 24 - SMS,
+# 36 - History, 37 - Directory, 38 - Menu, 39 - NewSMS, 40 - Status, 41 - Switch Account Up
+# 42 - Switch Account Down, 43 - Local Phone Book, 44 - BroadSoft Phone Book
+# 45 - XML Phone Book, 46 - NetWork Call Log
+P43211 = 0
+
+# Account
+# 255 - Auto, 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P43311 = 0
+
+# Value
+P43411 = 
+
+#################################################################################
+# Setting
+#################################################################################
+#-----------------------------------
+# Setting--Preference
+#-----------------------------------
+# Web Language
+# 0 - English, 1 - Chinese
+P2525 = %%langwebUI%%
+
+# Lcd Language
+# 0 - English, 1 - Chinese
+P8621 = %%langlcdUI%%
+
+# Lcd BackLight Time:
+# 0 : open, other: after some second will close BackLight
+P8683 =
+
+# Time Zone
+# 105 - -11 Samoa, 1 - -10 United States-Hawaii-Aleutian
+# 2 - -10 United States-Alaska-Aleutian, 3 - -9 United States-Alaska Time
+# 4 - -8 Canada(Vancouver,Whitehorse), 5 - -8 Mexico(Tijuana,Mexicali)
+# 6 - -8 United States-Pacific Time, 7 - -7 Canada(Edmonton,Calgary)
+# 8 - -7 Mexico(Mazatlan,Chihuahua), 9 - -7 United States-Mountain Time
+# 10 - -7 United States-MST no DST, 11 - -6 Canada-Manitoba(Winnipeg)
+# 12 - -6 Chile(Easter Islands), 13 - -6 Mexico(Mexico City,Acapulco)
+# 14 - -6 United States-Central Time, 15 - -5 Bahamas(Nassau)
+# 16 - -5 Canada(Montreal,Ottawa,Quebec), 17 - -5 Cuba(Havana)
+# 18 - -5 United States-Eastern Time, 19 - -4:30 Venezuela(Caracas)
+# 20 - -4 Canada(Halifax,Saint John), 21 - -4 Chile(Santiago)
+# 22 - -4 Paraguay(Asuncion), 23 - -4 United Kingdom-Bermuda(Bermuda)
+# 24 - -4 United Kingdom(Falkland Islands), 25 - -4 Trinidad &amp; Tobago
+# 26 - -3:30 Canada-New Foundland(St.Johns), 27 - -3 Denmark-Greenland(Nuuk)
+# 28 - -3 Argentina(Buenos Aires), 29 - -3 Brazil(no DST)
+# 30 - -3 Brazil(DST), 31 - -2 Brazil(no DST), 32 - -1 Portugal(Azores)
+# 33 - 0 GMT, 34 - 0 Greenland, 35 - 0 Denmark-Faroe Islands(Torshaven)
+# 36 - 0 Ireland(Dublin), 37 - 0 Portugal(Lisboa,Porto,Funchal)
+# 38 - 0 Spain-Canary Islands(Las Palmas), 39 - 0 United Kingdom(London)
+# 40 - 0 Morocco, 41 - +1 Albania(Tirane),42 - +1 Austria(Vienna)
+# 43 - +1 Belgium(Brussels), 44 - +1 Caicos, 45 - +1 Chatam
+# 46 - +1 Croatia(Zagreb), 47 - +1 Czech Republic(Prague)
+# 48 - +1 Denmark(Kopenhaven), 49 - +1 France(Paris), 50 - +1 Germany(Berlin)
+# 51 - +1 Hungary(Budapest), 52 - +1 Italy(Rome), 53 - +1 Luxembourg(Luxembourg)
+# 54 - +1 Makedonia(Skopje), 55 - +1 Netherlands(Amsterdam), 56 - +1 Namibia(Windhoek)
+# 57 - +2 Estonia(Tallinn), 58 - +2 Finland(Helsinki), 59 - +2 Gaza Strip(Gaza)
+# 106 - +2 Greece(Athens), 61 - +2 Israel(Tel Aviv), 62 - +2 Jordan(Amman)
+# 63 - +2 Latvia(Riga), 64 - +2 Lebanon(Beirut), 65 - +2 Moldova(Kishinev)
+# 66 - +2 Russia(Kaliningrad), 67 - +2 Romania(Bucharest), 68 - +2 Syria(Damascus)
+# 69 - +2 Turkey(Ankara), 70 - +2 Ukraine(Kyiv,Odessa), 71 - +3 East Africa Time
+# 72 - +3 Iraq(Baghdad), 73 - +3 Russia(Moscow), 74 - +3:30 Iran(Teheran)
+# 75 - +4 Armenia(Yerevan), 76 - +4 Azerbaijan(Baku), 77 - +4 Georgia(Tbilisi)
+# 78 - +4 Kazakstan(Aqtau), 79 - +4 Russia(Samara), 80 - +5 Kazakstan(Aqtobe)
+# 81 - +5 Kyrgyzstan(Bishkek), 82 - +5 Pakistan(Islamabad), 83 - +5 Russia(Chelyabinsk)
+# 84 - +5:30 India(Calcutta), 85 - +6 Kazakstan(Astana,Almaty), 86 - +6 Russia(Novosibirsk,Omsk)
+# 87 - +7 Russia(Krasnoyarsk), 88 - +7 Thailand(Bangkok), 89 - +8 China(Beijing)
+# 90 - +8 Singapore(Singapore), 91 - +8 Australia(Perth), 92 - +9 Korea(Seoul)
+# 93 - +9 Japan(Tokyo), 94 - +9:30 Australia(Adelaide), 95 - +9:30 Australia(Darwin)
+# 96 - +10 Australia(Sydney,Melbourne,Canberra), 97 - +10 Australia(Brisbane)
+# 98 - +10 Australia(Hobart), 99 - +10 Russia(Vladivostok), 100 - +10:30 Australia(Lord Howe Islands)
+# 101 - +11 New Caledonia(Noumea), 102 - +12 New Zeland(Wellington,Auckland)
+# 103 - +12:45 New Zeland(Chatham Islands), 104 - +13 Tonga(Nukualofa)
+
+P64 = %%param::time_timezone_htek%%
+
+# DHCP Time
+# 0 - no, 1 - yes
+P143 = 0
+
+# Daylight Saving Time
+# 0 - no, 1 - yes
+P75 = %%dstEnableDisable%%
+
+P20076 = %%param::time_dst_start_month%%
+P20077 = %%param::time_dst_start_day%%
+P20078 = %%param::time_dst_start_hour%%
+P20079 = %%param::time_dst_end_month%%
+P20080 = %%param::time_dst_end_day%%
+P20081 = %%param::time_dst_end_hour%%
+
+# Date Display Format 
+# 0 - Year - Month - Day, 1 - Month - Day - Year, 2 -  Day - Month - Year
+P102 = 2
+
+# Voice Mail Tone
+# 0 - on, 1 - off
+P20118 = 1
+
+# Lock Keypad Update
+# 0 - no, 1 - yes
+P88 = 0
+
+# Keypad DTMF Tone 
+# 0 - no, 1 - yes
+P1300 = 0
+
+# MIC Volume Amplification
+# 0 - 0dB default, 1 - +6dB, 2 - +4dB, 3 - +2dB, 4 - -2dB, 5 - -4dB, 6 - -6dB
+P249 = 0
+
+# Screen Time Out
+# 0 - Off, 1 - 1min, 2 - 2min, 3 - 5min, 4 - 10min, 5 - 30min
+P8940 = 1
+
+{IF ua=UC803}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 1
+
+# wallpaper
+# 0 - 5
+P8660 = 1
+{ENDIF}
+
+{IF ua=UC802}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 1
+
+# wallpaper
+# 0 - 5
+P8660 = 1
+{ENDIF}
+
+{IF ua=UC842}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 2
+
+# wallpaper
+# 0 - 5
+P8660 = 5
+{ENDIF}
+
+{IF ua=UC840}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 2
+
+# wallpaper
+# 0 - 5
+P8660 = 5
+{ENDIF}
+
+{IF ua=UC804}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 1
+
+# wallpaper
+# 0 - 5
+P8660 = 1
+{ENDIF}
+
+{IF ua=UC862}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 2
+
+# wallpaper
+# 0 - 5
+P8660 = 5
+{ENDIF}
+
+{IF ua=UC860}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 2
+
+# wallpaper
+# 0 - 5
+P8660 = 5
+{ENDIF}
+
+{IF ua=UC806}
+# ScreenSaver Type
+# 0 - backlight off, 1 - time &amp; logo, 2 - photo switch
+P8950 = 1
+
+# wallpaper
+# 0 - 5
+P8660 = 1
+{ENDIF}
+
+
+# Ring Tones
+# 0 - default, 1 - Ring1.bin, 2 - Ring2.bin
+# 3 - Ring3.bin, 4 - Ring4.bin, 5 - Ring5.bin
+# 6 - Ring6.bin, 7 - Ring7.bin, 8 - Ring8.bin
+P8721 = 3
+
+# Dial First Digit
+P20018 = 1
+
+# NO Key Entry Timeout(in seconds, 0 means never timeout, default is 0 seconds)
+P85 = 0
+
+# LED Status.Power Status.0 - no, 1 - yes
+P3734 = 1
+
+# LED Status.Ringing Status.0 - no, 1 - yes
+P3735 = 1
+
+# LED Status. MissCalls Status.0 - no, 1 - yes
+P3736 = 1
+
+# Alert Ring Setting: Ring Text: 0~64 string, Ringer : 0 ~ 8
+# RingText 1
+P1399 = external
+# Ringer 1
+P1402 = 2
+
+# RingText 2
+P1400 = international
+# Ringer 2
+P1403 = 2
+
+# RingText 3
+P1401 = national
+# Ringer 3
+P1404 = 4
+
+# RingText 4
+P20059 = local
+# Ringer 4
+P20066 = 5
+
+# RingText 5
+P20060 = queue
+# Ringer 5
+P20067 = 6
+
+# RingText 6
+P20061 = ivr
+# Ringer 6
+P20068 = 7
+
+# RingText 7
+P20062 =
+# RingText 8
+P20063 =
+# RingText 9
+P20064 =
+# RingText 10
+P20065 =
+# Ringer 7
+P20069 = 
+# Ringer 8
+P20070 = 
+# Ringer 9
+P20071 = 
+# Ringer 10
+P20072 = 
+
+#----------------------------------
+# Setting--Features
+#----------------------------------
+# Forward--always
+# 1 - on, 0 - off
+P53100 = 0
+
+# Target(Target number for transfer)
+P53101 =
+
+# On Code
+P53102 =
+
+# Off Code
+P53103 =
+
+# Forward--Busy
+# 1 - on, 0 - off
+P53110 = 0
+
+# Target(Target number for transfer)
+P53111 =
+
+# On Code
+P53112 =
+
+# Off Code
+P53113 =
+
+# Forward--No Answer
+# 1 - on, 0 - off
+P53120 = 0
+
+# After Ring Time(seconds)(waiting time for NoAnswer forward)
+P53124 =
+
+# Target(Target number for transfer)
+P53121 =
+
+# On Code
+P53122 =
+
+# Off Code
+P53123 =
+
+# Do Not Disturb.DND On Code(The feature code to enable DND,the phone will send the feature code directly to open DND)  
+P53200 = %%param::DIALCODEPROFILE%%2
+
+# Do Not Disturb.DND Off Code(The feature code to disable DND,the phone will send the feature code directly to close DND)
+P53201 = %%param::DIALCODEPROFILE%%0
+
+# Do Not Disturb.Authorized Numbers(comma separated)
+P53202 =
+
+# Hotline.Hotline Number
+P4210 =
+
+# Hotline.Hotline Time-out(seconds)(0~180s)
+P8638 = 0
+
+# Transfer Settings.Blind Transfer On Hook.0 - off, 1 - on
+P3201 = 1
+
+# Transfer Settings.Semi-Attended Transfer.0 - off, 1 - on
+P3202 = 0
+
+# Transfer Settings.Attended Transfer On Hook.0 - off, 1 - on
+P3204 = 1
+
+# Transfer Settings.Transfer Mode via DSSkey
+# 0 - Attended Transfer, 1 - Blind Transfer, 2 - New Call
+P3205 = 1
+
+# Call Pickup.Direct Call Pickup.0 - off, 1 - on
+P4701 = 0
+
+# Call Pickup.Direct Call Pickup Code
+P4745 = 
+
+# Call Pickup.Group Call Pickup.0 - off, 1 - on
+P4702 = 0
+
+# Call Pickup.Group Call Pickup Code
+P4746 = 
+
+
+# Call Pickup.Visual Alert for BLF Pickup.0 - off, 1 - on
+P4703 = 1
+
+# Call Pickup.Audio Alert for BLF Pickup.0 - off, 1 - on
+P4704 = 0
+
+# Phone Lock.Keypad Lock.0 - Disabled, 1 - All Keys, 2 - Menu Key
+# 3 - Function Keys, 4 - Answer All Only
+P8630 = 0
+
+# Phone Lock.Phone Unlock Pin(0~15digial)
+P5730 = 
+
+# Phone Lock.Auto Lock Time-Out(0~3600s)
+P5731 = 
+
+# Phone Lock.Emergency
+P5732 = 
+
+# CallBack feature
+P20984 = 
+
+#----------------------------------------
+# Setting--Tones
+#----------------------------------------
+#Call Progress Tones.Dial Tone
+P4000 = f1=350@-13,f2=440@-13,c=0/0;
+
+#Call Progress Tones.Ringback Tone
+P4001 = f1=440@-19,f2=480@-19,c=2000/4000;
+
+#Call Progress Tones.Busy Tone
+P4002 = f1=480@-24,f2=620@-24,c=500/500;
+
+#Call Progress Tones.Reorder Tone
+P4003 = f1=480@-24,f2=620@-24,c=250/250;
+
+#Call Progress Tones.Confirmation Tone
+P4004 = f1=350@-11,f2=440@-11,c=100/100-100/100-100/100;
+
+#Call Progress Tones.Call Waiting Tone
+P4005 = f1=440@-13,c=300/10000-300/10000-0/0;
+
+#--------------------------------
+# Setting--SMS
+#--------------------------------
+# SMS
+# Account.0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P58100 = 0
+
+#---------------------------------
+# Setting--Action URL
+#---------------------------------
+# Setup Completed(This message will be sent out when the phone is start-up completed, available for use.)
+P3701 = 
+
+# log On(This message will be sent out when an account is successfully registered.)
+P3702 = 
+
+# log Off(This message will be sent out when an account is logged off.)
+P3703 = 
+
+# Register Failed(This message will be sent out when an account is registered failed.)
+P3704 = 
+
+# Offhook(This message will be sent out when the phone is off hook.)
+P3705 = 
+
+# Onfhook(This message will be sent out when the phone is on hook.)
+P3706 = 
+
+# Incoming Call(This message will be sent out when there is an incoming call.)
+P3707 = 
+
+# Outgoing Call(This message will be sent out when there is an outgoing call.)
+P3708 = 
+
+# Call Established(This message will be sent out when a call is established.)
+P3709 = 
+
+# Call Terminated(This message will be sent out when a call is terminated.)
+P3710 = 
+
+# Open DND(This message will be sent out when DND is enabled.)
+P3711 =
+
+# Close DND(This message will be sent out when DND is disabled.)
+P3712 =
+
+# Open Always Forward(This message will be sent out when always-forward is enabled.)
+P3713 = 
+
+# Close Always Forward(This message will be sent out when always-forward is disabled.)
+P3714 = 
+
+# Open Busy Forward(This message will be sent out when busy-forward is enabled.)
+P3715 = 
+
+# Close Busy Forward(This message will be sent out when busy-forward is disabled.)
+P3716 =
+
+# Open No Busy Forward(This message will be sent out when no-answer-forward is enabled.)
+P3717 =
+
+# Close No Busy Forward(This message will be sent out when no-answer-forward is disable.)
+P3718 =
+
+# Transfer Call(This message will be sent out when transferring a call(including all kinds of transfer).)
+P3719 =
+
+# Blind Trandfer call(This message will be sent out when doing blind-transfer.)
+P3720 =
+
+# Attended Transfer Call(This message will be sent out when doing attended and semi-attended transfer.)
+P3721 =
+
+# Hold(This message will be sent out when holding a call.)
+P3722 =
+
+# Unhold(This message will be sent out when unholding the call.)
+P3723 =
+
+# Mute(This message will be sent out when muting a call.)
+P3724 =
+
+# Unmute(This message will be sent out when unmuting a call.)
+P3725 =
+
+# Missed Call(This message will be sent out when there is a new missed call even if missed call logs is disabled.)
+P3726 =
+
+# Idle ToBusy( call logs is disabled.)
+P3727 =
+
+# Busy To Idel( Busy to IdleBusy to Idle)
+P3728 =
+
+# Forward Incoming Call( Forward Incoming Call)
+P3729 =
+
+# Reject Incoming Call( Reject Incoming Call)
+P3730 =
+
+# Answer New Incoming Call(Answer New Incoming Call)
+P3731 =
+
+# TransferFinished(Transfer Finished)
+P3732 =
+
+# Transfe Failed(Transfer Failed)
+P3733 =
+
+###########################################################
+# Management
+###########################################################
+#--------------------------
+# Management--Auto Provision
+#--------------------------
+#Leave PnP enabled after provisioning: 1-enabled, 0-disabled
+P20165 = 0
+
+
+{IF network=LOCALLAN}
+# Firmware Urgrate
+# Urgrate Mode.0 - TFTP, 1 - HTTP, 2 - FTP, 3 - HTTPS
+P212 = 1
+
+# Firmware Server Path
+P192 = %%PROVLINKLOCAL%%/firmware/htek
+
+# Config Server Path
+P237 = %%PROVLINKLOCAL%%
+
+{ELSE}
+# Firmware Urgrate
+# Urgrate Mode.0 - TFTP, 1 - HTTP, 2 - FTP, 3 - HTTPS
+P212 = 3
+
+# Firmware Server Path
+P192 = %%PROVLINK%%/firmware/htek
+
+# Config Server Path
+P237 = %%PROVLINK%%
+{ENDIF}
+
+# Allow DHCP Option
+P1145 = 
+
+# To Override Server.0 - no, 1 - yes
+P145 = 0
+
+# AUTO Upgrade.0 - no, 1 - yes
+P194 = 1
+
+# check for upgrade every () Minutes
+P193 = 10080
+
+# Upgrade Check Mode
+# 0 -  Always Check For New Firmware
+# 1 - check new firmware only when F/W pre/suffix changes
+# 2 - Always Skip The Firmware Check
+P238 = 0
+
+# Authenticate Cfg File 
+# 0 - no, 1 - yes
+P240 = 0
+
+# Phonebook XML Download 
+# Phonebook XML Server Path
+P331 =
+
+# Phonebook Download Interval(the interval time should be 0-720 days))
+P332 = 1
+
+# Remove Manually-edited Entries On Download.0 - no, 1 - yes
+P333 = 0
+
+{IF network=LOCALLAN}
+# Phonebook XML Download Enable.0 - no, 1 - yes,HTTP, 2 - yes,TFTP, 3 - yes,FTP, 4 - yes,HTTPS
+P330 = 1
+
+# Remote Phonebook Download 
+# Remote XML Server Path
+P4401 = %%PROVLINKLOCAL%%/yealink_phonebook.xml
+
+{ELSE}
+# Phonebook XML Download Enable.0 - no, 1 - yes,HTTP, 2 - yes,TFTP, 3 - yes,FTP, 4 - yes,HTTPS
+P330 = 4
+
+# Remote Phonebook Download 
+# Remote XML Server Path
+P4401 = %%PROVLINK%%/yealink_phonebook.xml
+{ENDIF}
+
+# Remote PhoneBook Name
+P3316 = 3CX PhoneBook
+
+# Multicast Paging
+P20041 = 10
+P20042 = 1
+
+# SNMP Service 
+# SNMP Service Enable.0 - no, 1 - yes
+P8150 = 0
+
+# SNMP Get Community
+P8151 = 
+
+# SNMP Set Community
+P8152 = 
+
+# SNMP Manager IP 1
+P8153 = 
+
+# SNMP Manager IP 2
+P8154 = 
+
+# SNMP Manager IP 3
+P8155 = 
+
+# SNMP Manager IP 4
+P8156 = 
+
+# Management.Configuration
+# System Log.Syslog Server
+P207 = 
+
+# System Log.Syslog level
+# 0 - NONE, 1 - DEBUG, 2 - INFO, 3 - WARNING, 4 - ERROR
+P208 = 0
+
+#--------------------------
+# Management--security
+#--------------------------
+P2 = %%DESKPHONE_PASSWORD%%
+
+#-----------------------------------------------------------
+# Configure the access URL of the  Wallpaper and Screensaver
+#-----------------------------------------------------------
+{IF network=LOCALLAN}
+{IF ua=UC842}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC840}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC804}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC806.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC806.png
+{ENDIF}
+
+{IF ua=UC803}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC803.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC803.png
+{ENDIF}
+
+{IF ua=UC802}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC802.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC802.png
+{ENDIF}
+
+{IF ua=UC862}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC860}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC806}
+P20051 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC806.png
+P20052 = %%PROVLINKLOCAL%%/logo/hl_3CX_UC806.png
+{ENDIF}
+
+{ELSE}
+{IF ua=UC842}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC840}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC804}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC806.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC806.png
+{ENDIF}
+
+{IF ua=UC803}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC803.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC803.png
+{ENDIF}
+
+{IF ua=UC802}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC802.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC802.png
+{ENDIF}
+
+{IF ua=UC862}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC860}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC860.png
+{ENDIF}
+
+{IF ua=UC806}
+P20051 = %%PROVLINK%%/logo/hl_3CX_UC806.png
+P20052 = %%PROVLINK%%/logo/hl_3CX_UC806.png
+{ENDIF}
+{ENDIF}
+
+##########################################################################################
+##         	                      Trusted Certificates                                  ##               
+##########################################################################################
+P20156 = 2
+
+##########################################################################################
+##         	                        Expansion Module 1                                  ##               
+##########################################################################################
+#P6XYNN  :: X -- 0-1(Exp module NO), Y -- 0-1(page NO)
+
+{IF $uagroup=UCGroup1}
+{IF blf1}
+P60000 = %%DKtype%%
+P60001 = %%blf1%%
+P60002 = %%blffirstname1%% %%blflastname1%%
+P60003 = %%Line%%
+P60004 = %%PickupValue%%
+{ELSE}
+P60000 = 0
+P60001 =
+P60002 =
+P60003 = 0
+P60004 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf6}
+P60000 = %%DKtype%%
+P60001 = %%blf6%%
+P60002 = %%blffirstname6%% %%blflastname6%%
+P60003 = %%Line%%
+P60004 = %%PickupValue%%
+{ELSE}
+P60000 = 0
+P60001 =
+P60002 =
+P60003 = 0
+P60004 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf11}
+P60000 = %%DKtype%%
+P60001 = %%blf11%%
+P60002 = %%blffirstname11%% %%blflastname11%%
+P60003 = %%Line%%
+P60004 = %%PickupValue%%
+{ELSE}
+P60000 = 0
+P60001 =
+P60002 =
+P60003 = 0
+P60004 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 2
+{IF $uagroup=UCGroup1}
+{IF blf2}
+P60005 = %%DKtype%%
+P60006 = %%blf2%%
+P60007 = %%blffirstname2%% %%blflastname2%%
+P60008 = %%Line%%
+P60009 = %%PickupValue%%
+{ELSE}
+P60005 = 0
+P60006 =
+P60007 =
+P60008 = 0
+P60009 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf7}
+P60005 = %%DKtype%%
+P60006 = %%blf7%%
+P60007 = %%blffirstname7%% %%blflastname7%%
+P60008 = %%Line%%
+P60009 = %%PickupValue%%
+{ELSE}
+P60005 = 0
+P60006 =
+P60007 =
+P60008 = 0
+P60009 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf12}
+P60005 = %%DKtype%%
+P60006 = %%blf12%%
+P60007 = %%blffirstname12%% %%blflastname12%%
+P60008 = %%Line%%
+P60009 = %%PickupValue%%
+{ELSE}
+P60005 = 0
+P60006 =
+P60007 =
+P60008 = 0
+P60009 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 3
+{IF $uagroup=UCGroup1}
+{IF blf3}
+P60010 = %%DKtype%%
+P60011 = %%blf3%%
+P60012 = %%blffirstname3%% %%blflastname3%%
+P60013 = %%Line%%
+P60014 = %%PickupValue%%
+{ELSE}
+P60010 = 0
+P60011 =
+P60012 =
+P60013 = 0
+P60014 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf8}
+P60010 = %%DKtype%%
+P60011 = %%blf8%%
+P60012 = %%blffirstname8%% %%blflastname8%%
+P60013 = %%Line%%
+P60014 = %%PickupValue%%
+{ELSE}
+P60010 = 0
+P60011 =
+P60012 =
+P60013 = 0
+P60014 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf13}
+P60010 = %%DKtype%%
+P60011 = %%blf13%%
+P60012 = %%blffirstname13%% %%blflastname13%%
+P60013 = %%Line%%
+P60014 = %%PickupValue%%
+{ELSE}
+P60010 = 0
+P60011 =
+P60012 =
+P60013 = 0
+P60014 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 4
+{IF $uagroup=UCGroup1}
+{IF blf4}
+P60015 = %%DKtype%%
+P60016 = %%blf4%%
+P60017 = %%blffirstname4%% %%blflastname4%%
+P60018 = %%Line%%
+P60019 = %%PickupValue%%
+{ELSE}
+P60015 = 0
+P60016 =
+P60017 =
+P60018 = 0
+P60019 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf9}
+P60015 = %%DKtype%%
+P60016 = %%blf9%%
+P60017 = %%blffirstname9%% %%blflastname9%%
+P60018 = %%Line%%
+P60019 = %%PickupValue%%
+{ELSE}
+P60015 = 0
+P60016 =
+P60017 =
+P60018 = 0
+P60019 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf14}
+P60015 = %%DKtype%%
+P60016 = %%blf14%%
+P60017 = %%blffirstname14%% %%blflastname14%%
+P60018 = %%Line%%
+P60019 = %%PickupValue%%
+{ELSE}
+P60015 = 0
+P60016 =
+P60017 =
+P60018 = 0
+P60019 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 5
+{IF $uagroup=UCGroup1}
+{IF blf5}
+P60020 = %%DKtype%%
+P60021 = %%blf5%%
+P60022 = %%blffirstname5%% %%blflastname5%%
+P60023 = %%Line%%
+P60024 = %%PickupValue%%
+{ELSE}
+P60020 = 0
+P60021 =
+P60022 =
+P60023 = 0
+P60024 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf10}
+P60020 = %%DKtype%%
+P60021 = %%blf10%%
+P60022 = %%blffirstname10%% %%blflastname10%%
+P60023 = %%Line%%
+P60024 = %%PickupValue%%
+{ELSE}
+P60020 = 0
+P60021 =
+P60022 =
+P60023 = 0
+P60024 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf15}
+P60020 = %%DKtype%%
+P60021 = %%blf15%%
+P60022 = %%blffirstname15%% %%blflastname15%%
+P60023 = %%Line%%
+P60024 = %%PickupValue%%
+{ELSE}
+P60020 = 0
+P60021 =
+P60022 =
+P60023 = 0
+P60024 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 6
+{IF $uagroup=UCGroup1}
+{IF blf6}
+P60025 = %%DKtype%%
+P60026 = %%blf6%%
+P60027 = %%blffirstname6%% %%blflastname6%%
+P60028 = %%Line%%
+P60029 = %%PickupValue%%
+{ELSE}
+P60025 = 0
+P60026 =
+P60027 =
+P60028 = 0
+P60029 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf11}
+P60025 = %%DKtype%%
+P60026 = %%blf11%%
+P60027 = %%blffirstname11%% %%blflastname11%%
+P60028 = %%Line%%
+P60029 = %%PickupValue%%
+{ELSE}
+P60025 = 0
+P60026 =
+P60027 =
+P60028 = 0
+P60029 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf16}
+P60025 = %%DKtype%%
+P60026 = %%blf16%%
+P60027 = %%blffirstname16%% %%blflastname16%%
+P60028 = %%Line%%
+P60029 = %%PickupValue%%
+{ELSE}
+P60025 = 0
+P60026 =
+P60027 =
+P60028 = 0
+P60029 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 7
+{IF $uagroup=UCGroup1}
+{IF blf7}
+P60030 = %%DKtype%%
+P60031 = %%blf7%%
+P60032 = %%blffirstname7%% %%blflastname7%%
+P60033 = %%Line%%
+P60034 = %%PickupValue%%
+{ELSE}
+P60030 = 0
+P60031 =
+P60032 =
+P60033 = 0
+P60034 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf12}
+P60030 = %%DKtype%%
+P60031 = %%blf12%%
+P60032 = %%blffirstname12%% %%blflastname12%%
+P60033 = %%Line%%
+P60034 = %%PickupValue%%
+{ELSE}
+P60030 = 0
+P60031 =
+P60032 =
+P60033 = 0
+P60034 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf17}
+P60030 = %%DKtype%%
+P60031 = %%blf17%%
+P60032 = %%blffirstname17%% %%blflastname17%%
+P60033 = %%Line%%
+P60034 = %%PickupValue%%
+{ELSE}
+P60030 = 0
+P60031 =
+P60032 =
+P60033 = 0
+P60034 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 8
+{IF $uagroup=UCGroup1}
+{IF blf8}
+P60035 = %%DKtype%%
+P60036 = %%blf8%%
+P60037 = %%blffirstname8%% %%blflastname8%%
+P60038 = %%Line%%
+P60039 = %%PickupValue%%
+{ELSE}
+P60035 = 0
+P60036 =
+P60037 =
+P60038 = 0
+P60039 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf13}
+P60035 = %%DKtype%%
+P60036 = %%blf13%%
+P60037 = %%blffirstname13%% %%blflastname13%%
+P60038 = %%Line%%
+P60039 = %%PickupValue%%
+{ELSE}
+P60035 = 0
+P60036 =
+P60037 =
+P60038 = 0
+P60039 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf18}
+P60035 = %%DKtype%%
+P60036 = %%blf18%%
+P60037 = %%blffirstname18%% %%blflastname18%%
+P60038 = %%Line%%
+P60039 = %%PickupValue%%
+{ELSE}
+P60035 = 0
+P60036 =
+P60037 =
+P60038 = 0
+P60039 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 9
+{IF $uagroup=UCGroup1}
+{IF blf9}
+P60040 = %%DKtype%%
+P60041 = %%blf9%%
+P60042 = %%blffirstname9%% %%blflastname9%%
+P60043 = %%Line%%
+P60044 = %%PickupValue%%
+{ELSE}
+P60040 = 0
+P60041 =
+P60042 =
+P60043 = 0
+P60044 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf14}
+P60040 = %%DKtype%%
+P60041 = %%blf14%%
+P60042 = %%blffirstname14%% %%blflastname14%%
+P60043 = %%Line%%
+P60044 = %%PickupValue%%
+{ELSE}
+P60040 = 0
+P60041 =
+P60042 =
+P60043 = 0
+P60044 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf19}
+P60040 = %%DKtype%%
+P60041 = %%blf19%%
+P60042 = %%blffirstname19%% %%blflastname19%%
+P60043 = %%Line%%
+P60044 = %%PickupValue%%
+{ELSE}
+P60040 = 0
+P60041 =
+P60042 =
+P60043 = 0
+P60044 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 10
+{IF $uagroup=UCGroup1}
+{IF blf10}
+P60045 = %%DKtype%%
+P60046 = %%blf10%%
+P60047 = %%blffirstname10%% %%blflastname10%%
+P60048 = %%Line%%
+P60049 = %%PickupValue%%
+{ELSE}
+P60045 = 0
+P60046 =
+P60047 =
+P60048 = 0
+P60049 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf15}
+P60045 = %%DKtype%%
+P60046 = %%blf15%%
+P60047 = %%blffirstname15%% %%blflastname15%%
+P60048 = %%Line%%
+P60049 = %%PickupValue%%
+{ELSE}
+P60045 = 0
+P60046 =
+P60047 =
+P60048 = 0
+P60049 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf20}
+P60045 = %%DKtype%%
+P60046 = %%blf20%%
+P60047 = %%blffirstname20%% %%blflastname20%%
+P60048 = %%Line%%
+P60049 = %%PickupValue%%
+{ELSE}
+P60045 = 0
+P60046 =
+P60047 =
+P60048 = 0
+P60049 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 11
+{IF $uagroup=UCGroup1}
+{IF blf11}
+P60050 = %%DKtype%%
+P60051 = %%blf11%%
+P60052 = %%blffirstname11%% %%blflastname11%%
+P60053 = %%Line%%
+P60054 = %%PickupValue%%
+{ELSE}
+P60050 = 0
+P60051 =
+P60052 =
+P60053 = 0
+P60054 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf16}
+P60050 = %%DKtype%%
+P60051 = %%blf16%%
+P60052 = %%blffirstname16%% %%blflastname16%%
+P60053 = %%Line%%
+P60054 = %%PickupValue%%
+{ELSE}
+P60050 = 0
+P60051 =
+P60052 =
+P60053 = 0
+P60054 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf21}
+P60050 = %%DKtype%%
+P60051 = %%blf21%%
+P60052 = %%blffirstname21%% %%blflastname21%%
+P60053 = %%Line%%
+P60054 = %%PickupValue%%
+{ELSE}
+P60050 = 0
+P60051 =
+P60052 =
+P60053 = 0
+P60054 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 12
+{IF $uagroup=UCGroup1}
+{IF blf12}
+P60055 = %%DKtype%%
+P60056 = %%blf12%%
+P60057 = %%blffirstname12%% %%blflastname12%%
+P60058 = %%Line%%
+P60059 = %%PickupValue%%
+{ELSE}
+P60055 = 0
+P60056 =
+P60057 =
+P60058 = 0
+P60059 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf17}
+P60055 = %%DKtype%%
+P60056 = %%blf17%%
+P60057 = %%blffirstname17%% %%blflastname17%%
+P60058 = %%Line%%
+P60059 = %%PickupValue%%
+{ELSE}
+P60055 = 0
+P60056 =
+P60057 =
+P60058 = 0
+P60059 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf22}
+P60055 = %%DKtype%%
+P60056 = %%blf22%%
+P60057 = %%blffirstname22%% %%blflastname22%%
+P60058 = %%Line%%
+P60059 = %%PickupValue%%
+{ELSE}
+P60055 = 0
+P60056 =
+P60057 =
+P60058 = 0
+P60059 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 13
+{IF $uagroup=UCGroup1}
+{IF blf13}
+P60060 = %%DKtype%%
+P60061 = %%blf13%%
+P60062 = %%blffirstname13%% %%blflastname13%%
+P60063 = %%Line%%
+P60064 = %%PickupValue%%
+{ELSE}
+P60060 = 0
+P60061 =
+P60062 =
+P60063 = 0
+P60064 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf18}
+P60060 = %%DKtype%%
+P60061 = %%blf18%%
+P60062 = %%blffirstname18%% %%blflastname18%%
+P60063 = %%Line%%
+P60064 = %%PickupValue%%
+{ELSE}
+P60060 = 0
+P60061 =
+P60062 =
+P60063 = 0
+P60064 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf23}
+P60060 = %%DKtype%%
+P60061 = %%blf23%%
+P60062 = %%blffirstname23%% %%blflastname23%%
+P60063 = %%Line%%
+P60064 = %%PickupValue%%
+{ELSE}
+P60060 = 0
+P60061 =
+P60062 =
+P60063 = 0
+P60064 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 14
+{IF $uagroup=UCGroup1}
+{IF blf14}
+P60065 = %%DKtype%%
+P60066 = %%blf14%%
+P60067 = %%blffirstname14%% %%blflastname14%%
+P60068 = %%Line%%
+P60069 = %%PickupValue%%
+{ELSE}
+P60065 = 0
+P60066 =
+P60067 =
+P60068 = 0
+P60069 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf19}
+P60065 = %%DKtype%%
+P60066 = %%blf19%%
+P60067 = %%blffirstname19%% %%blflastname19%%
+P60068 = %%Line%%
+P60069 = %%PickupValue%%
+{ELSE}
+P60065 = 0
+P60066 =
+P60067 =
+P60068 = 0
+P60069 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf24}
+P60065 = %%DKtype%%
+P60066 = %%blf24%%
+P60067 = %%blffirstname24%% %%blflastname24%%
+P60068 = %%Line%%
+P60069 = %%PickupValue%%
+{ELSE}
+P60065 = 0
+P60066 =
+P60067 =
+P60068 = 0
+P60069 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 15
+{IF $uagroup=UCGroup1}
+{IF blf15}
+P60070 = %%DKtype%%
+P60071 = %%blf15%%
+P60072 = %%blffirstname15%% %%blflastname15%%
+P60073 = %%Line%%
+P60074 = %%PickupValue%%
+{ELSE}
+P60070 = 0
+P60071 =
+P60072 =
+P60073 = 0
+P60074 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf20}
+P60070 = %%DKtype%%
+P60071 = %%blf20%%
+P60072 = %%blffirstname20%% %%blflastname20%%
+P60073 = %%Line%%
+P60074 = %%PickupValue%%
+{ELSE}
+P60070 = 0
+P60071 =
+P60072 =
+P60073 = 0
+P60074 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf25}
+P60070 = %%DKtype%%
+P60071 = %%blf25%%
+P60072 = %%blffirstname25%% %%blflastname25%%
+P60073 = %%Line%%
+P60074 = %%PickupValue%%
+{ELSE}
+P60070 = 0
+P60071 =
+P60072 =
+P60073 = 0
+P60074 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 16
+{IF $uagroup=UCGroup1}
+{IF blf16}
+P60075 = %%DKtype%%
+P60076 = %%blf16%%
+P60077 = %%blffirstname16%% %%blflastname16%%
+P60078 = %%Line%%
+P60079 = %%PickupValue%%
+{ELSE}
+P60075 = 0
+P60076 =
+P60077 =
+P60078 = 0
+P60079 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf21}
+P60075 = %%DKtype%%
+P60076 = %%blf21%%
+P60077 = %%blffirstname21%% %%blflastname21%%
+P60078 = %%Line%%
+P60079 = %%PickupValue%%
+{ELSE}
+P60075 = 0
+P60076 =
+P60077 =
+P60078 = 0
+P60079 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf26}
+P60075 = %%DKtype%%
+P60076 = %%blf26%%
+P60077 = %%blffirstname26%% %%blflastname26%%
+P60078 = %%Line%%
+P60079 = %%PickupValue%%
+{ELSE}
+P60075 = 0
+P60076 =
+P60077 =
+P60078 = 0
+P60079 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 17
+{IF $uagroup=UCGroup1}
+{IF blf17}
+P60080 = %%DKtype%%
+P60081 = %%blf17%%
+P60082 = %%blffirstname17%% %%blflastname17%%
+P60083 = %%Line%%
+P60084 = %%PickupValue%%
+{ELSE}
+P60080 = 0
+P60081 =
+P60082 =
+P60083 = 0
+P60084 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf22}
+P60080 = %%DKtype%%
+P60081 = %%blf22%%
+P60082 = %%blffirstname22%% %%blflastname22%%
+P60083 = %%Line%%
+P60084 = %%PickupValue%%
+{ELSE}
+P60080 = 0
+P60081 =
+P60082 =
+P60083 = 0
+P60084 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf27}
+P60080 = %%DKtype%%
+P60081 = %%blf27%%
+P60082 = %%blffirstname27%% %%blflastname27%%
+P60083 = %%Line%%
+P60084 = %%PickupValue%%
+{ELSE}
+P60080 = 0
+P60081 =
+P60082 =
+P60083 = 0
+P60084 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 18
+{IF $uagroup=UCGroup1}
+{IF blf18}
+P60085 = %%DKtype%%
+P60086 = %%blf18%%
+P60087 = %%blffirstname18%% %%blflastname18%%
+P60088 = %%Line%%
+P60089 = %%PickupValue%%
+{ELSE}
+P60085 = 0
+P60086 =
+P60087 =
+P60088 = 0
+P60089 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf23}
+P60085 = %%DKtype%%
+P60086 = %%blf23%%
+P60087 = %%blffirstname23%% %%blflastname23%%
+P60088 = %%Line%%
+P60089 = %%PickupValue%%
+{ELSE}
+P60085 = 0
+P60086 =
+P60087 =
+P60088 = 0
+P60089 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf28}
+P60085 = %%DKtype%%
+P60086 = %%blf28%%
+P60087 = %%blffirstname28%% %%blflastname28%%
+P60088 = %%Line%%
+P60089 = %%PickupValue%%
+{ELSE}
+P60085 = 0
+P60086 =
+P60087 =
+P60088 = 0
+P60089 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 19
+{IF $uagroup=UCGroup1}
+{IF blf19}
+P60090 = %%DKtype%%
+P60091 = %%blf19%%
+P60092 = %%blffirstname19%% %%blflastname19%%
+P60093 = %%Line%%
+P60094 = %%PickupValue%%
+{ELSE}
+P60090 = 0
+P60091 =
+P60092 =
+P60093 = 0
+P60094 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf24}
+P60090 = %%DKtype%%
+P60091 = %%blf24%%
+P60092 = %%blffirstname24%% %%blflastname24%%
+P60093 = %%Line%%
+P60094 = %%PickupValue%%
+{ELSE}
+P60090 = 0
+P60091 =
+P60092 =
+P60093 = 0
+P60094 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf29}
+P60090 = %%DKtype%%
+P60091 = %%blf29%%
+P60092 = %%blffirstname29%% %%blflastname29%%
+P60093 = %%Line%%
+P60094 = %%PickupValue%%
+{ELSE}
+P60090 = 0
+P60091 =
+P60092 =
+P60093 = 0
+P60094 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 1 key 20
+{IF $uagroup=UCGroup1}
+{IF blf20}
+P60095 = %%DKtype%%
+P60096 = %%blf20%%
+P60097 = %%blffirstname20%% %%blflastname20%%
+P60098 = %%Line%%
+P60099 = %%PickupValue%%
+{ELSE}
+P60095 = 0
+P60096 =
+P60097 =
+P60098 = 0
+P60099 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf25}
+P60095 = %%DKtype%%
+P60096 = %%blf25%%
+P60097 = %%blffirstname25%% %%blflastname25%%
+P60098 = %%Line%%
+P60099 = %%PickupValue%%
+{ELSE}
+P60095 = 0
+P60096 =
+P60097 =
+P60098 = 0
+P60099 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf30}
+P60095 = %%DKtype%%
+P60096 = %%blf30%%
+P60097 = %%blffirstname30%% %%blflastname30%%
+P60098 = %%Line%%
+P60099 = %%PickupValue%%
+{ELSE}
+P60095 = 0
+P60096 =
+P60097 =
+P60098 = 0
+P60099 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 1 (1/2/1)
+{IF $uagroup=UCGroup1}
+{IF blf21}
+P60100 = %%DKtype%%
+P60101 = %%blf21%%
+P60102 = %%blffirstname21%% %%blflastname21%%
+P60103 = %%Line%%
+P60104 = %%PickupValue%%
+{ELSE}
+P60100 = 0
+P60101 =
+P60102 =
+P60103 = 0
+P60104 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf26}
+P60100 = %%DKtype%%
+P60101 = %%blf26%%
+P60102 = %%blffirstname26%% %%blflastname26%%
+P60103 = %%Line%%
+P60104 = %%PickupValue%%
+{ELSE}
+P60100 = 0
+P60101 =
+P60102 =
+P60103 = 0
+P60104 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf31}
+P60100 = %%DKtype%%
+P60101 = %%blf31%%
+P60102 = %%blffirstname31%% %%blflastname31%%
+P60103 = %%Line%%
+P60104 = %%PickupValue%%
+{ELSE}
+P60100 = 0
+P60101 =
+P60102 =
+P60103 = 0
+P60104 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 2 (1/2/2)
+{IF $uagroup=UCGroup1}
+{IF blf22}
+P60105 = %%DKtype%%
+P60106 = %%blf22%%
+P60107 = %%blffirstname22%% %%blflastname22%%
+P60108 = %%Line%%
+P60109 = %%PickupValue%%
+{ELSE}
+P60105 = 0
+P60106 =
+P60107 =
+P60108 = 0
+P60109 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf27}
+P60105 = %%DKtype%%
+P60106 = %%blf27%%
+P60107 = %%blffirstname27%% %%blflastname27%%
+P60108 = %%Line%%
+P60109 = %%PickupValue%%
+{ELSE}
+P60105 = 0
+P60106 =
+P60107 =
+P60108 = 0
+P60109 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf32}
+P60105 = %%DKtype%%
+P60106 = %%blf32%%
+P60107 = %%blffirstname32%% %%blflastname32%%
+P60108 = %%Line%%
+P60109 = %%PickupValue%%
+{ELSE}
+P60105 = 0
+P60106 =
+P60107 =
+P60108 = 0
+P60109 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 3
+{IF $uagroup=UCGroup1}
+{IF blf23}
+P60110 = %%DKtype%%
+P60111 = %%blf23%%
+P60112 = %%blffirstname23%% %%blflastname23%%
+P60113 = %%Line%%
+P60114 = %%PickupValue%%
+{ELSE}
+P60110 = 0
+P60111 =
+P60112 =
+P60113 = 0
+P60114 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf28}
+P60110 = %%DKtype%%
+P60111 = %%blf28%%
+P60112 = %%blffirstname28%% %%blflastname28%%
+P60113 = %%Line%%
+P60114 = %%PickupValue%%
+{ELSE}
+P60110 = 0
+P60111 =
+P60112 =
+P60113 = 0
+P60114 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf33}
+P60110 = %%DKtype%%
+P60111 = %%blf33%%
+P60112 = %%blffirstname33%% %%blflastname33%%
+P60113 = %%Line%%
+P60114 = %%PickupValue%%
+{ELSE}
+P60110 = 0
+P60111 =
+P60112 =
+P60113 = 0
+P60114 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 4
+{IF $uagroup=UCGroup1}
+{IF blf24}
+P60115 = %%DKtype%%
+P60116 = %%blf24%%
+P60117 = %%blffirstname24%% %%blflastname24%%
+P60118 = %%Line%%
+P60119 = %%PickupValue%%
+{ELSE}
+P60115 = 0
+P60116 =
+P60117 =
+P60118 = 0
+P60119 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf29}
+P60115 = %%DKtype%%
+P60116 = %%blf29%%
+P60117 = %%blffirstname29%% %%blflastname29%%
+P60118 = %%Line%%
+P60119 = %%PickupValue%%
+{ELSE}
+P60115 = 0
+P60116 =
+P60117 =
+P60118 = 0
+P60119 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf34}
+P60115 = %%DKtype%%
+P60116 = %%blf34%%
+P60117 = %%blffirstname34%% %%blflastname34%%
+P60118 = %%Line%%
+P60119 = %%PickupValue%%
+{ELSE}
+P60115 = 0
+P60116 =
+P60117 =
+P60118 = 0
+P60119 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 5
+{IF $uagroup=UCGroup1}
+{IF blf25}
+P60120 = %%DKtype%%
+P60121 = %%blf25%%
+P60122 = %%blffirstname25%% %%blflastname25%%
+P60123 = %%Line%%
+P60124 = %%PickupValue%%
+{ELSE}
+P60120 = 0
+P60121 =
+P60122 =
+P60123 = 0
+P60124 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf30}
+P60120 = %%DKtype%%
+P60121 = %%blf30%%
+P60122 = %%blffirstname30%% %%blflastname30%%
+P60123 = %%Line%%
+P60124 = %%PickupValue%%
+{ELSE}
+P60120 = 0
+P60121 =
+P60122 =
+P60123 = 0
+P60124 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf35}
+P60120 = %%DKtype%%
+P60121 = %%blf35%%
+P60122 = %%blffirstname35%% %%blflastname35%%
+P60123 = %%Line%%
+P60124 = %%PickupValue%%
+{ELSE}
+P60120 = 0
+P60121 =
+P60122 =
+P60123 = 0
+P60124 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 6
+{IF $uagroup=UCGroup1}
+{IF blf26}
+P60125 = %%DKtype%%
+P60126 = %%blf26%%
+P60127 = %%blffirstname26%% %%blflastname26%%
+P60128 = %%Line%%
+P60129 = %%PickupValue%%
+{ELSE}
+P60125 = 0
+P60126 =
+P60127 =
+P60128 = 0
+P60129 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf31}
+P60125 = %%DKtype%%
+P60126 = %%blf31%%
+P60127 = %%blffirstname31%% %%blflastname31%%
+P60128 = %%Line%%
+P60129 = %%PickupValue%%
+{ELSE}
+P60125 = 0
+P60126 =
+P60127 =
+P60128 = 0
+P60129 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf36}
+P60125 = %%DKtype%%
+P60126 = %%blf36%%
+P60127 = %%blffirstname36%% %%blflastname36%%
+P60128 = %%Line%%
+P60129 = %%PickupValue%%
+{ELSE}
+P60125 = 0
+P60126 =
+P60127 =
+P60128 = 0
+P60129 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 7
+{IF $uagroup=UCGroup1}
+{IF blf27}
+P60130 = %%DKtype%%
+P60131 = %%blf27%%
+P60132 = %%blffirstname27%% %%blflastname27%%
+P60133 = %%Line%%
+P60134 = %%PickupValue%%
+{ELSE}
+P60130 = 0
+P60131 =
+P60132 =
+P60133 = 0
+P60134 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf32}
+P60130 = %%DKtype%%
+P60131 = %%blf32%%
+P60132 = %%blffirstname32%% %%blflastname32%%
+P60133 = %%Line%%
+P60134 = %%PickupValue%%
+{ELSE}
+P60130 = 0
+P60131 =
+P60132 =
+P60133 = 0
+P60134 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf37}
+P60130 = %%DKtype%%
+P60131 = %%blf37%%
+P60132 = %%blffirstname37%% %%blflastname37%%
+P60133 = %%Line%%
+P60134 = %%PickupValue%%
+{ELSE}
+P60130 = 0
+P60131 =
+P60132 =
+P60133 = 0
+P60134 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 8
+{IF $uagroup=UCGroup1}
+{IF blf28}
+P60135 = %%DKtype%%
+P60136 = %%blf28%%
+P60137 = %%blffirstname28%% %%blflastname28%%
+P60138 = %%Line%%
+P60139 = %%PickupValue%%
+{ELSE}
+P60135 = 0
+P60136 =
+P60137 =
+P60138 = 0
+P60139 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf33}
+P60135 = %%DKtype%%
+P60136 = %%blf33%%
+P60137 = %%blffirstname33%% %%blflastname33%%
+P60138 = %%Line%%
+P60139 = %%PickupValue%%
+{ELSE}
+P60135 = 0
+P60136 =
+P60137 =
+P60138 = 0
+P60139 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf38}
+P60135 = %%DKtype%%
+P60136 = %%blf38%%
+P60137 = %%blffirstname38%% %%blflastname38%%
+P60138 = %%Line%%
+P60139 = %%PickupValue%%
+{ELSE}
+P60135 = 0
+P60136 =
+P60137 =
+P60138 = 0
+P60139 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 9
+{IF $uagroup=UCGroup1}
+{IF blf29}
+P60140 = %%DKtype%%
+P60141 = %%blf29%%
+P60142 = %%blffirstname29%% %%blflastname29%%
+P60143 = %%Line%%
+P60144 = %%PickupValue%%
+{ELSE}
+P60140 = 0
+P60141 =
+P60142 =
+P60143 = 0
+P60144 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf34}
+P60140 = %%DKtype%%
+P60141 = %%blf34%%
+P60142 = %%blffirstname34%% %%blflastname34%%
+P60143 = %%Line%%
+P60144 = %%PickupValue%%
+{ELSE}
+P60140 = 0
+P60141 =
+P60142 =
+P60143 = 0
+P60144 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf39}
+P60140 = %%DKtype%%
+P60141 = %%blf39%%
+P60142 = %%blffirstname39%% %%blflastname39%%
+P60143 = %%Line%%
+P60144 = %%PickupValue%%
+{ELSE}
+P60140 = 0
+P60141 =
+P60142 =
+P60143 = 0
+P60144 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 10
+{IF $uagroup=UCGroup1}
+{IF blf30}
+P60145 = %%DKtype%%
+P60146 = %%blf30%%
+P60147 = %%blffirstname30%% %%blflastname30%%
+P60148 = %%Line%%
+P60149 = %%PickupValue%%
+{ELSE}
+P60145 = 0
+P60146 =
+P60147 =
+P60148 = 0
+P60149 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf35}
+P60145 = %%DKtype%%
+P60146 = %%blf35%%
+P60147 = %%blffirstname35%% %%blflastname35%%
+P60148 = %%Line%%
+P60149 = %%PickupValue%%
+{ELSE}
+P60145 = 0
+P60146 =
+P60147 =
+P60148 = 0
+P60149 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf40}
+P60145 = %%DKtype%%
+P60146 = %%blf40%%
+P60147 = %%blffirstname40%% %%blflastname40%%
+P60148 = %%Line%%
+P60149 = %%PickupValue%%
+{ELSE}
+P60145 = 0
+P60146 =
+P60147 =
+P60148 = 0
+P60149 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 11
+{IF $uagroup=UCGroup1}
+{IF blf31}
+P60150 = %%DKtype%%
+P60151 = %%blf31%%
+P60152 = %%blffirstname31%% %%blflastname31%%
+P60153 = %%Line%%
+P60154 = %%PickupValue%%
+{ELSE}
+P60150 = 0
+P60151 =
+P60152 =
+P60153 = 0
+P60154 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf36}
+P60150 = %%DKtype%%
+P60151 = %%blf36%%
+P60152 = %%blffirstname36%% %%blflastname36%%
+P60153 = %%Line%%
+P60154 = %%PickupValue%%
+{ELSE}
+P60150 = 0
+P60151 =
+P60152 =
+P60153 = 0
+P60154 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf41}
+P60150 = %%DKtype%%
+P60151 = %%blf41%%
+P60152 = %%blffirstname41%% %%blflastname41%%
+P60153 = %%Line%%
+P60154 = %%PickupValue%%
+{ELSE}
+P60150 = 0
+P60151 =
+P60152 =
+P60153 = 0
+P60154 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 12
+{IF $uagroup=UCGroup1}
+{IF blf32}
+P60155 = %%DKtype%%
+P60156 = %%blf32%%
+P60157 = %%blffirstname32%% %%blflastname32%%
+P60158 = %%Line%%
+P60159 = %%PickupValue%%
+{ELSE}
+P60155 = 0
+P60156 =
+P60157 =
+P60158 = 0
+P60159 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf37}
+P60155 = %%DKtype%%
+P60156 = %%blf37%%
+P60157 = %%blffirstname37%% %%blflastname37%%
+P60158 = %%Line%%
+P60159 = %%PickupValue%%
+{ELSE}
+P60155 = 0
+P60156 =
+P60157 =
+P60158 = 0
+P60159 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf42}
+P60155 = %%DKtype%%
+P60156 = %%blf42%%
+P60157 = %%blffirstname42%% %%blflastname42%%
+P60158 = %%Line%%
+P60159 = %%PickupValue%%
+{ELSE}
+P60155 = 0
+P60156 =
+P60157 =
+P60158 = 0
+P60159 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 13
+{IF $uagroup=UCGroup1}
+{IF blf33}
+P60160 = %%DKtype%%
+P60161 = %%blf33%%
+P60162 = %%blffirstname33%% %%blflastname33%%
+P60163 = %%Line%%
+P60164 = %%PickupValue%%
+{ELSE}
+P60160 = 0
+P60161 =
+P60162 =
+P60163 = 0
+P60164 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf38}
+P60160 = %%DKtype%%
+P60161 = %%blf38%%
+P60162 = %%blffirstname38%% %%blflastname38%%
+P60163 = %%Line%%
+P60164 = %%PickupValue%%
+{ELSE}
+P60160 = 0
+P60161 =
+P60162 =
+P60163 = 0
+P60164 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf43}
+P60160 = %%DKtype%%
+P60161 = %%blf43%%
+P60162 = %%blffirstname43%% %%blflastname43%%
+P60163 = %%Line%%
+P60164 = %%PickupValue%%
+{ELSE}
+P60160 = 0
+P60161 =
+P60162 =
+P60163 = 0
+P60164 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 14
+{IF $uagroup=UCGroup1}
+{IF blf34}
+P60165 = %%DKtype%%
+P60166 = %%blf34%%
+P60167 = %%blffirstname34%% %%blflastname34%%
+P60168 = %%Line%%
+P60169 = %%PickupValue%%
+{ELSE}
+P60165 = 0
+P60166 =
+P60167 =
+P60168 = 0
+P60169 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf39}
+P60165 = %%DKtype%%
+P60166 = %%blf39%%
+P60167 = %%blffirstname39%% %%blflastname39%%
+P60168 = %%Line%%
+P60169 = %%PickupValue%%
+{ELSE}
+P60165 = 0
+P60166 =
+P60167 =
+P60168 = 0
+P60169 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf44}
+P60165 = %%DKtype%%
+P60166 = %%blf44%%
+P60167 = %%blffirstname44%% %%blflastname44%%
+P60168 = %%Line%%
+P60169 = %%PickupValue%%
+{ELSE}
+P60165 = 0
+P60166 =
+P60167 =
+P60168 = 0
+P60169 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 15
+{IF $uagroup=UCGroup1}
+{IF blf35}
+P60170 = %%DKtype%%
+P60171 = %%blf35%%
+P60172 = %%blffirstname35%% %%blflastname35%%
+P60173 = %%Line%%
+P60174 = %%PickupValue%%
+{ELSE}
+P60170 = 0
+P60171 =
+P60172 =
+P60173 = 0
+P60174 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf40}
+P60170 = %%DKtype%%
+P60171 = %%blf40%%
+P60172 = %%blffirstname40%% %%blflastname40%%
+P60173 = %%Line%%
+P60174 = %%PickupValue%%
+{ELSE}
+P60170 = 0
+P60171 =
+P60172 =
+P60173 = 0
+P60174 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf45}
+P60170 = %%DKtype%%
+P60171 = %%blf45%%
+P60172 = %%blffirstname45%% %%blflastname45%%
+P60173 = %%Line%%
+P60174 = %%PickupValue%%
+{ELSE}
+P60170 = 0
+P60171 =
+P60172 =
+P60173 = 0
+P60174 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 16
+{IF $uagroup=UCGroup1}
+{IF blf36}
+P60175 = %%DKtype%%
+P60176 = %%blf36%%
+P60177 = %%blffirstname36%% %%blflastname36%%
+P60178 = %%Line%%
+P60179 = %%PickupValue%%
+{ELSE}
+P60175 = 0
+P60176 =
+P60177 =
+P60178 = 0
+P60179 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf41}
+P60175 = %%DKtype%%
+P60176 = %%blf41%%
+P60177 = %%blffirstname41%% %%blflastname41%%
+P60178 = %%Line%%
+P60179 = %%PickupValue%%
+{ELSE}
+P60175 = 0
+P60176 =
+P60177 =
+P60178 = 0
+P60179 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf46}
+P60175 = %%DKtype%%
+P60176 = %%blf46%%
+P60177 = %%blffirstname46%% %%blflastname46%%
+P60178 = %%Line%%
+P60179 = %%PickupValue%%
+{ELSE}
+P60175 = 0
+P60176 =
+P60177 =
+P60178 = 0
+P60179 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 17
+{IF $uagroup=UCGroup1}
+{IF blf37}
+P60180 = %%DKtype%%
+P60181 = %%blf37%%
+P60182 = %%blffirstname37%% %%blflastname37%%
+P60183 = %%Line%%
+P60184 = %%PickupValue%%
+{ELSE}
+P60180 = 0
+P60181 =
+P60182 =
+P60183 = 0
+P60184 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf42}
+P60180 = %%DKtype%%
+P60181 = %%blf42%%
+P60182 = %%blffirstname42%% %%blflastname42%%
+P60183 = %%Line%%
+P60184 = %%PickupValue%%
+{ELSE}
+P60180 = 0
+P60181 =
+P60182 =
+P60183 = 0
+P60184 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf47}
+P60180 = %%DKtype%%
+P60181 = %%blf47%%
+P60182 = %%blffirstname47%% %%blflastname47%%
+P60183 = %%Line%%
+P60184 = %%PickupValue%%
+{ELSE}
+P60180 = 0
+P60181 =
+P60182 =
+P60183 = 0
+P60184 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 18
+{IF $uagroup=UCGroup1}
+{IF blf38}
+P60185 = %%DKtype%%
+P60186 = %%blf38%%
+P60187 = %%blffirstname38%% %%blflastname38%%
+P60188 = %%Line%%
+P60189 = %%PickupValue%%
+{ELSE}
+P60185 = 0
+P60186 =
+P60187 =
+P60188 = 0
+P60189 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf43}
+P60185 = %%DKtype%%
+P60186 = %%blf43%%
+P60187 = %%blffirstname43%% %%blflastname43%%
+P60188 = %%Line%%
+P60189 = %%PickupValue%%
+{ELSE}
+P60185 = 0
+P60186 =
+P60187 =
+P60188 = 0
+P60189 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf48}
+P60185 = %%DKtype%%
+P60186 = %%blf48%%
+P60187 = %%blffirstname48%% %%blflastname48%%
+P60188 = %%Line%%
+P60189 = %%PickupValue%%
+{ELSE}
+P60185 = 0
+P60186 =
+P60187 =
+P60188 = 0
+P60189 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 19
+{IF $uagroup=UCGroup1}
+{IF blf39}
+P60190 = %%DKtype%%
+P60191 = %%blf39%%
+P60192 = %%blffirstname39%% %%blflastname39%%
+P60193 = %%Line%%
+P60194 = %%PickupValue%%
+{ELSE}
+P60190 = 0
+P60191 =
+P60192 =
+P60193 = 0
+P60194 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf44}
+P60190 = %%DKtype%%
+P60191 = %%blf44%%
+P60192 = %%blffirstname44%% %%blflastname44%%
+P60193 = %%Line%%
+P60194 = %%PickupValue%%
+{ELSE}
+P60190 = 0
+P60191 =
+P60192 =
+P60193 = 0
+P60194 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf49}
+P60190 = %%DKtype%%
+P60191 = %%blf49%%
+P60192 = %%blffirstname49%% %%blflastname49%%
+P60193 = %%Line%%
+P60194 = %%PickupValue%%
+{ELSE}
+P60190 = 0
+P60191 =
+P60192 =
+P60193 = 0
+P60194 =
+{ENDIF}
+{ENDIF}
+
+#Expansion module 1 page 2 key 20
+{IF $uagroup=UCGroup1}
+#Expansion module 1 page 2 key 40
+{IF blf40}
+P60195 = %%DKtype%%
+P60196 = %%blf40%%
+P60197 = %%blffirstname40%% %%blflastname40%%
+P60198 = %%Line%%
+P60199 = %%PickupValue%%
+{ELSE}
+P60195 = 0
+P60196 =
+P60197 =
+P60198 = 0
+P60199 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup2}
+{IF blf45}
+P60195 = %%DKtype%%
+P60196 = %%blf45%%
+P60197 = %%blffirstname45%% %%blflastname45%%
+P60198 = %%Line%%
+P60199 = %%PickupValue%%
+{ELSE}
+P60195 = 0
+P60196 =
+P60197 =
+P60198 = 0
+P60199 =
+{ENDIF}
+{ENDIF}
+{IF $uagroup=UCGroup3}
+{IF blf50}
+P60195 = %%DKtype%%
+P60196 = %%blf50%%
+P60197 = %%blffirstname50%% %%blflastname50%%
+P60198 = %%Line%%
+P60199 = %%PickupValue%%
+{ELSE}
+P60195 = 0
+P60196 =
+P60197 =
+P60198 = 0
+P60199 =
+{ENDIF}
+{ENDIF}
+
+
+]]></deviceconfig>
+    </device>
+  </data>
+</doc>

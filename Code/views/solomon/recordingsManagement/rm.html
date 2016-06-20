@@ -1,0 +1,163 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Recordings Management
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default">
+              Download
+            </button>
+          </div>
+          <div class="row padding-left-15">
+            <div class="row padding-top-10">
+              <div class="col-sm-2" style="width:150px;">
+                <div class="checkbox-custom checkbox-default">
+                  <input type="checkbox" data-mark="default" id="r-enable-id"
+                         data-checked="<%=trimValue(data, ['enable_filter_by_id'])%>" data-update="default">
+                  <label for="r-enable-id">Filter by ID</label>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <input type="text" class="form-control" placeholder="ID" autocomplete="off"
+                       data-mark="default" id="r-filter-id-value"
+                       value="<%=trimValue(data, ['filter_by_id_value'])%>" data-update="default">
+              </div>
+              <div class="col-sm-3">
+                <select class="bs-select-hidden" data-role="select" data-mark="default" id="r-filter-id-type"
+                        data-selected="<%=trimValue(data, ['filter_by_id_type'])%>" data-update="default">
+                  <option value="1">Caller ID</option>
+                  <option value="2">Callee ID</option>
+                </select>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-sm-2" style="width:150px;">
+                <div class="checkbox-custom checkbox-default">
+                  <input type="checkbox" data-mark="default" id="r-enable-data"
+                         data-checked="<%=trimValue(data, ['enable_filter_by_date'])%>" data-update="default" >
+                  <label for="r-enable-data">Filter by Date</label>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="input-group" data-role="datetime">
+                  <input type="text" class="form-control" data-plugin="datepicker" data-mark="update" id="r-filter-from"
+                         value="<%=trimValue(data, ['filter_by_date_from'])%>" data-update="default">
+                  <span class="input-group-addon">
+                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="input-group" data-role="datetime">
+                  <input type="text" class="form-control" data-plugin="datepicker" data-mark="update" id="r-filter-to"
+                         value="<%=trimValue(data, ['filter_by_date_to'])%>" data-update="default">
+                  <span class="input-group-addon">
+                    <i class="icon wb-calendar" aria-hidden="true"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <button type="button" class="btn btn-outline btn-default" id="r-btn-apply">
+                  Apply
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>
+                  <div class="checkbox-custom checkbox-default">
+                    <input type="checkbox">
+                    <label></label>
+                  </div>
+                </th>
+                <th>#</th>
+                <th>Extension</th>
+                <th>Date</th>
+                <th>File Name</th>
+                <th>Size(MB)</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.rsData && data.rsData.records) {
+              data.rsData.records.forEach(function(data, key) {
+              %>
+              <tr>
+                <td>
+                  <div class="checkbox-custom checkbox-default">
+                    <input type="checkbox">
+                    <label></label>
+                  </div>
+                </td>
+                <td><%=(key+1) %></td>
+                <td><%=data.extension_number %></td>
+                <td><%=data.date %></td>
+                <td><%=data.file_name %></td>
+                <td><%=data.size %></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Delete"
+                          name="c-btn-delete" data-number="<%=data.extension_number%>" data-name="<%=data.file_name%>">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+              <tr>
+                <td colspan="7" class="footable-visible">
+                  <div class="text-right">
+                    <ul class="pagination">
+                      <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a>
+                      </li>
+                      <li class="footable-page-arrow disabled"><a data-page="prev"
+                                                                  href="#prev">‹</a></li>
+                      <li class="footable-page active"><a data-page="0" href="#">1</a></li>
+                      <li class="footable-page"><a data-page="1" href="#">2</a></li>
+                      <li class="footable-page"><a data-page="2" href="#">3</a></li>
+                      <li class="footable-page"><a data-page="3" href="#">4</a></li>
+                      <li class="footable-page"><a data-page="4" href="#">5</a></li>
+                      <li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li>
+                      <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

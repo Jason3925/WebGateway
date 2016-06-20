@@ -1,0 +1,94 @@
+<div class="tab-pane active" id="exampleTabsOne" role="tabpanel">
+  <!-- General BEGIN  -->
+
+
+  <h5 class="margin-top-10">
+    User Information
+  </h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Extension Number </label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" data-mark="default"
+               placeholder="Extension Number" autocomplete="off" id="eg-number"
+               value="<%=trimValue(data.eData, ['extension_number'])%>"
+               data-update="disabled">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Password</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="input-group input-group-icon" data-password="default" >
+          <input type="text" class="form-control" placeholder="Pasword" data-mark="default"
+                 placeholder="Password" autocomplete="off" id="eg-password"
+                 value="<%=trimValue(data.eData, ['password'])%>"
+                 />
+          <span class="input-group-addon">
+            <span class="icon wb-eye-close" aria-hidden="true"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">First Name</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="First Name" autocomplete="off"
+               data-mark="default" id="eg-first-name"
+               value="<%=trimValue(data.eData, ['profile','first_name'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Last Name</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" data-mark="default"
+               placeholder="Last Name" autocomplete="off" id="eg-last-name"
+               value="<%=trimValue(data.eData, ['profile','last_name'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Gender</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <select data-role="select" data-mark="default" id="eg-gender"
+                data-selected="<%=trimValue(data.eData, ['profile', 'gender'])%>" data-init="default">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Email</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Email" autocomplete="off"
+               data-mark="default" id="eg-email"
+               value="<%=trimValue(data.eData, ['profile', 'email'])%>">
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <hr>
+
+
+  <!-- END  -->
+</div>

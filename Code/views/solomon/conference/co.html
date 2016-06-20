@@ -1,0 +1,102 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Conference
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="add-room">
+              Add Room
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Room Extension</th>
+                <th>Room PIN</th>
+                <th>Admin PIN</th>
+                <th>Mode</th>
+                <th>Participants</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.crsData && data.crsData.rooms) {
+              data.crsData.rooms.forEach(function(data, key) {
+              %>
+
+              <tr data-value="<%=data.room_number%>" data-ip="<%=data.server_ip%>">
+                <td><%=(key+1)%></td>
+                <td><%=data.room_number %></td>
+                <td><%=data.room_pin %></td>
+                <td><%=data.admin_pin %></td>
+                <td><%=data.mode===1?'Audio Conference':data.mode===2?'Video Conference':data.mode %></td>
+                <td><%=data.participants %></td>
+                <td>
+                  <% if(data.status=='online'){ %>
+                  <span class="label label-primary">Online</span>
+                  <% } %>
+                  <% if(data.status=='offline'){ %>
+                  <span class="label label-danger">offline</span>
+                  <% } %>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Delete" title="Invite Member"
+                          name="co-participants" data-value="<%=data.room_number%>" data-ip="<%=data.server_ip%>">
+                    <i class="icon wb-user-add" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Edit" title="Edit Room"
+                          name="co-update" data-value="<%=data.room_number%>" data-ip="<%=data.server_ip%>">
+                    <i class="icon wb-wrench" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Delete" title="Delete Room"
+                          name="co-delete" data-value="<%=data.room_number%>" data-ip="<%=data.server_ip%>">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                  <input type="hidden" id="co-data-<%=data.room_number%>" data-mode="<%=data.mode%>" data-extension="<%=data.room_number%>"
+                         data-room-pin="<%=data.room_pin%>" data-admin-pin="<%=data.admin_pin%>"
+                         data-maximum-participants="<%=data.maximum_participants%>"/>
+                </td>
+              </tr>
+
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

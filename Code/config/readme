@@ -1,0 +1,14 @@
+= ==================================================================================================================== =
+=                                                                                                                      =
+=                                                                                                                      =
+=                                               特殊组件数据加载方式记录
+=                                                                                                                      =
+=                                                                                                                      =
+= ==================================================================================================================== =
+
+-- 多值select数据加载
+<select class="bs-select-hidden" multiple data-mark="default" id="eo-extension-groups" data-role="select"
+data-selects="<%=trimValue(data.eData, ['belong_groups'])%>" data-init="default">
+  <option value="DEFAULT">DEFAULT</option>
+  <option value="SYSTEM">SYSTEM</option>
+</select>

@@ -1,0 +1,700 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-04-18 15:00:00</time>
+    <name>Panasonic</name>
+    <url>http://www.panasonic.com</url>
+    <models>
+      <model ua="Panasonic_KX_TGP500B01">Panasonic KX-TGP500</model>
+    </models>
+    <description>Panasonic UT</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+      <event-name>check-sync</event-name>
+    </rebootParams>
+    <resyncParams>
+      <event-name>check-sync</event-name>
+    </resyncParams>
+    <firmwareParams>
+      <event-name>check-sync</event-name>
+    </firmwareParams>
+    <AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">0</option>
+        <option value="REMOTESPM">0</option>
+    </AllowedNetworkConfig>
+    <timezoneParams param="time_timezone_panasonic">
+      <!--The first entry is the selected entry in management console-->
+      <option value="-300">GMT-5:00 (US Eastern Time, New York)</option>
+      <option value="-720">GMT-12:00 (International Date Line West)</option>
+      <option value="-660">GMT-11:00 (Midway Island, Samoa)</option>
+      <option value="-600">GMT-10:00 (US Hawaiian Time)</option>
+      <option value="-540">GMT-9:00 (US Alaska Time)</option>
+      <option value="-480">GMT-8:00 (US Pacific Time, Los Angeles)</option>
+      <option value="-420">GMT-7:00 (US Mountain Time, Denver)</option>
+      <option value="-360">GMT-6:00 (US Central Time, Chicago)</option>
+      <option value="-270">GMT-4:30 (Venezuela)</option>
+      <option value="-240">GMT-4:00 (Atlantic Time, Quebec)</option>
+      <option value="-210">GMT-3:30 (Newfoundland)</option>
+      <option value="-180">GMT-3:00 (Greenland)</option>
+      <option value="-120">GMT-2:00 (Mid-Atlantic)</option>
+      <option value="-60">GMT-1:00 (Azores, Cape Verdi Is.)</option>
+      <option value="0">GMT(London, Dublin, Edinburgh, Lisbon, Casablanca, Monrovia)</option>
+      <option value="60">GMT+1:00 (Paris,Amsterdam, Berlin, Rome, Vienna, Madrid, Warsaw, Brussels)</option>
+      <option value="120">GMT+2:00 (Israel, Cairo, Athens, Helsinki, Istanbul, Buchrest)</option>
+      <option value="180">GMT+3:00 (Moscow, Kuwait, Baghdad, Tehran, Nairobi)</option>
+      <option value="210">GMT+3:30 (Tehran)</option>
+      <option value="240">GMT+4:00 (Abu Dhabi, Baku)</option>
+      <option value="270">GMT+4:30 (Kabul)</option>
+      <option value="300">GMT+5:00 (Islamabad, Ekaterinburg, Karachi, Tashkent)</option>
+      <option value="330">GMT+5:30 (Chennai, New Delhi, Mumbai)</option>
+      <option value="345">GMT+5:45 (Kathmandu)</option>
+      <option value="360">GMT+6:00 (Almaty, Astana. Dhaka, Novosibirsk)</option>
+      <option value="390">GMT+6:30 (Rangoon)</option>
+      <option value="420">GMT+7:00 (Bankok, Jakarta, Hanoi, Krasnoyarsk)</option>
+      <option value="480">GMT+8:00 (Beijing, Singapore, Taipei, Kuala Lumpur, Irkutsk, Perth)</option>
+      <option value="540">GMT+9:00 (Japan, Korea, Yakutsk)</option>
+      <option value="570">GMT+9:30 (Adelaide, Darwin)</option>
+      <option value="600">GMT+10:00 (Brisbane, Sydney, Melbourne, Canberra, Guam, Hobart)</option>
+      <option value="660">GMT+11:00 (Magadan, Solomon Is., New Caledonia)</option>
+      <option value="720">GMT+12:00 (Auckland, Wellington, Fiji)</option>
+      <option value="780">GMT+13:00 (Nuku'alofa)</option>
+    </timezoneParams>
+	<dst variableName="dstEnableDisable" enable="Y" disable="N"></dst>
+    <languages>
+    <!-- The first entry is the selected entry in management console  --> 
+    <option value="English-US">
+       <item name="langwebUI">en-US</item> 
+    </option>
+    <option value="English-UK">
+      <item name="langwebUI">en-UK</item> 
+    </option>
+    <option value="Deutsch">
+      <item name="langwebUI">de</item> 
+    </option>
+    <option value="Espanol">
+      <item name="langwebUI">es</item> 
+    </option>
+    <option value="Francais">
+      <item name="langwebUI">fr</item> 
+    </option>
+    <option value="Italiano">
+      <item name="langwebUI">it</item> 
+    </option>
+    <option value="Nederlands">
+      <item name="langwebUI">nl</item> 
+    </option>
+    </languages>
+
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+      <!-- The first entry is the selected entry in management console--> 
+         <option value="1">G722 Priority 1</option>
+         <option value="2">G722 Priority 2</option>
+         <option value="3">G722 Priority 3</option>
+         <option value="4">G722 Priority 4</option>
+      </Codecspriority>
+
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+         <option value="2">G711U Priority 2</option>
+		 <option value="1">G711U Priority 1</option>
+         <option value="3">G711U Priority 3</option>
+         <option value="4">G711U Priority 4</option>
+  	 </Codecspriority>
+
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+         <option value="4">G726-32 Priority 4</option>
+		 <option value="1">G726-32 Priority 1</option>
+         <option value="2">G726-32 Priority 2</option>
+         <option value="3">G726-32 Priority 3</option>
+      </Codecspriority>
+
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+         <option value="3">G729A Priority 3</option>
+		 <option value="1">G729A Priority 1</option>
+         <option value="2">G729A Priority 2</option>
+         <option value="4">G729A Priority 4</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  
+  	<blftype>
+      <extension>
+        <value>X_PANASONIC_IPTEL_CONTACT</value>
+      </extension>
+	  <speeddial>
+	    <value>X_PANASONIC_IPTEL_ONETOUCH</value>
+      </speeddial>		
+	  <customspeeddial>
+	    <value>X_PANASONIC_IPTEL_ONETOUCH</value>
+      </customspeeddial>
+      <queuelogin>
+        <value>X_PANASONIC_IPTEL_ONETOUCH</value>
+      </queuelogin>
+	  <profilestatus>
+        <value>X_PANASONIC_IPTEL_ONETOUCH</value>
+      </profilestatus>
+      <parkextension>
+        <value>X_PANASONIC_IPTEL_CONTACT</value>
+		<userphone></userphone>
+      </parkextension>
+	</blftype>
+  <data>
+    <device>
+      <type>phone</type>
+      <field name="Name">sip_allusers.cfg</field>
+      <deviceconfig filename="Config%%mac_address%%.cfg">
+<![CDATA[# PCC Standard Format File # DO NOT CHANGE THIS LINE!
+
+############################################################
+# Line 1 Settings #
+############################################################
+## Username and Password
+PHONE_NUMBER_1="%%extension_number%%"
+SIP_URI_1="%%extension_number%%"
+SIP_AUTHID_1="%%extension_auth_id%%"
+SIP_PASS_1="%%extension_auth_pw%%"
+
+##Vbox System
+VM_NUMBER_1="%%vm_number%%"
+VM_SUBSCRIBE_ENABLE="Y"
+
+## Display Name on Phone Display
+DISPLAY_NAME_1="%%extension_first_name%% %%extension_last_name%%"
+
+############################################################
+# Line 2-8 Generic Settings #
+############################################################
+##Vbox System
+VM_NUMBER_2="%%vm_number%%"
+VM_NUMBER_3="%%vm_number%%"
+VM_NUMBER_4="%%vm_number%%"
+VM_NUMBER_5="%%vm_number%%"
+VM_NUMBER_6="%%vm_number%%"
+VM_NUMBER_7="%%vm_number%%"
+VM_NUMBER_8="%%vm_number%%"
+
+########################################################
+###     Network Location Setting for Identity 1      ###
+########################################################
+
+######################### LAN  #########################
+{IF network=LOCALLAN}
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line1
+SIP_RGSTR_ADDR_1="%%pbx_ip%%"
+SIP_RGSTR_PORT_1="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_1="%%pbx_ip%%"
+SIP_PRSNC_PORT_1="%%param::sipport%%"
+
+SIP_PRXY_ADDR_1="%%pbx_ip%%"
+SIP_PRXY_PORT_1="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line2
+SIP_RGSTR_ADDR_2="%%pbx_ip%%"
+SIP_RGSTR_PORT_2="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_2="%%pbx_ip%%"
+SIP_PRSNC_PORT_2="%%param::sipport%%"
+
+SIP_PRXY_ADDR_2="%%pbx_ip%%"
+SIP_PRXY_PORT_2="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line3
+SIP_RGSTR_ADDR_3="%%pbx_ip%%"
+SIP_RGSTR_PORT_3="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_3="%%pbx_ip%%"
+SIP_PRSNC_PORT_3="%%param::sipport%%"
+
+SIP_PRXY_ADDR_3="%%pbx_ip%%"
+SIP_PRXY_PORT_3="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line4
+SIP_RGSTR_ADDR_4="%%pbx_ip%%"
+SIP_RGSTR_PORT_4="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_4="%%pbx_ip%%"
+SIP_PRSNC_PORT_4="%%param::sipport%%"
+
+SIP_PRXY_ADDR_4="%%pbx_ip%%"
+SIP_PRXY_PORT_4="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line5
+SIP_RGSTR_ADDR_5="%%pbx_ip%%"
+SIP_RGSTR_PORT_5="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_5="%%pbx_ip%%"
+SIP_PRSNC_PORT_5="%%param::sipport%%"
+
+SIP_PRXY_ADDR_5="%%pbx_ip%%"
+SIP_PRXY_PORT_5="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line6
+SIP_RGSTR_ADDR_6="%%pbx_ip%%"
+SIP_RGSTR_PORT_6="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_6="%%pbx_ip%%"
+SIP_PRSNC_PORT_6="%%param::sipport%%"
+
+SIP_PRXY_ADDR_6="%%pbx_ip%%"
+SIP_PRXY_PORT_6="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line7
+SIP_RGSTR_ADDR_7="%%pbx_ip%%"
+SIP_RGSTR_PORT_7="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_7="%%pbx_ip%%"
+SIP_PRSNC_PORT_7="%%param::sipport%%"
+
+SIP_PRXY_ADDR_7="%%pbx_ip%%"
+SIP_PRXY_PORT_7="%%param::sipport%%"
+
+# IP Adress of the 3CX PhoneSystem to register to (SIP) for Line8
+SIP_RGSTR_ADDR_8="%%pbx_ip%%"
+SIP_RGSTR_PORT_8="%%param::sipport%%"
+
+SIP_PRSNC_ADDR_8="%%pbx_ip%%"
+SIP_PRSNC_PORT_8="%%param::sipport%%"
+
+SIP_PRXY_ADDR_8="%%pbx_ip%%"
+SIP_PRXY_PORT_8="%%param::sipport%%"
+	
+# Local SIP Port for the phone (SIP) Line1
+SIP_SRC_PORT_1="5060"
+
+# Local SIP Port for the phone (SIP) Line2
+SIP_SRC_PORT_2="5070"
+
+# Local SIP Port for the phone (SIP) Line3
+SIP_SRC_PORT_3="5080"
+
+# Local SIP Port for the phone (SIP) Line4
+SIP_SRC_PORT_4="5090"
+
+# Local SIP Port for the phone (SIP) Line5
+SIP_SRC_PORT_5="5100"
+
+# Local SIP Port for the phone (SIP) Line6
+SIP_SRC_PORT_6="5110"
+
+# Local SIP Port for the phone (SIP) Line7
+SIP_SRC_PORT_7="5120"
+
+# Local SIP Port for the phone (SIP) Line8
+SIP_SRC_PORT_1="5130"
+
+# NAT Default Sertting Line1
+PORT_PUNCH_INTERVAL_1="0"
+SIP_ADD_RPORT_1="N"
+
+# NAT Default Sertting Line2
+PORT_PUNCH_INTERVAL_2="0"
+SIP_ADD_RPORT_2="N"
+
+# NAT Default Sertting Line3
+PORT_PUNCH_INTERVAL_3="0"
+SIP_ADD_RPORT_3="N"
+
+# NAT Default Sertting Line4
+PORT_PUNCH_INTERVAL_4="0"
+SIP_ADD_RPORT_4="N"
+
+# NAT Default Sertting Line5
+PORT_PUNCH_INTERVAL_5="0"
+SIP_ADD_RPORT_5="N"
+
+# NAT Default Sertting Line6
+PORT_PUNCH_INTERVAL_6="0"
+SIP_ADD_RPORT_6="N"
+
+# NAT Default Sertting Line7
+PORT_PUNCH_INTERVAL_7="0"
+SIP_ADD_RPORT_7="N"
+
+# NAT Default Sertting Line8
+PORT_PUNCH_INTERVAL_8="0"
+SIP_ADD_RPORT_8="N"
+
+# SPM Default Sertting Line1
+SIP_REQURI_PORT_1="Y"
+SIP_OUTPROXY_ADDR_1=""
+SIP_OUTPROXY_PORT_1="5060"
+
+# SPM Default Sertting Line2
+SIP_REQURI_PORT_2="Y"
+SIP_OUTPROXY_ADDR_2=""
+SIP_OUTPROXY_PORT_2="5060"
+
+# SPM Default Sertting Line3
+SIP_REQURI_PORT_3="Y"
+SIP_OUTPROXY_ADDR_3=""
+SIP_OUTPROXY_PORT_3="5060"
+
+# SPM Default Sertting Line4
+SIP_REQURI_PORT_4="Y"
+SIP_OUTPROXY_ADDR_4=""
+SIP_OUTPROXY_PORT_4="5060"
+
+# SPM Default Sertting Line5
+SIP_REQURI_PORT_5="Y"
+SIP_OUTPROXY_ADDR_5=""
+SIP_OUTPROXY_PORT_5="5060"
+
+# SPM Default Sertting Line6
+SIP_REQURI_PORT_6="Y"
+SIP_OUTPROXY_ADDR_6=""
+SIP_OUTPROXY_PORT_6="5060"
+
+# SPM Default Sertting Line7
+SIP_REQURI_PORT_7="Y"
+SIP_OUTPROXY_ADDR_7=""
+SIP_OUTPROXY_PORT_7="5060"
+
+# SPM Default Sertting Line8
+SIP_REQURI_PORT_8="Y"
+SIP_OUTPROXY_ADDR_8=""
+SIP_OUTPROXY_PORT_8="5060"
+
+##Register & Subscribtion Timer Line1
+REG_EXPIRE_TIME_1="900"
+REG_INTERVAL_RATE_1="90"
+SIP_SUBS_EXPIRE_1="900"
+
+##Register & Subscribtion Timer Line2
+REG_EXPIRE_TIME_2="900"
+REG_INTERVAL_RATE_2="90"
+SIP_SUBS_EXPIRE_2="900"
+
+##Register & Subscribtion Timer Line3
+REG_EXPIRE_TIME_3="900"
+REG_INTERVAL_RATE_3="90"
+SIP_SUBS_EXPIRE_3="900"
+
+##Register & Subscribtion Timer Line4
+REG_EXPIRE_TIME_4="900"
+REG_INTERVAL_RATE_4="90"
+SIP_SUBS_EXPIRE_4="900"
+
+##Register & Subscribtion Timer Line5
+REG_EXPIRE_TIME_5="900"
+REG_INTERVAL_RATE_5="90"
+SIP_SUBS_EXPIRE_5="900"
+
+##Register & Subscribtion Timer Line6
+REG_EXPIRE_TIME_6="900"
+REG_INTERVAL_RATE_6="90"
+SIP_SUBS_EXPIRE_6="900"
+
+##Register & Subscribtion Timer Line7
+REG_EXPIRE_TIME_7="900"
+REG_INTERVAL_RATE_7="90"
+SIP_SUBS_EXPIRE_7="900"
+
+##Register & Subscribtion Timer Line8
+REG_EXPIRE_TIME_8="900"
+REG_INTERVAL_RATE_8="90"
+SIP_SUBS_EXPIRE_8="900"
+
+# Audio Default Port Range (SDP/RTP)
+RTP_PORT_MIN="16000"
+RTP_PORT_MAX="20000"
+RTP_PTIME="20"
+
+# STUN Server Default Sertting
+STUN_SERV_ADDR=""
+STUN_SERV_PORT="3478"
+
+# Firmware Update
+FIRM_VERSION="01.081"
+FIRM_FILE_PATH="%%PROVLINKLOCAL%%/firmware/%%firmware%%"
+
+# Provisioning Update Link
+CFG_STANDARD_FILE_PATH="%%PROVLINKLOCAL%%/Config{mac}.cfg"
+
+# Pana Phonebook
+XMLAPP_ENABLE="Y"
+XMLAPP_LDAP_URL="%%PROVLINKLOCAL%%/panasonic_phonebook.xml"
+{ENDIF}
+
+############################################################
+# Telephone Settings                                       #
+############################################################
+## Multi Number Settings
+INCOMING_CALL_GROUP_1="1,0,0,0,0,0,0"
+INCOMING_CALL_GROUP_2="0,1,0,0,0,0,0"
+INCOMING_CALL_GROUP_3="0,0,1,0,0,0,0"
+INCOMING_CALL_GROUP_4="0,0,0,1,0,0,0"
+INCOMING_CALL_GROUP_5="0,0,0,0,1,0,0"
+INCOMING_CALL_GROUP_6="0,0,0,0,0,1,0"
+INCOMING_CALL_GROUP_7="1,1,1,1,1,1,1"
+INCOMING_CALL_GROUP_8="1,1,1,1,1,1,1"
+
+OUTGOING_CALL_LINE_HS1="1,0,0,0,0,0,0,0"
+OUTGOING_CALL_LINE_HS2="0,1,0,0,0,0,0,0"
+OUTGOING_CALL_LINE_HS3="0,0,1,0,0,0,0,0"
+OUTGOING_CALL_LINE_HS4="0,0,0,1,0,0,0,0"
+OUTGOING_CALL_LINE_HS5="0,0,0,0,1,0,0,0"
+OUTGOING_CALL_LINE_HS6="0,0,0,0,0,1,0,0"
+OUTGOING_CALL_LINE_BS="1,1,1,1,1,1,1,1"
+
+DEFAULT_LINE_SELECT_HS1="1,0,0,0,0,0,0,0"
+DEFAULT_LINE_SELECT_HS2="0,1,0,0,0,0,0,0"
+DEFAULT_LINE_SELECT_HS3="0,0,1,0,0,0,0,0"
+DEFAULT_LINE_SELECT_HS4="0,0,0,1,0,0,0,0"
+DEFAULT_LINE_SELECT_HS5="0,0,0,0,1,0,0,0"
+DEFAULT_LINE_SELECT_HS6="0,0,0,0,0,1,0,0"
+DEFAULT_LINE_SELECT_BS="1,0,0,0,0,0,0,0"
+
+############################################################
+# SIP Settings #
+############################################################
+##Sip User Agent
+SIP_USER_AGENT="Panasonic_{MODEL}/{fwver} ({mac})"
+SIP_RESPONSE_CODE_DND="403"
+SIP_RESPONSE_CODE_CALL_REJECT="603"
+##Enable MOH from 3CX
+HOLD_SOUND_PATH_1="1"
+HOLD_SOUND_PATH_2="1"
+HOLD_SOUND_PATH_3="1"
+HOLD_SOUND_PATH_4="1"
+HOLD_SOUND_PATH_5="1"
+HOLD_SOUND_PATH_6="1"
+HOLD_SOUND_PATH_7="1"
+HOLD_SOUND_PATH_8="1"
+
+############################################################
+# Codec Settings for line 1 #
+############################################################
+#Codec 1 G722
+CODEC_ENABLE0_1="Y"
+CODEC_PRIORITY0_1="%%codec1%%"
+CODEC_ENABLE0_2="Y"
+CODEC_PRIORITY0_2="%%codec1%%"
+CODEC_ENABLE0_3="Y"
+CODEC_PRIORITY0_3="%%codec1%%"
+CODEC_ENABLE0_4="Y"
+CODEC_PRIORITY0_4="%%codec1%%"
+CODEC_ENABLE0_5="Y"
+CODEC_PRIORITY0_5="%%codec1%%"
+CODEC_ENABLE0_6="Y"
+CODEC_PRIORITY0_6="%%codec1%%"
+CODEC_ENABLE0_7="Y"
+CODEC_PRIORITY0_7="%%codec1%%"
+CODEC_ENABLE0_8="Y"
+CODEC_PRIORITY0_8="%%codec1%%"
+
+#Codec 2 G711A
+CODEC_ENABLE1_1="Y"
+CODEC_PRIORITY1_1="5"
+CODEC_ENABLE1_2="Y"
+CODEC_PRIORITY1_2="5"
+CODEC_ENABLE1_3="Y"
+CODEC_PRIORITY1_3="5"
+CODEC_ENABLE1_4="Y"
+CODEC_PRIORITY1_4="5"
+CODEC_ENABLE1_5="Y"
+CODEC_PRIORITY1_5="5"
+CODEC_ENABLE1_6="Y"
+CODEC_PRIORITY1_6="5"
+CODEC_ENABLE1_7="Y"
+CODEC_PRIORITY1_7="5"
+CODEC_ENABLE1_8="Y"
+CODEC_PRIORITY1_8="5"
+
+#Codec 3 G726-32
+CODEC_ENABLE2_1="Y"
+CODEC_PRIORITY2_1="%%codec3%%"
+CODEC_ENABLE2_2="Y"
+CODEC_PRIORITY2_2="%%codec3%%"
+CODEC_ENABLE2_3="Y"
+CODEC_PRIORITY2_3="%%codec3%%"
+CODEC_ENABLE2_4="Y"
+CODEC_PRIORITY2_4="%%codec3%%"
+CODEC_ENABLE2_5="Y"
+CODEC_PRIORITY2_5="%%codec3%%"
+CODEC_ENABLE2_6="Y"
+CODEC_PRIORITY2_6="%%codec3%%"
+CODEC_ENABLE2_7="Y"
+CODEC_PRIORITY2_7="%%codec3%%"
+CODEC_ENABLE2_8="Y"
+CODEC_PRIORITY2_8="%%codec3%%"
+
+#Codec 4 G729A
+CODEC_ENABLE3_1="Y"
+CODEC_PRIORITY3_1="%%codec4%%"
+CODEC_ENABLE3_2="Y"
+CODEC_PRIORITY3_2="%%codec4%%"
+CODEC_ENABLE3_3="Y"
+CODEC_PRIORITY3_3="%%codec4%%"
+CODEC_ENABLE3_4="Y"
+CODEC_PRIORITY3_4="%%codec4%%"
+CODEC_ENABLE3_5="Y"
+CODEC_PRIORITY3_5="%%codec4%%"
+CODEC_ENABLE3_6="Y"
+CODEC_PRIORITY3_6="%%codec4%%"
+CODEC_ENABLE3_7="Y"
+CODEC_PRIORITY3_7="%%codec4%%"
+CODEC_ENABLE3_8="Y"
+CODEC_PRIORITY3_8="%%codec4%%"
+
+#Codec 5 G711U
+CODEC_ENABLE4_1="Y"
+CODEC_PRIORITY4_1="%%codec2%%"
+CODEC_ENABLE4_2="Y"
+CODEC_PRIORITY4_2="%%codec2%%"
+CODEC_ENABLE4_3="Y"
+CODEC_PRIORITY4_3="%%codec2%%"
+CODEC_ENABLE4_4="Y"
+CODEC_PRIORITY4_4="%%codec2%%"
+CODEC_ENABLE4_5="Y"
+CODEC_PRIORITY4_5="%%codec2%%"
+CODEC_ENABLE4_6="Y"
+CODEC_PRIORITY4_6="%%codec2%%"
+CODEC_ENABLE4_7="Y"
+CODEC_PRIORITY4_7="%%codec2%%"
+CODEC_ENABLE4_8="Y"
+CODEC_PRIORITY4_8="%%codec2%%"
+
+#General Codec Settings
+CODEC_G711_REQ="1"
+
+
+############################################################
+# Provisioning settings #
+############################################################
+OPTION66_ENABLE="Y"
+OPTION66_REBOOT="Y"
+PROVISION_ENABLE="Y"
+CFG_CYCLIC_INTVL="1440"
+CFG_RESYNC_FROM_SIP="check-sync"
+
+############################################################
+# Enable Webserver #
+############################################################
+HTTPD_PORTOPEN_AUTO="Y"
+#1=US-ENG 2=UK-ENG 4=German
+WEB_LANGUAGE="1"
+
+############################################################
+# Firmware Update #
+############################################################
+FIRM_UPGRADE_ENABLE="Y"
+FIRM_UPGRADE_AUTO="Y"
+
+############################################################
+# Time and Date #
+############################################################
+## System Time Settings
+# Time Zone in minutes i.e. GMT+1=60 GMT+0=0 GMT-1= -60
+#TIME_ZONE="%%param::time_timezone_panasonic%%"
+
+## Time Adjust Settings (NTP)
+NTP_ADDR="%%param::time_ntp_server%%"
+NTP_PORT="123"
+TIME_SYNC_INTVL="60"
+TIME_QUERY_INTVL="43200"
+
+# DST Settings
+DST_ENABLE="%%dstEnableDisable%%"
+#DST_OFFSET="%%param::time_dst_saving_minutes%%"
+#DST_START_MONTH="%%param::time_dst_start_month%%"
+DST_START_ORDINAL_DAY="1"
+DST_START_DAY_OF_WEEK="0"
+#DST_START_TIME="%%param::time_dst_start_minute%%"
+#DST_STOP_MONTH="%%param::time_dst_end_month%%"
+DST_STOP_ORDINAL_DAY="4"
+DST_STOP_DAY_OF_WEEK="0"
+#DST_STOP_TIME="%%param::time_dst_end_minute%%"
+LOCAL_TIME_ZONE_POSIX=""
+
+## Time And Date Format
+#For AM/PM Use Option 0 for 24h Mode 2
+DISPLAY_TIME_PATTERN="2"
+
+#For "MMM. DD" use 2 for "DD MMM." use 0
+DISPLAY_DATE_PATTERN="0"
+
+############################################################
+# Ring and dial tone #
+############################################################
+## Tone Settings dafault US UK/German in line
+
+## Dial Tone
+#For Germany type here DIAL_TONE1_FRQ="440,440"
+DIAL_TONE1_FRQ="350,440"
+DIAL_TONE1_GAIN="0"
+DIAL_TONE1_RPT="0"
+#For Germany type here DIAL_TONE_TIMING="0,0,0,0" 
+DIAL_TONE1_TIMING="60,0"
+
+## Busy tone
+#For Germany type here BUSY_TONE_FRQ="440,0"
+BUSY_TONE_FRQ="480,620"
+BUSY_TONE_GAIN="0"
+BUSY_TONE_RPT="1"
+#For Germany type here BUSY_TONE_TIMING="500,500,500,500" 
+BUSY_TONE_TIMING="60,500,440"
+
+## Reorder tone
+#For Germany type here REORDER_TONE_FRQ="480,440"
+REORDER_TONE_FRQ="480,620"
+REORDER_TONE_GAIN="0"
+REORDER_TONE_RPT="1"
+#For Germany type here REORDER_TONE_TIMING="250,250,250,250,250,250,250,250" 
+REORDER_TONE_TIMING="60,250,190"
+
+##Ring back tone
+#For Germany type here RINGBACK_TONE_FRQ="440,0"
+RINGBACK_TONE_FRQ="440,480"
+RINGBACK_TONE_GAIN="0"
+RINGBACK_TONE_RPT="1"
+#For Germany type here RINGING_TONE_TIMING="2000,4000,2000,4000"
+RINGBACK_TONE_TIMING="60,2000,3940"
+
+## Hold tone
+HOLD_ALARM_FRQ="425"
+HOLD_ALARM_GAIN="0"
+HOLD_ALARM_RPT="1"
+HOLD_ALARM_TIMING="120,14880"
+
+## Call Waiting Tone
+CW_TONE1_FRQ="425"
+CW_TONE1_GAIN="0"
+CW_TONE1_RPT="1"
+CW_TONE1_TIMING="120,120,120,120,120,14400"
+
+##Hold tone
+#For Germany type here HOLD_TONE_FRQ=""440"
+HOLD_TONE_FRQ="425"
+HOLD_TONE_GAIN="0"
+HOLD_TONE_RPT="1"
+HOLD_TONE_TIMING="500,190,190,190,2890"
+
+##Bell core rythem
+BELL_CORE_PATTERN1_TIMING="2000,4000"
+BELL_CORE_PATTERN2_TIMING="800,400,800,4000"
+BELL_CORE_PATTERN3_TIMING="400,200,400,200,800,4000"
+BELL_CORE_PATTERN4_TIMING="300,200,1000,200,300,4000"
+BELL_CORE_PATTERN5_TIMING="500"
+
+##To be enabled only for Germany
+#STT_TONE_FRQ="0,440"
+#STT_TONE_TIMING="100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,"
+#100,100,100,100,100,0,0"
+#HOWLER_TONE_FRQ="1400,2060"
+#HOWLER_TONE_TIMING="100,100,100,100"
+#HOWLER_START_TIME="30"
+
+
+]]></deviceconfig>
+    </device>
+  </data>
+</doc>

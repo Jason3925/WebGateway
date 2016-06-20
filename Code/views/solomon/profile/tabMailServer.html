@@ -1,0 +1,79 @@
+<div class="tab-pane active" id="tabMailServer" role="tabpanel">
+  <!-- General BEGIN  -->
+
+
+  <h5 class="margin-top-10">
+    Mail Server
+  </h5>
+
+  <p>
+    Specify the mail server details to use for send notifications and alerts.
+  </p>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">SMTP Server:</label>
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="SMTP Server" autocomplete="off"
+               data-mark="default" id="te-smtp-server" value="<%=trimValue(data.teData, ['mail_server', 'smtp_server'])%>"
+               >
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">SMTP Server Port:</label>
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="SMTP Server" autocomplete="off"
+               data-mark="default" id="te-smtp-server-port" value="<%=trimValue(data.teData, ['mail_server', 'smtp_server_port'])%>"
+        >
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Reply email Address:</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Address:" autocomplete="off"
+               data-mark="default" id="te-email-address" value="<%=trimValue(data.teData, ['mail_server', 'reply_email_address'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Username for SMTP Server:</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Username" autocomplete="off"
+               data-mark="default" id="te-server-username" value="<%=trimValue(data.teData, ['mail_server', 'username_for_smtp_server'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Password for SMTP Server:</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Password" autocomplete="off"
+               data-mark="default" id="te-server-password" value="<%=trimValue(data.teData, ['mail_server', 'password_for_smtp_server'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Enable SSL/TLS</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default" style="height: 36px">
+          <input type="checkbox" id="te-enable-ssl-tls" data-mark="default"
+                 data-checked="<%=trimValue(data.teData, ['mail_server', 'enable_ssl_tls'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr/>
+
+</div>

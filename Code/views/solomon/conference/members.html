@@ -1,0 +1,114 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0)" data-return="co">Conference Room</a></li>
+      <li class="active">Participants</li>
+    </ol>
+
+  </div>
+  <div class="page-content">
+
+    <div class="row">
+      <div class="col-sm-8 my-setting-box">
+        <div class="panel">
+          <div class="panel-body">
+            <!-- Example Responsive -->
+            <div class="example-wrap">
+              <button type="button" class="btn btn-outline btn-default"
+                      data-target="#modelExtensionsList"  data-toggle="modal"
+              >
+                Invite Participant
+              </button>
+              <button type="button" class="btn btn-outline btn-default"
+                      name="co-action" data-type="lock-room" data-value="<%=trimValue(data.crData, ['locked'])%>"
+                      data-number="<%=trimValue(data.crData, ['room_number'])%>"
+                      data-ip="<%=trimValue(data.crData, ['server_ip'])%>"
+              >
+                <%=trimValue(data.crData, ['locked'])?'UnLock':'Lock'%> Conference
+              </button>
+              <button type="button" class="btn btn-outline btn-default"
+                      name="co-action" data-type="record-room" data-value="<%=trimValue(data.crData, ['recording'])%>"
+                      data-number="<%=trimValue(data.crData, ['room_number'])%>"
+                      data-ip="<%=trimValue(data.crData, ['server_ip'])%>"
+              >
+                <%=trimValue(data.crData, ['recording'])?'UnRecord':'Record'%> Conference
+              </button>
+              <button type="button" class="btn btn-outline btn-default"
+                      name="co-action" data-type="mute-room" data-value="<%=trimValue(data.crData, ['muted'])%>"
+                      data-number="<%=trimValue(data.crData, ['room_number'])%>"
+                      data-ip="<%=trimValue(data.crData, ['server_ip'])%>"
+              >
+                <%=trimValue(data.crData, ['muted'])?'UnMute':'Mute'%> Conference
+              </button>
+              <!--
+              <h4 class="example-title">Basic</h4>
+              -->
+              <!-- Table -->
+              <div class="example table-responsive">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Participant</th>
+                    <th>Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  <%
+                  if(data && data.crpsData && data.crpsData.participants) {
+                  data.crpsData.participants.forEach(function(participant, key) {
+                  %>
+
+                  <tr data-value="<%=participant.room_extension%>">
+                    <td><%=(key+1)%></td>
+                    <td><%=participant.participant%></td>
+                    <td>
+                      <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                              data-toggle="tooltip" data-original-title="Delete" title="Mute Room"
+                              name="crp-audio" data-value="<%=participant.participant%>"
+                              data-ip="<%=trimValue(data.crData, ['server_ip'])%>"
+                      >
+                        <i class="icon <%=participant.muted?'wb-volume-off':'wb-volume-high'%>" aria-hidden="true"></i>
+                      </button>
+                      <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                              data-toggle="tooltip" data-original-title="Delete" title="Delete Room"
+                              name="crp-delete" data-value="<%=participant.participant%>"
+                              data-ip="<%=trimValue(data.crData, ['server_ip'])%>"
+                      >
+                      <i class="icon wb-close" aria-hidden="true"></i>
+                      </button>
+                    </td>
+                  </tr>
+
+                  <%
+                  });
+                  }
+                  %>
+
+
+
+
+                  </tbody>
+                  <tfoot>
+
+                  </tfoot>
+                </table>
+
+              </div>
+
+            </div>
+            <!-- End Example Responsive -->
+            <% include modelParticipants.html%>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

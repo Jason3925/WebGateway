@@ -1,0 +1,1 @@
+var test = require('./addon.node');

@@ -1,0 +1,235 @@
+.modal.fade .my-modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition:      -o-transform .3s ease-out;
+    transition:         transform .3s ease-out;
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    -o-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+}
+.modal.in .my-modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.my-modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 768px) {
+    .my-modal-dialog {
+        width: 1000px;
+        margin: 30px auto;
+    }
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+    .modal-sm {
+        width: 300px;
+    }
+}
+
+/* 解决内容box高度问题 */
+.my-page {
+    position: relative;
+    min-height: -webkit-calc(100% - 44px);
+    min-height:         calc(100% - 44px);
+    background: rgb(229,229,229);
+}
+
+/* 为实现左侧菜单底部不预留空间 */
+.my-site-menubar-body {
+    height: 100%;
+    /*height: -webkit-calc(100% - 76px);*/
+    /*height:         calc(100% - 76px);*/
+    height: -webkit-calc(100% - 0px);
+    height:         calc(100% - 0px);
+}
+.css-menubar.site-menubar-native .my-site-menubar-body {
+    overflow-y: scroll;
+}
+.site-menubar-unfold.site-menubar-native .my-site-menubar-body {
+    overflow-y: scroll;
+}
+/* END */
+
+/* 选项页面H标签样式 非大写 */
+.my-example-title,
+h4.my-example-title {
+    font-size: 14px;
+}
+
+/* Extensions 页面选项内容input长度控制 */
+
+.my-input {
+    width: 220px;
+    display: initial;
+}
+
+/* 选项页面内容样式 */
+
+.my-page-header + .page-content {
+    padding-top: 0;
+}
+.page-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 26px;
+}
+.page-title > .icon {
+    margin-right: .3em;
+}
+.page-description {
+    color: #a3afb7;
+}
+.my-page-header {
+    position: relative;
+    padding: 10px 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: transparent;
+    border-bottom: none;
+}
+.my-page-header-actions {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.my-page-header-actions .btn-icon {
+    margin-left: 6px;
+}
+.my-page-header-actions > * {
+    margin-bottom: 0;
+}
+.my-page-header .breadcrumb {
+    padding: 0;
+    margin: 0;
+}
+.my-page-header-bordered {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-bottom: 1px solid transparent;
+}
+.my-page-header-tabs {
+    padding-bottom: 0;
+}
+.my-page-header-tabs .nav-tabs-line {
+    margin-top: 5px;
+    border-bottom-color: transparent;
+}
+.my-page-header-tabs .nav-tabs-line > li > a {
+    padding: 5px 20px;
+}
+
+.my-form-group {
+    margin-bottom: 5px;
+}
+.my-col-sm-8 {
+    width: 66.66666667%;
+}
+.my-col-sm-7 {
+    width: 58.33333333%;
+}
+@media (max-width: 767px) {
+
+    .my-col-sm-8 {
+        width: 100%;
+    }
+    .my-col-sm-7 {
+        width: 100%;
+    }
+
+}
+.my-setting-box{
+    width: 66.66666667%;
+}
+
+@media (max-width: 1366px){
+
+    .my-setting-box {
+        width: 91.66666667%;
+    }
+
+}
+@media (max-width: 768px){
+
+    .my-setting-box {
+        width: 100%;
+    }
+
+}
+
+
+
+.my-multi-select-box {
+    overflow: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.my-width-auto {
+    width: auto;
+}
+
+.my-modal-detail {
+    width: 900px;
+    display: block;
+}
+
+.table-high tbody tr {
+    height: 50px;
+}
+.a-file {
+    overflow:hidden;
+    position: relative;
+    overflow: hidden;
+}
+.a-file input{
+    position:absolute; right:0; top:0;opacity:0;filter:alpha(opacity=0);
+    font-size: 22px;
+}
+
+.example-forwarding {
+    position: relative;
+}
+.example-forwarding .example-loading {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    opacity: 0.8;
+    height: 100%;
+}
+.nav-tabs-horizontal .nav-tabs li>a {
+    padding: 10px 15px;
+}
+
+/*step*/
+.step-modal{
+    top: 50%;
+    margin-top: -250px;
+}
+
+.bootstrap-select {
+    /*border: 1px solid #e4eaec;*/
+    /*border-radius: 3px;*/
+}
+.btn-default {
+    /*border-color: #62a8ea;*/
+    /*border: 1px solid transparent;*/
+}
+
+
+

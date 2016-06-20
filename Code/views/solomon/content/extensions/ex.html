@@ -1,0 +1,129 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Extensions
+    </h1>
+  </div>
+  <div class="page-content">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+
+          <% if(trimLook(role, ['tenant', 'administrator'])) { %>
+          <div class="btn-group hidden-xs" aria-label="Button group with nested dropdown" role="group">
+
+            <button type="button" class="btn btn-outline btn-default" id="btn-add-extension">
+              Add Extension
+            </button>
+            <a type="button" class="btn btn-outline btn-default a-file" id="ex-btn-import">
+              Import Extension
+              <input type="file" />
+            </a>
+            <button type="button" class="btn btn-outline btn-default" id="ex-btn-export">Export Extension</button>
+          </div>
+          <% } %>
+          <div class="btn-group hidden-sm hidden-lg hidden-md" role="group">
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-outline btn-default dropdown-toggle"
+                      data-toggle="dropdown" aria-expanded="false">
+                Menu
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="exampleGroupDrop2" role="menu">
+                <li role="presentation"><a href="javascript:void(0)" role="menuitem">Add Extension</a>
+                </li>
+                <li role="presentation"><a href="javascript:void(0)" role="menuitem">Import
+                  Extension</a></li>
+                <li role="presentation"><a href="javascript:void(0)" role="menuitem">Import
+                  Extension</a></li>
+              </ul>
+            </div>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Extension Number</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Group</th>
+                <th>Status</th>
+                <th>User Agent</th>
+                <th>Mac Address</th>
+                <th>Phone Model</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <!-- IF exData BEGIN -->
+
+              <% if(data.eData && data.eData.extensions) {%>
+              <% data.eData.extensions.forEach(function(data,key){ %>
+              <tr>
+                <td><%=(key+1)%></td>
+                <td><%=data.extension_number%></td>
+                <td><%=data.first_name%> <%=data.last_name%></td>
+                <td><%=data.email%></td>
+                <td><%=data.belong_groups.length>1?data.belong_groups[0]+' ...':data.belong_groups[0]%></td>
+                <td><%=data.status%></td>
+                <td><%=data.user_agent%></td>
+                <td><%=data.phone_MAC_address%></td>
+                <td><%=data.phone_model%></td>
+
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"data-toggle="tooltip"
+                          data-original-title="Edit" data-en="<%=data.extension_number%>" name="e-update-btn">
+                    <i class="icon wb-wrench" aria-hidden="true"></i>
+                  </button>
+                  <% if(trimLook(role, ['tenant', 'administrator'])) { %>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Delete" data-en="<%=data.extension_number%>" name="e-delete-btn">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                  <% } %>
+                </td>
+              </tr>
+              <% }); %>
+
+
+              <!-- IF exData END -->
+              <% } %>
+
+              </tbody>
+              <% if(trimLook(role, ['tenant', 'administrator'])) { %>
+              <tfoot>
+
+              <%
+              var colsPanNumber = 10; //跨行
+              var showNumber = 5;    //显示多少个页码
+              var page_current = data.page;    // 当前页码
+              var page_count = data.page_sum;  // 总页码
+              %>
+              <% include ../../page.html%>
+
+              </tfoot>
+              <% } %>
+            </table>
+
+          </div>
+          <!-- End Table -->
+
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

@@ -1,0 +1,2068 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-09-12 15:00:00</time>
+    <name>Yealink VP530</name>
+    <url>http://www.yealink.com</url>
+    <models>
+      <model ua="VP530P">Yealink VP530</model>
+    </models>
+    <description>Yealink VP530 SIP Phone</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </rebootParams>
+    <resyncParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </resyncParams>
+    <firmwareParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </firmwareParams>
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+	<AllowSSLProvisioning>0</AllowSSLProvisioning>
+    <dst variableName="dstEnableDisable" enable="1" disable="0">
+    </dst>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+        <item name="langwebUI">English</item>
+        <item name="langlcdUI">English</item>
+      </option>
+      <option value="Chinese_S">
+        <item name="langwebUI">Chinese Simplified</item>
+        <item name="langlcdUI">Chinese Simplified</item>
+      </option>
+      <option value="French">
+        <item name="langwebUI">French</item>
+        <item name="langlcdUI">French</item>
+      </option>
+      <option value="German">
+        <item name="langwebUI">German</item>
+        <item name="langlcdUI">German</item>
+      </option>
+      <option value="Dutch">
+        <item name="langwebUI">English</item>
+        <item name="langlcdUI">Dutch</item>
+      </option>
+      <option value="Portuguese">
+        <item name="langwebUI">Portuguese</item>
+        <item name="langlcdUI">Portuguese</item>
+      </option>
+      <option value="Polish">
+        <item name="langwebUI">English</item>
+        <item name="langlcdUI">Polish</item>
+      </option>
+      <option value="Spanish">
+        <item name="langwebUI">Spanish</item>
+        <item name="langlcdUI">Spanish</item>
+      </option>
+      <option value="Turkish">
+        <item name="langwebUI">Turkish</item>
+        <item name="langlcdUI">Turkish</item>
+      </option>
+    </languages>
+	<timezoneParams param="time_timezone_yealink">
+      <!--The first entry is the selected entry in management console-->
+      <option value="-5" displaytext="GMT-5:00 US Eastern Time, New York" id="0" zone="-5:00">
+        <item name="TimeZoneName">United States-Eastern Time</item>
+      </option>
+      <option value="-11" displaytext="GMT-11:00 Samoa" id="120" zone="-11:00">
+        <item name="TimeZoneName">Samoa</item>
+      </option>
+      <option value="-10" displaytext="GMT-10:00 United States-Hawaii-Aleutian" id="1" zone="-10:00">
+        <item name="TimeZoneName">United States-Hawaii-Aleutian</item>
+      </option>
+      <option value="-10" displaytext="GMT-10:00 United States-Alaska-Aleutian" id="2" zone="-10:00">
+        <item name="TimeZoneName">United States-Alaska-Aleutian</item>
+      </option>
+      <option value="-9" displaytext="GMT-9:00 United States-Alaska Time" id="3" zone="-9:00">
+        <item name="TimeZoneName">United States-Alaska Time</item>
+      </option>
+      <option value="-8" displaytext="GMT-8:00 Canada(Vancouver,Whitehorse)" id="4" zone="-8:00">
+        <item name="TimeZoneName">Canada(Vancouver,Whitehorse)</item>
+      </option>
+      <option value="-8" displaytext="GMT-8:00 Mexico(Tijuana,Mexicali)" id="5" zone="-8:00">
+        <item name="TimeZoneName">Mexico(Tijuana,Mexicali)</item>
+      </option>
+      <option value="-8" displaytext="GMT-8:00 United States-Pacific Time" id="6" zone="-8:00">
+        <item name="TimeZoneName">United States-Pacific Time</item>
+      </option>
+      <option value="-7" displaytext="GMT-7:00 Canada(Edmonton,Calgary)" id="7" zone="-7:00">
+        <item name="TimeZoneName">Canada(Edmonton,Calgary)</item>
+      </option>
+      <option value="-7" displaytext="GMT-7:00 Mexico(Mazatlan,Chihuahua)" id="8" zone="-7:00">
+        <item name="TimeZoneName">Mexico(Mazatlan,Chihuahua)</item>
+      </option>
+      <option value="-7" displaytext="GMT-7:00 United States-Mountain Time" id="9" zone="-7:00">
+        <item name="TimeZoneName">United States-Mountain Time</item>
+      </option>
+      <option value="-7" displaytext="GMT-7:00 United States-MST no DST" id="10" zone="-7:00">
+        <item name="TimeZoneName">United States-MST no DST</item>
+      </option>
+      <option value="-6" displaytext="GMT-6:00 Canada-Manitoba(Winnipeg)" id="11" zone="-6:00">
+        <item name="TimeZoneName">Canada-Manitoba(Winnipeg)</item>
+      </option>
+      <option value="-6" displaytext="GMT-6:00 Chile(Easter Islands)" id="12" zone="-6:00">
+        <item name="TimeZoneName">Chile(Easter Islands)</item>
+      </option>
+      <option value="-6" displaytext="GMT-6:00 Mexico(Mexico City,Acapulco)" id="13" zone="-6:00">
+        <item name="TimeZoneName">Mexico(Mexico City,Acapulco)</item>
+      </option>
+      <option value="-6" displaytext="GMT-6:00 United States-Central Time" id="14" zone="-6:00">
+        <item name="TimeZoneName">United States-Central Time</item>
+      </option>
+      <option value="-5" displaytext="GMT-5:00 Bahamas(Nassau)" id="15" zone="-5:00">
+        <item name="TimeZoneName">Bahamas(Nassau)</item>
+      </option>
+      <option value="-5" displaytext="GMT-5:00 Canada(Montreal,Ottawa,Quebec)" id="16" zone="-5:00">
+        <item name="TimeZoneName">Canada(Montreal,Ottawa,Quebec)</item>
+      </option>
+      <option value="-5" displaytext="GMT-5:00 Cuba(Havana)" id="17" zone="-5:00">
+        <item name="TimeZoneName">Cuba(Havana)</item>
+      </option>
+      <option value="-4:30" displaytext="GMT-4:30 Venezuela(Caracas)" id="18" zone="-4:30">
+        <item name="TimeZoneName">Venezuela(Caracas)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 Canada(Halifax,Saint John)" id="19" zone="-4:00">
+        <item name="TimeZoneName">Canada(Halifax,Saint John)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 Chile(Santiago)" id="20" zone="-4:00">
+        <item name="TimeZoneName">Chile(Santiago)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 Paraguay(Asuncion)" id="21" zone="-4:00">
+        <item name="TimeZoneName">Paraguay(Asuncion)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 United Kingdom-Bermuda(Bermuda)" id="22" zone="-4:00">
+        <item name="TimeZoneName">United Kingdom-Bermuda(Bermuda)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 United Kingdom(Falkland Islands)" id="23" zone="-4:00">
+        <item name="TimeZoneName">United Kingdom(Falkland Islands)</item>
+      </option>
+      <option value="-4" displaytext="GMT-4 Trinidad Tobago" id="24" zone="-4:00">
+        <item name="TimeZoneName">TrinidadTobago</item>
+      </option>
+      <option value="-3:30" displaytext="GMT-3:30 Canada-New Foundland(St.Johns)" id="25" zone="-3:30">
+        <item name="TimeZoneName">Canada-New Foundland(St.Johns)</item>
+      </option>
+      <option value="-3" displaytext="GMT-3 Denmark-Greenland(Nuuk)" id="26" zone="-3:00">
+        <item name="TimeZoneName">Denmark-Greenland(Nuuk)</item>
+      </option>
+      <option value="-3" displaytext="GMT-3 Argentina(Buenos Aires)" id="27" zone="-3:00">
+        <item name="TimeZoneName">Argentina(Buenos Aires)</item>
+      </option>
+      <option value="-3" displaytext="GMT-3 Brazil(no DST)" id="28" zone="-3:00">
+        <item name="TimeZoneName">Brazil(no DST)</item>
+      </option>
+      <option value="-3" displaytext="GMT-3 Brazil(DST)" id="29" zone="-3:00">
+        <item name="TimeZoneName">Brazil(DST)</item>
+      </option>
+      <option value="-2" displaytext="GMT-2 Brazil(no DST)" id="30" zone="-2:00">
+        <item name="TimeZoneName">Brazil(no DST)</item>
+      </option>
+      <option value="-1" displaytext="GMT-1 Portugal(Azores)" id="31" zone="-1:00">
+        <item name="TimeZoneName">Portugal(Azores)</item>
+      </option>
+      <option value="0" displaytext="GMT" zone="0:00">
+        <item name="TimeZoneName">GMT</item>
+      </option>
+      <option value="0" displaytext="0 Greenland" zone="0:00">
+        <item name="TimeZoneName">Greenland</item>
+      </option>
+      <option value="0" displaytext="0 Denmark-Faroe Islands(Torshaven)" id="32" zone="0:00">
+        <item name="TimeZoneName">Denmark-Faroe Islands(Torshaven)</item>
+      </option>
+      <option value="0" displaytext="0 Ireland(Dublin)" id="33" zone="0:00">
+        <item name="TimeZoneName">Ireland(Dublin)</item>
+      </option>
+      <option value="0" displaytext="0 Portugal(Lisboa,Porto,Funchal)" id="34" zone="0:00">
+        <item name="TimeZoneName">Portugal(Lisboa,Porto,Funchal)</item>
+      </option>
+      <option value="0" displaytext="0 Spain-Canary Islands(Las Palmas)" id="35" zone="0:00">
+        <item name="TimeZoneName">Spain-Canary Islands(Las Palmas)</item>
+      </option>
+      <option value="0" displaytext="0 United Kingdom(London)" id="36" zone="0:00">
+        <item name="TimeZoneName">United Kingdom(London)</item>
+      </option>
+      <option value="0" displaytext="0 Morocco" zone="0:00">
+        <item name="TimeZoneName">Morocco</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Albania(Tirane)" id="37" zone="1:00">
+        <item name="TimeZoneName">Albania(Tirane)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Austria(Vienna)" id="38" zone="1:00">
+        <item name="TimeZoneName">Austria(Vienna)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Belgium(Brussels)" id="39" zone="1:00">
+        <item name="TimeZoneName">Belgium(Brussels)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Caicos" id="40" zone="1:00">
+        <item name="TimeZoneName">Caicos</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Chatam" id="41" zone="1:00">
+        <item name="TimeZoneName">Chatam</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Croatia(Zagreb)" id="42" zone="1:00">
+        <item name="TimeZoneName">Croatia(Zagreb)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Czech Republic(Prague)" id="43" zone="1:00">
+        <item name="TimeZoneName">Czech Republic(Prague)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Denmark(Kopenhaven)" id="44" zone="1:00">
+        <item name="TimeZoneName">Denmark(Kopenhaven)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 France(Paris)" id="45" zone="1:00">
+        <item name="TimeZoneName">France(Paris)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Germany(Berlin)" id="46" zone="1:00">
+        <item name="TimeZoneName">Germany(Berlin)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Hungary(Budapest)" id="47" zone="1:00">
+        <item name="TimeZoneName">Hungary(Budapest)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Italy(Rome)" id="48" zone="1:00">
+        <item name="TimeZoneName">Italy(Rome)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Luxembourg(Luxembourg)" id="49" zone="1:00">
+        <item name="TimeZoneName">Luxembourg(Luxembourg)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Makedonia(Skopje)" id="50" zone="1:00">
+        <item name="TimeZoneName">Makedonia(Skopje)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Netherlands(Amsterdam)" id="51" zone="1:00">
+        <item name="TimeZoneName">Netherlands(Amsterdam)</item>
+      </option>
+      <option value="+1" displaytext="GMT+1 Namibia(Windhoek)" id="52" zone="1:00">
+        <item name="TimeZoneName">Namibia(Windhoek)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Estonia(Tallinn)" id="67" zone="2:00">
+        <item name="TimeZoneName">Estonia(Tallinn)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Finland(Helsinki)" id="68" zone="2:00">
+        <item name="TimeZoneName">Finland(Helsinki)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Gaza Strip(Gaza)" id="69" zone="2:00">
+        <item name="TimeZoneName">Gaza Strip(Gaza)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Greece(Athens)" id="70" zone="2:00">
+        <item name="TimeZoneName">Greece(Athens)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Israel(Tel Aviv)" id="71" zone="2:00">
+        <item name="TimeZoneName">Israel(Tel Aviv)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Jordan(Amman)" id="72" zone="2:00">
+        <item name="TimeZoneName">Jordan(Amman)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Latvia(Riga)" id="73" zone="2:00">
+        <item name="TimeZoneName">Latvia(Riga)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Lebanon(Beirut)" id="74" zone="2:00">
+        <item name="TimeZoneName">Lebanon(Beirut)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Moldova(Kishinev)" id="75" zone="2:00">
+        <item name="TimeZoneName">Moldova(Kishinev)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Russia(Kaliningrad)" id="76" zone="2:00">
+        <item name="TimeZoneName">Russia(Kaliningrad)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Romania(Bucharest)" id="77" zone="2:00">
+        <item name="TimeZoneName">Romania(Bucharest)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Syria(Damascus)" id="78" zone="2:00">
+        <item name="TimeZoneName">Syria(Damascus)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Turkey(Ankara)" id="79" zone="2:00">
+        <item name="TimeZoneName">Turkey(Ankara)</item>
+      </option>
+      <option value="+2" displaytext="GMT+2 Ukraine(Kyiv,Odessa)" id="80" zone="2:00">
+        <item name="TimeZoneName">Ukraine(Kyiv,Odessa)</item>
+      </option>
+      <option value="+3" displaytext="GMT+3 East Africa Time" id="81" zone="3:00">
+        <item name="TimeZoneName">East Africa Time</item>
+      </option>
+      <option value="+3" displaytext="GMT+3 Iraq(Baghdad)" id="82" zone="3:00">
+        <item name="TimeZoneName">Iraq(Baghdad)</item>
+      </option>
+      <option value="+3" displaytext="GMT+3 Russia(Moscow)" id="83" zone="3:00">
+        <item name="TimeZoneName">Russia(Moscow)</item>
+      </option>
+      <option value="+3:30" displaytext="GMT+3:30 Iran(Teheran)" id="84" zone="3:30">
+        <item name="TimeZoneName">Iran(Teheran)</item>
+      </option>
+      <option value="+4" displaytext="GMT+4 Armenia(Yerevan)" id="85" zone="4:00">
+        <item name="TimeZoneName">Armenia(Yerevan)</item>
+      </option>
+      <option value="+4" displaytext="GMT+4 Azerbaijan(Baku)" id="86" zone="4:00">
+        <item name="TimeZoneName">Azerbaijan(Baku)</item>
+      </option>
+      <option value="+4" displaytext="GMT+4 Georgia(Tbilisi)" id="87" zone="4:00">
+        <item name="TimeZoneName">Georgia(Tbilisi)</item>
+      </option>
+      <option value="+4" displaytext="GMT+4 Kazakstan(Aqtau)" id="88" zone="4:00">
+        <item name="TimeZoneName">Kazakstan(Aqtau)</item>
+      </option>
+      <option value="+4" displaytext="GMT+4 Russia(Samara)" id="89" zone="4:00">
+        <item name="TimeZoneName">Russia(Samara)</item>
+      </option>
+      <option value="+5" displaytext="GMT+5 Kazakstan(Aqtobe)" id="92" zone="5:00">
+        <item name="TimeZoneName">Kazakstan(Aqtobe)</item>
+      </option>
+      <option value="+5" displaytext="GMT+5 Kyrgyzstan(Bishkek)" id="93" zone="5:00">
+        <item name="TimeZoneName">Kyrgyzstan(Bishkek)</item>
+      </option>
+      <option value="+5" displaytext="GMT+5 Pakistan(Islamabad)" id="94" zone="5:00">
+        <item name="TimeZoneName">Pakistan(Islamabad)</item>
+      </option>
+      <option value="+5" displaytext="GMT+5 Russia(Chelyabinsk)" id="95" zone="5:00">
+        <item name="TimeZoneName">Russia(Chelyabinsk)</item>
+      </option>
+      <option value="+5:30" displaytext="GMT+5:30 India(Calcutta)" id="96" zone="5:30">
+        <item name="TimeZoneName">India(Calcutta)</item>
+      </option>
+      <option value="+6" displaytext="GMT+6 Kazakstan(Astana,Almaty)" id="98" zone="6:00">
+        <item name="TimeZoneName">Kazakstan(Astana,Almaty)</item>
+      </option>
+      <option value="+6" displaytext="GMT+6 Russia(Novosibirsk,Omsk)" id="99" zone="6:00">
+        <item name="TimeZoneName">Russia(Novosibirsk,Omsk)</item>
+      </option>
+      <option value="+7" displaytext="GMT+7 Russia(Krasnoyarsk)" id="101" zone="7:00">
+        <item name="TimeZoneName">Russia(Krasnoyarsk)</item>
+      </option>
+      <option value="+7" displaytext="GMT+7 Thailand(Bangkok)" id="102" zone="7:00">
+        <item name="TimeZoneName">Thailand(Bangkok)</item>
+      </option>
+      <option value="+8" displaytext="GMT+8 China(Beijing)" id="103" zone="8:00">
+        <item name="TimeZoneName">China(Beijing)</item>
+      </option>
+      <option value="+8" displaytext="GMT+8 Singapore(Singapore)" id="104" zone="8:00">
+        <item name="TimeZoneName">Singapore(Singapore)</item>
+      </option>
+      <option value="+8" displaytext="GMT+8 Korea(Seoul)" id="106" zone="9:00">
+        <item name="TimeZoneName">Korea(Seoul)</item>
+      </option>
+      <option value="+8" displaytext="GMT+8 Australia(Perth)" id="105" zone="8:00">
+        <item name="TimeZoneName">Australia(Perth)</item>
+      </option>
+      <option value="+9" displaytext="GMT+9 Japan(Tokyo)" id="107" zone="9:00">
+        <item name="TimeZoneName">Japan(Tokyo)</item>
+      </option>
+      <option value="+9:30" displaytext="GMT+9:30 Australia(Adelaide)" id="108" zone="9:30">
+        <item name="TimeZoneName">Australia(Adelaide)</item>
+      </option>
+      <option value="+9:30" displaytext="GMT+9:30 Australia(Darwin)" id="109" zone="9:30">
+        <item name="TimeZoneName">Australia(Darwin)</item>
+      </option>
+      <option value="+10" displaytext="GMT+10 Australia(Sydney,Melbourne,Canberra)" id="110" zone="10:00">
+        <item name="TimeZoneName">Australia(Sydney,Melbourne,Canberra)</item>
+      </option>
+      <option value="+10" displaytext="GMT+10 Australia(Brisbane)" id="111" zone="10:00">
+        <item name="TimeZoneName">Australia(Brisbane)</item>
+      </option>
+      <option value="+10" displaytext="GMT+10 Australia(Hobart)" id="112" zone="10:00">
+        <item name="TimeZoneName">Australia(Hobart)</item>
+      </option>
+      <option value="+10" displaytext="GMT+10 Russia(Vladivostok)" id="113" zone="10:00">
+        <item name="TimeZoneName">Russia(Vladivostok)</item>
+      </option>
+      <option value="+10:30" displaytext="GMT+10:30 Australia(Lord Howe Islands)" id="114" zone="10:30">
+        <item name="TimeZoneName">Australia(Lord Howe Islands)</item>
+      </option>
+      <option value="+11" displaytext="GMT+11 New Caledonia(Noumea)" id="115" zone="11:00">
+        <item name="TimeZoneName">New Caledonia(Noumea)</item>
+      </option>
+      <option value="+12" displaytext="GMT+12 New Zeland(Wellington,Auckland)" id="116" zone="12:00">
+        <item name="TimeZoneName">New Zeland(Wellington,Auckland)</item>
+      </option>
+      <option value="+12:45" displaytext="GMT+12:45 New Zeland(Chatham Islands)" id="118" zone="12:45">
+        <item name="TimeZoneName">New Zeland(Chatham Islands)</item>
+      </option>
+      <option value="+13" displaytext="GMT+13 Tonga(Nukualofa)" id="119" zone="13:00">
+        <item name="TimeZoneName">Tonga(Nukualofa)</item>
+      </option>
+    </timezoneParams>
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" PayloadTypeName="payload1" priority="1">
+        <!--The first entry is the selected entry in management console. codec1 will be replaced by value, payload1 will be replaced by payload-->
+        <option value="0" payload="PCMU">PCMU</option>
+        <option value="8" payload="PCMA">PCMA</option>
+        <option value="18" payload="G729">G729</option>
+        <option value="9" payload="G722">G722</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" PayloadTypeName="payload2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="8" payload="PCMA">PCMA</option>
+        <option value="0" payload="PCMU">PCMU</option>
+        <option value="18" payload="G729">G729</option>
+        <option value="9" payload="G722">G722</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" PayloadTypeName="payload3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="9" payload="G722">G722</option>
+        <option value="0" payload="PCMU">PCMU</option>
+        <option value="8" payload="PCMA">PCMA</option>
+        <option value="18" payload="G729">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" PayloadTypeName="payload4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="18" payload="G729">G729</option>
+        <option value="0" payload="PCMU">PCMU</option>
+        <option value="8" payload="PCMA">PCMA</option>
+        <option value="9" payload="G722">G722</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  <blftype>
+    <extension>
+      <Line>0</Line>
+      <type>blf</type>
+      <DKtype>16</DKtype>
+      <!--The variable blfno will be replaced with the corresponding blf number specified in the phone device-->
+      <PickupValue>%%param::pickup%%%%blfno%%</PickupValue>
+      <value>fnc=sd+blf+cp;</value>
+    </extension>
+    <speeddial>
+      <Line>0</Line>
+      <type>
+      </type>
+      <DKtype>13</DKtype>
+      <PickupValue>
+      </PickupValue>
+    </speeddial>
+    <customspeeddial>
+      <Line>0</Line>
+      <type>
+      </type>
+      <DKtype>13</DKtype>
+      <PickupValue>
+      </PickupValue>
+    </customspeeddial>
+    <queuelogin>
+      <Line>0</Line>
+      <type>
+      </type>
+      <DKtype>13</DKtype>
+      <PickupValue>
+      </PickupValue>
+    </queuelogin>
+    <profilestatus>
+      <Line>0</Line>
+      <type>
+      </type>
+      <DKtype>13</DKtype>
+      <PickupValue>
+      </PickupValue>
+    </profilestatus>
+    <parkextension>
+      <Line>1</Line>
+      <type>
+      </type>
+      <DKtype>10</DKtype>
+      <PickupValue>
+      </PickupValue>
+    </parkextension>
+  </blftype>
+  <data>
+    <device>
+      <type>phone</type>
+	  <!-- Friendly Name -->
+      <field name="Name">Yealink VP530</field>
+      <deviceconfig filename="y000000000023.cfg"><![CDATA[#!version:1.0.0.1
+
+#######################################################################################
+##                Syslog Server                                                      ##          
+#######################################################################################
+
+#Configure the syslog mode, 0-Disabled, 1-Local, 2-Server;
+#Require reboot;
+syslog.mode = 0
+
+#Configure the IP address of the syslog server;
+#Require reboot;
+syslog.server = 
+
+#Configure the syslog level. It ranges from 0 to 6, the default value is 3.
+#Require reboot;
+syslog.log_level = 
+
+#######################################################################################
+##                 TR069                                                             ##
+#######################################################################################
+
+#The TR069 feature is only applicable to some designated firmware version;
+#All settings of TR069 require reboot;
+#Enable or disable the TR069 feature; 0-Disabled (default), 1-Enabled;
+managementserver.enable = 0
+
+#Configure the username and password for the phone to authenticate with the ACS;
+managementserver.username = 
+managementserver.password = 
+
+#Configure the access URL of the ACS;
+managementserver.url = 
+
+#Configure the username and password for the phone to authenticate the connection requests;
+managementserver.connection_request_username = 
+managementserver.connection_request_password = 
+
+#Enable or disable the phone to inform the ACS of its configuration; 0-Disabled (default), 1-Enabled; 
+managementserver.periodic_inform_enable = 0
+
+#Configure the interval (in seconds) the phone to inform the ACS of its configuration. The default value is 60.
+managementserver.periodic_inform_interval = 
+
+#######################################################################################
+##                                   Voice                                           ##
+#######################################################################################
+
+#Configure the receiving volume of Speaker,HandSet and HeadSet. It ranges from 0 to 15, the default value is 5.
+voice.handfree.spk_vol = 
+voice.handset.spk_vol =
+voice.headset.spk_vol =
+
+#Configure the ring volume. It ranges from 0 to 15, the default value is 5.
+voice.ring_vol = 
+
+#######################################################################################
+#         	                   Action URL                                            ##
+#######################################################################################
+
+#action_url.incoming_call: configure the phone to send message to the specified server when receiving incoming call;              
+#action_url.dnd_on: configure the phone to send message to the specified server when DND feature is activated; 
+#The value format is: http://IP address of server/help.xml?mac=$mac
+#action_url.log_on = http://192.168.1.20/help.xml?mac=$mac
+
+action_url.setup_completed = 
+action_url.log_on = 
+action_url.log_off = 
+action_url.register_failed = 
+action_url.off_hook = 
+action_url.on_hook = 
+action_url.incoming_call = 
+action_url.outgoing_call = 
+action_url.call_established = 
+action_url.dnd_on = 
+action_url.dnd_off = 
+action_url.always_fwd_on = 
+action_url.always_fwd_off = 
+action_url.busy_fwd_on = 
+action_url.busy_fwd_off = 
+action_url.no_answer_fwd_on = 
+action_url.no_answer_fwd_off = 
+action_url.transfer_call = 
+action_url.blind_transfer_call =
+action_url.attended_transfer_call = 
+action_url.hold = 
+action_url.unhold = 
+action_url.mute = 
+action_url.unmute = 
+action_url.missed_call = 
+action_url.call_terminated = 
+action_url.busy_to_idle = 
+action_url.idle_to_busy = 
+
+#Configure the phone to send message to the specified server when changing the IP address;  
+action_url.ip_change = 
+
+#Configure the phone to send message to the specified server when forwarding or rejecting incoming call, or answering new incoming call;
+action_url.forward_incoming_call = 
+action_url.reject_incoming_call = 
+action_url.answer_new_incoming_call =
+
+#Configure the phone to send message to the specified server when transfer finished/transfer failed; 
+action_url.transfer_finished = 
+action_url.transfer_failed = 
+
+#Configure the phone to send message to the specified server when rejecting the new incoming call;
+action_url.reject_new_incoming_call =
+
+Configure the phone to send message to the specified server when the phone cancels to call out,the remote called party is busy or the remote party cancels the call;
+action_url.cancel_callout =
+action_url.remote_busy =
+action_url.call_remote_canceled = 
+
+#######################################################################################
+##         	               Auto Redial                                               ##
+#######################################################################################
+
+#Enable or disable the auto redial feature, 0-Disabled (default), 1-Enabled;
+auto_redial.enable = 0
+
+#Configure the interval (in seconds) to wait before redial. It ranges from 1 to 300. The default value is 10.
+auto_redial.interval = 10
+auto_redial.times = 10
+
+#######################################################################################
+##         	               Zero Touch                                                ##
+#######################################################################################
+
+#Enable or disable the zero-sp-touch; 0-Disabled (default), 1-Enabled; 
+zero_touch.enable = 0 
+
+#Configure the waiting time (in seconds) before canceling the zero-sp-touch. It ranges from 0 to 100, the default value is 5.
+zero_touch.wait_time = 5
+
+#######################################################################################
+##         	               push xml                                                  ##
+#######################################################################################
+push_xml.server = 
+
+#Enable or disable the phone to display the push XML interface when receiving an incoming call; 0-Disabled (default), 1-Enabled;
+push_xml.block_in_calling = 0
+
+#Enable or disable the phone to use the push XML via SIP Notify message; 0-Disabled (default), 1-Enabled;
+push_xml.sip_notify = 0
+
+#######################################################################################
+##         	             Dial Plan                                                   ##
+#######################################################################################
+
+#Configure the area code;
+dialplan.area_code.code = 
+dialplan.area_code.min_len = 1 
+dialplan.area_code.max_len = 15
+
+#When applying the rule to multiple lines, each line ID separated by comma.
+#e.g. dialplan.area_code.line_id = 1,2,3
+dialplan.area_code.line_id = 
+
+#Configure the block out numbers for the phone, x ranges from 1 to 10;
+#dialplan.block_out.number.x =
+dialplan.block_out.number.1 =
+
+#When applying the rule to multiple lines, each line ID separated by comma, e.g. 1,2,3
+#dialplan.block_out.line_id.X =
+dialplan.block_out.line_id.1 =
+
+#Configure the dialnow rule for the phone, x ranges from 1 to 10;
+#dialplan.dialnow.rule.x =   
+#dialplan.dialnow.line_id.x =
+
+dialplan.dialnow.rule.1 = 
+dialplan.dialnow.line_id.1 = 
+
+#Configure the replace rule for the phone, x ranges from 1 to 10;
+#dialplan.replace.prefix.x = 
+#dialplan.replace.replace.x =
+#dialplan.replace.line_id.x =
+
+dialplan.replace.prefix.1 = 
+dialplan.replace.replace.1 = 
+dialplan.replace.line_id.1 =
+
+#######################################################################################
+##         	    BSFT Phonebook                                                       ##
+#######################################################################################
+
+#Configuration of BW phonebook X ("X" ranges from 1 to 6);
+#This feature is only applicable to some designated firmware version;
+#bw_phonebook.display_name = 
+#bw_phonebook.data.X.server = 
+#bw_phonebook.data.X.port = 
+#bw_phonebook.data.X.username = 
+#bw_phonebook.data.X.password = 
+#bw_phonebook.data.X.name = 
+
+bw_phonebook.display_name = 
+bw_phonebook.data.1.server = 
+bw_phonebook.data.1.port = 
+bw_phonebook.data.1.username = 
+bw_phonebook.data.1.password = 
+bw_phonebook.data.1.name = 
+
+bw_phonebook.data.2.server =   
+bw_phonebook.data.2.port =     
+bw_phonebook.data.2.username = 
+bw_phonebook.data.2.password = 
+bw_phonebook.data.2.name =     
+
+bw_phonebook.data.3.server = 
+bw_phonebook.data.3.port =   
+bw_phonebook.data.3.username = 
+bw_phonebook.data.3.password = 
+bw_phonebook.data.3.name =   
+
+bw_phonebook.data.4.server = 
+bw_phonebook.data.4.port =   
+bw_phonebook.data.4.username = 
+bw_phonebook.data.4.password = 
+bw_phonebook.data.4.name =   
+
+bw_phonebook.data.5.server = 
+bw_phonebook.data.5.port =   
+bw_phonebook.data.5.username = 
+bw_phonebook.data.5.password = 
+bw_phonebook.data.5.name =   
+
+bw_phonebook.data.6.server = 
+bw_phonebook.data.6.port =   
+bw_phonebook.data.6.username = 
+bw_phonebook.data.6.password =
+bw_phonebook.data.6.name =  
+
+#X ranges from 1 to 6;
+#Configure the search parameter of broadsoft phonebook version 1.0;
+#bw_phonebook.search_list_v1.x =
+
+#Configure the search parameter of broadsoft phonebook version 2.0;
+#bw_phonebook.search_list_v2.x =
+
+#Configure the mode of search parameters; 0-AND, 1-OR (default);
+#bw_phonebook.search_mode_or.x =
+
+bw_phonebook.search_list_v1.1 =
+bw_phonebook.search_list_v2.2 =
+bw_phonebook.search_mode_or.3 = 
+
+#######################################################################################
+##         	   BSFT Call Log                                                         ##
+#######################################################################################
+
+#Configuration of the BW Call Log X ("X" ranges from 1 to 6)
+#This feature is only applicable to some designated firmware version;
+#bw_call_log.display_name =     
+#bw_call_log.data.X.server =   
+#bw_call_log.data.X.port =     
+#bw_call_log.data.X.username = 
+#bw_call_log.data.X.password = 
+#bw_call_log.data.X.name =     
+
+bw_call_log.display_name =         
+bw_call_log.data.1.server =        
+bw_call_log.data.1.port =          
+bw_call_log.data.1.username =      
+bw_call_log.data.1.password =      
+bw_call_log.data.1.name =     
+   
+bw_call_log.data.2.server =   
+bw_call_log.data.2.port =     
+bw_call_log.data.2.username = 
+bw_call_log.data.2.password = 
+bw_call_log.data.2.name =     
+ 
+bw_call_log.data.3.server =   
+bw_call_log.data.3.port =     
+bw_call_log.data.3.username = 
+bw_call_log.data.3.password = 
+bw_call_log.data.3.name =   
+
+bw_call_log.data.4.server =   
+bw_call_log.data.4.port =     
+bw_call_log.data.4.username = 
+bw_call_log.data.4.password = 
+bw_call_log.data.4.name =     
+
+bw_call_log.data.5.server =   
+bw_call_log.data.5.port =     
+bw_call_log.data.5.username = 
+bw_call_log.data.5.password = 
+bw_call_log.data.5.name =     
+
+bw_call_log.data.6.server =   
+bw_call_log.data.6.port =     
+bw_call_log.data.6.username = 
+bw_call_log.data.6.password = 
+bw_call_log.data.6.name =      
+
+#######################################################################################
+##         	              LDAP Settings                                              ##
+#######################################################################################
+
+#Enableor disable the LDAP feature; 0-Disabled(default), 1-Enabled;
+ldap.enable = 
+#Custom the display name of the LDAP;
+ldap.customize_label = 
+
+#Configure the search criteria for name and number lookups;
+ldap.name_filter = 
+ldap.number_filter = 
+
+ldap.host = 
+ldap.port = 389
+
+ldap.base = 
+ldap.user = 
+ldap.password = 
+
+#Configure the maximum displayed search results. It ranges from 1 to 32000, the default value is 50.
+ldap.max_hits = 50
+
+ldap.name_attr = 
+ldap.numb_attr = 
+ldap.display_name = 
+
+#Configure the LDAP version. The valid value is 2 or 3(default);
+ldap.version = 3
+
+#Enable or disable the phone to query the contact name from the LDAP server when receiving an incoming call; 0-Disabled (default), 1-Enabled;
+ldap.call_in_lookup = 0 
+
+#Enable or disable the phone to sort the search results in alphabetical order; 0-Disabled (default), 1-Enabled; 
+ldap.ldap_sort = 0 
+
+#######################################################################################
+##                    Certificates                                                   ##  
+#######################################################################################
+trusted_certificates.url =
+
+#trusted_certificates.delete = http://localhost/all,delete all the trusted certificates; 
+trusted_certificates.delete = 
+
+server_certificates.url = 
+
+#server_certificates.delete = http://localhost/all, delete the server certificate; 
+server_certificates.delete = 
+
+#######################################################################################
+##  Local Contact/DST Time/Dialnow Rule/Replace Rule                                 ##
+#######################################################################################
+local_contact.data.url =
+auto_dst.url =
+dialplan_dialnow.url =
+dialplan_replace_rule.url =
+
+#######################################################################################
+##      Customized Factory Configurations                                            ##
+#######################################################################################
+#Configure the access URL for downloading the customized factory configurations;
+custom_factory_configuration.url =
+
+#######################################################################################
+##          Call List                                                                ##                                            
+#######################################################################################
+#Configure the access URL for downloading the call list;
+#Require reboot
+call_list.url = 
+
+#######################################################################################
+##            OpenVPN                                                                ##                                            
+#######################################################################################
+#Configure the access URL for downloading the open VPN tar;
+openvpn.url = 
+
+
+]]></deviceconfig>
+    </device>
+  </data>
+  <data>
+    <device>
+      <type>phone</type>
+	  <!-- Friendly Name -->
+      <field name="Name">Yealink VP530 Identity</field>
+      <deviceconfig filename="%%mac_address%%.cfg"><![CDATA[#!version:1.0.0.1
+
+#Require reboot;
+super_search.url = %%PROVLINKLOCAL%%/VP530_super_search.xml
+
+#Uploading the settings of the shortcut keys;
+#Require reboot;
+dialing_shortcut.url= %%PROVLINKLOCAL%%/VP530_dialing_shortcut.xml
+
+#######################################################################################
+##                          Network                                                  ## 
+#######################################################################################
+
+#Configure the WAN port type; 0-DHCP(default), 1-PPPoE, 2-Static IP Address;
+#Require reboot;
+network.internet_port.type =     
+
+#Configure the static IP address,submask,gateway and DNS server for the phone;
+#Require reboot;
+network.internet_port.ip =
+network.internet_port.mask = 
+network.internet_port.gateway =
+network.primary_dns = 
+network.secondary_dns = 
+
+#Configure the username and password for PPPOE connection;
+#Require reboot;
+network.pppoe.user = 
+network.pppoe.password =      
+
+#Enable or disable the VLAN of WAN port; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+network.vlan.internet_port_enable =           
+
+#Configure the VLAN ID, it ranges from 1 to 4094, the default value is 1.
+#Require reboot;
+network.vlan.internet_port_vid =  
+
+#Configure the VLAN priority, it ranges from 0 (default) to 7.  
+#Require reboot;            
+network.vlan.internet_port_priority =           
+  
+#Configure the HTTP port (80 by default) and the HTTPS port (443 by default) of the web server. Both range from 1 to 65535.
+#Require reboot;
+network.port.http = 
+network.port.https = 
+
+{IF network=LOCALLAN}
+#Configure the maximum local RTP port. It ranges from 0 to 65535, the default value is 11800.
+#Require reboot;
+network.port.max_rtpport = 11800
+
+#Configure the minimum local RTP port. It ranges from 0 to 65535, the default value is 11780.
+#Require reboot;
+network.port.min_rtpport = 11780
+{ENDIF}
+
+{IF network=REMOTESTUN}
+#Configure the maximum local RTP port. It ranges from 0 to 65535, the default value is 11800.
+#Require reboot;
+network.port.max_rtpport = %%rtp_port_max%%
+
+#Configure the minimum local RTP port. It ranges from 0 to 65535, the default value is 11780.
+#Require reboot;
+network.port.min_rtpport = %%rtp_port_min%%
+{ENDIF}
+
+{IF network=REMOTESPM}
+#Configure the maximum local RTP port. It ranges from 0 to 65535, the default value is 11800.
+#Require reboot;
+network.port.max_rtpport = 11800
+
+#Configure the minimum local RTP port. It ranges from 0 to 65535, the default value is 11780.
+#Require reboot;
+network.port.min_rtpport = 11780
+{ENDIF}
+
+#Configure the voice QOS. It ranges from 0 to 63, the default value is 40.
+#Require reboot;
+network.qos.rtptos = 
+
+#Configure the SIP QOS. It ranges from 0 to 63, the default value is 26.
+#Require reboot;
+network.qos.signaltos = 
+
+#Configure the 802.1x mode; 0-Disabled (default), 1-Enabled (EAP-MD5);
+#Require reboot;
+network.802_1x.mode = 
+
+#Configure the username and password for 802.1x authentication;
+#Require reboot;
+network.802_1x.identity = 
+network.802_1x.md5_password = 
+
+#Enable or disable the VPN feature; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+network.vpn_enable = 
+
+#Enable or disable the LLDP feature; 0-Disabled, 1-Enabled (default);
+#Require reboot;
+network.lldp.enable = 
+
+#Configure the interval (in seconds) the phone broadcasts the LLDP request. It ranges from 1 to 3600, the default value is 120.
+#Require reboot;
+network.lldp.packet_interval = 
+
+#######################################################################################
+##                 Auto Provisioning                                                 ##      
+#######################################################################################
+
+#Enable or disable the Plug and Play feature; 0-Disabled, 1-Enabled (default);
+auto_provision.pnp_enable = 1
+
+#Enable or disable the phone to check new configruation when power on, 0-Disabled, 1-Enabled (default);   
+auto_provision.mode = 1
+
+#Enable or disable the phone to check the new configuration repeatedly; 0-Disabled (default), 1-Enabled;
+auto_provision.repeat.enable = 0
+
+#Configure the interval (in minutes) the phone repeatedly checks the new configuration. The default is 1440.
+auto_provision.repeat.minutes = 1440
+
+#Enable or disable the phone to check the new configuration weekly; 0-Disabled (default), 1-Enabled;
+auto_provision.weekly.enalbe = 0
+
+#Configure the week time the phone checks the new configuration. Applicable when the auto provisioning mode is configured as weekly or power on + weekly.
+auto_provision.weekly.mask = 
+auto_provision.weekly.begin_time = 
+auto_provision.weekly.end_time = 
+
+#Configure the URL of the auto provisioning server.
+auto_provision.server.url = %%PROVLINKLOCAL%%
+auto_provision.server.username = 
+auto_provision.server.password = 
+
+
+#Configure the domain name of the PNP server.
+auto_provision.pnp_domain_name =
+
+#Configure the PNP vendor information.
+auto_provision.pnp_event_vendor =
+
+#Configure the name of the Common configuration file.
+auto_provision.common_file_name = y000000000023.cfg
+
+#Enable or disable the DHCP option mode; 0-Disabled, 1-Enabled (default) 
+auto_provision.dhcp_option.enable = 
+
+#Configure the value (manufacturer of the device) of DHCP option 60; 
+auto_provision.dhcp_option.option60_value = 
+
+#Configure the custom DHCP option number. It ranges from 128 to 254; 
+auto_provision.dhcp_option.list_user_options = 
+
+#Configure AES key (16 characters) for decrypting the common CFG file. 
+auto_provision.aes_key_16.com =
+ 
+#Configure AES key (16 characters) for decrypting the MAC-Oriented CFG file.
+auto_provision.aes_key_16.mac =
+
+#######################################################################################
+##	               Auto Provisioning Code                                            ##
+#######################################################################################
+
+#This feature allows user to trigger the auto provisioning by dialing a predefined string on the phone, when there is no available accounts.
+#Require reboot;
+# "X" ranges from 1 to 50
+
+#Configure the auto provisioning name;
+#The value format is String, the maximum length is 100;
+#autoprovision.X.name =                  
+
+#Configure the auto provisioning code;
+#The valid value is a string, the maximum length is 100;
+#autoprovision.X.code =                   
+
+#Configure the URL of the auto provisioning server;
+#The valid value is a string, the maximum length is 256;
+#autoprovision.X.url =                
+
+#Configure the username and password for downloading.
+#The valid value is a string, the maximum length is 100;
+#autoprovision.X.user =                   
+#autoprovision.X.password =             
+
+#Configure AES key (16 characters) for decrypting the common CFG file and MAC-Oriented CFG file;
+#autoprovision.X.com_aes =               
+#autoprovision.X.mac_aes =               
+
+autoprovision.1.name =        
+autoprovision.1.code =        
+autoprovision.1.url =         
+autoprovision.1.user =        
+autoprovision.1.password =    
+autoprovision.1.com_aes =     
+autoprovision.1.mac_aes =     
+
+autoprovision.2.name =        
+autoprovision.2.code =        
+autoprovision.2.url =         
+autoprovision.2.user =        
+autoprovision.2.password =    
+autoprovision.2.com_aes =     
+autoprovision.2.mac_aes = 
+
+#######################################################################################
+##	                Phone Features                                                   ##
+#######################################################################################
+
+#Enable or disable the phone to escape the pound key as percent sign followed by 23 when dialing out; 0-Disabled, 1-Enabled (default); 
+sip.use_23_as_pound = 
+
+#Enable or disable the RFC2543 Hold feature, 0-Disabled (default), 1-Enabled;
+sip.rfc2543_hold = 0
+
+#Enable or disable the phone to keep sending the SIP messages to the outbound server, 0-Disabled, 1-Enabled (default);
+sip.use_out_bound_in_dialog = 1
+
+#Configure the registration random time (in seconds). It ranges from 0 (default) to 60. 
+sip.reg_surge_prevention = 0
+
+#Enable or disable the WatchDog feature; 0-Disabled, 1-Enabled (default);
+watch_dog.enable = 1
+
+#Enable or disable the transferee to display the missed call prompt when receiving a semi_attended transfer call;
+#0-Disabled, 1-Enabled(default);
+transfer.semi_attend_tran_enable = 0
+
+#Enable or disable the phone to complete the blind or attended transfer through on-hook;
+#0-Disabled(default),1-Enabled;
+transfer.blind_tran_on_hook_enable = 1   
+transfer.on_hook_trans_enable = 1
+
+#Enable or disable the conference initiator to transfer the call when hanging up; 
+#0-Disabled(default),1-Enabled;
+transfer.tran_others_after_conf_enable = 0 
+
+#Enable or disable to access the web user interface of phone using the http/https protocol;
+#0-Disabled,1-Enabled(default);
+#Require Reboot;
+wui.https_enable = 1
+wui.http_enable = 1
+
+#Enable or disable the feature key synchronization, 0-Disabled (default), 1-Enabled;
+bw.feature_key_sync = 0
+
+#Enable or disable the conference feature on the phone, 0-Disabled, 1-Enabled(default);
+#Require reboot;
+features.conference_enable =
+
+#Enable or disable the hoteling feature, 0-Disabled (default), 1-Enabled;
+#Require reboot;
+features.hoteling.enable = 
+
+#Enable or disable the ACD feature on the phone, 0-Disabled (default), 1-Enabled;
+#Require reboot;
+acd.enable = 
+
+#######################################################################################
+##         	                   Security Settings                                     ##                   
+#######################################################################################
+
+#Enable or disable the phone to only accept the certificates in the Trusted Certificates list;
+#0-Disabled,1-Enabled(default);
+security.trust_certificates = 0
+
+#Set the password of the user or the administrator, the value format is: user:password or admin:password;
+#security.user_password = admin:admin123 
+
+security.user_name.admin = admin
+security.user_password = admin:%%DESKPHONE_PASSWORD%%
+
+#######################################################################################
+##         	                   Time Settings                                         ##
+#######################################################################################
+
+#Configure the time zone and time zone name. The time zone ranges from -11 to +12, the default value is +8. 
+#The default time zone name is China(Beijing).  
+#local_time.time_zone = +8
+#local_time.time_zone_name = China(Beijing) 
+local_time.time_zone = %%param::time_timezone_yealink%%
+local_time.time_zone_name = %%TimeZoneName%%
+
+#Configure the domain name or the IP address of the NTP server. The default value is cn.pool.ntp.org.
+local_time.ntp_server1 = %%param::time_ntp_server%%
+local_time.ntp_server2 = %%param::time_ntp_server%%
+
+#Configure the update interval(in seconds) when using NTP Server. The default value is 1000.
+local_time.interval = 1000
+
+#Configure the daylight saving time feature. 0-Disabled, 1-Enabled, 2-Automatic (default); 
+local_time.summer_time = 2
+
+#Configure the DST type when the DST feature is enabled; 0-By Date (default), 1-By Week;
+local_time.dst_time_type = 0
+
+#Configure the start time of DST. The default value is 1/1/0.
+#If the DST type is configured as By Date, the value format is Month/Day/Hour. For example, the value 5/20/10 means the start time is at 10:00 on May 20.  
+#If the DST type is configured as By Week, the value format is Month/Day of Week/Day of Week Last in Month/Hour of Day. 
+#For example, the value 1/4/2/5 means the start time is at 5 o'clock on Tuesday of the 4th week in January.
+local_time.start_time = %%param::time_dst_start_month%%/%%param::time_dst_start_day%%/%%param::time_dst_start_hour%%
+
+#Configure the end time of DST. The default value is 12/31/23. The value format is the same to the start time.
+local_time.end_time = %%param::time_dst_end_month%%/%%param::time_dst_end_day%%/%%param::time_dst_end_hour%%
+
+#Configure the offset time (in minutes). It ranges from -300 to 300, the default value is 60.
+local_time.offset_time = %%param::time_utc_offset_minutes%%
+
+#Configure the time format, 0-12 Hour, 1-24 Hour (default);
+local_time.time_format = 1
+
+#Configure the date format, 0-WWW MMM DD (default), 1-DD-MMM-YY, 2-YYYY-MM-DD, 3-DD/MM/YYYY, 4-MM/DD/YY, 5-DD MMM YYYY, 6-WWW DD MMM;
+local_time.date_format = 0
+
+#Enable or disable the DHCP Time, 0-Disabled (default), 1-Enabled;
+local_time.dhcp_time = 0
+
+#######################################################################################
+##         	              Phone Settings                                             ##
+#######################################################################################
+
+#Configure the return code when activating DND; 404-No Found, 480-Temporarily not available (default), 486-Busy here;
+features.dnd_refuse_code = 486
+
+#Configure the return code when refusing a call. The valid values are 404, 480, 486 (default).
+features.normal_refuse_code = 
+
+features.call_completion_enable = 0
+
+#Enable or disable the call waiting feature; 0-Disabled, 1-Enabled(default);
+call_waiting.enable = 1
+
+#Enable or disable the playing of call waiting tone; 0-Disabled, 1-Enabled (default);
+call_waiting.tone = 1
+
+#Enable or disable the intercom feature; 0-Disabled, 1-Enabled(default);
+features.intercom.allow  = 1
+
+#Enable or disable the phone to mute the speaker when automatically answer an intercom call, 0-Disabled(default), 1-Enabled;     
+features.intercom.mute  = 0
+
+#Enable or disable the phone to play intercom warning tone, 0-Disabled, 1-Enabled(default); 
+features.intercom.tone  = 1
+
+#Enable or disable the phone to barge in an intercom call; 0-Disabled(default), 1-Enabled;
+features.intercom.barge  = 0
+
+#Configure the hotline number and delay time (in seconds). It ranges from 0 to 180, the default value of delay time is 4.
+features.hotline_number = 
+features.hotline_delay = 2
+
+#Configure the delay time (in seconds) of playing busy tone when rejecting a call. The valid values are 0 (default), 3 and 5.  
+features.busy_tone_delay = 0
+
+#Define "#" or "*" as the send key; 0-Disabled, 1-# key(default), 2-* key
+features.pound_key.mode = 1
+
+#Enable or disable the phone to play tone when pressing the digit key; 0-Disabled, 1-Enabled (default);
+features.send_key_tone = 1
+features.key_tone = 1
+
+features.redial_tone = 
+
+#Enable or disable the phone to save the call history; 0-Disabled, 1-Enabled(default);  
+features.save_call_history = 1
+
+#Configure the phone to receive the action URI request from the specified IP address(es) or any IP address;
+#Enter multiple IP addresses (separated by comma) or "any"(stands for any IP address); 
+features.action_uri_limit_ip = any
+
+#Configure the over time(in minutes) for logging web user interface. It ranges from 1 to 1000, the default value is 5.
+features.relog_offtime = 
+ 
+#Enable or disable the phone to dial the IP address directly; 0-Disabled, 1-Enabled (default);
+#Require reboot;
+features.direct_ip_call_enable = 1
+
+#Specify the ring device when the phone is in the headset mode,0-use Speaker(default) 1-use Headset;
+features.ringer_device.is_use_headset = 0
+
+#Enable or disable the phone to display the local camera when in the fullscreen state, 0-Disabled, 1-Enabled(default); 
+features.fullscreen_local_visible = 1
+
+#Configure the time (in seconds) to automatically dial out dialed digit. It ranges from 1 to 14, the default value is 4.
+phone_setting.inter_digit_time = 4
+
+#Configure the ring tone for the phone, System ring tones are: common(default), Ring1.wav, Ring2.wav, Ring8.wav;
+#If you set the custom ring tone(Busy.wav) as phone ring tone,the value format is: Custom:Busy.wav
+#If you set the system ring tone(Ring2.wav) as phone ring tone,the value format is: Resource:Ring2.wav
+phone_setting.ring_type = 
+
+#Configure the active backlight level, Integer,1-10 (6 by default);
+phone_setting.active_backlight_level =
+
+#Configure the inactive backlight level. It ranges from 1 to 10, the default value is 1.
+phone_setting.inactive_backlight_level = 1
+
+#Configure the backlight time(in seconds). The valid values are 1-Always on, 60 (default), 120, 300, 600, 1800;
+phone_setting.backlight_time =
+
+#Configure the background image;
+#If you set the custom image(new.png) as backgroup,the value format is: phone_setting.backgrounds = Config:new.png
+#If you set the system image(1.jpg) as backgroup,the value format is: phone_setting.backgrounds = Resource:1.jpg 
+phone_setting.backgrounds = Config:yealinkVP530.jpg
+
+#Enable or disable the phone to automatically dial out the dialed digits in the pre-dial interface, 0-Disabled(default), 1-Enabled;
+phone_setting.predial_autodial = 0
+
+#Enable or disable the phone to deal the 180 SIP messages after the 183 SIP message, 0-Disabled, 1-Enabled(default);
+phone_setting.is_deal180 = 1
+
+#Configure the delay time(in seconds) for the dialnow rule. It ranges from 1 to 14, the default value is 4.
+phone_setting.dialnow_delay = 4
+
+#Enable or disable the phone to display the shortcut menu on the idle screen, 0-Disabled(default), 1-Enabled;  
+phone_setting.shortcuts_enable = 0
+
+#Enable or disable the phone to display the recent call in the pre-dial interface, 0-Disabled, 1-Enabled(default);
+super_search.recent_call = 1 
+
+#Enable or disable the phone to display the soft dialpad in the pre-dial interface, 0-Disabled, 1-Enabled(default);
+super_search.dial_pad = 1 
+
+#Enable or disable the phone to hide the value N/A of the DSS key; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+phone_setting.dsskey_hide_enable =
+
+#Enable or disable the phone to configure the soft key on the idle screen; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+phone_setting.softkey_enable =
+
+#Enable or disable the phone to strip out the URL from the alert-info header; 0-Disabled, 1-Enabled (default);
+phone_setting.parse_ring_url_enable = 
+
+#Enable or disable the Tel mode; 0-SIP (default), 1-Tel;
+phone_setting.tel_mode = 
+
+#Enable or disable the action URL feature; 0-Disabled, 1-Enabled (default);
+phone_setting.action_uri_enable =
+
+#Enable or disable the phone to display the Account menu icon; 0-Disabled, 1-Enabled (default);
+#Require reboot;
+phone_setting.account_show_enable =
+
+#######################################################################################
+##                     Configure a server URL for firmware update                    ##                                 
+#######################################################################################
+
+server_type = HTTP	
+server_ip =
+server_port =
+login_name = 
+login_pswd = 
+firmware.url = %%PROVLINKLOCAL%%/firmware/yealink/%%firmware%%
+firmware_name = 
+
+#######################################################################################
+##                     Configure a server URL for customizing a ringtones            ##                                  
+#######################################################################################
+ringtone.url =
+
+#ringtone.delete = http://localhost/all,delete all the customized ring tones;
+ringtone.delete = 
+
+#######################################################################################
+##     	Camera/Doorphone data/Contact image/Wallpaper                                ##
+#######################################################################################
+#Configure the access URL for downloading the camera data;
+doorphone_data.url = 
+
+#Configure access URL for downloading customized image of local contact;
+local_contact_image.url =
+
+#Configure the server address for uploading a .tar file which contains mutiple contact images;
+local_contact_image.tar.url =
+
+#Configure the access URL for downloading the customized wallpaper;
+wallpaper_upload.url = %%PROVLINKLOCAL%%/logo/yealinkVP530.jpg
+
+#######################################################################################
+##                           Account1 Settings                                       ##
+#######################################################################################
+
+#Enable or disable the account1, 0-Disabled(default), 1-Enabled;
+account.1.enable = 1
+
+#Configure the label displayed on the LCD screen for account 1.
+account.1.label = %%extension_first_name%% %%extension_last_name%%
+
+#Configure the display name of account1;
+account.1.display_name = %%extension_first_name%% %%extension_last_name%%
+
+#Configure the username and password for register authentication;
+account.1.auth_name = %%extension_auth_id%%
+account.1.password =  %%extension_auth_pw%%  
+
+#Configure the register user name;
+account.1.user_name = %%extension_number%%
+
+#Enable or disable the phone to receive the messages from the server only; 0-Disabled (default), 1-Enabled;
+account.1.sip_trust_ctrl =
+
+account.1.sip_server_host_readonly = 
+
+
+{IF network=LOCALLAN}
+#Configure the SIP server address.
+account.1.sip_server_host = %%pbx_ip%%
+#Specify the port for the SIP server. The default value is 5060.
+account.1.sip_server_port = %%param::sipport%%
+
+#Configure the SIP port for account 1, the default value is 5060. 
+account.1.sip_listen_port = 
+
+#Enable or disable the use of the outbound proxy server; 0-Disabled (default), 1-Enabled; 
+account.1.outbound_proxy_enable = 0
+
+#Specify the IP address or domain name of the outbound proxy server.
+account.1.outbound_host = 
+
+#Specify the server port, the default value is 5060.
+account.1.outbound_port =
+
+#Enable or disable the NAT traversal; 0-Disabled (default), 1-STUN;
+account.1.nat.nat_traversal = 
+{ENDIF}
+
+{IF network=REMOTESTUN}
+#Configure the SIP server address.
+account.1.sip_server_host = %%pbx_ip%%
+#Specify the port for the SIP server. The default value is 5060.
+account.1.sip_server_port = %%param::sipport%%
+
+#Configure the SIP port for account1, the default value is 5060. 
+account.1.sip_listen_port = %%phonesipport%%
+
+#Enable or disable to use the outbound proxy server; 0-Disabled (default), 1-Enabled; 
+account.1.outbound_proxy_enable = 0
+
+#Specify the IP address or domain name of the outbound proxy server.
+account.1.outbound_host = 
+
+#Specify the server port, the default value is 5060.
+account.1.outbound_port =
+
+#Enable or disable the NAT traversal; 0-Disabled (default), 1-STUN;
+account.1.nat.nat_traversal = 
+{ENDIF}
+
+{IF network=REMOTESPM}
+#Configure the SIP server address.
+account.1.sip_server_host = %%pbx_ip%%
+#Specify the port for the SIP server. The default value is 5060.
+account.1.sip_server_port = %%param::sipport%%
+
+#Configure the SIP port for account1, the default value is 5060. 
+account.1.sip_listen_port = 
+
+#Enable or disable to use the outbound proxy server; 0-Disabled (default), 1-Enabled; 
+account.1.outbound_proxy_enable = 1
+
+#Specify the IP address or domain name of the outbound proxy server.
+account.1.outbound_host = %%local_spm_ip%%
+
+#Specify the server port, the default value is 5060.
+account.1.outbound_port =%%local_spm_port%%
+
+#Enable or disable the NAT traversal; 0-Disabled (default), 1-STUN;
+account.1.nat.nat_traversal = 
+{ENDIF}
+
+
+
+#Specify the backup SIP server port, the default value is 5060.
+#Require reboot;
+account.1.backup_sip_server_port =
+
+#Configure the transport type; 0-UDP(default), 1-TCP, 2-TLS, 3-DNS SRV;
+account.1.transport = 
+
+#Configure the backup outbound proxy server address and port(5060 by default);
+account.1.backup_outbound_host = 
+account.1.backup_outbound_port = 
+
+#Configure the voice mail number of account1; 
+voice_mail.number.1 = %%vm_number%%
+
+#Configure the proxy server to account 1;
+account.1.proxy_require = 
+
+#Configure the call mode; 0-Voice, 1-Video (default);
+account.1.call_option.call_mode = 
+
+#Enable or disable the anonymous call feature for account1; 0-Disabled(default), 1-Enabled;
+account.1.anonymous_call = 
+
+#Configure the on code and off code for the anonymous call feature;
+account.1.anonymous_call_oncode = 
+account.1.anonymous_call_offcode = 
+
+#Enable or disable the reject anonymous call feature for account1; 0-Disabled(Default), 1-Enabled;
+account.1.reject_anonymous_call = 
+
+#Configure the on code and off code for the reject anonymous call feature;
+account.1.anonymous_reject_oncode = 
+account.1.anonymous_reject_offcode = 
+
+#Configure the SIP port for account1; 
+account.1.sip_listen_port = %%param::sipport%%
+
+#Configure the register expire time(in seconds), (3600 by default);
+account.1.expires = 120
+
+#Enable or disable the 100 reliable retransmission; 0-Disabled, 1-Enabled(default);
+account.1.100rel_enable = 0
+
+#Enable or disable the resource reservation; 0-Disabled(default), 1-Enabled;
+account.1.precondition = 
+
+#Enbleor disable the phone to subscribe the register status; 0-Disabled(default), 1-Enabled;
+account.1.subscribe_register = 0
+
+#Enable or disable the phone to subscribe the Message Waiting Indicator; 0-Disabled(default), 1-Enabled;
+account.1.subscribe_mwi = 1
+
+#Configure MWI subscribe expire time(in seconds), ranges from 0 to 84600(3600 by default);
+account.1.subscribe_mwi_expires = 900
+
+#Configure the type of SIP header to carry the caller ID; 0-FROM (default), 1-PAI; 
+account.1.cid_source = 
+
+#Configure the presentation of the callee ID; 0-PAI-PRID, 1-DIALED DIGITS (default), 2-RFC4916; 
+account.1.cp_source = 
+
+#Enable or disable the session timer, 0-Disabled(default), 1-Enabled;
+account.1.session_timer.enable = 0    
+
+#Configure the refresh session timer interval(in seconds), ranges from 1 to 9999;
+account.1.session_timer.expires =    
+
+#Configure the session timer refresher; 0-Uac(default), 1-Uas;
+account.1.session_timer.refresher = 0
+
+#Enable or disable the "user=phone"; 0-Disabled(default), 1-Enabled;
+account.1.enable_user_equal_phone = 0
+
+#Enable or disable to encrypt the message of the phone; 0-Disabled(default), 1-Enabled;
+account.1.srtp_encryption = 
+
+#Configure the RTP packet time; 0(Disabled), 10, 20(Default), 30, 40, 50, 60;
+account.1.ptime = 20
+
+#Configure account1 as shared line; 0-Disabled/Private(default), 1-BSFT shared line, 2-Draft bridge line_appearance;
+account.1.shared_line =
+
+#Configure BLA number for account1 and the subscribe period (in seconds), ranges from 60 to 7200, (300 by default);
+account.1.bla_number = 
+account.1.bla_subscribe_period = 300
+
+#Enable or disable the phone to call pickup using the dialog-info sip header; 0-Disabled(default), 1-Enabled;
+account.1.dialoginfo_callpickup = 
+
+#Enable or disable auto answer when receiving a incoming call for accout1; 0-Disabled(default), 1-Enabled;
+account.1.auto_answer = 
+
+#Enable or disable the phone to record the missed call; 0-Disabled, 1-Enabled(default);
+account.1.missed_calllog = 
+
+#Enable or disable the phone to subscribe the voicemail number for MWI; 0-Disabled(default), 1-Enabled;
+account.1.subscribe_mwi_to_vm = 
+
+#Enable or disable the phone to send mac address in the Register message;  0-Disabled(default), 1-Enabled;     
+account.1.register_mac =
+
+#Enable or disable the phone to send line number in the Register message;  0-Disabled, 1-Enabled(default);  
+account.1.register_line =  
+
+#Configure interval time(in seconds) for retrying register when account1 register failed, ranges from 0 to 1800 (30 by default);
+account.1.reg_fail_retry_interval = 30
+
+#Configure the conference type; 0-Local(default), 2-Network Conference
+account.1.conf_type = 
+
+#Configure the conference uri(a SIP URI, or user part of the SIP URI), for example, "conference@domain.com" or "conference";
+account.1.conf_uri = 
+
+#Connfigure the BLF List URI (a SIP URI, or user part of the SIP URI), for example, "2300_blflist@domain.com" or "2300_blflist";
+account.1.blf.blf_list_uri = 
+
+#Configure the blf subscribe period(in seconds), (1800s by default);
+account.1.blf.subscribe_period = 900
+
+#Configure the pickup code for BLF List;
+account.1.blf_list_code = 
+
+#Configure the barge-in code;
+account.1.blf_list_barge_in_code = 
+
+#Assign the sip platform; 0-Local SIP Server(Default), 2-Broadsoft;
+account.1.sip_server_type = 
+
+#Enable or disable the SIP signal encode, 0-Disabled (defaault), 1-Enabled (RC 4);
+account.1.enable_signal_encode = 
+
+Configure the key for encoding;
+account.1.signal_encode_key = 
+
+#Configure the music on hold server;
+account.1.music_server_uri = 
+
+#Configure the DTMF type; 0-INBAND, 1-RFC2833 (default), 2-SIP INFO, 3-AUTO+SIP INFO;
+account.1.dtmf.type = 1
+
+#Configure the RFC2833 payload, ranges from 96 to 225 (101 by default);
+account.1.dtmf.dtmf_payload = 101
+
+#Configure DTMF info type when using SIP INFO, 0-Disabled, 1-DTMF-Relay(default), 2-DTMF, 3-Telephone-Event;
+account.1.dtmf.info_type = 
+
+#Enable or disable the phone to support the simplified SIP header; 0-Disabled (default), 1-Enabled;
+account.1.compact_header_enable = 
+
+#Enable or disable the ACD feature on account 1; 0-Disabled (default), 1-Enable;
+account.1.acd.enable = 
+
+#Enbale or disable the phone to use the available/unavailable key; 0-Disabled (default), 1-Enable;
+account.1.acd.available =
+
+#Configure the initial state when logging in the ACD system; 0-Unavailable, 1-Available (default); 
+account.1.acd.initial_state = 
+
+#Configure the user ID and password to login the ACD system.
+account.1.acd.user_id =
+account.1.acd.password =
+
+#Enable or disable the phone to automatically log in the ACD system; 0-Disabled, 1-Enabled (default);
+account.1.acd.auto_login_enable =
+
+#Configure the unavailable reason and unavailable reason code.
+account.1.acd.unavailable_reason =
+account.1.acd.reason_code.code =
+
+#Enable or disable the hoteling feature on account 1; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+account.1.hoteling.enable =
+
+#Configure the hoteling user ID and password.
+#Require reboot;
+account.1.hoteling.user_id =
+account.1.hoteling.password =
+
+#Enable or disable the auto login feature of the hoteling; 0-Disabled (default), 1-Enabled;
+#Require reboot;
+account.1.hoteling.auto_login_enable = 
+
+#########################################################################
+##                     NAT Settings                                    ##
+#########################################################################
+
+#Enable or disable the NAT traversal; 0-Disabled(default), 1-STUN;
+account.1.nat.nat_traversal = 
+
+#Configure the STUN server address and port (3478 by default);
+account.1.nat.stun_server = 
+account.1.nat.stun_port = 3478
+
+#Configure the NAT keep-alive and the keep-alive interval(in seconds), 30 by default;
+account.1.nat.udp_update_enable = 
+account.1.nat.udp_update_time = 30
+
+#Enable or disable the nat Rport; 0-Disabled(default), 1-Enabled
+account.1.nat.rport = 0
+
+#Configure the session timer (in seconds), the default values of T1, T2, T3 are 0.5, 4, 5.
+account.1.advanced.timer_t1 = 0.5
+account.1.advanced.timer_t2 = 4
+account.1.advanced.timer_t4 = 5
+
+#Configure the audio and video attributes
+account.1.advanced.audio_bandwidth = 0
+account.1.advanced.video_frame_rate = 25
+account.1.advanced.video_i_frame_refresh_time = 30
+account.1.advanced.video_bandwidth = 0
+account.1.advanced.total_bandwidth = 0
+
+#Assign a ringtone for account1; System ring tones are: common(default),Ring1.wav,Ring2.wav, Ring8.wav;
+#If you set the custom ring tone(Family.wav) as phone ring tone,the value format is: Custom:Family.wav
+#If you set the system ring tone(Ring2.wav) as phone ring tone,the value format is: Resource:Ring2.wav
+account.1.ringtone.ring_type = 
+
+#Audio codecs for account1 (Y ranges from 1 to 7)
+#account.1.codec.Y.enable = 1
+#account.1.codec.Y.payload_type = PCMA
+#account.1.codec.Y.priority = 2
+#account.1.codec.Y.rtpmap = 8
+
+account.1.codec.1.enable = 1
+account.1.codec.1.payload_type = %%payload1%%
+account.1.codec.1.priority = 1 
+account.1.codec.1.rtpmap = %%codec1%%
+
+account.1.codec.2.enable = 1
+account.1.codec.2.payload_type = %%payload2%%
+account.1.codec.2.priority = 2 
+account.1.codec.2.rtpmap = %%codec2%%
+
+account.1.codec.3.enable = 1 
+account.1.codec.3.payload_type = %%payload3%%
+account.1.codec.3.priority =3 
+account.1.codec.3.rtpmap = %%codec3%%
+
+account.1.codec.4.enable = 1
+account.1.codec.4.payload_type = %%payload4%%
+account.1.codec.4.priority = 4
+account.1.codec.4.rtpmap = %%codec4%%
+
+account.1.codec.5.enable = 0
+account.1.codec.5.payload_type = G723
+account.1.codec.5.priority = 5
+account.1.codec.5.rtpmap = 4
+
+account.1.codec.6.enable = 0
+account.1.codec.6.payload_type = AACLC
+account.1.codec.6.priority = 6
+account.1.codec.6.rtpmap = 102
+
+account.1.codec.7.enable = 0 
+account.1.codec.7.payload_type = iLBC
+account.1.codec.7.priority = 7 
+account.1.codec.7.rtpmap = 122
+
+#Video codecs for account1 (X ranges from 1 to 3)
+#account.1.video_codec.X.enable = 
+#account.1.video_codec.X.priority = 
+#account.1.video_codec.X.payload_type = 
+#account.1.video_codec.X.rtpmap = 
+#account.1.video_codec.X.para = 
+
+account.1.video_codec.1.enable = 1                                                          
+account.1.video_codec.1.priority = 1                                                        
+account.1.video_codec.1.payload_type = H264                                                 
+account.1.video_codec.1.rtpmap = 99                                                         
+account.1.video_codec.1.para = profile-level-id=42800D; packetization-mode=0; max-mbps=11880
+
+account.1.video_codec.2.enable = 1                                                          
+account.1.video_codec.2.priority = 2                                                        
+account.1.video_codec.2.payload_type = H263                                                 
+account.1.video_codec.2.rtpmap = 34                                                         
+account.1.video_codec.2.para = CIF=1; QCIF=1
+
+account.1.video_codec.3.enable = 1                                                          
+account.1.video_codec.3.priority = 3                                                        
+account.1.video_codec.3.payload_type = mp4v-es                                                 
+account.1.video_codec.3.rtpmap = 102                                                         
+account.1.video_codec.3.para = CIF=1; QCIF=1; MaxBR=3840
+
+
+#######################################################################################
+##         	                  DSS Key                                                ##              
+#######################################################################################
+
+#memorykey.x.line: Configure the desired line to apply the key feature. It ranges from 0 to 4.  
+#The value 0 of the "memorykey.x.line" stands for Auto, it means the first available line. 
+#But, when the DSS key is configured as BLF, BLF List, Shared Line, Call Park, Pick Up, ACD or Voice Mail feature, the value 0 stands for line 1.
+#memorykey.x.value: Enter the value of some features. E.g. When configuring the DSS key to be BLF, enter the number of the monitored user.   
+#memorykey.x.pickup_value: Enter the pickup code, this parameter is only appilicable to BLF.
+#memorykey.x.type: Assign the desired feature to the memory key.  
+#Valid types are:: 0-N/A(default for memory key)    1-Conference    2-Forward    3-Transfer    4-Hold    5-DND    6-Redial    7-Call Return    8-SMS    9-Call Pickup    10-Call Park
+#                  11-DTMF    12-Voicemail    13-SpeedDial    14-Intercom    15-Line(default for line key)    16-BLF    17-URL    18-Group Listening    19-Public Hold    20-Private Hold 
+#                  21-Shared Line    22-XML Group    23-Group Pickup    24- Paging    25-Record    27-XMLbrowser    35-URLRecord    37-Switch    38-LDAP    39-BLF List 
+#                  40-Prefix    41- Zero-Sp-Touch    42-ACD    45-Local Group    46-Broadsoft Group 
+#memorykey.x.xml_phonebook: Specify the desired remote phonebook/local group/BSFT phonebook for the DSS key. This parameter is only appilicable to the feature XML Group/Local Group/Broadsoft Group.  
+#memorykey.x.label: configure the label for each key dispalying on LCD screen.
+
+# Configure DSS Key1
+{IF blf1}
+memorykey.1.line = %%Line%%
+memorykey.1.value = %%blf1%%
+memorykey.1.pickup_value = %%PickupValue%%
+memorykey.1.type = %%DKtype%%
+memorykey.1.xml_phonebook = 
+memorykey.1.label = %%blffirstname1%% %%blflastname1%%
+{ELSE}
+memorykey.1.type=NA
+{ENDIF}
+
+# Configure DSS Key2
+{IF blf2}
+memorykey.2.line = %%Line%%
+memorykey.2.value = %%blf2%%
+memorykey.2.pickup_value = %%PickupValue%%
+memorykey.2.type = %%DKtype%%
+memorykey.2.xml_phonebook = 
+memorykey.2.label = %%blffirstname2%% %%blflastname2%%
+{ELSE}
+memorykey.2.type=NA
+{ENDIF}
+
+# Configure DSS Key3
+{IF blf3}
+memorykey.3.line = %%Line%%
+memorykey.3.value = %%blf3%%
+memorykey.3.pickup_value = %%PickupValue%%
+memorykey.3.type = %%DKtype%%
+memorykey.3.xml_phonebook = 
+memorykey.3.label = %%blffirstname3%% %%blflastname3%%
+{ELSE}
+memorykey.3.type=NA
+{ENDIF} 
+
+# Configure DSS Key4
+{IF blf4}
+memorykey.4.line = %%Line%%
+memorykey.4.value = %%blf4%%
+memorykey.4.pickup_value = %%PickupValue%%
+memorykey.4.type = %%DKtype%%
+memorykey.4.xml_phonebook = 
+memorykey.4.label = %%blffirstname4%% %%blflastname4%%
+{ELSE}
+memorykey.4.type=NA
+{ENDIF}
+
+# Configure DSS Key5
+{IF blf5}
+memorykey.5.line = %%Line%%
+memorykey.5.value = %%blf5%%
+memorykey.5.pickup_value = %%PickupValue%%
+memorykey.5.type = %%DKtype%%
+memorykey.5.xml_phonebook = 
+memorykey.5.label = %%blffirstname5%% %%blflastname5%%
+{ELSE}
+memorykey.5.type=NA
+{ENDIF} 
+
+# Configure DSS Key6
+{IF blf6}
+memorykey.6.line = %%Line%%
+memorykey.6.value = %%blf6%%
+memorykey.6.pickup_value = %%PickupValue%%
+memorykey.6.type = %%DKtype%%
+memorykey.6.xml_phonebook = 
+memorykey.6.label = %%blffirstname6%% %%blflastname6%%
+{ELSE}
+memorykey.6.type=NA
+{ENDIF} 
+
+# Configure DSS Key7
+{IF blf7}
+memorykey.7.line = %%Line%%
+memorykey.7.value = %%blf7%%
+memorykey.7.pickup_value = %%PickupValue%%
+memorykey.7.type = %%DKtype%%
+memorykey.7.xml_phonebook = 
+memorykey.7.label = %%blffirstname7%% %%blflastname7%%
+{ELSE}
+memorykey.7.type=NA
+{ENDIF}
+
+# Configure DSS Key8
+{IF blf8}
+memorykey.8.line = %%Line%%
+memorykey.8.value = %%blf8%%
+memorykey.8.pickup_value = %%PickupValue%%
+memorykey.8.type = %%DKtype%%
+memorykey.8.xml_phonebook = 
+memorykey.8.label = %%blffirstname8%% %%blflastname8%%
+{ELSE}
+memorykey.8.type=NA
+{ENDIF}
+
+# Configure DSS Key9
+{IF blf9}
+memorykey.9.line = %%Line%%
+memorykey.9.value = %%blf9%%
+memorykey.9.pickup_value = %%PickupValue%%
+memorykey.9.type = %%DKtype%%
+memorykey.9.xml_phonebook = 
+memorykey.9.label = %%blffirstname9%% %%blflastname9%%
+{ELSE}
+memorykey.9.type=NA
+{ENDIF}
+
+# Configure DSS Key10
+{IF blf10}
+memorykey.10.line = %%Line%%
+memorykey.10.value = %%blf10%%
+memorykey.10.pickup_value = %%PickupValue%%
+memorykey.10.type = %%DKtype%%
+memorykey.10.xml_phonebook = 
+memorykey.10.label = %%blffirstname10%% %%blflastname10%%
+{ELSE}
+memorykey.10.type=NA
+{ENDIF}
+
+# Configure DSS Key11
+{IF blf11}
+memorykey.11.line = %%Line%%
+memorykey.11.value = %%blf11%%
+memorykey.11.pickup_value = %%PickupValue%%
+memorykey.11.type = %%DKtype%%
+memorykey.11.xml_phonebook = 
+memorykey.11.label = %%blffirstname11%% %%blflastname11%%
+{ELSE}
+memorykey.11.type=NA
+{ENDIF}
+
+# Configure DSS Key12
+{IF blf12}
+memorykey.12.line = %%Line%%
+memorykey.12.value = %%blf12%%
+memorykey.12.pickup_value = %%PickupValue%%
+memorykey.12.type = %%DKtype%%
+memorykey.12.xml_phonebook = 
+memorykey.12.label = %%blffirstname12%% %%blflastname12%%
+{ELSE}
+memorykey.12.type=NA
+{ENDIF} 
+
+# Configure DSS Key13
+{IF blf13}
+memorykey.13.line = %%Line%%
+memorykey.13.value = %%blf13%%
+memorykey.13.pickup_value = %%PickupValue%%
+memorykey.13.type = %%DKtype%%
+memorykey.13.xml_phonebook = 
+memorykey.13.label = %%blffirstname13%% %%blflastname13%%
+{ELSE}
+memorykey.13.type=NA
+{ENDIF}
+
+# Configure DSS Key14
+{IF blf14}
+memorykey.14.line = %%Line%%
+memorykey.14.value = %%blf14%%
+memorykey.14.pickup_value = %%PickupValue%%
+memorykey.14.type = %%DKtype%%
+memorykey.14.xml_phonebook = 
+memorykey.14.label = %%blffirstname14%% %%blflastname14%%
+{ELSE}
+memorykey.14.type=NA
+{ENDIF}
+
+# Configure DSS Key15
+{IF blf15}
+memorykey.15.line = %%Line%%
+memorykey.15.value = %%blf15%%
+memorykey.15.pickup_value = %%PickupValue%%
+memorykey.15.type = %%DKtype%%
+memorykey.15.xml_phonebook = 
+memorykey.15.label = %%blffirstname15%% %%blflastname15%%
+{ELSE}
+memorykey.15.type=NA
+{ENDIF} 
+
+# Configure DSS Key16
+{IF blf16}
+memorykey.16.line = %%Line%%
+memorykey.16.value = %%blf16%%
+memorykey.16.pickup_value = %%PickupValue%%
+memorykey.16.type = %%DKtype%%
+memorykey.16.xml_phonebook = 
+memorykey.16.label = %%blffirstname16%% %%blflastname16%%
+{ELSE}
+memorykey.16.type=NA
+{ENDIF}
+
+# Configure DSS Key17
+{IF blf17}
+memorykey.17.line = %%Line%%
+memorykey.17.value = %%blf17%%
+memorykey.17.pickup_value = %%PickupValue%%
+memorykey.17.type = %%DKtype%%
+memorykey.17.xml_phonebook = 
+memorykey.17.label = %%blffirstname17%% %%blflastname17%%
+{ELSE}
+memorykey.17.type=NA
+{ENDIF}
+
+# Configure DSS Key18
+{IF blf18}
+memorykey.18.line = %%Line%%
+memorykey.18.value = %%blf18%%
+memorykey.18.pickup_value = %%PickupValue%%
+memorykey.18.type = %%DKtype%%
+memorykey.18.xml_phonebook = 
+memorykey.18.label = %%blffirstname18%% %%blflastname18%%
+{ELSE}
+memorykey.18.type=NA
+{ENDIF} 
+
+#######################################################################################
+##         	                  Line Key                                               ##                 
+#######################################################################################
+
+#The x of the parameter "linekey.x.line" ranges from 1 to 4.
+#The default value equals to the value of x. For example, the default value of the parameter "linekey.1.line" is 1.
+#linekey.x.lable--Define the label for each line key.
+
+#Configure Linekey1 
+linekey.1.line = 
+linekey.1.value = 
+linekey.1.pickup_value = 
+linekey.1.type = 
+linekey.1.xml_phonebook =
+linekey.1.label = 
+
+#Configure Linekey2
+linekey.2.line = 1                     
+linekey.2.value =                       
+linekey.2.pickup_value =                
+linekey.2.type = 15                       
+linekey.2.xml_phonebook =               
+linekey.2.label =                       
+
+#Configure Linekey3
+linekey.3.line = 1                      
+linekey.3.value =                       
+linekey.3.pickup_value =                
+linekey.3.type = 15                      
+linekey.3.xml_phonebook =               
+linekey.3.label =                       
+
+#Configure Linekey4
+linekey.4.line = 1                     
+linekey.4.value =                       
+linekey.4.pickup_value =                
+linekey.4.type = 15                    
+linekey.4.xml_phonebook =               
+linekey.4.label =                        
+
+#######################################################################################
+##         	                   Language Settings                                     ##       
+#######################################################################################
+
+#Specify the web language, the valid values are: English, Chinese_S, German, Italian and Turkish;
+lang.wui = %%langwebUI%%
+
+#Specify the LCD language, the valid values are: English (default), Chinese_S, German, French, Turkish, Italiano, Polish and Portungues;
+lang.gui = %%langlcdUI%%
+
+#######################################################################################
+##         	                   Call Forward                                          ##               
+#######################################################################################
+#Enable or disable the always forward, 0-Disabled(default), 1-Enabled;
+forward.always.enable = 0
+
+#Configure the target phonenumber that the phone will forward the call to;
+forward.always.target = 
+
+#Configure the on/off code for always forward;
+forward.always.on_code = 
+forward.always.off_code =
+
+#Enable or disable the busy forward, 0-Disabled(default), 1-Enabled;
+forward.busy.enable = 0
+forward.busy.target = 
+forward.busy.on_code = 
+forward.busy.off_code = 
+
+# #Enable or disable the no answer forward, 0-Disabled(default), 1-Enabled; 
+#Configure the waiting ring times before forwarding, ranges from 0 to 20 (by default);
+forward.no_answer.enable = 0
+forward.no_answer.target = 
+forward.no_answer.timeout = 60
+forward.no_answer.on_code = 
+forward.no_answer.off_code = 
+
+
+#######################################################################################
+##         	                   DND                                                   ##               
+#######################################################################################
+
+#Configure the DND key mode; 0-Phone mode (default), 1-Custom mode.
+features.dnd_mode = 0
+
+#Configure the DND on code and off code.
+features.dnd.on_code = %%param::DIALCODEPROFILE%%2 
+features.dnd.off_code = %%param::DIALCODEPROFILE%%0
+
+
+#######################################################################################
+##         	    Remote Phonebook                                                     ##
+#######################################################################################
+
+#Configure the access URL and dispaly name of the remote phonebook. X ranges from 1 to 5.
+remote_phonebook.display_name = 3CX Phonebook
+
+remote_phonebook.data.1.url = %%PROVLINKLOCAL%%/yealink_phonebook.xml
+remote_phonebook.data.1.name = 3CX Phonebook 
+
+remote_phonebook.data.2.url = 
+remote_phonebook.data.2.name =  
+
+remote_phonebook.data.3.url = 
+remote_phonebook.data.3.name =  
+
+remote_phonebook.data.4.url = 
+remote_phonebook.data.4.name = 
+
+remote_phonebook.data.5.url = 
+remote_phonebook.data.5.name =
+
+#Configure the interval(in minutes) for the phone to update phonebook,(1440 by default);
+directory.update_time_interval =
+
+#Enable or disable the phone to match the incoming call with the contact in the remote phonebook; 0-Disabled, 1-Enabled(default);
+directory.incoming_call_match_enable = 1
+  
+#Enable or disable the broadsoft directory; 0-Disabled (default), 1-Enabled;
+bw.directory_enable =
+
+]]></deviceconfig>
+    </device>
+  </data>
+</doc>

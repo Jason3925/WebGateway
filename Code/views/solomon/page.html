@@ -1,0 +1,62 @@
+<%
+var page_start = page_current;
+var page_end = page_current + showNumber -1;
+
+if (page_count <= showNumber ) {
+page_start = 1;
+page_end = page_count;
+}else {
+if((page_count-page_start) <= 5) page_start = page_count - showNumber ;
+page_end = page_start + showNumber - 1 >= page_count ? page_count : page_start + showNumber - 1;
+}
+%>
+<tr>
+  <td colspan="<%=colsPanNumber%>" class="footable-visible padding-0 margin-0">
+    <div class="text-right">
+      <ul class="pagination">
+
+        <% if(page_current == 1) { %>
+        <li class="footable-page-arrow disabled">
+          <a data-page="first" href="#first">«</a>
+        </li>
+        <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li>
+        <% } else { %>
+        <li class="footable-page-arrow">
+          <a href="#first" data-page="<%=page_current-2<1?1:page_current-2%>" data-role="page">«</a>
+        </li>
+        <li class="footable-page-arrow">
+          <a href="#prev" data-page="<%=page_current-1%>" data-role="page">‹</a>
+        </li>
+        <% } %>
+
+
+        <% for(var i=page_start; i<=page_end; i++) { %>
+        <% if(page_current == i) {%>
+        <li class="footable-page active"><a data-page="<%=i%>" href="#"><%=i%></a></li>
+        <%} else {%>
+        <li class="footable-page">
+          <a data-page="<%=i%>" data-role="page" href="#"><%=i%></a>
+        </li>
+        <%}%>
+
+
+        <% } %>
+
+        <% if(page_current == page_count) { %>
+        <li class="footable-page-arrow disabled"><a data-page="next" href="#next">›</a></li>
+        <li class="footable-page-arrow disabled"><a data-page="last" href="#last">»</a></li>
+        <% } else { %>
+        <li class="footable-page-arrow">
+          <a href="#next" data-page="<%=page_current+1%>" data-role="page">›</a>
+        </li>
+        <li class="footable-page-arrow">
+          <a href="#last" data-page="<%=page_current+2>page_count?page_count:page_current+2%>"
+             data-role="page">»</a>
+        </li>
+        <% } %>
+
+
+      </ul>
+    </div>
+  </td>
+</tr>

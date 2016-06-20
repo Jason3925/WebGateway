@@ -1,0 +1,1332 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2016-01-13 15:00:00</time>
+    <name>Aastra SIP Phone</name>
+    <url>http://www.aastra.com</url>
+    <models>
+      <model ua="Aastra 6730i">Aastra 6730i</model>
+      <model ua="Aastra 6731i">Aastra 6731i</model>
+	  <model ua="Aastra 6739i">Aastra 6739i</model>
+      <model ua="Aastra 51i">Aastra 51i/6751i</model>
+      <model ua="Aastra 53i">Aastra 53i/6753i</model>
+      <model ua="Aastra 55i">Aastra 55i/6755i</model>
+      <model ua="Aastra 57i">Aastra 57i/6757i</model>
+    </models>
+	<AllowedNetworkConfig>
+      <option value="LOCALLAN">1</option>
+    </AllowedNetworkConfig>
+    <parsers>
+        <parser>BLF</parser>
+    </parsers>
+    <description>Aastra SIP Phone</description>
+	<rebootParams>
+		<event-name>check-sync</event-name>
+	</rebootParams>
+	<resyncParams>
+		<event-name>check-sync</event-name>
+	</resyncParams>
+	<firmwareParams>
+		<event-name>check-sync</event-name>
+	</firmwareParams>
+	<dst variableName ="dstEnableDisable" enable ="3" disable = "0">
+	</dst>
+	<languages>
+	<!--The first entry is the selected entry in management console--> 
+	<option value="English">
+		<item name = "langwebUI">0</item>
+		<item name = "langwebUI2">English</item>
+		<item name = "langlcdUI"></item>
+	</option>
+	<option value="French">
+		<item name = "langwebUI">1</item>
+		<item name = "langwebUI2">French</item>
+		<item name = "langlcdUI">lang_fr.txt</item>
+	</option>
+	<option value="Spanish">
+		<item name = "langwebUI">2</item>
+		<item name = "langwebUI2">Spanish</item>
+		<item name = "langlcdUI">lang_es.txt</item>
+	</option>
+	<option value="German">
+		<item name = "langwebUI">3</item>
+		<item name = "langwebUI2">German</item>
+		<item name = "langlcdUI">lang_de.txt</item>
+	</option>
+	<option value="Italian">
+		<item name = "langwebUI">4</item>
+		<item name = "langwebUI2">Italian</item>
+		<item name = "langlcdUI">lang_it.txt</item>
+	</option>
+	<option value="Portuguese">
+		<item name = "langwebUI">5</item>
+		<item name = "langwebUI2">Portuguese</item>
+		<item name = "langlcdUI">lang_pt.txt</item>
+	</option>
+	<option value="Russian">
+		<item name = "langwebUI">6</item>
+		<item name = "langwebUI2">Russian</item>
+		<item name = "langlcdUI">lang_ru.txt</item>
+	</option>
+	<option value="Danish">
+		<item name = "langwebUI">7</item>
+		<item name = "langwebUI2">Danish</item>
+		<item name = "langlcdUI">lang_da.txt</item>
+	</option>
+	<option value="Swedish">
+		<item name = "langwebUI">8</item>
+		<item name = "langwebUI2">Swedish</item>
+		<item name = "langlcdUI">lang_sv.txt</item>
+	</option>
+	<option value="Turkish">
+		<item name = "langwebUI">9</item>
+		<item name = "langwebUI2">Turkish</item>
+		<item name = "langlcdUI">lang_tr.txt</item>
+	</option>
+	</languages>
+	<timezoneParams param="time_timezone_aastra">
+	<!--The first entry is the selected entry in management console--> 
+	<option value="US-Eastern" id="0" zone="-5:00">US-Eastern EST</option>
+	<option value="AD-Andorra"  id="61" zone="1:00">AD-Andorra CET</option>
+	<option value="AE-Dubai" id="90" zone="4:00">AE-Dubai GST</option>
+	<option value="AG-Antigua" zone="-4:00">AG-Antigua AST</option>
+	<option value="AI-Anguilla" zone="-4:00">AI-Anguilla AST</option>
+	<option value="AL-Tirane" id="37" zone="1:00">AL-Tirane CET</option>
+	<option value="AN-Curacao" zone="-4:00">AN-Curacao AST</option>
+	<option value="AR-Buenos Aires" id="27" zone="-3:00">AR-Buenos Aires ART</option>
+	<option value="AR-Saudi Arabia" id="81" zone="3:00">AR-Saudi Arabia ART</option>
+	<option value="AS-Pago Pago" zone="-11:00">AS-Pago Pago BST</option>
+	<option value="AT-Vienna" id="38" zone="1:00">AT-Vienna CET</option>
+	<option value="AU-Lord Howe" id="114" zone="10:30">AU-Lord Howe LHS</option>
+	<option value="AU-Tasmania" id="115" zone="11:00">AU-Tasmania EST</option>
+	<option value="AU-Melbourne" id="110" zone="10:00">AU-Melbourne EST</option>
+	<option value="AU-Sydney" id="112" zone="10:00">AU-Sydney EST</option>
+	<option value="AU-Broken Hill" zone="10:30">AU-Broken Hill CST</option>
+	<option value="AU-Brisbane" id="111" zone="10:00">AU-Brisbane EST</option>
+	<option value="AU-Lindeman" zone="10:00">AU-Lindeman EST</option>
+	<option value="AU-Adelaide" id="108" zone="9:30">AU-Adelaide CST</option>
+	<option value="AU-Darwin" id="109" zone="9:30">AU-Darwin CST</option>
+	<option value="AU-Perth" id="105" zone="8:00">AU-Perth WST</option>
+	<option value="AW-Aruba" zone="-4:00">AW-Aruba AST</option>
+	<option value="AZ-Baku" id="86" zone="4:00">AZ-Baku AZT</option>
+	<option value="BA-Sarajevo" zone="1:00">BA-Sarajevo EET</option>
+	<option value="BB-Barbados" zone="-4:00">BB-Barbados AST</option>
+	<option value="BE-Brussels" id="39" zone="1:00">BE-Brussels CET</option>
+	<option value="BG-Sofia" id="63" zone="2:00">BG-Sofia  EET</option>
+	<option value="BM-Bermuda" id="22" zone="-4:00">BM-Bermuda AST</option>
+	<option value="BO-La Paz" zone="-4:00">BO-La Paz BOT</option>
+	<option value="BR-Noronha" zone="-2:00">BR-Noronha FNT</option>
+	<option value="BR-Belem" zone="-2:00">BR-Belem BRT</option>
+	<option value="BR-Fortaleza" zone="-3:00">BR-Fortaleza BRT</option>
+	<option value="BR-Recife" zone="-3:00">BR-Recife BRT</option>
+	<option value="BR-Araguaina" zone="-3:00">BR-Araguaina BRS</option>
+	<option value="BR-Maceio" zone="-3:00">BR-Maceio BRT</option>
+	<option value="BR-Sao Paulo" zone="-3:00">BR-Sao Paulo BRS</option>
+	<option value="BR-Cuiaba" zone="-4:00">BR-Cuiaba AMS</option>
+	<option value="BR-Porto Velho" zone="-4:00">BR-Porto Velho AMT</option>
+	<option value="BR-Boa Vista" zone="-4:00">BR-Boa Vista AMT</option>
+	<option value="BR-Manaus" zone="-4:00">BR-Manaus AMT</option>
+	<option value="BR-Eirunepe" zone="-5:00">BR-Eirunepe ACT</option>
+	<option value="BR-Rio Branco" zone="-5:00">BR-Rio Branco ACT</option>
+	<option value="BS-Nassau" id="15" zone="-5:00">BS-Nassau EST</option>
+	<option value="BY-Minsk" id="62" zone="2:00">BY-Minsk EET</option>
+	<option value="BZ-Belize" zone="-8:00">BZ-Belize CST</option>
+	<option value="CA-Newfoundland" id="25" zone="-3:30">CA-Newfoundland NST</option>
+	<option value="CA-Atlantic" id="19" zone="-4:00">CA-Atlantic AST</option>
+	<option value="CA-Eastern" id="16" zone="-5:00">CA-Eastern EST</option>
+	<option value="CA-Saskatchewan" zone="-6:00">CA-Saskatchewan EST</option>
+	<option value="CA-Central" id="11" zone="-6:00">CA-Central CST</option>
+	<option value="CA-Mountain" zone="-6:00">CA-Mountain MST</option>
+	<option value="CA-Pacific" id="7" zone="-7:00">CA-Pacific PST</option>
+	<option value="CA-Yukon" zone="-7:00">CA-Yukon PST</option>
+	<option value="CH-Zurich" zone="1:00">CH-Zurich CET</option>
+	<option value="CK-Rarotonga" zone="-10:00">CK-Rarotonga CKS</option>
+	<option value="CL-Santiago" id="20" zone="-4:00">CL-Santiago CLS</option>
+	<option value="CL-Easter" id="12" zone="-6:00">CL-Easter EAS</option>
+	<option value="CN-Beijing" id="103" zone="8:00">CN-Beijing CST</option>
+	<option value="CO-Bogota" zone="-5:00">CO-Bogota COS</option>
+	<option value="CR-Costa Rica" zone="-6:00">CR-Costa Rica CST</option>
+	<option value="CU-Havana" id="17" zone="-5:00">CU-Havana CST</option>
+	<option value="CY-Nicosia" id="64" zone="2:00">CY-Nicosia EES</option>
+	<option value="CZ-Prague" id="43" zone="1:00">CZ-Prague CET</option>
+	<option value="DE-Berlin" id="46" zone="1:00">DE-Berlin CET</option>
+	<option value="DK-Copenhagen" id="44" zone="1:00">DK-Copenhagen CET</option>
+	<option value="DM-Dominica" zone="-4:00">DM-Dominica AST</option>
+	<option value="DO-Santo Domingo" zone="-4:00">DO-Santo Domingo AST</option>
+	<option value="EE-Tallinn" id="67" zone="2:00">EE-Tallinn EET</option>
+	<option value="ES-Madrid" id="56" zone="1:00">ES-Madrid CET</option>
+	<option value="ES-Canary" id="35" zone="0:00">ES-Canary WET</option>
+	<option value="FI-Helsinki" id="68" zone="2:00">FI-Helsinki EET</option>
+	<option value="FJ-Fiji" zone="12:00">FJ-Fiji NZT</option>
+	<option value="FK-Stanley" zone="-3:00">FK-Stanley FKS</option>
+	<option value="FO-Faeroe" id="32" zone="0:00">FO-Faeroe WET</option>
+	<option value="FR-Paris" id="45" zone="1:00">FR-Paris CET</option>
+	<option value="GB-London" id="36" zone="0:00">GB-London GMT</option>
+	<option value="GB-Belfast" id="58" zone="1:00">GB-Belfast GMT</option>
+	<option value="GD-Grenada" zone="-4:00">GD-Grenada AST</option>
+	<option value="GE-Tbilisi" id="87" zone="4:00">GE-Tbilisi GET</option>
+	<option value="GF-Cayenne" zone="-3:00">GF-Cayenne GFT</option>
+	<option value="GI-Gibraltar" id="59" zone="1:00">GI-Gibraltar CET</option>
+	<option value="GP-Guadeloupe" zone="-4:00">GP-Guadeloupe AST</option>
+	<option value="GR-Athens" id="70" zone="2:00">GR-Athens EET</option>
+	<option value="GS-South Georgia" zone="-2:00">GS-South Georgia GST</option>
+	<option value="GT-Guatemala" zone="-6:00">GT-Guatemala CST</option>
+	<option value="GU-Guam" zone="10:00">GU-Guam CST</option>
+	<option value="GY-Guyana" zone="-4:00">GY-Guyana GYT</option>
+	<option value="HK-Hong Kong" zone="8:00">HK-Hong Kong HKS</option>
+	<option value="HN-Tegucigalpa" zone="-6:00">HN-Tegucigalpa CST</option>
+	<option value="HR-Zagreb" id="42" zone="1:00">HR-Zagreb CET</option>
+	<option value="HT-Port-au-Prince" zone="-4:00">HT-Port-au-Prince EST</option>
+	<option value="HU-Budapest" id="47" zone="1:00">HU-Budapest CET</option>
+	<option value="IE-Dublin" id="33" zone="0:00">IE-Dublin GMT</option>
+	<option value="IS-Reykjavik" zone="0:00">IS-Reykjavik GMT</option>
+	<option value="IT-Rome" id="48" zone="1:00">IT-Rome CET</option>
+	<option value="JM-Jamaica" zone="-5:00">JM-Jamaica EST</option>
+	<option value="JP-Tokyo" id="107" zone="9:00">JP-Tokyo JST</option>
+	<option value="KY-Cayman" zone="-5:00">KY-Cayman EST</option>
+	<option value="LC-St Lucia" zone="-4:00">LC-St Lucia AST</option>
+	<option value="LI-Vaduz" zone="2:00">LI-Vaduz CET</option>
+	<option value="LT-Vilnius" zone="3:00">LT-Vilnius EET</option>
+	<option value="LU-Luxembourg" id="49" zone="1:00">LU-Luxembourg CET</option>
+	<option value="LV-Riga" id="73" zone="2:00">LV-Riga EET</option>
+	<option value="MC-Monaco" zone="1:00">MC-Monaco CET</option>
+	<option value="MD-Chisinau" id="75" zone="2:00">MD-Chisinau EET</option>
+	<option value="MK-Skopje" id="50" zone="1:00">MK-Skopje CET</option>
+	<option value="MQ-Martinique" zone="-4:00">MQ-Martinique AST</option>
+	<option value="MS-Montserrat">MS-Montserrat AST</option>
+	<option value="MT-Malta" zone="-4:00">MT-Malta CET</option>
+	<option value="MU-Mauritius" zone="4:00">MU-Mauritius MUT</option>
+	<option value="MX-Mexico City" id="13" zone="-6:00">MX-Mexico City CST</option>
+	<option value="MX-Cancun" zone="-5:00">MX-Cancun CST</option>
+	<option value="MX-Merida" zone="-5:00">MX-Merida CST</option>
+	<option value="MX-Monterrey" zone="-5:00">MX-Monterrey CST</option>
+	<option value="MX-Mazatlan" zone="-6:00">MX-Mazatlan MST</option>
+	<option value="MX-Chihuahua" zone="-6:00">MX-Chihuahua MST</option>
+	<option value="MX-Hermosillo" id="8" zone="-7:00">MX-Hermosillo MST</option>
+	<option value="MX-Tijuana" id="5" zone="-8:00">MX-Tijuana PST</option>
+	<option value="NI-Managua" zone="-6:00">NI-Managua CST</option>
+	<option value="NL-Amsterdam" id="51" zone="1:00">NL-Amsterdam CET</option>
+	<option value="NO-Oslo" id="53" zone="1:00">NO-Oslo CET</option>
+	<option value="NR-Nauru" zone="12:00">NR-Nauru NRT</option>
+	<option value="NU-Niue" zone="-11:00">NU-Niue NUT</option>
+	<option value="NZ-Auckland" id="116" zone="12:00">NZ-Auckland NZS</option>
+	<option value="NZ-Chatham" id="118" zone="12:45">NZ-Chatham CHA</option>
+	<option value="OM-Muscat" id="85" zone="4:00">OM-Muscat GST</option>
+	<option value="PA-Panama" zone="-5:00">PA-Panama EST</option>
+	<option value="PE-Lima" zone="-5:00">PE-Lima PES</option>
+	<option value="PL-Warsaw" id="54" zone="1:00">PL-Warsaw CET</option>
+	<option value="PR-Puerto Rico" zone="-4:00">PR-Puerto Rico AST</option>
+	<option value="PT-Lisbon" id="34" zone="0:00">PT-Lisbon WET</option>
+	<option value="PT-Madeira" zone="0:00">PT-Madeira WET</option>
+	<option value="PT-Azores" id="31" zone="-1:00">PT-Azores AZO</option>
+	<option value="PY-Asuncion" id="21" zone="-4:00">PY-Asuncion PYS</option>
+	<option value="RO-Bucharest" id="77" zone="2:00">RO-Bucharest EET</option>
+	<option value="RU-Kaliningrad" id="76" zone="2:00">RU-Kaliningrad EET</option>
+	<option value="RU-Moscow" id="83" zone="3:00">RU-Moscow MSK</option>
+	<option value="RU-Samara" id="89" zone="4:00">RU-Samara SAM</option>
+	<option value="RU-Yekaterinburg" id="95" zone="5:00">RU-Yekaterinburg YEK</option>
+	<option value="RU-Omsk" id="98" zone="6:00">RU-Omsk OMS</option>
+	<option value="RU-Novosibirsk" id="99" zone="6:00">RU-Novosibirsk NOV</option>
+	<option value="RU-Krasnoyarsk" id="101" zone="7:00">RU-Krasnoyarsk KRA</option>
+	<option value="RU-Irkutsk" zone="8:00">RU-Irkutsk IRK</option>
+	<option value="RU-Yakutsk" zone="9:00">RU-Yakutsk YAK</option>
+	<option value="RU-Vladivostok" id="113" zone="10:00">RU-Vladivostok VLA</option>
+	<option value="RU-Sakhalin" zone="10:00">RU-Sakhalin SAK</option>
+	<option value="RU-Magadan" zone="10:00">RU-Magadan MAG</option>
+	<option value="RU-Kamchatka" id="117" zone="12:00">RU-Kamchatka PET</option>
+	<option value="RU-Anadyr" zone="12:00">RU-Anadyr ANA</option>
+	<option value="SA-Saudi Arabia" id="82" zone="3:00">SA-Saudi Arabia AST</option>
+	<option value="SE-Stockholm" id="57" zone="1:00">SE-Stockholm CET</option>
+	<option value="SG-Singapore" id="104" zone="8:00">SG-Singapore SGT</option>
+	<option value="SI-Ljubljana" zone="1:00">SI-Ljubljana CET</option>
+	<option value="SK-Bratislava" id="55" zone="1:00">SK-Bratislava CET</option>
+	<option value="SM-San Marino" zone="1:00">SM-San Marino CET</option>
+	<option value="SR-Paramaribo" zone="-3:00">SR-Paramaribo SRT</option>
+	<option value="SV-El Salvador" zone="-6:00">SV-El Salvador CST</option>
+	<option value="TR-Istanbul" id="79" zone="2:00">TR-Istanbul EET</option>
+	<option value="TT-Port of Spain" id="24" zone="-4:00">TT-Port of Spain AST</option>
+	<option value="TW-Taipei" zone="8:00">TW-Taipei CST</option>
+	<option value="UA-Kiev" id="80" zone="2:00">UA-Kiev EET</option>
+	<option value="US-Central" id="14" zone="-6:00">US-Central CST</option>
+	<option value="US-Mountain" id="9" zone="-7:00">US-Mountain MST</option>
+	<option value="US-Pacific" id="6" zone="-8:00">US-Pacific PST</option>
+	<option value="US-Alaska" id="2" zone="-10:00">US-Alaska AKS</option>
+	<option value="US-Aleutian" zone="-10:00">US-Aleutian HAS</option>
+	<option value="US-Hawaii" id="1" zone="-10:00">US-Hawaii HST</option>
+	<option value="UY-Montevideo" zone="-3:00">UY-Montevideo UYS</option>
+	<option value="VA-Vatican" zone="1:00">VA-Vatican CET</option>
+	<option value="VE-Caracas" id="18" zone="-4:30">VE-Caracas VET</option>
+	<option value="YU-Belgrade" id="60" zone="1:00">YU-Belgrade CET</option>
+	</timezoneParams>
+	<Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="payload=0;ptime=20;silsupp=off,payload=8;ptime=20;silsupp=off,payload=18;ptime=20;silsupp=off">Basic (includes G711u(8K),G711a(8K),G729)</option>
+		<option value="payload=0;ptime=20;silsupp=off">G711u(8K)</option>
+		<option value="payload=8;ptime=20;silsupp=off">G711a(8K)</option>
+		<option value="payload=9;ptime=20;silsupp=off">G722</option>
+		<option value="payload=18;ptime=20;silsupp=off">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+		<option value="payload=9;ptime=20;silsupp=off">G722</option>
+		<option value="payload=8;ptime=20;silsupp=off">G711a(8K)</option>
+		<option value="payload=0;ptime=20;silsupp=off">G711u 8K)</option>
+		<option value="payload=18;ptime=20;silsupp=off">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="payload=18;ptime=20;silsupp=off">G729</option>
+		<option value="payload=0;ptime=20;silsupp=off">G711u(8K)</option>
+		<option value="payload=8;ptime=20;silsupp=off">G711a(8K)</option>
+		<option value="payload=9;ptime=20;silsupp=off">G722</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="payload=0;ptime=20;silsupp=off">G711u 8K)</option>
+		<option value="payload=8;ptime=20;silsupp=off">G711a(8K)</option>
+		<option value="payload=9;ptime=20;silsupp=off">G722</option>
+		<option value="payload=18;ptime=20;silsupp=off">G729</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  
+  <blftype>
+      <extension>
+        <value>blfxfer</value>
+      </extension>
+	  <speeddial>
+        <value>speeddialxfer</value>
+      </speeddial>
+	  <customspeeddial>
+        <value>speeddialxfer</value>
+      </customspeeddial>
+      <queuelogin>
+        <value>speeddial</value>
+      </queuelogin>
+	  <profilestatus>
+        <value>speeddial</value>
+      </profilestatus>
+	  <parkextension>
+        <value>blfxfer</value>
+      </parkextension>
+  </blftype>
+  
+  <data>
+    <device>
+      <type>phone</type>
+  
+      <!-- Friendly Name -->
+      <field name="Name">Aastra SIP Phone</field>
+      <field name="RebootLink">astra</field>
+
+      <deviceconfig filename="%%mac_address%%.cfg">
+<![CDATA[
+########################################################
+###                   SIP Settings                   ###
+########################################################
+
+# The Extension Number must be specified in the "sip user name" field. The "extension_number" variable will be replaced by the Extension's Extension Number.
+sip line1 user name: %%extension_number%%
+
+# The Authentication ID must be specified in the "sip auth name" field. The "extension_auth_id" variable will be replaced by the Extension's Authentication ID.
+sip line1 auth name: %%extension_auth_id%%
+
+# The Authentication Password must be specified in the "sip password" field. The "extension_auth_pw" variable will be replaced by the Extension's Authentication Password.
+sip line1 password: %%extension_auth_pw%%
+
+# The "sip display name" field contains the Caller Name which the phone will send to 3CXPS. By default the provisioning template will set this to the First Name and Last Name of the Extension. The "extension_first_name" and "extension_last_name" variables will be replaced by the Extension's First Name and Last Name.
+sip line1 display name: %%extension_first_name%% %%extension_last_name%%
+
+# The "sip screen name" field contains the name which will be displayed on the phone's LCD. By default the provisioning template will set this to the First Name and Last Name of the Extension. The "extension_first_name" and "extension_last_name" variables will be replaced by the Extension's First Name and Last Name.
+sip line1 screen name: %%extension_first_name%% %%extension_last_name%%
+
+# The "sip proxy ip" field contains the ip address of the SIP Proxy - in the case 3CXPS. The "pbx_ip" variable will be replaced by the IP Address of 3CXPS.
+sip line1 proxy ip: %%pbx_ip%%
+
+# The "sip registrar ip" field contains the ip address of the SIP Registrar - in the case 3CXPS. The "pbx_ip" variable will be replaced by the IP Address of 3CXPS.
+sip line1 registrar ip: %%pbx_ip%%
+
+# The "sip proxy port" field contains the port of the SIP Proxy - in the case 3CXPS. The "param::sipport" variable will be replaced by the SIP Port of 3CXPS.
+sip line1 proxy port: %%param::sipport%%
+
+# The "sip registrar port" field contains the port of the SIP Registrar - in the case 3CXPS. The "param::sipport" variable will be replaced by the SIP Port of 3CXPS.
+sip line1 registrar port: %%param::sipport%%
+
+# The "sip mode" field specifies the type of SIP server which will be used. Valid values are: 0==Generic; 1==Broadsoft; 2==Nortel; 3==BLA. You must use 0==Generic for 3CXPS.
+sip line1 mode: 0
+
+# The "sip allow auto answer" field enables or disables automatic answering for intercom calls (if the phone is a member of a "Paging" Ring Group, for example). Valid values are 1==Allow Auto-Answer, 0==Do Not Allow Auto-Answer. The provisioning template sets the value to 1==Allow Auto-Answer.
+sip line1 allow auto answer: 1
+
+# The "sip intercom mute mic" field enables or disables the microphone on the phone for Intercom calls. Valid values are 1==Muted, 0==Not Muted. The provisioning template sets the value to 0==Not Muted.
+sip line1 intercom mute mic: 0
+
+# The "sip intercom warning tono" field enables or disables a warning tone to play when the phone receives an intercom call. Valid values are 1==Play Warning Tone, 0==Do Not Play Warning Tone. The provisioning template sets the value to 1==Play Warning Tone.
+sip line1 intercom warning tone: 1
+
+# The "sip intercom allow barge in" field enables or disables whether an incoming intercom call takes priority over currently active calls (by placing curently active calls on hold) or not. Valid values are 1==Intercom Calls Take Priority, 0==Intercom Calls Do Not Take Priority (treated like a normal call). The provisioning template sets the value to 0==Intercom Calls Do Not Take Priority
+sip line1 intercom allow barge in: 0
+
+# The "sip accept out of order requests" field enables the phone to accept sip requests which arrive with sequence numbers that are not in strict sequence. This can sometimes happen when a large number of updates are sent to the phone simultaneously. Valid values are 1==Accept Out Of Sequence Requests, 0==Do Not Accept Out Of Sequence Requests. The provisioning template sets the value to 1==Accept Out Of Sequence Requests
+sip line1 accept out of order requests: 1
+
+# The "sip blf subscription period" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for BLF notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.
+sip line1 blf subscription period: 900
+
+# The "sip registration retry timer" field specifies the length of time (in seconds) before the phone will retry registration after 3CXPS rejects a registration attempt. The provisioning template sets the value to 120 (2 minutes). Valid values are any positive integer.
+sip line1 registration retry timer: 120
+
+# The "sip registration timeout retry timer" field specifies the length of time (in seconds) before the phone will retry registration if the previous registration timed out with a response from 3CXPS. The provisioning template sets the value to 120 (2 minutes). Valid values are any positive integer.
+sip line1 registration timeout retry timer: 120
+
+# The "sip registration period" field specifies the length of time (in seconds) the phone will be registered with 3CXPS. The phone will attempt to re-register with 3CXPS before this time expires. The provisioning template sets the value to 120 (2 minutes). Valid values are any positive integer.
+sip line1 registration period: 120
+
+# The "sip explicit mwi subscription period" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for MWI notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.
+sip line1 explicit mwi subscription period: 900
+
+# Specifies the local source port (UDP/TCP) from which the phone sends SIP messages.
+sip local port: 5060
+
+# Indicates the port through which the RTP packets are sent. This value must specify the
+# beginning of the RTP port range on the gateway or router.
+sip rtp port: 3000
+
+# The protocol that the IP phone uses to send out SIP messages.
+sip transport protocol: 0
+
+# Specifies the length of time, in seconds, that the phone waits until it re-attempts to register
+# after a REGISTER message times out.
+sip registration timeout retry timer: 30
+
+########################################################
+###                  STUN parameters                 ###
+########################################################
+# IP address and/or qualified domain name of the STUN server (also know as Simple
+# Traversal of UDP through NAT).
+sip stun ip: 0.0.0.0
+sip stun port: 3478
+
+########################################################
+###             Plug and play sip notify             ###
+########################################################
+# Enables or disables the phone to accept of reject an aastra-xml SIP NOTIFY message 0 disabled 1 enabled
+sip whitelist: 1
+sip xml notify event: 1
+
+########################################################
+###                  Call Pickup Settings            ###
+########################################################
+directed call pickup: 1
+directed call pickup prefix:
+play a ring splash: 0
+
+########################################################
+###                   RTP Settings                   ###
+########################################################
+
+# The "sip use basic codecs" field tells the phone to use G711u, G711a, and G729 audio codecs. Valid calues are 1==Use Basic Codecs; 0==Specificy All Codecs Explicitly. The provisioning template sets the value to 1 by default.
+sip use basic codecs: 1
+
+# The "sip silence suppression" field enables or disables the use of the Silence Suppression feature. Valid values are 0==Disabled; 1==Enabled. The provisioning template sets the value to 0==Disabled to ensure correct interaction with other phones, gateways, and voip providers which do not support this feature.
+sip silence suppression: 0
+
+# The "sip customized codec" field contains a string that sets the specific parameters for each codec being used. This string must contain a section for each codec, seperated by ",". Each codec section must contain 3 parameter values - "payload" (the payload number), "ptime" (the packetization rate), and "silsupp" (silence suppression per-codec). The provisioning template uses the standard values "ptime=20" and "silsupp=off" for all codecs by default to ensure correct interaction with other phones, gateways, and voip providers which do not support non-standard values. Note: "payload=0" refers to G711u; "payload=8" refers to G711a, "payload=18" refers to G729
+sip customized codec: %%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%
+
+
+
+########################################################
+### VoiceMail and Message Waiting Indicator Settings ###
+########################################################
+
+# The "sip vmail" field contains the destination number for the VoiceMail service. The "vm_number" variable will be replacd by the 3CXPS VoiceMail Menu Extension Number.
+sip vmail: %%vm_number%%
+
+# The "mwi led line" field specifies which line to monitor for Waiting Messages. Valid values are 0==Any Line; 1==Line1; 2==Line2; 3==Line3; 4==Line4; 5--Line5; 6==Line6; 7==Line7; 8==Line8; 9==Line9
+mwi led line: 0
+
+# The "sip explicit mwi subscription" field enables or disables explicit subscription for MWI features. Valid values are 1==Enabled, 0==Disabled. The provisioning template sets the value to 1==Enabled.
+sip explicit mwi subscription: 1
+
+# Controls which visual indicators are displayed on the IP phone when voicemail messages are pending on 
+# SCA-configured lines. Applicable to the 9480i, 9480i CT, 6735i, 6737i, 6755i, 6757i, 6757i CT, and 6867i model IP phones (as well as expansion modules).
+voice mail indicator: 2
+
+########################################################
+###              Configuration server settings       ###
+########################################################
+
+# The "download protocol" field specifies the protocol which the phone will use to retrieve provisioning configuration files. Valid values are "HTTP", "HTTPS", "FTP", "TFTP". The provisioning template sets the value to HTTP since practically all phone vendors support HTTP. This setting, together with DHCP Option 66, will allow the phone to retrieve its configuration files over HTTP. For this phone, DHCP Option 66 must be set to "http://%%pbx_ip%%:%%pbx_http_port%%/provisioning/%%PROVSUBDIR%%/"
+download protocol: HTTP
+http server: %%PROVLINKLOCAL.HOST%%
+http path: %%PROVLINKLOCAL.PATH%%
+http port: %%PROVLINKLOCAL.PORT%%
+
+# firmware server update path from where the phone will get the firmware update. Example 57.st
+firmware server: %%PROVLINKLOCAL%%/firmware/aastra
+
+
+########################################################
+###             Remote Reboot Settings               ###
+########################################################
+
+# The "xml application post list" field specifies which IP Addresses can remotely request the phone to reboot. The "pbx_ip" variable will be replaced by the IP Address of 3CXPS.
+xml application post list: %%pbx_ip%%
+
+
+########################################################
+###   Phone LCD Backlight Settings (if available)    ###
+########################################################
+
+# The "backlight mode" field specifies whether the LCD Backlight is always off, or whether the LCD Backlight turns off Automatically after a period of inactivity. Valid values are 0==Always Off, 1==Auto Off. The provisioning template sets the value to 1==Auto Off.
+backlight mode: 1
+
+# Allows you to set the amount of time, in seconds, that the backlight stays ON before
+# turning OFF because of inactivity.
+bl on time: 30
+
+# The "bl on time" field specifies the length (in seconds) of the period of inactivity before the LCD Backlight turns off automatically. Valid values is any valid positive integer. The provisioning template sets the value to 5 seconds.
+bl on time: 5 
+
+# Specifies the location of the background image for the idle screen on 6739i and 6867i phones.
+background image: %%PROVLINKLOCAL%%/logo/aastra6739.png
+
+
+########################################################
+###              Time and DST Settings               ###
+########################################################
+
+time server disabled: 0
+time server1: %%param::time_ntp_server%%
+time server2: 
+time server3: 
+time zone name: %%param::time_timezone_aastra%%
+
+# The "date format" field enables you to select the date format on the phone's display. Valid values are "0" (WWW MMM DD), "1" (DD-MMM-YY), "2" (YYY-MM-DD), "3" (DD/MM/YYYY), "4" (DD/MM/YY), "5" (DD-MM-YY), "6" (MM/DD/YY), "7" (MMM DD)
+date format: 0
+
+# The "time format" field enables you to select 12hr or 24hr format on the phone's display. Valid values are "0" (12hr format), "1" (24hr format)
+time format: 1
+
+# Daylight Savings - Enables/disables the use of Daylight Savings Time Page A53 of Admin Guide. Available values 0 -OFF, 1 -30min Summer Time, 2 -1hr Summer time, 3 -Automatic
+dst config: 3
+
+	
+########################################################
+###               Phonebook Settings                 ###
+########################################################
+
+# The "directory disabled" field enables or disables access to the 3CXPS Phonebook. Valid values are 0==Enabled, 1==Disabled. The provisioning template sets the value to 0==Enabled.
+directory disabled: 0
+
+# The "directory 1" field specifies the filename which contains the Company Direcory (3CXPS System-Wide Phonebook). The provisioning template sets this value to "aastra_phonebook.csv", which is filename for the phonebook generated by 3CXPS in Aastra-compatible format.
+directory 1: %%PROVLINKLOCAL%%/aastra_phonebook.csv
+
+########################################################
+###               Language  Settings   Pg: A191      ###
+### Basic settings/preferences/Language settings     ###
+########################################################
+#Language webpage language available options 0-4 (0 English, 1 language1, 2 language2, 3 language3, 4 language4) 
+language: 1
+
+#Input Language - Input language for IP phone
+input language: %%langwebUI2%%
+
+#Web interface language - Load language 1 first by default 
+web language: 1
+
+#Language pack settings - Download string Language N. Language packs need to be placed in Firmware folder. Download language pack from Aastra website. 
+language 1: %%PROVLINKLOCAL%%/firmware/aastra/%%langlcdUI%%
+language 2: 
+
+########################################################
+###                Networking V-LAN                  ###
+########################################################
+
+# VLAn Enabled / Disabled and Priority of Non-IP Packet
+vlanEnabled: 0
+nonippri: 5
+# Phone Vlan ID and Prio
+vlanid0: 1
+sippri: 3
+rtppri: 5
+rtcppri: 5
+# PC Port Vlan ID and Prio
+vlanid1: 4095
+port1pri: 0
+
+########################################################
+###                 Other Settings                   ###
+########################################################
+
+########################################################
+# Phone Web Admin password
+# Uncomment and adjust the following field if you would like all your provisioned phones to have the same Admin Web Interface password. Use numeric passwords ONLY.
+# admin password: %%DESKPHONE_PASSWORD%%
+# user password: %%DESKPHONE_PASSWORD%%
+
+# Enables or disables password protection of the Options key on the IP phone. If enabled,
+# upon pressing the Options key, a user has to enter a password at the IP phone UI.
+options password enabled: 0
+
+# Enables or disables the Missed Calls Indicator.
+missed calls indicator disabled: 1
+
+# Specifies whether or not the phone displays an indication of a terminated call.
+far end disconnect timer: 0
+
+########################################################
+
+########################################################
+###                  In display settings             ###
+########################################################
+
+{If ua=Aastra 6730i}
+prgkey1 type: dnd
+prgkey1 value:
+prgkey1 line: 1
+prgkey2 type: callforward
+prgkey2 value:
+prgkey2 line: 1
+prgkey3 type: directory
+prgkey3 value:
+prgkey4 line: 1
+prgkey4 type: empty
+prgkey4 value:
+prgkey5 line: 1
+prgkey7 type: services
+prgkey7 value:
+prgkey7 line: 1
+prgkey8 type: speeddial
+prgkey8 value: %%vm_number%%
+prgkey8 line: 1
+{ENDIF}
+
+{If ua=Aastra 6731i}
+prgkey1 type: dnd
+prgkey1 value:
+prgkey1 line: 1
+prgkey2 type: callforward
+prgkey2 value:
+prgkey2 line: 1
+prgkey3 type: directory
+prgkey3 value:
+prgkey3 line: 1
+prgkey4 type: callers
+prgkey4 value:
+prgkey4 line: 1
+prgkey7 type: services
+prgkey7 value:
+prgkey7 line: 1
+prgkey8 type: speeddial
+prgkey8 value: %%vm_number%%
+prgkey8 line: 1
+{ENDIF}
+
+{If ua=Aastra 53i}
+prgkey3 type: xfer
+prgkey3 value:
+prgkey3 line: 1
+prgkey4 type: dnd
+prgkey4 value:
+prgkey4 line: 1
+prgkey5 type: directory
+prgkey5 value:
+prgkey5 line: 1
+prgkey6 type: callers
+prgkey6 value:
+prgkey6 line: 1
+{ENDIF}
+
+{If ua=Aastra 55i}
+prgkey1 type: dnd
+prgkey1 value:
+prgkey1 line: 1
+prgkey2 type: callforward
+prgkey2 value:
+prgkey2 line: 1
+prgkey3 type: directory
+prgkey3 value:
+prgkey3 line: 1
+prgkey4 type: callers
+prgkey4 value:
+prgkey4 line: 1
+prgkey5 type: services
+prgkey5 value:
+prgkey5 line: 1
+prgkey6 type: speeddial
+prgkey6 value: %%vm_number%%
+prgkey6 line: 1
+{ENDIF}
+
+{If ua=Aastra 57i}
+topsoftkey1 type: dnd
+topsoftkey1 value:
+topsoftkey1 line: 1
+topsoftkey2 type: callforward
+topsoftkey2 value:
+topsoftkey2 line: 1
+topsoftkey3 type: directory
+topsoftkey3 value:
+topsoftkey3 line: 1
+topsoftkey4 type: callers
+topsoftkey4 value:
+topsoftkey4 line: 1
+topsoftkey5 type: speeddial
+topsoftkey5 value: %%vm_number%%
+topsoftkey5 label: Voice Mail
+topsoftkey5 line: 1
+topsoftkey6 type: services
+topsoftkey6 value: 
+topsoftkey6 line: 1
+{ENDIF}
+
+########################################################
+###                  BLF Settings                    ###
+########################################################
+
+# The "softkey1 type" field specifies the type of functionality enabled on the first softkey. Valid values for use with 3CXPS are "none", "blf" for monitoring other extensions, and "blfxfer" to monitor other extensions AND transfering calls. The provisioning template sets the value to "blfxfer".
+# The "softkey1 label" field specifies the text label that displays on the phone for the softkey. The "blf1" variable will be replaced by the extension number chosen for monitoring.
+# The "softkey1 value" field specifies which extension number to monitor for the softkey. The "blf1" variable will be replaced by the extension number chosen for monitoring.
+# The comments for "softkey1 type", "softkey1 label", and "softkey1 value" apply also for subsequent softkeys in sequence. The other softkeys will be "softkey2", "softkey3", and so on.
+
+{IF blf1}
+softkey1 type: %%value%%
+softkey1 label: %%blffirstname1%% %%blflastname1%%
+softkey1 value: %%blf1%%
+softkey1 line: 1
+{ELSE}
+softkey1 type:
+softkey1 label:
+softkey1 value:
+{ENDIF}
+
+{IF blf2}
+softkey2 type: %%value%%
+softkey2 label: %%blffirstname2%% %%blflastname2%%
+softkey2 value: %%blf2%%
+softkey2 line: 1
+{ELSE}
+softkey2 type:
+softkey2 label:
+softkey2 value:
+{ENDIF}
+
+{IF blf3}
+softkey3 type: %%value%%
+softkey3 label: %%blffirstname3%% %%blflastname3%%
+softkey3 value: %%blf3%%
+softkey3 line: 1
+{ELSE}
+softkey3 type:
+softkey3 label:
+softkey3 value:
+{ENDIF}
+
+{IF blf4}
+softkey4 type: %%value%%
+softkey4 label: %%blffirstname4%% %%blflastname4%%
+softkey4 value: %%blf4%%
+softkey4 line: 1
+{ELSE}
+softkey4 type:
+softkey4 label:
+softkey4 value:
+{ENDIF}
+
+{IF blf5}
+softkey5 type: %%value%%
+softkey5 label: %%blffirstname5%% %%blflastname5%%
+softkey5 value: %%blf5%%
+softkey5 line: 1
+{ELSE}
+softkey5 type:
+softkey5 label:
+softkey5 value:
+{ENDIF}
+
+{IF blf6}
+softkey6 type: %%value%%
+softkey6 label: %%blffirstname6%% %%blflastname6%%
+softkey6 value: %%blf6%%
+softkey6 line: 1
+{ELSE}
+softkey6 type:
+softkey6 label:
+softkey6 value:
+{ENDIF}
+
+{IF blf7}
+softkey7 type: %%value%%
+softkey7 label: %%blffirstname7%% %%blflastname7%%
+softkey7 value: %%blf7%%
+softkey7 line: 1
+{ELSE}
+softkey7 type:
+softkey7 label:
+softkey7 value:
+{ENDIF}
+
+{IF blf8}
+softkey8 type: %%value%%
+softkey8 label: %%blffirstname8%% %%blflastname8%%
+softkey8 value: %%blf8%%
+softkey8 line: 1
+{ELSE}
+softkey8 type:
+softkey8 label:
+softkey8 value:
+{ENDIF}
+
+{IF blf9}
+softkey9 type: %%value%%
+softkey9 label: %%blffirstname9%% %%blflastname9%%
+softkey9 value: %%blf9%%
+softkey9 line: 1
+{ELSE}
+softkey9 type:
+softkey9 label:
+softkey9 value:
+{ENDIF}
+
+{IF blf10}
+softkey10 type: %%value%%
+softkey10 label: %%blffirstname10%% %%blflastname10%%
+softkey10 value: %%blf10%%
+softkey10 line: 1
+{ELSE}
+softkey10 type:
+softkey10 label:
+softkey10 value:
+{ENDIF}
+
+{IF blf11}
+softkey11 type: %%value%%
+softkey11 label: %%blffirstname11%% %%blflastname11%%
+softkey11 value: %%blf11%%
+softkey11 line: 1
+{ELSE}
+softkey11 type:
+softkey11 label:
+softkey11 value:
+{ENDIF}
+
+{IF blf12}
+softkey12 type: %%value%%
+softkey12 label: %%blffirstname12%% %%blflastname12%%
+softkey12 value: %%blf12%%
+softkey12 line: 1
+{ELSE}
+softkey12 type:
+softkey12 label:
+softkey12 value:
+{ENDIF}
+
+{IF blf13}
+softkey13 type: %%value%%
+softkey13 label: %%blffirstname13%% %%blflastname13%%
+softkey13 value: %%blf13%%
+softkey13 line: 1
+{ELSE}
+softkey13 type:
+softkey13 label:
+softkey13 value:
+{ENDIF}
+
+{IF blf14}
+softkey14 type: %%value%%
+softkey14 label: %%blffirstname14%% %%blflastname14%%
+softkey14 value: %%blf14%%
+softkey14 line: 1
+{ELSE}
+softkey14 type:
+softkey14 label:
+softkey14 value:
+{ENDIF}
+
+{IF blf15}
+softkey15 type: %%value%%
+softkey15 label: %%blffirstname15%% %%blflastname15%%
+softkey15 value: %%blf15%%
+softkey15 line: 1
+{ELSE}
+softkey15 type:
+softkey15 label:
+softkey15 value:
+{ENDIF}
+
+{IF blf16}
+softkey16 type: %%value%%
+softkey16 label: %%blffirstname16%% %%blflastname16%%
+softkey16 value: %%blf16%%
+softkey16 line: 1
+{ELSE}
+softkey16 type:
+softkey16 label:
+softkey16 value:
+{ENDIF}
+
+{IF blf17}
+softkey17 type: %%value%%
+softkey17 label: %%blffirstname17%% %%blflastname17%%
+softkey17 value: %%blf17%%
+softkey17 line: 1
+{ELSE}
+softkey17 type:
+softkey17 label:
+softkey17 value:
+{ENDIF}
+
+{IF blf18}
+softkey18 type: %%value%%
+softkey18 label: %%blffirstname18%% %%blflastname18%%
+softkey18 value: %%blf18%%
+softkey18 line: 1
+{ELSE}
+softkey18 type:
+softkey18 label:
+softkey18 value:
+{ENDIF}
+
+{IF blf19}
+softkey19 type: %%value%%
+softkey19 label: %%blffirstname19%% %%blflastname19%%
+softkey19 value: %%blf19%%
+softkey19 line: 1
+{ELSE}
+softkey19 type:
+softkey19 label:
+softkey19 value:
+{ENDIF}
+
+{IF blf20}
+softkey20 type: %%value%%
+softkey20 label: %%blffirstname20%% %%blflastname20%%
+softkey20 value: %%blf20%%
+softkey20 line: 1
+{ELSE}
+softkey20 type:
+softkey20 label:
+softkey20 value:
+{ENDIF}
+
+{IF blf21}
+softkey21 type: %%value%%
+softkey21 label: %%blffirstname21%% %%blflastname21%%
+softkey21 value: %%blf21%%
+softkey21 line: 1
+{ELSE}
+softkey21 type:
+softkey21 label:
+softkey21 value:
+{ENDIF}
+
+{IF blf22}
+softkey22 type: %%value%%
+softkey22 label: %%blffirstname22%% %%blflastname22%%
+softkey22 value: %%blf22%%
+softkey22 line: 1
+{ELSE}
+softkey22 type:
+softkey22 label:
+softkey22 value:
+{ENDIF}
+
+{IF blf23}
+softkey23 type: %%value%%
+softkey23 label: %%blffirstname23%% %%blflastname23%%
+softkey23 value: %%blf23%%
+softkey23 line: 1
+{ELSE}
+softkey23 type:
+softkey23 label:
+softkey23 value:
+{ENDIF}
+
+{IF blf24}
+softkey24 type: %%value%%
+softkey24 label: %%blffirstname24%% %%blflastname24%%
+softkey24 value: %%blf24%%
+softkey24 line: 1
+{ELSE}
+softkey24 type:
+softkey24 label:
+softkey24 value:
+{ENDIF}
+
+{IF blf25}
+softkey25 type: %%value%%
+softkey25 label: %%blffirstname25%% %%blflastname25%%
+softkey25 value: %%blf25%%
+softkey25 line: 1
+{ELSE}
+softkey25 type:
+softkey25 label:
+softkey25 value:
+{ENDIF}
+
+{IF blf26}
+softkey26 type: %%value%%
+softkey26 label: %%blffirstname26%% %%blflastname26%%
+softkey26 value: %%blf26%%
+softkey26 line: 1
+{ELSE}
+softkey26 type:
+softkey26 label:
+softkey26 value:
+{ENDIF}
+
+{IF blf27}
+softkey27 type: %%value%%
+softkey27 label: %%blffirstname27%% %%blflastname27%%
+softkey27 value: %%blf27%%
+softkey27 line: 1
+{ELSE}
+softkey27 type:
+softkey27 label:
+softkey27 value:
+{ENDIF}
+
+{IF blf28}
+softkey28 type: %%value%%
+softkey28 label: %%blffirstname28%% %%blflastname28%%
+softkey28 value: %%blf28%%
+softkey28 line: 1
+{ELSE}
+softkey28 type:
+softkey28 label:
+softkey28 value:
+{ENDIF}
+
+{IF blf29}
+softkey29 type: %%value%%
+softkey29 label: %%blffirstname29%% %%blflastname29%%
+softkey29 value: %%blf29%%
+softkey29 line: 1
+{ELSE}
+softkey29 type:
+softkey29 label:
+softkey29 value:
+{ENDIF}
+
+{IF blf30}
+softkey30 type: %%value%%
+softkey30 label: %%blffirstname30%% %%blflastname30%%
+softkey30 value: %%blf30%%
+softkey30 line: 1
+{ELSE}
+softkey30 type:
+softkey30 label:
+softkey30 value:
+{ENDIF}
+
+{IF blf31}
+softkey31 type: %%value%%
+softkey31 label: %%blffirstname31%% %%blflastname31%%
+softkey31 value: %%blf31%%
+softkey31 line: 1
+{ELSE}
+softkey31 type:
+softkey31 label:
+softkey31 value:
+{ENDIF}
+
+{IF blf32}
+softkey32 type: %%value%%
+softkey32 label: %%blffirstname32%% %%blflastname32%%
+softkey32 value: %%blf32%%
+softkey32 line: 1
+{ELSE}
+softkey32 type:
+softkey32 label:
+softkey32 value:
+{ENDIF}
+
+{IF blf33}
+softkey33 type: %%value%%
+softkey33 label: %%blffirstname33%% %%blflastname33%%
+softkey33 value: %%blf33%%
+softkey33 line: 1
+{ELSE}
+softkey33 type:
+softkey33 label:
+softkey33 value:
+{ENDIF}
+
+{IF blf34}
+softkey34 type: %%value%%
+softkey34 label: %%blffirstname34%% %%blflastname34%%
+softkey34 value: %%blf34%%
+softkey34 line: 1
+{ELSE}
+softkey34 type:
+softkey34 label:
+softkey34 value:
+{ENDIF}
+
+{IF blf35}
+softkey35 type: %%value%%
+softkey35 label: %%blffirstname35%% %%blflastname35%%
+softkey35 value: %%blf35%%
+softkey35 line: 1
+{ELSE}
+softkey35 type:
+softkey35 label:
+softkey35 value:
+{ENDIF}
+
+{IF blf36}
+softkey36 type: %%value%%
+softkey36 label: %%blffirstname36%% %%blflastname36%%
+softkey36 value: %%blf36%%
+softkey36 line: 1
+{ELSE}
+softkey36 type:
+softkey36 label:
+softkey36 value:
+{ENDIF}
+
+{IF blf37}
+softkey37 type: %%value%%
+softkey37 label: %%blffirstname37%% %%blflastname37%%
+softkey37 value: %%blf37%%
+softkey37 line: 1
+{ELSE}
+softkey37 type:
+softkey37 label:
+softkey37 value:
+{ENDIF}
+
+{IF blf38}
+softkey38 type: %%value%%
+softkey38 label: %%blffirstname38%% %%blflastname38%%
+softkey38 value: %%blf38%%
+softkey38 line: 1
+{ELSE}
+softkey38 type:
+softkey38 label:
+softkey38 value:
+{ENDIF}
+
+{IF blf39}
+softkey39 type: %%value%%
+softkey39 label: %%blffirstname39%% %%blflastname39%%
+softkey39 value: %%blf39%%
+softkey39 line: 1
+{ELSE}
+softkey39 type:
+softkey39 label:
+softkey39 value:
+{ENDIF}
+
+{IF blf40}
+softkey40 type: %%value%%
+softkey40 label: %%blffirstname40%% %%blflastname40%%
+softkey40 value: %%blf40%%
+softkey40 line: 1
+{ELSE}
+softkey40 type:
+softkey40 label:
+softkey40 value:
+{ENDIF}
+
+{IF blf41}
+softkey41 type: %%value%%
+softkey41 label: %%blffirstname41%% %%blflastname41%%
+softkey41 value: %%blf41%%
+softkey41 line: 1
+{ELSE}
+softkey41 type:
+softkey41 label:
+softkey41 value:
+{ENDIF}
+
+{IF blf42}
+softkey42 type: %%value%%
+softkey42 label: %%blffirstname42%% %%blflastname42%%
+softkey42 value: %%blf42%%
+softkey42 line: 1
+{ELSE}
+softkey42 type:
+softkey42 label:
+softkey42 value:
+{ENDIF}
+
+{IF blf43}
+softkey43 type: %%value%%
+softkey43 label: %%blffirstname43%% %%blflastname43%%
+softkey43 value: %%blf43%%
+softkey43 line: 1
+{ELSE}
+softkey43 type:
+softkey43 label:
+softkey43 value:
+{ENDIF}
+
+{IF blf44}
+softkey44 type: %%value%%
+softkey44 label: %%blffirstname44%% %%blflastname44%%
+softkey44 value: %%blf44%%
+softkey44 line: 1
+{ELSE}
+softkey44 type:
+softkey44 label:
+softkey44 value:
+{ENDIF}
+
+{IF blf45}
+softkey45 type: %%value%%
+softkey45 label: %%blffirstname45%% %%blflastname45%%
+softkey45 value: %%blf45%%
+softkey45 line: 1
+{ELSE}
+softkey45 type:
+softkey45 label:
+softkey45 value:
+{ENDIF}
+
+{IF blf46}
+softkey46 type: %%value%%
+softkey46 label: %%blffirstname46%% %%blflastname46%%
+softkey46 value: %%blf46%%
+softkey46 line: 1
+{ELSE}
+softkey46 type:
+softkey46 label:
+softkey46 value:
+{ENDIF}
+
+{IF blf47}
+softkey47 type: %%value%%
+softkey47 label: %%blffirstname47%% %%blflastname47%%
+softkey47 value: %%blf47%%
+softkey47 line: 1
+{ELSE}
+softkey47 type:
+softkey47 label:
+softkey47 value:
+{ENDIF}
+
+{IF blf48}
+softkey48 type: %%value%%
+softkey48 label: %%blffirstname48%% %%blflastname48%%
+softkey48 value: %%blf48%%
+softkey48 line: 1
+{ELSE}
+softkey48 type:
+softkey48 label:
+softkey48 value:
+{ENDIF}
+
+{IF blf49}
+softkey49 type: %%value%%
+softkey49 label: %%blffirstname49%% %%blflastname49%%
+softkey49 value: %%blf49%%
+softkey49 line: 1
+{ELSE}
+softkey49 type:
+softkey49 label:
+softkey49 value:
+{ENDIF}
+
+{IF blf50}
+softkey50 type: %%value%%
+softkey50 label: %%blffirstname50%% %%blflastname50%%
+softkey50 value: %%blf50%%
+softkey50 line: 1
+{ELSE}
+softkey50 type:
+softkey50 label:
+softkey50 value:
+{ENDIF}
+
+{IF blf51}
+softkey51 type: %%value%%
+softkey51 label: %%blffirstname51%% %%blflastname51%%
+softkey51 value: %%blf51%%
+softkey51 line: 1
+{ELSE}
+softkey51 type:
+softkey51 label:
+softkey51 value:
+{ENDIF}
+
+{IF blf52}
+softkey52 type: %%value%%
+softkey52 label: %%blffirstname52%% %%blflastname52%%
+softkey52 value: %%blf52%%
+softkey52 line: 1
+{ELSE}
+softkey52 type:
+softkey52 label:
+softkey52 value:
+{ENDIF}
+
+{IF blf53}
+softkey53 type: %%value%%
+softkey53 label: %%blffirstname53%% %%blflastname53%%
+softkey53 value: %%blf53%%
+softkey53 line: 1
+{ELSE}
+softkey53 type:
+softkey53 label:
+softkey53 value:
+{ENDIF}
+
+{IF blf54}
+softkey54 type: %%value%%
+softkey54 label: %%blffirstname54%% %%blflastname54%%
+softkey54 value: %%blf54%%
+softkey54 line: 1
+{ELSE}
+softkey54 type:
+softkey54 label:
+softkey54 value:
+{ENDIF}
+
+{IF blf55}
+softkey55 type: %%value%%
+softkey55 label: %%blffirstname55%% %%blflastname55%%
+softkey55 value: %%blf55%%
+softkey55 line: 1
+{ELSE}
+softkey55 type:
+softkey55 label:
+softkey55 value:
+{ENDIF}
+
+########################################################
+###               Cleanup Global SIP                 ###
+########################################################
+
+sip user name:
+sip auth name: 
+sip password:
+sip display name:
+sip screen name: 
+sip proxy ip: 
+sip registrar ip:
+sip proxy port:
+sip registrar port:
+sip mode: 
+sip allow auto answer: 1
+sip intercom mute mic: 0
+sip intercom warning tone: 1
+sip intercom allow barge in: 0
+sip accept out of order requests: 
+sip blf subscription period:
+sip registration retry timer:
+sip registration timeout retry timer:
+sip registration period:
+sip explicit mwi subscription period:
+
+]]>
+      </deviceconfig>
+
+    </device>
+  </data>   
+</doc>

@@ -1,0 +1,114 @@
+<div class="tab-pane" id="exampleTabsTwo" role="tabpanel">
+
+
+  <div class="example example-forwarding">
+    <!-- 这里应该需要一个浮动的层，但不是全屏，只有这个页签 -->
+    <div class="example-loading example-well height-350 vertical-align text-center" id="ex-vm-loading">
+      <div class="loader vertical-align-middle loader-circle" data-type="default"></div>
+    </div>
+
+    <h5 class="margin-top-10">
+      Voice Mail Options
+    </h5>
+
+    <p>
+      Once the voice mail is enabled, the voice message will be recoreded if extension unable to answer the call
+    </p>
+
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">Enable Voice Mail</label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <div class="checkbox-custom checkbox-default" style="height: 36px">
+            <input type="checkbox" id="evm-enable" data-mark="default" data-init="checked"
+                   data-checked="<%=trimValue(data.eData, ['voice_mail','enable_voicemail'])%>">
+            <label></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">
+        Prompt language
+      </label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <select data-role="select" data-mark="default" id="evm-prompt-language" data-init="default"
+                  data-selected="<%=trimValue(data.eData, ['voice_mail', 'prompt_language'])%>">
+            <option value="en">English</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">Enable Voicemail PIN Authentication</label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <div class="checkbox-custom checkbox-default" style="height: 36px">
+            <input type="checkbox" data-mark="default" id="evm-pin-auth"
+                   data-checked="<%=trimValue(data.eData, ['voice_mail','enable_vm_pin_auth'])%>">
+            <label></label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+    </div>
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">
+        PIN Number
+      </label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <input type="text" class="form-control" placeholder="PIN Number" autocomplete="off"
+                 data-mark="default" id="evm-pin-number"
+                 value="<%=trimValue(data.eData, ['voice_mail', 'voicemail_pin'])%>">
+        </div>
+      </div>
+    </div>
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">
+        Play Call ID
+      </label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <div class="checkbox-custom checkbox-default" style="height: 36px">
+            <input type="checkbox" data-mark="default" id="evm-call-id"
+                   data-checked="<%=trimValue(data.eData, ['voice_mail','enable_play_caller_id'])%>">
+            <label></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group my-form-group">
+      <label class="col-sm-4 control-label">
+        Read Out Date/time of message
+      </label>
+
+      <div class="col-sm-8 padding-left-0">
+        <div class="col-sm-8">
+          <select class="bs-select-hidden" data-role="select" data-mark="default" id="evm-read-out"
+                  data-selected="<%=trimValue(data.eData, ['voice_mail','msg_read_out_datetime'])%>"
+                  data-init="default">
+            <option value="1">Do not read</option>
+            <option value="2">Read in AM/PM format</option>
+            <option value="3">Read in 24-hour format</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+
+    <div id="evm-greeting-file-box">
+
+    </div>
+  </div>
+
+
+</div>

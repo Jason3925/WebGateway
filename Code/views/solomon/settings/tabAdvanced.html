@@ -1,0 +1,70 @@
+<div class="tab-pane" id="tabAdvanced" role="tabpanel">
+  <!-- General BEGIN  -->
+
+
+  <h5 class="margin-top-10">
+    Paging/Intercom
+  </h5>
+
+  <!--<p>-->
+  <!--This is the list of the IP Address/Domain that will be allowed to used as a whitelist to allow  gateways and other trusted servers, clients to skip authentication.-->
+  <!--</p>-->
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Dial code :</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Run As User" autocomplete="off"
+               data-mark="default" id="ss-dial-code"
+               value="<%=trimValue(data.ssData, ['paging_intercom', 'dial_code'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Alert-Info header for Auto Answer :</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <select class="bs-select-hidden" data-role="select" data-mark="default" id="ss-alert-info-header"
+                data-selected="<%=trimValue(data.ssData, ['paging_intercom', 'auto_answer_alert_info_header'])%>">
+          <option value="1">intercom</option>
+          <option value="2">alert-autoanswer</option>
+          <option value="3">Auto Answer</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Call-Info header for Auto Answer :</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-auto-answer"
+                 data-checked="<%=trimValue(data.ssData, ['paging_intercom', 'enable_auto_answer_call_info_header'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-4 control-label">Require Answer Mode(RFC5373):</label>
+
+    <div class="col-sm-8 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-answer-mode"
+                 data-checked="<%=trimValue(data.ssData, ['paging_intercom', 'enable_require_answer_mode'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+
+  <!-- END  -->
+</div>

@@ -1,0 +1,170 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0)" data-return="ms">Media Server</a></li>
+      <li class="active"><%=type=='add'?'Add':type=='update'?'Update':''%> Server</li>
+    </ol>
+
+  </div>
+  <div class="page-content">
+
+    <div class="row">
+      <div class="col-sm-8 my-setting-box">
+        <div class="panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <%=type==='add'?'Add a media server.':type==='update'?'Media Server information': ''%>
+            </h3>
+          </div>
+
+          <div class="panel-body container-fluid">
+            <div class="example padding-left-20 example-forwarding">
+              <!-- 这里应该需要一个浮动的层，但不是全屏，只有这个页签 -->
+              <div class="example-loading example-well height-350 vertical-align text-center" data-load="hide"
+                   id="ms-btn-apply-loading">
+                <div class="loader vertical-align-middle loader-circle" data-type="default"></div>
+              </div>
+              <form class="form-horizontal" name="form-transports-add">
+                <h5>
+                  General
+                </h5>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Name:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Name" autocomplete="off"
+                             data-mark="default" id="ms-name" value="<%=trimValue(data.msData, ['name'])%>"
+                             data-update="disabled">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Server IP
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Server IP" autocomplete="off"
+                             data-mark="default" id="ms-ip" value="<%=trimValue(data.msData, ['ip'])%>"
+                             data-update="disabled">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Server Port
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Server Port" autocomplete="off"
+                             data-mark="default" id="ms-port" value="<%=trimValue(data.msData, ['port'])%>"
+                             data-update="disabled">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Maximum call sessions
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum call sessions" autocomplete="off"
+                             data-mark="default" id="ms-max-concurrent"
+                             value="<%=trimValue(data.msData, ['max_concurrent_sessions'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <hr/>
+                <%
+                if(type == 'update') {
+                %>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Active Sessoins
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum call sessions" autocomplete="off"
+                             data-mark="default" id="ms-call-sessions"
+                             value="<%=trimValue(data.msData, ['active_call_sessions'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    CPU
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum call sessions" autocomplete="off"
+                             data-mark="default" id="ms-cpu"
+                             value="<%=trimValue(data.msData, ['cpu_usage'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Memory
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum call sessions" autocomplete="off"
+                             data-mark="default" id="ms-memory"
+                             value="<%=trimValue(data.msData, ['memory_usage'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <%
+                }
+                %>
+
+
+
+
+
+
+                <div class="form-group my-form-group margin-top-30">
+                  <div class="col-sm-8 col-sm-offset-4">
+                    <button type="button" class="btn btn-default btn-primary btn-outline"
+                            data-return="ms">
+                      Cancel
+                    </button>
+                    <button type="reset" class="btn btn-default btn-outline btn-primary">
+                      Reset
+                    </button>
+                    <button type="button" class="btn btn-default btn-outline btn-primary" id="ms-btn-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

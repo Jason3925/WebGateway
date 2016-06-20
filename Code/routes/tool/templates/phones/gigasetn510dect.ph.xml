@@ -1,0 +1,749 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-04-18 15:00:00</time>
+    <time>2013-10-12 19:00:00</time>
+    <name>Gigaset N510</name>
+    <url>http://www.gigaset.com</url>
+    <image>gigaset.png</image>
+    <models>
+		<model ua="N510">Gigaset N510 IP PRO</model>
+    </models>
+    <description>Gigaset N510</description>
+    <parsers>
+        <parser>BLF</parser>
+    </parsers>
+	<rebootParams>
+      <event-name>reboot</event-name>
+    </rebootParams>
+	<resyncParams>
+		<event-name>check-sync;reboot=false</event-name>
+	</resyncParams>
+	<firmwareParams>
+	  <event-name>check-sync;reboot=true</event-name>
+	</firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">1</option>
+        <option value="REMOTESPM">0</option>
+	</AllowedNetworkConfig>
+	
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+	
+	<languages>
+		<option value="English">
+			<item name = "langwebUI">1</item>
+		</option>  
+		<option value="Deutsch">
+			<item name = "langwebUI">2</item>
+		</option>  
+		<option value="Espanol">
+			<item name = "langwebUI">4</item>
+		</option>  
+		<option value="Portugues">
+			<item name = "langwebUI">5</item>
+		</option>   
+		<option value="Italiano">
+			<item name = "langwebUI">7</item>
+		</option>    
+		<option value="Francais">
+			<item name = "langwebUI">9</item>
+		</option>  	
+	</languages>
+	
+	<timezoneParams param="time_timezone_giaset">
+		<!--The first entry is the selected entry in management console-->
+		<option value="27">DE GMT +1</option> 
+	</timezoneParams>	
+	
+	<Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0x00">G711u</option>
+        <option value="0x01">G711a</option>
+        <option value="0x05">G722</option>
+		<option value="0x03">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0x01">G711a</option>
+		<option value="0x00">G711u</option>
+        <option value="0x05">G722</option>
+		<option value="0x03">G729</option>
+		<option value="0xff">DISABLED</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0x05">G722</option>
+		<option value="0x00">G711u</option>
+        <option value="0x01">G711a</option>
+		<option value="0x03">G729</option>
+		<option value="0xff">DISABLED</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0x03">G729</option>
+		<option value="0x00">G711u</option>
+        <option value="0x01">G711a</option>
+        <option value="0x05">G722</option>
+		<option value="0xff">DISABLED</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+
+  <data>
+    <device>
+      <type>phone</type>
+      <field name="Name">Gigaset N510</field>
+      <deviceconfig filename="%%mac_address%%.xml">
+<![CDATA[<?xml version="1.0" encoding="ISO-8859-1"?>
+<ProviderFrame xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="N510_general.xsd">
+<Provider>
+<MAC_ADDRESS value="%%mac_address%%"/>
+
+<PROFILE_NAME class="string" value="%%mac_address%%.xml"/>
+
+<!-- Provisioning Type Settings -->
+<SYMB_ITEM ID="BS_IP_Data3.ucI_ONESHOT_PROVISIONING_MODE_1" class="symb_item" value="0x1"/>
+
+<!-- IP Account 1 User Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_ACCOUNT_IS_ACTIVE_1" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_AE_Subscriber.stMtDat[0].aucTlnName" class="symb_item" value='"%%extension_number%%"'/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[0].aucAccountName[0]" class='"%%extension_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_USER_ID" class="symb_item" value='"%%extension_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data3.aucS_SIP_LOGIN_ID" class="symb_item" value='"%%extension_auth_id%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_PASSWORD" class="symb_item" value='"%%extension_auth_pw%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DISPLAYNAME" class="symb_item" value='"%%extension_last_name%%"'/>
+
+{IF network=LOCALLAN}
+<!-- SIP 1 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 1 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 1 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 1 Settings -->
+
+{IF network=LOCALLAN}
+<!-- SIP 2 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_2" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_2" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_2" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_2" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_2" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_2" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_2" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_2" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_2" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_2" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_2" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_2" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 2 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_2" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_2" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_2" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_2" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_2" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_2" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_2" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_2" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_2" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_2" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_2" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 2 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_2" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_2" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_2" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_2" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_2" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_2" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_2" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_2" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_2" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_2" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_2" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_2" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_2" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_2" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 2 Settings -->
+
+{IF network=LOCALLAN}
+<!-- SIP 3 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_3" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_3" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_3" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_3" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_3" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_3" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_3" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_3" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_3" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_3" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_3" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_3" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 3 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_3" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_3" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_3" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_3" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_3" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_3" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_3" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_3" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_3" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_3" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_3" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 3 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_3" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_3" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_3" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_3" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_3" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_3" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_3" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_3" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_3" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_3" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_3" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_3" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_3" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_3" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 3 Settings -->
+
+{IF network=LOCALLAN}
+<!-- SIP 4 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_4" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_4" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_4" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_4" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_4" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_4" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_4" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_4" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_4" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_4" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_4" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_4" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 4 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_4" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_4" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_4" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_4" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_4" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_4" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_4" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_4" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_4" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_4" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_4" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 4 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_4" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_4" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_4" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_4" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_4" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_4" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_4" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_4" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_4" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_4" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_4" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_4" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_4" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_4" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 4 Settings -->
+
+{IF network=LOCALLAN}
+<!-- SIP 5 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_5" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_5" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_5" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_5" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_5" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_5" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_5" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_5" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_5" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_5" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_5" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_5" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 5 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_5" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_5" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_5" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_5" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_5" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_5" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_5" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_5" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_5" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_5" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_5" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 5 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_5" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_5" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_5" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_5" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_5" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_5" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_5" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_5" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_5" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_5" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_5" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_5" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_5" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_5" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 5 Settings -->
+
+{IF network=LOCALLAN}
+<!-- SIP 6 Settings - LAN -->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_6" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_6" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_6" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_6" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_6" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_6" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_6" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_6" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_6" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_6" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_6" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_6" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESTUN}
+<!-- SIP 6 Settings  - STUN-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_6" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_6" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_6" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_6" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_6" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_6" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_6" class="symb_item" value='""'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_6" class="symb_item" value="5060"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_6" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_6" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_6" class="symb_item" value="5020"/>
+{ENDIF}
+
+
+{IF network=REMOTESPM}
+<!-- SIP 6 Settings - SPM-->
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_DOMAIN_6" class="symb_item" value='"%%pbx_ip%%"'/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_SERVER_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_SERVER_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+
+<SYMB_ITEM ID="BS_IP_Data1.aucS_SIP_REGISTRAR_6" class="symb_item" value='"%%pbx_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_REGISTRAR_PORT_6" class="symb_item" value="%%param::sipport%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_REGISTRATION_TIMER_6" class="symb_item" value="180"/>
+
+<!-- STUN Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_SIP_USE_STUN_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_STUN_SERVER_6" class="symb_item" value=""/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_STUN_SERVER_PORT_6" class="symb_item" value="3478"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RE_STUN_TIMER_6" class="symb_item" value="240"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_NAT_REFRESH_TIME_6" class="symb_item" value="20"/>
+
+<!-- SPM Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_OUTBOUND_PROXY_MODE_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_OUTBOUND_PROXY_6" class="symb_item" value='"%%local_spm_ip%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_OUTBOUND_PROXY_PORT_6" class="symb_item" value="%%local_spm_port%%"/>
+
+<!-- Local System SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_RANDOM_PORT_6" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_SIP_LOCAL_PORT_6" class="symb_item" value="5060"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_6" class="symb_item" value="5004"/>
+<SYMB_ITEM ID="BS_IP_Data1.uiI_RTP_LOCAL_PORT_MAX_6" class="symb_item" value="5020"/>
+{ENDIF}
+<!-- End of IP Account 6 Settings -->
+
+<!-- 3CX Company Phone Book -->
+<SYMB_ITEM ID="BS_XML_Netdirs.aucNetdirSelForAutoLookup" class="symb_item" value="0x01,0x14,0x46,0x47,0x64,0x65"/>
+<SYMB_ITEM ID="BS_XML_Netdirs.aucActivatedNetdirs" class="symb_item" value="0x00,0x01,0x14,0x46,0x47,0x4b,0x4c,0x50,0x51,0x5a,0x5b,0x61,0x64,0x65,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00"/>
+
+<!-- General SIP Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_DO_CHECK_FOR_PROFILE_UPDATES" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_DTMF_TX_MODE_BITS" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_DTMF_TX_MODE_AUTO" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER" class="symb_item" value="17"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER_2" class="symb_item" value="17"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER_3" class="symb_item" value="17"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER_4" class="symb_item" value="17"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER_5" class="symb_item" value="17"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_TRANSPORT_LAYER_6" class="symb_item" value="17"/>
+
+<!-- Transfer Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_ATTENDED_CALL_TRANS_HOLD_TARGET" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_UNATTENDED_CALL_TRANS_HOLD_TARGET" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_CUSTOM.bit.bMusicOnHoldCap" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_USE_R_KEY_FOR_CALL_TRANSFER" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_CUSTOM_ORG.bit.bEct" class="symb_item" value="1"/>
+
+<!-- Time and DST Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.uiI_TIME_TIMEZONE" class="symb_item" value="27"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_TIME_NTP_SERVER[0]" class="symb_item" value='"%%param::time_ntp_server%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_TIME_USE_AUTOMATIC_DST" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_TIME_USE_AUTOMATIC_NTP_SYN" class="symb_item" value="1"/>
+
+<!-- Codec Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucI_CODEC_PREFERENCES" class="symb_item" value="0"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_2" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_3" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_4" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_5" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+<SYMB_ITEM ID="BS_IP_Data1.ucI_SIP_PREFERRED_VOCODER_6" class="symb_item" value="%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%"/>
+
+<!-- Vbox Settings -->
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_1" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_1" class="symb_item" value='"%%vm_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_2" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_2" class="symb_item" value='"%%vm_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_3" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_3" class="symb_item" value='"%%vm_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_4" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_4" class="symb_item" value='"%%vm_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_5" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_5" class="symb_item" value='"%%vm_number%%"'/>
+<SYMB_ITEM ID="BS_IP_Data1.ucB_VOIP_NET_AM_ENABLED_6" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_IP_Data1.aucS_VOIP_NET_AM_NUMBER_6" class="symb_item" value='"%%vm_number%%"'/>
+
+<!-- HS Inbound and Outbound Settings -->
+<SYMB_ITEM ID="BS_Accounts.astAccounts[0].uiReceiveMask" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[0].uiSendMask" class="symb_item" value="1"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[1].uiSendMask" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[1].uiReceiveMask" class="symb_item" value="2"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[2].uiReceiveMask" class="symb_item" value="4"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[2].uiSendMask" class="symb_item" value="4"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[3].uiReceiveMask" class="symb_item" value="8"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[3].uiSendMask" class="symb_item" value="8"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[4].uiSendMask" class="symb_item" value="16"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[4].uiReceiveMask" class="symb_item" value="16"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[5].uiSendMask" class="symb_item" value="32"/>
+<SYMB_ITEM ID="BS_Accounts.astAccounts[5].uiReceiveMask" class="symb_item" value="32"/>
+</Provider>
+</ProviderFrame>
+]]>
+   </deviceconfig>
+
+   </device>
+</data>   
+</doc>

@@ -1,0 +1,82 @@
+<!-- Page -->
+<div class="page animsition">
+
+    <div class="page-header">
+        <h1 class="page-title">
+            System Extension
+        </h1>
+    </div>
+    <div class="page-content container-fluid">
+        <!-- Panel -->
+        <div class="panel">
+            <div class="panel-body">
+                <!-- Example Responsive -->
+                <div class="example-wrap">
+                    <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+                        <button type="button" class="btn btn-outline btn-default" id="sex-refresh">
+                            Refresh
+                        </button>
+                    </div>
+                    <!--
+                    <h4 class="example-title">Basic</h4>
+                    -->
+                    <!-- Table -->
+                    <div class="example table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Extension Number</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <% if(data.seData && data.seData.extensions) { %>
+                            <% data.seData.extensions.forEach(function(data,key){ %>
+                            <tr>
+                                <td><%=(key+1) %></td>
+                                <td><%=data.extension_number %></td>
+                                <td>
+                                    <% if(data.status=='online'){ %>
+                                    <span class="label label-primary">Online</span>
+                                    <% } %>
+                                    <% if(data.status=='offline'){ %>
+                                    <span class="label label-danger">offline</span>
+                                    <% }else{ %>
+                                    <%=data.status  %>
+                                    <% } %>
+                                </td>
+                                <td><%=data.type===1?'Ring Group':
+                                    data.type===2?'Voice Mail':
+                                    data.type===3?'Call Queue':
+                                    data.type===4?'Conference Room':
+                                    data.type===5?'Virtual Receptionist':data.type%></td>
+
+                            </tr>
+                            <% }); %>
+                            <% } %>
+
+                            </tbody>
+                            <tfoot>
+                            <%
+                            var colsPanNumber = 7; //跨行
+                            var showNumber = 5;    //显示多少个页码
+                            var page_current = data.page;    // 当前页码
+                            var page_count = data.page_sum;  // 总页码
+                            %>
+                            <% include ../../page.html%>
+                            </tfoot>
+                        </table>
+
+                    </div>
+
+                </div>
+                <!-- End Example Responsive -->
+            </div>
+        </div>
+        <!-- End Panel -->
+    </div>
+</div>
+<!-- End Page -->

@@ -1,0 +1,82 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Tenants
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="add-tenant">
+              Add Tenant
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Company Name</th>
+                <th>Maximum Extensions</th>
+                <th>Maximum simultaneous calls</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(teData && teData.tenants) {
+              teData.tenants.forEach(function(data, key){
+              %>
+
+              <tr>
+                <td><%=(key+1)%></td>
+                <td><%=data.username %></td>
+                <td><%=data.company_name %></td>
+                <td><%=data.max_extensions %></td>
+                <td><%=data.max_concurrent_calls %></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Edit" data-value="<%=data.username%>" name="te-btn-update">
+                    <i class="icon wb-wrench" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Delete" data-value="<%=data.username%>" name="te-btn-delete">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <%
+              });
+              }
+              %>
+
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

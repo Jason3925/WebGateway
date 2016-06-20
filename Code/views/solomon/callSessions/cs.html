@@ -1,0 +1,84 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Call Sessions
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="cs-btn-refresh">
+              Refresh
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Caller</th>
+                <th>Callee</th>
+                <th>Session ID</th>
+                <th>Start Time</th>
+                <th>Answered Time</th>
+                <th>Duration</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <%
+              if(data && data.cssData && data.cssData.sessions) {
+              data.cssData.sessions.forEach(function(data, key){
+              %>
+              <tr>
+                <td><%=(key+1)%></td>
+                <td><%=data.caller %></td>
+                <td><%=data.callee %></td>
+                <td><%=data.session_id %></td>
+                <td><%=data.start_time>0?trimDate(data, ['start_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></td>
+                <td><%=data.answered_time>0?trimDate(data, ['answered_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></td>
+                <td><%=data.duration %></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-toggle="tooltip" data-original-title="Delete" title="End Session"
+                          name="cs-btn-delete" data-value="<%=data.session_id%>">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });}
+              %>
+
+              </tbody>
+              <tfoot>
+              <%
+              var colsPanNumber = 8; //跨行
+              var showNumber = 5;    //显示多少个页码
+              var page_current = data.page;    // 当前页码
+              var page_count = data.page_sum;  // 总页码
+              %>
+              <% include ../page.html%>
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

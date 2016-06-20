@@ -1,0 +1,280 @@
+<div class="tab-pane active" id="tabGeneral" role="tabpanel">
+  <!-- General BEGIN  -->
+
+
+  <h5 class="margin-top-10">
+    General
+  </h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Enable Sip Message Logging</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-message-log"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_sip_message_log'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Enable IPv6</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-ipv6"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_ipv6'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Disable DIGEST challenges</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-digest-auth" data-reverse="default"
+                 data-checked="<%=!trimValue(data.ssData, ['general', 'enable_digest_auth'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Disable auth-int DIGEST challenges</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-auth-int-dialog" data-reverse="default"
+                 data-checked="<%=!trimValue(data.ssData, ['general', 'enable_digest_auth_int'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Disable authentication of mid-dialog requests</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-auth-mid-dialog" data-reverse="default"
+                 data-checked="<%=!trimValue(data.ssData, ['general', 'enable_auth_mid_dialog']) %>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Send 403 if a client sends a bad nonce</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-reject-bad-nonce"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_reject_bad_nonce'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Allow To tag in registrations</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-tag-in-reqister"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_to_tag_in_register'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Statistics Log Interval</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <select class="bs-select-hidden" data-role="select" data-mark="default" id="ss-statistics-log"
+                data-selected="<%=trimValue(data.ssData, ['general', 'statistics_log_interval'])%>">
+          <option value="600">600</option>
+          <option value="1200">1200</option>
+          <option value="2400">2400</option>
+          <option value="3600">3600</option>
+        </select>
+      </div>
+      <div class="col-sm-3">
+        <label class="col-sm-3 control-label">(seconds)</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Enable Congestion Management</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-congestion-management"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_congestion_management'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Congestion Management Metric</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <select class="bs-select-hidden" data-role="select" data-mark="default" id="ss-congestion-metric"
+                data-selected="<%=trimValue(data.ssData, ['general', 'congestion_management_metric'])%>">
+          <option value="1">WAIT_TIME</option>
+          <option value="2">TIME_DEPTH</option>
+          <option value="3">SIZE</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Congestion Management Tolerance</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <select class="bs-select-hidden" data-role="select" data-mark="default" id="ss-congestion-tolerance"
+                data-selected="<%=trimValue(data.ssData, ['general', 'congestion_management_tolerance'])%>">
+          <option value="80">80</option>
+          <option value="100">100</option>
+          <option value="120">200</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Automatically create the extension when a non-existent extension try to register.</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-create-non-exist-extension"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_create_non_exist_extension'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <hr>
+  <h5>Dead Session Detection</h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-7 control-label">Close the session if there no RTP packet received within</label>
+
+    <div class="col-sm-2">
+      <input type="text" class="form-control" autocomplete="off" data-mark="default" id="ss-session-timeout"
+             value="<%=trimValue(data.ssData, ['general', 'dead_session_timeout'])%>">
+    </div>
+    <div class="col-sm-3">
+      <label class="col-sm-3 control-label">(seconds)</label>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Enable the session timer(RFC4028), this also requires the client support</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8 padding-top-10">
+        <div class="checkbox-custom checkbox-default">
+          <input type="checkbox" data-mark="default" id="ss-session-timer"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'enable_session_timer'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Sesstion Timer Duration</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <select class="bs-select-hidden" data-role="select" data-mark="default" id="ss-session-timer-duration"
+                data-selected="<%=trimValue(data.ssData, ['general', 'session_timer_duration'])%>">
+          <option value="90">90</option>
+          <option value="120">120</option>
+          <option value="180">180</option>
+          <option value="360">360</option>
+          <option value="720">720</option>
+          <option value="900">900</option>
+          <option value="1800">1800</option>
+        </select>
+      </div>
+      <div class="col-sm-3">
+        <label class="col-sm-3 control-label">(seconds)</label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <h5>Presence Mode</h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Peer to Peer</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <div class="radio-custom radio-primary">
+          <input type="radio" name="ss-presence-mode" value="1" data-mark="default"
+                 data-checked="<%=trimValue(data.ssData, ['general', 'presence_mode'])%>">
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Presence Server (Require the client support PUBLISH)</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8 padding-top-10">
+        <div class="radio-custom radio-primary">
+          <input type="radio" name="ss-presence-mode" data-mark="default" value="2" >
+          <label></label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+  <h5>DNS Server</h5>
+
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Primary DNS server</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Run As User" autocomplete="off"
+               data-mark="default" id="ss-primary-dns" value="<%=trimValue(data.ssData, ['general', 'primary_dns_server'])%>">
+      </div>
+    </div>
+  </div>
+  <div class="form-group my-form-group">
+    <label class="col-sm-5 control-label">Secondary DNS server</label>
+
+    <div class="col-sm-7 padding-left-0">
+      <div class="col-sm-8">
+        <input type="text" class="form-control" placeholder="Secondary DNS server" autocomplete="off"
+               data-mark="default" id="ss-secondary-dns" value="<%=trimValue(data.ssData, ['general', 'secondary_dns_server'])%>">
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+
+  <!-- END  -->
+</div>

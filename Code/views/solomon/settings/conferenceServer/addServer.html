@@ -1,0 +1,152 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0)" data-return="cse">Conference Server</a></li>
+      <li class="active"><%=type=='add'?'Add':type=='update'?'Update':''%> Server</li>
+    </ol>
+
+  </div>
+  <div class="page-content">
+
+    <div class="row">
+      <div class="col-sm-8 my-setting-box">
+        <div class="panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <%=type==='add'?'Enter the Conference server information below':type==='update'?
+              'Conference Server information':''%>
+            </h3>
+          </div>
+
+          <div class="panel-body container-fluid">
+            <div class="example padding-left-20 example-forwarding">
+
+              <!-- 这里应该需要一个浮动的层，但不是全屏，只有这个页签 -->
+              <div class="example-loading example-well height-350 vertical-align text-center" data-load="hide"
+                   id="cse-btn-apply-loading">
+                <div class="loader vertical-align-middle loader-circle" data-type="default"></div>
+              </div>
+              <form class="form-horizontal" name="form-transports-add">
+                <h5>
+                  General
+                </h5>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Name:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Name" autocomplete="off" data-update="disabled"
+                        data-mark="default" id="cse-name" value="<%=trimValue(data.csData, ['name'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Server IP
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control"  placeholder="Server IP" autocomplete="off" data-update="disabled"
+                             data-mark="default" id="cse-ip" value="<%=trimValue(data.csData, ['ip'])%>">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Server Port
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Server Port" autocomplete="off" data-update="disabled"
+                             data-mark="default" id="cse-port" value="<%=trimValue(data.csData, ['port'])%>">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Maximum Rooms
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum Rooms" autocomplete="off"
+                             data-mark="default" id="cse-maximum-rooms" value="<%=trimValue(data.csData, ['max_rooms'])%>">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Maximum Participants
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Maximum Participants" autocomplete="off"
+                             data-mark="default" id="cse-maximum-participants"
+                             value="<%=trimValue(data.csData, ['max_participants'])%>">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Currently rooms
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Currently rooms" autocomplete="off" disabled="true"
+                             value="<%=trimValue(data.csData, ['rooms_count'])%>">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Currently participants
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Currently participants" autocomplete="off" disabled="true"
+                             value="<%=trimValue(data.csData, ['participants_count'])%>">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group my-form-group margin-top-30">
+                  <div class="col-sm-8 col-sm-offset-4">
+                    <button type="button" class="btn btn-default btn-primary btn-outline"
+                            data-return="cse">
+                      Cancel
+                    </button>
+                    <button type="reset" class="btn btn-default btn-outline btn-primary">
+                      Reset
+                    </button>
+                    <button type="button" class="btn btn-default btn-outline btn-primary" id="cse-btn-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

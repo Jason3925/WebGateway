@@ -1,0 +1,75 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0)" name="cong-return">Contacts</a></li>
+      <li class="active">Add Group</li>
+    </ol>
+
+  </div>
+  <div class="page-content">
+
+    <div class="row">
+      <div class="col-sm-8 my-setting-box">
+        <div class="panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Enter Contacts settings and click "Apply" button to save changes.
+            </h3>
+          </div>
+
+          <div class="panel-body">
+            <div class="example">
+              <form class="form-horizontal" name="form-transports-add">
+                <div class="example-wrap">
+
+                  <div class="nav-tabs-horizontal margin-bottom-20">
+                    <ul class="nav nav-tabs" data-plugin="nav-tabs" role="tablist">
+                      <li class="active" role="presentation">
+                        <a data-toggle="tab" href="#tabGroupInfo"
+                           aria-controls="exampleTabsOne" role="tab">GroupInfo</a>
+                      </li>
+                      <%
+                      if(type == 'update') {
+                      %>
+                      <li role="presentation" style="display: block;">
+                        <a data-toggle="tab" href="#tabGroupContacts"
+                           aria-controls="exampleTabsTwo" role="tab">GroupContacts</a>
+                      </li>
+                      <%
+                      }
+                      %>
+                    </ul>
+                    <div class="tab-content padding-top-10">
+                      <% include tabGroupInfo.html %>
+                      <% include tabGroupContacts.html %>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-8 col-sm-offset-4 padding-top-50">
+                    <button type="button" class="btn btn-default btn-primary btn-outline"
+                            name="cong-return">
+                      Cancel
+                    </button>
+                    <button type="reset" class="btn btn-default btn-outline btn-primary">
+                      Reset
+                    </button>
+                    <button type="button" class="btn btn-default btn-outline btn-primary" id="cong-btn-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

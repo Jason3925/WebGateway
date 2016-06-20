@@ -1,0 +1,144 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <ol class="breadcrumb">
+      <li><a href="javascript:void(0)" data-return="bi">Billing</a></li>
+      <li class="active"><%=type==='add'?'Add':type==='update'?'Update':''%> Rate</li>
+    </ol>
+
+  </div>
+  <div class="page-content">
+
+    <div class="row">
+      <div class="col-sm-8 my-setting-box">
+        <div class="panel">
+
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              Call Rate
+            </h3>
+          </div>
+
+          <div class="panel-body container-fluid">
+            <div class="example padding-left-20 example-forwarding">
+
+              <!-- 这里应该需要一个浮动的层，但不是全屏，只有这个页签 -->
+              <div class="example-loading example-well height-350 vertical-align text-center" data-load="hide"
+                   id="bi-apply-loading">
+                <div class="loader vertical-align-middle loader-circle" data-type="default"></div>
+              </div>
+              <form class="form-horizontal" name="form-transports-add">
+                <!--<h5>-->
+                  <!--General-->
+                <!--</h5>-->
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Name:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Name"
+                             value="<%=trimValue(data.bData, ['names'])%>"
+                             autocomplete="off" data-mark="default" id="bi-name"
+                        />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Number Prefix:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Number Prefix"
+                             value="<%=trimValue(data.bData, ['call_prefix'])%>" data-update="disabled"
+                             autocomplete="off" data-mark="default" id="bi-call-prefix"
+                        />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Rate:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" placeholder="Rate"
+                             value="<%=trimValue(data.bData, ['rate'])%>"
+                             autocomplete="off" data-mark="default" id="bi-rate"
+                        />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Currency Unit:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <select data-role="select" data-mark="default" id="bi-currency-unit" data-init="default"
+                              data-selected="<%=trimValue(data.bData, ['currency_unit'])%>">
+                        <option value="USD">USD</option>
+                        <option value="CNY">CNY</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="RUR">RUR</option>
+                        <option value="KPW">KPW</option>
+                        <option value="INR">INR</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group">
+                  <label class="col-sm-4 control-label">
+                    Timing Unit:
+                  </label>
+
+                  <div class="col-sm-8 padding-left-0">
+                    <div class="col-sm-8">
+                      <select data-role="select" data-mark="default" id="bi-timing-unit" data-init="default"
+                              data-selected="<%=trimValue(data.bData, ['timing_unit'])%>">
+                        <option value="minutes">Minutes</option>
+                        <option value="seconds">Seconds</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group my-form-group margin-top-30">
+                  <div class="col-sm-8 col-sm-offset-4">
+                    <button type="button" class="btn btn-default btn-primary btn-outline"
+                            data-return="bi">
+                      Cancel
+                    </button>
+                    <button type="reset" class="btn btn-default btn-outline btn-primary">
+                      Reset
+                    </button>
+                    <button type="button" class="btn btn-default btn-outline btn-primary" id="bi-apply">
+                      Apply
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- End Page -->

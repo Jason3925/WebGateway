@@ -1,0 +1,76 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Number Blacklist
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="add-blacklist">
+              Add
+            </button>
+            <button type="button" class="btn btn-outline btn-default">
+              Import
+            </button>
+            <button type="button" class="btn btn-outline btn-default">
+              Export
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Blacklisted Extension Number</th>
+                <th>Description</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <%
+              if(data && data.nbsData && data.nbsData.black_numbers) {
+              data.nbsData.black_numbers.forEach(function(data, key) {
+              %>
+              <tr>
+                <td><%=key+1%></td>
+                <td><%=data.black_number%></td>
+                <td><%=data.description%></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          name="nb-btn-delete" data-value="<%=data.black_number%>">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

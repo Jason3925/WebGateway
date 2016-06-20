@@ -1,0 +1,255 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-04-18 15:00:00</time>
+    <name>Cisco 79X0</name>
+    <url>http://www.cisco.com</url>
+    <models>
+      <model ua="Cisco-CP7940G">Cisco 7940</model>
+      <model ua="Cisco-CP7960G">Cisco 7960</model>	
+    </models>
+    <description>Cisco SCCP SIP Phones</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+    </rebootParams>
+    <resyncParams>
+    </resyncParams>
+    <firmwareParams>
+    </firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">0</option>
+        <option value="REMOTESPM">0</option>
+		<option value="SBC">1</option>
+    </AllowedNetworkConfig>
+    <dst variableName="dstEnableDisable" enable="1" disable="0">
+    </dst>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+        <item name="langwebUI">English</item>
+        <item name="langlcdUI">English</item>
+      </option>
+    </languages>
+    <timezoneParams param="time_timezone_cisco79x0">
+      <!--The first entry is the selected entry in management console-->
+      <option value="GMT" id="36" zone="0:00">GMT(London, Dublin, Edinburgh, Lisbon, Casablanca, Monrovia)</option>
+      <option value="CET" id="38" zone="1:00">GMT+1:00 (Paris,Amsterdam, Berlin, Rome, Vienna, Madrid, Warsaw, Brussels)</option>
+      <option value="EET" id="71" zone="2:00">GMT+2:00 (Israel, Cairo, Athens, Helsinki, Istanbul, Buchrest)</option>
+      <option value="BT" id="81" zone="3:00">GMT+3:00 (Moscow, Kuwait, Baghdad, Tehran, Nairobi)</option>
+      <option value="IT" id="84" zone="3:30">GMT+3:30 (Tehran)</option>
+      <option value="ZP4" id="85" zone="4:00">GMT+4:00 (Abu Dhabi, Yerevan, Baku)</option>
+      <option value="AFG" id="91" zone="4:30">GMT+4:30 (Kabul)</option>
+      <option value="ZP5" id="94" zone="5:00">GMT+5:00 (Islamabad, Ekaterinburg, Karachi, Tashkent)</option>
+      <option value="IST" id="96" zone="5:30">GMT+5:30 (Chennai, New Delhi, Mumbai)</option>
+      <option value="ZP6" id="98" zone="6:00">GMT+6:00 (Almaty, Astana. Dhaka, Novosibirsk)</option>
+      <option value="SUM" id="100" zone="6:30">GMT+6:30 (North Sumatra)</option>
+      <option value="WAST" id="102" zone="7:00">GMT+7:00 (Bankok, Jakarta, Hanoi, Krasnoyarsk)</option>
+      <option value="HST" id="104" zone="8:00">GMT+8:00 (Beijing, Singapore, Taipei, Kuala Lumpur, Irkutsk, Perth)</option>
+      <option value="JST" id="107" zone="9:00">GMT+9:00 (Japan, Korea, Yakutsk)</option>
+      <option value="CAST" id="108" zone="9:30">GMT+9:30 (Adelaide, Darwin)</option>
+      <option value="EAST" id="110" zone="10:00">GMT+10:00 (Brisbane, Sydney, Melbourne, Canberra, Guam, Hobart)</option>
+      <option value="EADT" id="115" zone="11:00">GMT+11:00 (Magadan, Solomon Is., New Caledonia)</option>
+      <option value="NZST" id="116" zone="12:00">GMT+12:00 (Auckland, Wellington, Fiji)</option>
+      <option value="IDL" id="121" zone="-12:00">GMT-12:00 (International Date Line West)</option>
+      <option value="NT" id="120" zone="-11:00">GMT-11:00 (Midway Island, Samoa)</option>
+      <option value="AHST" id="1" zone="-10:00">GMT-10:00 (US Hawaiian Time)</option>
+      <option value="IMT" id="122" zone="-9:30">GMT-9:30 (Isle Marquises)</option>
+      <option value="YST" id="3" zone="-9:00">GMT-9:00 (US Alaska Time)</option>
+      <option value="PST" id="6" zone="-8:00">GMT-8:00 (US Pacific Time, Los Angeles)</option>
+      <option value="MST" id="9" zone="-7:00">GMT-7:00 (US Mountain Time, Denver)</option>
+      <option value="CST" id="14" zone="-6:00">GMT-6:00 (US Central Time, Chicago)</option>
+      <option value="EST" id="0" zone="-5:00">GMT-5:00 (US Eastern Time, New York)</option>
+      <option value="AST" id="19" zone="-4:00">GMT-4:00 (Atlantic Time, Quebec)</option>
+      <option value="NST" id="25" zone="-3:30">GMT-3:30 (Newfoundland)</option>
+      <option value="BST" id="26" zone="-3:00">GMT-3:00 (Greenland)</option>
+      <option value="AT" id="123" zone="-2:00">GMT-2:00 (Mid-Atlantic)</option>
+      <option value="WAT" id="31" zone="-1:00">GMT-1:00 (Azores, Cape Verdi Is.)</option>
+    </timezoneParams>
+	<Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="g711ulaw">G711u</option>
+        <option value="g711alaw">G711a</option>
+		<option value="g729a">G729a</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <option value="g711alaw">G711a</option>
+		<option value="g711ulaw">G711u</option>
+		<option value="g729a">G729a</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <option value="g729a">G729a</option>
+		<option value="g711ulaw">G711u</option>
+        <option value="g711alaw">G711a</option>
+      </Codecspriority>
+	  <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="NA">N/A</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  <blftype>
+  </blftype>
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Cisco 7940 Global</field>
+      <deviceconfig filename="SIPDefault.cnf">
+        <filename>
+          <model name="Cisco7940" filename="SIPDefault.cnf" />
+        </filename>
+<![CDATA[
+#Fimrware Version SIP for Cisco 7940
+image_version: P0S3-8-12-00
+
+#Vox Number
+messages_uri: "%%vm_number%%"
+
+#DTMF Mode
+dtmf_inband: "1"
+dtmf_db_level: "3"
+
+#Dialing
+dialedNumber: "true"
+
+# Allow Transfer to be completed while target phone is still ringing (Options: 0-Disabled, 1-Enabled)
+semi_attended_transfer: "1"
+
+]]></deviceconfig>
+    </device>
+  </data>
+  <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Cisco 79x0 Device Config</field>
+      <deviceconfig filename="SIP%%mac_address%%.cnf">
+<![CDATA[
+
+#Setting for 3CX Phone System Server
+{IF network=LOCALLAN}
+proxy1_address: %%pbx_ip%%
+proxy_register: 1
+proxy1_port: %%param::sipport%%
+timer_register_expires: "900"
+
+# Outbound Proxy
+outbound_proxy: ""
+outbound_proxy_port: ""
+{ENDIF}
+
+{IF network=SBC}
+proxy1_address: %%local_sbc_ip%%
+proxy_register: 1
+proxy1_port: %%local_sbc_port%%
+timer_register_expires: "900"
+
+# Outbound Proxy
+outbound_proxy: %%local_sbc_ip%%
+outbound_proxy_port: %%local_sbc_port%%
+{ENDIF}
+
+#Setting for Timezone and DST, Option GMT,CET,EET,BT,IT,ZP4,AFG,ZP5,IST,ZP6,SUM,WAST,HST,JST,CAST,EAST,EADT,NZST,IDL,NT,AHST,IMT,YST,PST,MST,CST,EST,AST,NST,BST,AT,WAT
+sntp_server: "%%param::time_ntp_server%%"
+sntp_mode: unicast
+time_zone: "%%param::time_timezone_cisco79x0%%"
+dst_offset: 1
+dst_start_month: March
+dst_start_day_of_week: Sun
+dst_start_week_of_month: 8
+dst_start_time: 01
+dst_stop_month: Oct
+dst_stop_day_of_week: Sun
+dst_stop_week_of_month: 8
+dst_stop_time: 02
+dst_auto_adjust: 1
+time_format_24hr: 1
+date_format : M/D/Y
+
+#Line 1 Setting
+line1_name: "%%extension_number%%"
+line1_authname: "%%extension_auth_id%%"
+line1_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line1_password: "%%extension_auth_pw%%"
+line1_shortname: "%%extension_first_name%% %%extension_last_name%%"
+
+#Line 2 Setting
+line2_name: "%%extension_number%%"
+line2_authname: "%%extension_auth_id%%"
+line2_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line2_password: "%%extension_auth_pw%%"
+line2_shortname: "%%extension_first_name%% %%extension_last_name%%"
+
+{IF ua=Cisco-CP7960G}
+#Line 3 Setting
+line3_name: "%%extension_number%%"
+line3_authname: "%%extension_auth_id%%"
+line3_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line3_password: "%%extension_auth_pw%%"
+line3_shortname: "%%extension_first_name%% %%extension_last_name%%"
+
+#Line 4 Setting
+line4_name: "%%extension_number%%"
+line4_authname: "%%extension_auth_id%%"
+line4_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line4_password: "%%extension_auth_pw%%"
+line4_shortname: "%%extension_first_name%% %%extension_last_name%%"
+
+#Line 5 Setting
+line5_name: "%%extension_number%%"
+line5_authname: "%%extension_auth_id%%"
+line5_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line5_password: "%%extension_auth_pw%%"
+line5_shortname: "%%extension_first_name%% %%extension_last_name%%"
+
+#Line 6 Setting
+line6_name: "%%extension_number%%"
+line6_authname: "%%extension_auth_id%%"
+line6_displayname: "%%extension_first_name%% %%extension_last_name%%"
+line6_password: "%%extension_auth_pw%%"
+line6_shortname: "%%extension_first_name%% %%extension_last_name%%"	
+{ENDIF}
+
+#Default Codec
+preferred_codec: %%codec1%%
+{IF network=LOCALLAN}
+#3CX Phone System Tbook max 32 entries
+directory_url: "%%PROVLINKLOCAL%%/cisco_phonebook.xml"
+
+#3CX Logo
+logo_url: "%%PROVLINKLOCAL%%/logo/cisco9740.bmp"
+{ENDIF}
+
+{IF network=SBC}
+#3CX Phone System Tbook max 32 entries
+directory_url: "%%PROVLINKEXT%%/cisco_phonebook.xml"
+
+#3CX Logo
+logo_url: "%%PROVLINKEXT%%/logo/cisco9740.bmp"
+{ENDIF}
+
+# NAT/Firewall Traversal
+nat_enable: "1"
+nat_address: ""
+voip_control_port: "5060"
+start_media_port: "16384"
+end_media_port:  "32766"
+nat_received_processing: "0"
+ 
+# Display Name of Phone in right upper conrner
+phone_label: "3CX %%extension_number%%"
+
+# Remote Debugging via Telnet (0-Disabled, 1-Enabled, 2-Privileged)
+telnet_level: "2"
+phone_prompt: "3CXPhoneSystem"
+phone_password: "cisco"
+]]></deviceconfig>
+    </device>
+  </data>
+ </doc>

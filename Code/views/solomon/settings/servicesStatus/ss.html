@@ -1,0 +1,93 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Services Status
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="ss-btn-reresh">
+              Reresh
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Service Name</th>
+                <th>Status</th>
+                <th>Enabled</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.sssData && data.sssData.services) {
+              data.sssData.services.forEach(function(data, key) {
+              %>
+
+              <tr>
+                <td><%=key+1%></td>
+                <td><%=data.service_id%></td>
+                <td>
+                  <%
+                  if(data.status == 'Running') {
+                  %>
+                  <span class="label label-success">Running</span>
+                  <%
+                  }else {
+                  %>
+                  <span class="label label-danger">Stopped</span>
+                  <%
+                  }
+                  %>
+
+                </td>
+                <td>
+                  <div name="ss-btn-enabled">
+                    <input type="checkbox" data-role="switchery" data-value="<%=data.status=='Running'?'true':'false'%>"
+                      data-id="<%=data.service_id%>"/>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          title="Restart" name="ss-btn-Restart" data-value="<%=data.service_id%>">
+                    <i class="icon wb-refresh" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

@@ -1,0 +1,111 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Call Details Record
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="search">
+              Search History
+            </button>
+            <button type="button" class="btn btn-outline btn-default" id="download">
+              Download
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Caller</th>
+                <th>Callee</th>
+                <th>Start Time</th>
+                <th>Answer Time</th>
+                <th>End Time</th>
+                <th>Duration</th>
+                <th>Call Prefix</th>
+                <th>Rate Value</th>
+                <th>cost</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.crsData && data.crsData.details) {
+              data.crsData.details.forEach(function(data,key) {
+              %>
+              <tr>
+                <td><%=(key+1) %></td>
+                <td><%=data.caller %></td>
+                <td><%=data.callee %></td>
+                <td><%=trimDate(data, ['start_time'], 'YYYY-MM-DD HH:mm:ss') %></td>
+                <td><%=trimDate(data, ['answer_time'], 'YYYY-MM-DD HH:mm:ss') %></td>
+                <td><%=trimDate(data, ['end_time'], 'YYYY-MM-DD HH:mm:ss') %></td>
+                <td><%=data.duration %></td>
+                <td><%=data.call_prefix%></td>
+                <td><%=data.rate_value %></td>
+                <td><%=data.cost %></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
+                          data-target="#callDetail" data-toggle="modal" data-value="<%=data.call_id%>">
+                    <i class="icon wb-eye" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });
+              }
+              %>
+
+              </tbody>
+              <tfoot>
+
+              <%
+              if(data && data.page) {
+              var cur_page = data.page;
+              var prevClass = parseInt(data.page) === 1 ? 'footable-page-arrow disabled': 'footable-page-arrow';
+              var nextClass = parseInt(data.crsData.count) < parseInt(data.page_size) ? 'footable-page-arrow disabled': 'footable-page-arrow';
+              %>
+              <tr>
+                <td colspan="11" class="footable-visible">
+                  <div class="text-right">
+                    <ul class="pagination">
+                      <li class="<%=prevClass%>"><a data-page="prev" href="#prev" data-value="<%=parseInt(data.page)-1%>">‹</a></li>
+                      <li class="<%=nextClass%>"><a data-page="next" href="#next" data-value="<%=parseInt(data.page)+1%>">›</a></li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <%
+              }
+              %>
+
+              </tfoot>
+            </table>
+
+          </div>
+          <div id="model-box">
+            <% include modelDetail.html %>
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

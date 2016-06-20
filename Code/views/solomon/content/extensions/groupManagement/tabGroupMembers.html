@@ -1,0 +1,54 @@
+<div class="tab-pane" id="tabGroupMembers" role="tabpanel">
+  <!-- Offline BEGIN  -->
+
+  <h5>
+    Group general:
+  </h5>
+
+  <p>
+    Group members
+  </p>
+
+  <div class="form-group my-form-group">
+
+    <div class="col-xs-1 col-sm-1"></div>
+    <div class="col-xs-12 col-sm-10 ">
+
+
+      <div class="col-xs-4 col-sm-4 padding-0 margin-0 my-multi-select-box height-200 my-multi-select-box">
+        <div class="list-group" data-listbox="egm-extensions"
+             data-listbox-value="<%=trimArray(data.eData.extensions,'extension_number')%>"
+             data-url="/callManager/extension/list" data-page="1" data-remaining="<%=data.eData.remaining_extensions%>">
+        </div>
+      </div>
+      <div class="col-xs-1 col-sm-1 my-width-auto padding-top-60">
+        <div class="btn-group-vertical margin-right-0" aria-label="Vertical button group" role="group">
+          <button type="button" class="btn btn-outline btn-default" id="egm-extensions-right">
+            <i class="icon wb-chevron-right-mini" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-outline btn-default" id="egm-extensions-left">
+            <i class="icon wb-chevron-left-mini" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 padding-0 margin-0 my-multi-select-box height-200 my-multi-select-box"
+           data-mark="default" id="egm-extensions-active" data-role="listbox" data-listbox="default"
+           data-listbox-value="<%=trimArray(data.egData.members)%>" data-update="update">
+      </div>
+      <div class="col-xs-1 col-sm-1 my-width-auto padding-top-60">
+        <div class="btn-group-vertical margin-right-0"
+             aria-label="Vertical button group" role="group">
+          <button type="button" class="btn btn-outline btn-default"><i
+            class="icon wb-chevron-up" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-outline btn-default"><i
+            class="icon wb-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- END  -->
+</div>

@@ -1,0 +1,3842 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-07-24 12:00:00</time>
+    <name>GrandStream GXP</name>
+    <url>http://www.grandstream.com</url>
+    <models>
+	  <model ua="GXP1160">GrandStream GXP-1160</model>
+	  <model ua="GXP1165">GrandStream GXP-1165</model>
+	  <model ua="GXP1400">GrandStream GXP-1400</model>
+	  <model ua="GXP1405">GrandStream GXP-1405</model>	  
+	  <model ua="GXP1450">GrandStream GXP-1450</model>
+	  <model ua="GXP2100">GrandStream GXP-2100</model>
+      <model ua="GXP2110">GrandStream GXP-2110</model>
+      <model ua="GXP2120">GrandStream GXP-2120</model>
+	  <model ua="GXP2124">GrandStream GXP-2124</model>
+      </models>
+    <description>GrandStream GXP SIP Phone</description>
+    <parsers>
+        <parser>BLF</parser>
+        <parser>Grandstream</parser>
+    </parsers>
+	<rebootParams>
+		<event-name>check-sync</event-name>
+	</rebootParams>
+	<resyncParams>
+		<event-name>check-sync</event-name>
+	</resyncParams>
+	<firmwareParams>
+		<event-name>check-sync</event-name>
+	</firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">1</option>
+    </AllowedNetworkConfig>
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+	<AllowSSLProvisioning>1</AllowSSLProvisioning>
+	<dst variableName ="dstEnableDisable" enable ="1" disable = "0"></dst>
+	<languages>
+	<!--The first entry is the selected entry in management console--> 
+	<option value="English">
+		<item name = "langwebUI">en</item>
+		<item name = "langwebUI2">en</item>
+	</option>   
+	<option value="Simplified Chinese">
+		<item name = "langwebUI">zh-tw</item>
+		<item name = "langwebUI2">zh-tw</item>
+	</option>
+	<option value="Traditional Chinese">
+		<item name = "langwebUI">zh</item>
+		<item name = "langwebUI2">zh</item>
+	</option>
+	<option value="Croatian">
+		<item name = "langwebUI">hr</item>
+		<item name = "langwebUI2">hr</item>
+	</option>
+	<option value="French">
+		<item name = "langwebUI">fr</item>
+		<item name = "langwebUI2">fr</item>
+	</option>
+	<option value="German">
+		<item name = "langwebUI">de</item>
+		<item name = "langwebUI2">de</item>
+	</option>
+	<option value="Italian">
+		<item name = "langwebUI">it</item>
+		<item name = "langwebUI2">it</item>
+	</option>
+	<option value="Japan">
+		<item name = "langwebUI">ja</item>
+		<item name = "langwebUI2">ja</item>
+	</option>
+	<option value="Korean">
+		<item name = "langwebUI">ko</item>
+		<item name = "langwebUI2">ko</item>
+	</option>
+	<option value="Portuguese">
+		<item name = "langwebUI">pt</item>
+		<item name = "langwebUI2">pt</item>
+	</option>
+	<option value="Spanish">
+		<item name = "langwebUI">es</item>
+		<item name = "langwebUI2">es</item>
+	</option>
+	<option value="Polish">
+		<item name = "langwebUI">pl</item>
+		<item name = "langwebUI2">pl</item>
+	</option>
+	<option value="Hungarian">
+		<item name = "langwebUI">hu</item>
+		<item name = "langwebUI2">hu</item>
+	</option>
+	<option value="Russian">
+		<item name = "langwebUI">ru</item>
+		<item name = "langwebUI2">ru</item>
+	</option>
+	<option value="Slovenian">
+		<item name = "langwebUI">sl</item>
+		<item name = "langwebUI2">sl</item>
+	</option>
+	<option value="Arabic">
+		<item name = "langwebUI">ar</item>
+		<item name = "langwebUI2">ar</item>
+	</option>
+	<option value="Dutch">
+		<item name = "langwebUI">nl</item>
+		<item name = "langwebUI2">nl</item>
+	</option>
+	<option value="Hebrew">
+		<item name = "langwebUI">he</item>
+		<item name = "langwebUI2">he</item>
+	</option>
+	<option value="Turkish">
+		<item name = "langwebUI">tr</item>
+		<item name = "langwebUI2">tr</item>
+	</option>
+	</languages>
+    <timezoneParams param="time_timezone_grandstreamexec">
+      <!--The first entry is the selected entry in management console-->
+      <option value="EST5EDT" id="0" zone="-5:00">GMT-5:00 (Eastern Time)</option>
+      <option value="TZA%2B12" id="121" zone="-12:00">GMT-12:00 (International Date Line West)</option>
+      <option value="TZB%2B11" id="120" zone="-11:00">GMT-11:00 (Midway Island%2C Samoa)</option>
+      <option value="HAW10" id="1" zone="-10:00">GMT-10:00 (US Hawaiian Time)</option>
+      <option value="AKST9AKDT" id="3" zone="-9:00">GMT-9:00 (US Alaska Time)</option>
+      <option value="PST8PDT" id="6" zone="-8:00">GMT-8:00 (US Pacific Time, Los Angeles)</option>
+      <option value="MST7MDT" id="9" zone="-7:00">GMT-7:00 (US Mountain Time, Denver)</option>
+      <option value="MST7" id="10" zone="-7:00">GMT-7:00 (US Mountain Time, Arizona)</option>
+      <option value="CST6CDT" id="14" zone="-6:00">GMT-6:00 (US Central Time, Chicago)</option>
+      <option value="CST%2B6" zone="-6:00">GMT-06:00 (Central America)</option>
+      <option value="TZf%2B4%3A30" id="18" zone="-4:30">GMT-04:30 (Caracas) </option>
+      <option value="AST4ADT" id="19" zone="-4:00">GMT-4:00 (Atlantic Time, Quebec)</option>
+      <option value="AST4ADT%2CM4.1.0%2F00%3A01%3A00%2CM10.5.0%2F00%3A01%3A00" zone="-4:00">GMT-4:00 (New Brunswick)</option>
+      <option value="NST%2B3%3A30NDT+2%3A30%2CM4.1.0%2F00%3A01%3A00%2CM10.5.0%2F00%3A01%3A00" id="25" zone="-3:30">GMT-3:30 (Newfoundland)</option>
+      <option value="TZK%2B3" id="26" zone="-3:00">GMT-03:00 (Greenland)</option>
+      <option value="BRST%2B3BRDT%2B2%2CM10.3.0%2CM2.3.0" id="28" zone="-3:00">GMT-3:00 (Brazil, Sao Paulo)</option>
+      <option value="UTC%2B3" id="27" zone="-3:00">GMT-3:00 (Argentina)</option>
+      <option value="TZL%2B2" id="123" zone="-2:00">GMT-02:00 (Mid-Atlantic)</option>
+      <option value="TZM%2B1" id="31" zone="-1:00">GMT-01:00 (Azores, Cape Verdi Is.)</option>
+      <option value="TZN%2B0" zone="0:00">GMT (Edinburgh, Casablanca, Monrovia)</option>
+      <option value="GMT%2B0BST-1%2CM3.5.0%2F01%3A00%3A00%2CM10.5.0%2F02%3A00%3A00" id="36" zone="0:00">GMT (London, Great Britain)</option>
+      <option value="WET-0WEST-1%2CM3.5.0%2F01%3A00%3A00%2CM10.5.0%2F02%3A00%3A00" zone="0:00">GMT (Lisbon)</option>
+      <option value="GMT%2B0IST-1%2CM3.5.0%2F01%3A00%3A00%2CM10.5.0%2F02%3A00%3A00" id="33" zone="0:00">GMT (Dublin, Ireland) </option>
+      <option value="TZO-1" id="38" zone="1:00">GMT+01:00 (Paris, Vienna, Warsaw)</option>
+      <option value="CET-1CEST-2%2CM3.5.0%2F02%3A00%3A00%2CM10.5.0%2F03%3A00%3A00" id="48" zone="1:00">GMT+01:00 (Roma, Paris, Madrid, Prague, Berlin, Budapest, Amsterdam, Barcelona)</option>
+      <option value="TZO-1" id="39" zone="1:00">GMT+01:00 (Brussels, Belgium)</option>
+      <option value="TZP-2" id="65" zone="2:00">GMT+02:00 (Israel, Cairo, Athens, Istanbul, Buchrest)</option>
+      <option value="EET-2EEST-3%2CM3.5.0%2F03%3A00%3A00%2CM10.5.0%2F04%3A00%3A00" id="68" zone="2:00">GMT+02:00 (Helsinki, Athens, Tallinn)</option>
+      <option value="EET-2EEST%2CM3.5.0%2F3%2CM10.5.0%2F4" id="80" zone="2:00">GMT+2:00 (Kiyv, Ukraine)</option>
+      <option value="TZQ-3" id="81" zone="3:00">GMT+03:00 (Kuwait, Baghdad, Tehran, Nairobi)</option>
+      <option value="MSK-3MSD%2CM3.5.0%2F2%2CM10.5.0%2F3" id="83" zone="3:00">GMT+03:00 (Moscow, Russia)</option>
+      <option value="MST-3MDT%2CM3.5.0%2F2%2CM10.5.0%2F3" zone="3:00">GMT+03:00 (St.Petersburg, Russia)</option>
+      <option value="TZR-4" id="86" zone="4:00">GMT+04:00 (Abu Dhabi, Baku)</option>
+      <option value="TZS-5" id="94" zone="5:00">GMT+05:00 (Islamabad, Ekaterinburg, Karachi, Tashkent)</option>
+      <option value="TZT-5%3A30" id="96" zone="5:30">GMT+05:30 (Chennai, New Delhi, Mumbai)</option>
+      <option value="TZU-5%3A45" id="97" zone="5:45">GMT+05:45 (Kathmandu)</option>
+      <option value="TZV-6" id="98" zone="6:00">GMT+06:00 (Almaty, Astana, Dhaka, Novosibirsk)</option>
+      <option value="TZW-6%3A30" id="100" zone="6:30">GMT+06:30 (Rangoon)</option>
+      <option value="TZX-7" id="102" zone="7:00">GMT+07:00 (Bankok, Hanoi, Krasnoyarsk)</option>
+      <option value="WIB-7" zone="7:00">GMT+07:00 (Jakarta)</option>
+      <option value="TZY-8" id="103" zone="8:00">GMT+08:00 (Beijing, Taipei, Kuala Lumpur, Irkutsk)</option>
+      <option value="SGT-8" id="104" zone="8:00">GMT+08:00 (Singapore)</option>
+      <option value="ULAT-8" zone="8:00">GMT+08:00 (Ulaanbaatar, Mongolia)</option>
+      <option value="WST-8" id="105" zone="8:00">GMT+08:00 (Perth)</option>
+      <option value="TZZ-9" id="107" zone="9:00">GMT+09:00 (Japan, Korea, Yakutsk)</option>
+      <option value="CST-9%3A30CDT-10%3A30%2CM10.5.0%2F02%3A00%3A00%2CM3.5.0%2F03%3A00%3A00" id="108" zone="9:30">GMT+09:30 (Adelaide)</option>
+      <option value="CST-9%3A30" id="109" zone="9:30">GMT+09:30 (Darwin)</option>
+      <option value="TZb-10" zone="10:00">GMT+10:00 (Guam)</option>
+      <option value="EST-10EDT-11%2CM10.1.0%2F02%3A00%3A00%2CM3.5.0%2F03%3A00%3A00" id="112" zone="10:00">GMT+10:00 (Hobart)</option>
+      <option value="EST-10EDT-11%2CM10.5.0%2F02%3A00%3A00%2CM3.5.0%2F03%3A00%3A00" id="110" zone="10:00">GMT+10:00 (Sydney, Melbourne, Canberra)</option>
+      <option value="TZc-11" id="115" zone="11:00">GMT+11:00 (Magadan, Solomon Is., New Caledonia)</option>
+      <option value="NZST-12NZDT-13%2CM10.1.0%2F02%3A00%3A00%2CM3.3.0%2F03%3A00%3A00" id="116" zone="12:00">GMT+12:00 (Auckland, Wellington)</option>
+      <option value="TZd-12" zone="12:00">GMT+12:00 (Fiji)</option>
+      <option value="TZe-13" id="119" zone="13:00">GMT+13:00 (Nuku'alofa)</option>
+    </timezoneParams>
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="18">G729A/B</option>
+        <option value="9">G722 (WideBand)</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="8">PCMA</option>
+		<option value="0">PCMU</option>
+        <option value="18">G729A/B</option>
+        <option value="9">G722 (WideBand)</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="9">G722 (WideBand)</option>
+		<option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+        <option value="18">G729A/B</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="18">G729A/B</option>
+		<option value="9">G722 (WideBand)</option>
+		<option value="0">PCMU</option>
+        <option value="8">PCMA</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  
+  <blftype>
+      <extension>
+        <value>1</value>
+      </extension>
+	  <speeddial>
+        <value>0</value>
+      </speeddial>
+	  <customspeeddial>
+        <value>0</value>
+      </customspeeddial>
+      <queuelogin>
+        <value>0</value>
+      </queuelogin>
+	  <profilestatus>
+        <value>0</value>
+      </profilestatus>
+	  <parkextension>
+        <value>1</value>
+      </parkextension>
+  </blftype>
+  
+  
+  <data>
+    <device>
+      <type>phone</type>
+
+	    <!-- Friendly Name -->
+      <field name="Name">GrandStream GXP</field>
+      <deviceconfig filename="cfg%%mac_address%%">
+<![CDATA[
+
+################################################################################################
+## Configuration template for GXP21xx/GXP14XX/11XX firmware version 1.0.5.15
+################################################################################################
+
+##############################################################################
+##  Advanced/System-wide Options
+##############################################################################
+
+# Enable Provider Lock. 0 - No, 1 - Yes.
+P9999 = 0
+
+# Provider Lock Key. A string of up to 16 bytes.
+P9998 = 
+
+# Provider Authentication. A string of up to 16 bytes
+P9997 = 
+
+# Password for configuration file authentication
+P1 =
+# Admin password for web interface
+P2 = %%DESKPHONE_PASSWORD%%
+
+# Layer 3 QoS (IP Diff-Serv or Precedence value for RTP)
+P38 = 48
+
+# Layer 2 QoS. 802.1Q/VLAN Tag (VLAN classification for RTP)
+P51 = 0
+
+# Layer 2 QoS. 802.1p priority value (0 - 7)
+P87 = 0
+
+{IF network=REMOTESTUN}
+# Local RTP port (1024-65535, default 5004)
+P39 = %%rtp_port_min%%
+# STUN server
+P76 = %%pbx_ip%%:%%param::sipport%%
+{ELSE}
+# Local RTP port (1024-65535, default 5004)
+P39 = 5004
+# STUN server
+P76 = 
+{ENDIF}
+
+# Use Random Port. 0 - no, 1 - yes
+P78 = 0
+
+# Keep-alive interval (in seconds. default 20 seconds)
+P84 = 20
+
+# Use NAT IP.  This will enable our SIP client to use this IP in the SIP/SDP message. Example 64.3.153.50.
+P101 =
+
+#-------------------------------------------------------------
+# Firmware Upgrade
+#-------------------------------------------------------------
+# Firmware Upgrade and Provisioning
+# 0 - Always Check For New Firmware
+# 1 - Check New Firmware only when F/W pre/suffix changes
+# 2 - Always Skip the Firmware Check
+P238 = 0
+
+# XML Config File Password
+P1359 = 
+
+# HTTP/HTTPS User Name
+P1360 =
+
+# HTTP/HTTPS Password
+P1361 =
+
+{IF network=LOCALLAN}
+# Firmware Upgrade. 0 - TFTP Upgrade,  1 - HTTP Upgrade, 2 - HTTPS Upgrade
+P212 = 1
+
+# Firmware Server Path
+P192 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/firmware/grandstream
+# Config Server Path
+P237 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%
+
+{ELSE}
+# Firmware Upgrade. 0 - TFTP Upgrade,  1 - HTTP Upgrade, 2 - HTTPS Upgrade
+P212 = 2
+
+# Firmware Server Path
+P192 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/firmware/grandstream
+# Config Server Path
+P237 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%
+{ENDIF}
+
+# Firmware File Prefix
+P232 =
+
+# Firmware File Postfix
+P233 =
+
+# Config File Prefix
+P234 =
+
+# Config File Postfix
+P235 =
+
+# Allow DHCP Option43 and Option 66 to override server: 0 - No, 1 - Yes. Default is Yes.
+# When set to Yes(1), it will override the configured provision path and method.
+P145 = 0
+
+# Automatic Upgrade. 0 - No, 1 - Yes. Default is No.
+P194 = 1
+
+# Check for new firmware every () minutes, unit is in minute, minimum 60 minutes, default is 7 days.
+P193 = 10080
+
+# Authenticate Conf File. 0 - No, 1 - Yes. Default is No.
+P240 = 0
+
+# Enable TR069. 0 - No, 1 - Yes. Default is No.
+# P1409 = 0
+
+# ACS URL
+P4503 = 
+# TR-069 Username
+P4504 =
+
+# TR-069 Password
+P4505 = 
+# Periodic Inform Enable. 0 - No, 1 - Yes.	
+P4506 = 0
+
+# Periodic Inform Interval.
+P4507 =
+
+# Connection Request Username	
+P4511 =
+
+# Connection Request Password	
+P4512 =
+
+# Authentication Method. 0 - No Authentication, 1 - Basic, 2 - Digest 
+P4519 = 2
+
+# Connection Request Port
+P4518 =
+
+
+
+#----------------------------------------
+# XML Phonebook
+#----------------------------------------
+# Enable Phonebook XML Download
+# 0 = No
+# 1 = YES, HTTP
+# 2 = YES, TFTP
+# 3 = YES, HTTPS
+# Default is No.
+{IF network=LOCALLAN}
+P330 = 1
+
+# Phonebook XML Server Path
+# This is a string of up to 128 characters that should contain a path to the XML file.  
+# It MUST be in the host/path format. For example: "directory.grandstream.com/engineering"
+P331 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%
+
+{ELSE}
+P330 = 3
+
+# Phonebook XML Server Path
+# This is a string of up to 128 characters that should contain a path to the XML file.  
+# It MUST be in the host/path format. For example: "directory.grandstream.com/engineering"
+P331 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%
+{ENDIF}
+
+# Phonebook Download Interval
+# This is an integer variable in hours.  
+# Valid value range is 0-720 (default 0), and greater values will default to 720
+P332 = 12
+
+# Remove Manually-edited entries on Download
+# 0 - No, 1 - Yes, other values ignored
+P333 = 1
+
+# LDAP Directory
+# LDAP Script Server Path
+P1304 = 
+
+#---------------------------------------
+# XML Idle Screen 
+#---------------------------------------
+# Enable Idle Screen XML Download
+# 0 = No
+# 1 = YES, HTTP
+# 2 = YES, TFTP
+# 3 = YES, HTTPS
+# Default is No
+
+{IF network=LOCALLAN}
+P340 = 1
+
+# Idle Screen XML Server Path
+# This is a string of up to 128 characters that should contain a path to the XML file.  
+# It MUST be in the host/path format.  For example: "directory.grandstream.com/engineering"
+{IF ua=GXP1160}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp1160
+{ENDIF}
+{IF ua=GXP1165}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp1160
+{ENDIF}
+{IF ua=GXP1400}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp1400
+{ENDIF}
+{IF ua=GXP1405}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp1400
+{ENDIF}
+{IF ua=GXP1450}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp1450
+{ENDIF}
+{IF ua=GXP2100}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp2100
+{ENDIF}
+{IF ua=GXP2110}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp2110
+{ENDIF}
+{IF ua=GXP2120}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp2120
+{ENDIF}
+{IF ua=GXP2124}
+P341 = %%PROVLINKLOCAL.HOST%%:%%PROVLINKLOCAL.PORT%%%%PROVLINKLOCAL.PATH%%/logo/idle_screen.xml.gxp2124
+{ENDIF}
+
+{ELSE}
+P340 = 3
+
+# Idle Screen XML Server Path
+# This is a string of up to 128 characters that should contain a path to the XML file.  
+# It MUST be in the host/path format.  For example: "directory.grandstream.com/engineering"
+{IF ua=GXP1160}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp1160
+{ENDIF}
+{IF ua=GXP1165}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp1160
+{ENDIF}
+{IF ua=GXP1400}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp1400
+{ENDIF}
+{IF ua=GXP1405}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp1400
+{ENDIF}
+{IF ua=GXP1450}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp1450
+{ENDIF}
+{IF ua=GXP2100}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp2100
+{ENDIF}
+{IF ua=GXP2110}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp2110
+{ENDIF}
+{IF ua=GXP2120}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp2120
+{ENDIF}
+{IF ua=GXP2124}
+P341 = %%PROVLINK.HOST%%:%%PROVLINK.PORT%%%%PROVLINK.PATH%%/logo/idle_screen.xml.gxp2124
+{ENDIF}
+
+{ENDIF}
+
+# Download Screen XML At Boot-up. 0 - no, 1 - yes 
+P1349 = 1
+
+# Use Custom File Name. 0 - no, 1 - yes
+P1343 = 1
+
+#---------------------------------------
+# XML Application
+#---------------------------------------
+# Server Path
+P337 =
+
+# Softkey Label
+P352 = XML Service
+
+# Offhook Auto Dial
+P71 =
+
+# Syslog Server (name of the server, max length is 64 characters)
+P207 = 
+
+# Syslog Level (Default setting is NONE)
+# 0 - NONE, 1 - DEBUG, 2 - INFO, 3 - WARNING, 4 - ERROR
+P208 = 0
+
+# Send SIP Log. 0 - Do not send SIP log in Syslog, 1 - Send SIP log in Syslog if configured and set to DEBUG level
+P1387 = 0
+# NTP Server
+P30 = %%param::time_ntp_server%%
+
+# Allow DHCP Option 42 to override NTP server. 0 - No, 1 - Yes. Default is No.
+# When set to Yes(1), it will override the configured NTP server.
+P144 = 0
+# SSL Certificate
+#P280 =
+
+# SSL Private Key
+#P279 =
+
+# SSL Private Key Password
+#P281 = 
+
+#---------------------------------------
+# Disctinctive Ring Tone
+#---------------------------------------
+#Setting for distinctive ringing base on altert info
+#info=external -- call from external line (no reformatting has been applied)
+#info=international -- call from external line, reformatting detected international call
+#info=national -- call from external line, reformatting detected national call
+#info=local -- call from external line, reformatting detected local call
+#info=queue -- call from queue
+#info=ivr -- call from IVR
+
+# Matching Incoming Caller ID. Matching Rule 1
+# String
+P1488 = external
+
+# Matching Rule 1 Distinctive Ringtone
+# 0 - system ring tone, 1 - custom ring tone 1, 2 - custom ring tone 2, 3 - custom ring tone 3. Default is 0.
+# Number: 0, 1, 2, 3
+# Mandatory
+P1489 = 1
+
+# Matching Incoming Caller ID. Matching Rule 2
+# String
+P1490 = queue
+
+# Matching Rule 2 Distinctive Ringtone
+# 0 - system ring tone, 1 - custom ring tone 1, 2 - custom ring tone 2, 3 - custom ring tone 3. Default is 0
+# Number: 0, 1, 2, 3
+# Mandatory
+P1491 = 2
+
+# Matching Incoming Caller ID. Matching Rule 3
+# String
+P1492 = ivr
+
+# Matching Rule 3 Distinctive Ringtone
+# 0 - system ring tone, 1 - custom ring tone 1, 2 - custom ring tone 2, 3 - custom ring tone 3. Default is 0
+# Number: 0, 1, 2, 3
+# Mandatory
+P1493 = 3
+
+
+# System Ring Tone
+P345 = f1=440,f2=480,c=200/400;
+
+### Call Progress Tones ###
+# Syntax: f1=val,f2=val[,c=on1/off1[-on2/off2[-on3/off3]]]; 
+# (Frequencies are in Hz and cadence on and off are in 10ms) 
+# Dial Tone
+P343 = f1=350,f2=440;
+
+# Message Waiting
+P344 = f1=350,f2=440,c=10/10;
+
+# Ring Back Tone
+P346 = f1=440,f2=480,c=200/400;
+
+# Call-Waiting Tone
+P347 = f1=440,f2=440,c=25/525;
+
+# Busy Tone
+P348 = f1=480,f2=620,c=50/50;
+
+# Reorder Tone
+P349 = f1=480,f2=620,c=25/25;
+
+# Intercom User ID. (Account 1)
+P1303 =
+
+# Disable Call Waiting. 0 - no, 1 - yes
+P91 = 0
+
+# Disable Call-Waiting Tone. 0 - no, 1 - yes
+P186 = 0
+
+# Disable Direct IP Call. 0 - no, 1 - yes
+P1310 = 0
+
+# Use Quick IP-call mode. 0 - no, 1 - yes
+P184 = 0
+
+# Disable Conference. 0 - no, 1 - yes
+P1311 = 0
+
+# Enable Muliti-Purpose-Key sending DTMF, 0 - no, 1 - yes
+P1339 = 0
+
+# Disable DND Button. 0 - no, 1 - yes
+P1340 = 0
+
+# DND On - P2344 and DND Off - P2345
+P2344 = %%param::DIALCODEPROFILE%%2
+P2345 = %%param::DIALCODEPROFILE%%0
+
+# Disable Transfer. 0 - no, 1 - yes
+P1341 = 0
+
+# Enable Auto-attended Transfer, 0 - No, 1 -Yes. Default is 0
+P1376 = 0
+# Configuration Via Keypad Menu. 0 - Unrestricted, 1 - Basic settings only, 2 - Constraint mode
+P1357 = 0
+
+# Enable STAR key Keypad locking. 0 - no, 1 - yes
+P1382 = 0
+
+# Password to lock/unlock.  (0-9 only)
+P1383 =
+
+# Do not escape "#" as 23% in SIP URL. 0 - No, 1 - Yes. Default is 0
+P1406 = 0
+# Display Language. 
+# ar - Arabic, de - Deutsh
+# en - English, es - Spanish, fr - Francais
+# he - Hebrew, hr - Hrvatski, hu - Magyar 
+# it - Italiano, ja - japanese, ko - korean
+# nl - Dutch, pl - Polski, pt - Portugue
+# ru - Russian, sl - Slovenian, zh-tw - traditional chinese
+# zh - simplified chinese, tr - Turkish, auto - Automatic, 
+# gxp - Downloaded Language
+P1362 = %%langwebUI2%%
+
+#Language File postfix (for Downloaded Language)
+#P399 = 
+
+
+####################################################################
+# Account Settings
+####################################################################
+####################################################################
+# Primary Account (Account 1) Settings
+####################################################################
+
+# Account Active (In Use). 0 - no, 1 - yes
+P271 = 1
+
+# Account Name
+P270 = %%extension_number%%
+
+{IF network=LOCALLAN}
+# SIP Server Local configuration - Local internal IP Address of the server
+P47 = %%pbx_ip%%:%%param::sipport%%
+# Outbound Proxy - The "P48" field contains the ip address and SIP port of the SIP Outbound Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.
+P48 = 
+# Local SIP port (default 5060)
+P40 = 5060
+# NAT Traversal. 0 - no, 1 - STUN, 2 - keep alive, 3 - UPnP, 4 - Auto, 5 - VPN
+P52 = 2
+{ENDIF}
+
+{IF network=REMOTESTUN}
+# SIP Server configuration for remote using stun mode - External IP Address
+P47 = %%pbx_ip%%:%%param::sipport%%
+# Outbound Proxy - The "P48" field contains the ip address and SIP port of the SIP Outbound Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.
+P48 = 
+# Local SIP port (default 5060)
+P40 = %%phonesipport%%
+# NAT Traversal. 0 - no, 1 - STUN, 2 - keep alive, 3 - UPnP, 4 - Auto, 5 - VPN
+P52 = 1
+{ENDIF}
+
+# End Network Selection configuration
+
+# Secondary SIP Server
+P2312 = 
+
+# SIP User ID 
+P35 = %%extension_number%%
+
+# Authenticate ID
+P36 = %%extension_auth_id%%
+
+# Authenticate password
+P34 = %%extension_auth_pw%%
+
+# Display Name
+P3 = %%extension_first_name%% %%extension_last_name%%
+
+# DNS Mode. 0 - A Record, 1 - SRV, 2 - NAPTR/SRV, 3 - Use Configured IP 
+P103 = 0
+
+# Primary IP. Maximum 15 characters
+P2308 = 
+
+# Backup IP 1
+P2309 = 
+
+# Backup IP 2
+P2310 = 
+
+# TEL URI. 0 - Disabled, 1 - User=Phone, 2 - Enabled
+P63 = 1
+
+# SIP Registration. 0 - no, 1 - yes
+P31 = 1
+
+# Unregister On Reboot. 0 - no, 1 - yes
+P81 = 1
+
+# Register Expiration (in minutes. default 1 hour, max 45 days)
+P32 = 2
+
+# Reregister before Expiration (in seconds, default 0 second)
+P2330 = 0
+
+# SIP Registration Failure Retry Wait Time. In seconds. Between 1-3600, default is 20.
+P138 = 20
+
+# SIP T1 Timeout. RFC 3261 T1 value (RTT estimate)
+# 50 - 0.5 sec, 100 - 1 sec, 200 - 2 sec. Default 100.
+P209 = 50
+
+# SIP T2 Interval. RFC 3261 T2 value. The maximum retransmit interval for non-INVITE requests and INVITE responses.
+# 200 - 2 sec, 400 - 4 sec, 800 - 8 sec. Default 400.
+P250 = 400
+
+# SIP Transport. 0 - UDP, 1 - TCP, 2 - TLS/TCP
+P130 = 0
+
+# SIP URI Scheme when using TLS. 0 - sip, 1 - sips. Default is 1
+P2329 = 1
+
+# Use Actual Ephemeral Port in Contact with TCP/TLS. 0 - No, 1- Yes. Default is 0
+P2331 = 0
+# Check Domain Certificates. 0 - No, 1 - Yes. When set to Yes/Enabled, we will check the domain certificate as defined in RFC5922
+P2311 = 0
+
+# Remove OBP from Route. 0 - No, 1 - Yes
+P2305 = 0
+
+# Validate Incoming Messages. 0 - No, 1 - Yes
+P2306 = 0
+
+# Support SIP Instace ID. 0 - No, 1 - Yes
+P288 = 1
+
+# SUBSCRIBE for MWI. (Whether or not send SUBSCRIBE for Message Waiting Indication) 0 - No, 1 - Yes.
+P99 = 1
+
+# SUBSCRIBE for Registration. 0 - No, 1 - Yes. Default is 0.
+P2319 = 0
+
+# Feature Key Synchronization. 0 - Disabled, 1 - Enabled. Default is 0.
+P2325 = 0
+
+# PUBLISH for Presence. 0 - no, 1 - yes
+P188 = 0
+
+# Proxy-Require (A SIP extension to enable firewall penetration). Max length is 64 characters
+P197 =
+
+# Voice Mail UserID (User ID/extension for 3rd party voice mail system)
+P33 = %%vm_number%%
+
+# Send DTMF. 0 - no, 1 - yes
+# in-audio
+P2301 = 0
+# Via RTP (RFC2833)
+
+P2302 = 1
+
+# Via SIP INFO
+P2303 = 0
+
+# DTMF Payload Type
+P79 = 101
+
+# Early Dial (use "Yes" only if proxy supports 484 response). 0 - no, 1 - yes
+P29 = 0
+
+# Dial Plan Prefix (dial plan prefix string).
+P66 = 
+
+# Dial Plan
+P290 = { [*x]%2b }
+
+# BLF Call-pickup Prefix:
+P1347 = %%param::pickup%%
+
+# Delayed Call Forward Wait Time
+P139 = 20
+
+# Enable Call Features. (if yes, call features using star codes will be supported locally)   0 - no, 1 - yes
+P191 = 0
+
+# Call Log. 0 - Log All, 1 - Log Incoming/Outgoing only (Missed calls NOT recorded), 2 - Disable Call Log
+P182 = 0
+
+# Session Expiration (in seconds. default 180 seconds. Allowed value: 90-65535)
+P260 = 180
+
+# Minimum SE (in seconds. default 90 seconds, must be lower than or equal to P260)
+P261 = 90
+
+# Caller Request Timer (Request for timer when calling) 0 - no, 1 - yes
+P262 = 0
+
+# Callee Request Timer (Request for timer when called. i.e. if remote party supports timer but did not request for one) 0 - no, 1 - yes
+P263 = 0
+
+# Force Timer (Still use timer when remote party does not support timer) 0 - no, 1 - yes
+P264 = 0
+
+# UAC Specify Refresher. 0 - omit, 1 - UAC, 2 - UAS
+P266 = 0
+
+# UAS Specify Refresher. 1 - UAC, 2 - UAS
+P267 = 1
+
+# Force INVITE (Always refresh with INVITE instead of UPDATE even when remote party supports UPDATE) 0 - no, 1 - yes
+P265 = 0
+
+# Enable 100rel. 0 - no, 1 - yes
+P272 = 0
+
+# Account Ring Tone. 0 - system ring tone, 1 - custom ring tone 1, 2 - custom ring tone 2
+# 3 - custom ring tone 3.
+P104 = 0
+# Ring Timeout.  (in seconds. Between 30-3600, default is 60)
+P1328 = 600
+
+# Line-Seize Timeout. (In seconds. Between 15-60, default is 15)
+P2313 = 15
+
+# Send Anonymous (caller ID will be blocked if set to Yes). 0 - no, 1 - yes
+P65 = 0
+
+# Anonymous Call Rejection. 0 - no, 1 - yes
+P129 = 0
+
+# Auto Answer. 0 - no, 1 - yes
+P90 = 0
+
+# Allow Auto Answer by Call-Info. 0 - no, 1 - yes
+P298 = 1
+
+# Refer-To Use Target Contact. 0 - no, 1 - yes
+P135 = 0
+
+# Transfer on conference Hang-Up. 0 - no, 1 - yes
+P2304 = 0
+
+# Check SIP User ID for incoming INVITE. 0 - No, 1 - Yes
+P258 = 0
+
+# Preferred Vocoder
+# 0 - PCMU, 2 - G.726-32, 4 - G.723.1, 8 - PCMA, 
+# 9 - G.722, 18 - G.729A/B, 98 - iLBC
+# choice 1.   
+P57 = %%codec1%%
+# choice 2.  
+P58 = %%codec2%%
+# choice 3.   
+P59 = %%codec3%%
+# choice 4.   
+P60 = %%codec4%%
+# choice 5.   
+P61 = 98
+# choice 6.   
+P62 = 2
+# choice 7. 
+P46 = 4
+
+# SRTP Mode
+# 0 = Disabled
+# 1 = Enabled but not forced
+# 2 = Enabled and forced
+# 3 = Optional
+P183 = 0
+
+# Symmetric RTP. 0 - No, 1 - yes
+P291 = 0
+
+# Silence Suppression 0 - no, 1 - yes
+P50 = 0
+
+# Voice Frames per TX (up to 10/20/32/64 frames for G711/G726/G723/other codecs respectively)
+P37 = 2
+# No Key Entry Timeout. Default - 4 seconds.
+P85 = 4
+
+# Use # as Dial Key. 0 - no, 1 - yes
+P72 = 1
+
+# G723 rate. 0 - 6.3kbps encoding rate, 1 - 5.3kbps encoding rate
+P49 = 1
+
+# G.726-32 Packing Mode. 0 = ITU, 1 = IETF, default is 0
+P2323 = 0
+# iLBC Frame Size. 0 - 20ms, 1 - 30ms(default).
+P97 = 1
+
+# iLBC payload type. Between 96 and 127, default is 97.
+P96 = 97
+
+# Jitter Buffer Type. 0 - Fixed, 1 - Adaptive. Default is Adaptive
+P133 = 1
+
+# Jitter Buffer Length. 0 - 100ms, 1 - 200ms, 2 - 300ms
+# 3 - 400ms, 4 - 500ms, 5 - 600ms, 6 - 700ms, 7 - 800ms
+# Default is 2 (300ms)
+P132 = 2
+# eventlist BLF URI
+P134 = 
+# Conference URI
+P2318 =
+
+# Special Feature. 100 - Standard, 101 - Nortel MCS, 102- Broadsoft, 108 - CBCOM, 109 - RNK
+# 110 - Sylantro, 117 - Huawei IMS
+P198 = 100
+
+################################################################################
+# End User Settings. Please do not edit this section.
+################################################################################
+##############################################################################
+##  Basic/System-wide Options
+##############################################################################
+
+# End User Password
+P196 = 
+
+# IP Address Mode. 0 - DHCP, 1 - Static IP, 2 - PPPoE
+#P8 = 0
+
+#--------------------------------------
+# DHCP
+#--------------------------------------
+# Host name, DHCP option 12. Max length allowed is 64 characters.
+P146 =
+
+# Domain name, DHCP option 15. Max length allowed is 64 characters.
+P147 =
+
+# Vendor Class ID, DHCP option 60. Max length allowed is 64 characters. 
+# Default value for GXP2110 - Grandstream GXP2110
+# Default value for GXP2120 - Grandstream GXP2120
+# Default value for GXP2100 - Grandstream GXP2100
+# Default value for GXP1450 - Grandstream GXP1450
+P148 =  Grandstream GXP
+
+#--------------------------------------
+# PPPoE
+#--------------------------------------
+# PPPoE account ID
+P82 =
+
+# PPPoE password
+P83 =
+
+# PPPoE Service Name
+P269 =
+
+#--------------------------------------
+# Statically Configured
+#--------------------------------------
+# IP Address. Ignore if DHCP or PPPoE is used
+#P9 = 192
+#P10 = 168
+#P11 = 0
+#P12 = 160
+
+# Subnet mask. Ignore if DHCP or PPPoE is used
+#P13 = 255
+#P14 = 255
+#P15 = 0
+#P16 = 0
+
+# Gateway. Ignore if DHCP or PPPoE is used
+#P17 = 0
+#P18 = 0
+#P19 = 0
+#P20 = 0
+
+# DNS 1 Server. Ignore if DHCP or PPPoE is used
+#P21 = 0
+#P22 = 0
+#P23 = 0
+#P24 = 0
+
+# DNS 2 Server. Ignore if DHCP or PPPoE is used
+#P25 = 0
+#P26 = 0
+#P27 = 0
+#P28 = 0
+
+# Preferred DNS server.  (if specified).
+#P92 = 0
+#P93 = 0
+#P94 = 0
+#P95 = 0
+
+# 802.1X mode 0 - disable, 1 - EAP-MD5
+#P7901 = 0
+
+# Identity. Max length allowed is 64 characters.
+#P7902 = 
+
+# MD5 Password. Max length allowed is 64 characters.
+#P7903 =
+
+#------------------------------------------------------------------------------------- 
+# Line Keys
+#------------------------------------------------------------------------------------- 
+
+# Line Key 1
+# ------------------------------------------------------------------------------------
+# Key Mode. 0 - Line ,1 - Shared Line
+P1363 = 0
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3,
+# 3 - Account 4, 4 - Account 5, 5- Account 6.
+P1364 = 0
+
+# Line Key 2
+# ------------------------------------------------------------------------------------
+# Key Mode. 0 - Line ,1 - Shared Line
+P1365 = 0
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3,
+# 3 - Account 4, 4 - Account 5, 5- Account 6.
+P1366 = 1
+
+# Line Key 3
+# ------------------------------------------------------------------------------------
+# Key Mode. 0 - Line ,1 - Shared Line
+P1367 = 0
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3,
+# 3 - Account 4, 4 - Account 5, 5- Account 6.
+P1368 = 2
+
+# Line Key 4
+# ------------------------------------------------------------------------------------
+# Key Mode. 0 - Line ,1 - Shared Line
+P1369 = 0
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3,
+# 3 - Account 4, 4 - Account 5, 5- Account 6.
+P1370 = 3
+
+#-------------------------------------------------------------------------------------
+# Line Key 5, 6, 7, 8 For Multi-Purpose function FOR GXP2120 and GXP2124 ONLY
+#------------------------------------------------------------------------------------- 
+# Line Key 5 - BLF KEY 25 in 3CX Phone System
+# ------------------------------------------------------------------------------------
+
+{IF blf25}
+# Key Mode. 
+#  0 - Line 
+#  1 - Shared Line
+# 10 - Speed Dial
+# 11 - BLF
+# 12 - Presence Watcher
+# 13 - eventlist BLF 
+# 14 - Speed Dial via active account
+# 15 - DialDTMF
+# 17 - CallReturn
+# 18 - Transfer
+# 20 - Intercom
+P1371 = 11
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+# For GXP2120 4 - Account 5, 5- Account 6.
+P1372 = 0
+
+# Name. Max length allowed is 32 characters.
+P1473 = %%blf25%%
+
+# User ID.  Max length allowed is 64 characters.
+P1474 = %%blf25%%
+
+{ELSE}
+P1371 =0
+P1372 =4
+P1473 =
+P1474 =
+{ENDIF}
+
+# ------------------------------------------------------------------------------------
+# Line Key 6 - BLF KEY 26 in 3CX Phone System
+# ------------------------------------------------------------------------------------
+
+{IF blf26}
+# Key Mode. 
+#  0 - Line 
+#  1 - Shared Line
+# 10 - Speed Dial
+# 11 - BLF
+# 12 - Presence Watcher
+# 13 - eventlist BLF 
+# 14 - Speed Dial via active account
+# 15 - DialDTMF
+# 17 - CallReturn
+# 18 - Transfer
+# 20 - Intercom
+P1373 = 11
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+# For GXP2120 4 - Account 5, 5- Account 6.
+P1374 = 0
+
+# Name. Max length allowed is 32 characters.
+P1475 = %%blf26%%
+
+# User ID.  Max length allowed is 64 characters.
+P1476 = %%blf26%%
+
+{ELSE}
+P1373 =0
+P1374 =5
+P1475 =
+P1476 =
+{ENDIF}
+
+# Line Key  7 For Multi-Purpose function (GXP2124 ONLY)
+# ------------------------------------------------------------------------------------
+
+{IF blf27}
+# Key Mode. 
+# 10 - Speed Dial
+# 11 - BLF
+# 12 - Presence Watcher
+# 13 - eventlist BLF 
+# 14 - Speed Dial via active account
+# 15 - DialDTMF
+# 17 - CallReturn
+# 18 - Transfer
+# 20 - Intercom
+P1477 = %%value%%
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4, 
+P1478 = 0
+
+# Name. Max length allowed is 32 characters.
+P1479 = %%blf27%%
+
+# User ID.  Max length allowed is 64 characters.
+P1480 = %%blf27%%
+
+{ELSE}
+P1477 =0
+P1478 =0
+P1479 =
+P1480 =
+{ENDIF}
+
+# Line Key 8 For Multi-Purpose function(GXP2124 ONLY)
+# ------------------------------------------------------------------------------------
+
+{IF blf28}
+# Key Mode. 
+# 10 - Speed Dial
+# 11 - BLF
+# 12 - Presence Watcher
+# 13 - eventlist BLF 
+# 14 - Speed Dial via active account
+# 15 - DialDTMF
+# 17 - CallReturn
+# 18 - Transfer
+# 20 - Intercom
+
+P1481 = %%value%%
+
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4, 
+P1482 = 0
+
+# Name. Max length allowed is 32 characters.
+P1483 = %%blf28%%
+
+# User ID.  Max length allowed is 64 characters.
+P1484 = %%blf28%%
+
+{ELSE}
+P1481 =0
+P1482 =0
+P1483 =
+P1484 =
+{ENDIF}
+
+#-------------------------------------------------------------------------------------
+# End User Multi Purpose Keys - Specified in blf 1-18 below
+#------------------------------------------------------------------------------------- 
+#--------------------------------------------------------------------------------------
+# End User Time settings
+#--------------------------------------------------------------------------------------
+
+# Time Zone.
+# auto - Automatic
+# TZA+12 - GMT-12:00 (International Date Line West)
+# TZB+11 - GMT-11:00 (Midway Island, Samoa) 
+# HAW10 - GMT-10:00 (US Hawaiian Time) 
+# AKST9AKDT - GMT-9:00 (US Alaska Time) 
+# PST8PDT - GMT-8:00 (US Pacific Time, Los Angeles) 
+# MST7MDT - GMT-07:00 (US Mountain Time, Denver) 
+# MST7 - GMT-07:00 (Mountain Time (Arizona, no DST)) 
+# CST6CDT - GMT-06:00 (Central Time) 
+# CST+6 - GMT-06:00 (Central America) 
+# EST5EDT - GMT-05:00 (Eastern Time) 
+# TZf+4:30 - GMT-04:30 (Caracas) 
+# AST4ADT - GMT-04:00 (Atlantic Time) 
+# AST4ADT,M4.1.0/00:01:00,M10.5.0/00:01:00 - GMT-04:00 (Atlantic Time (New Brunswick)) 
+# NST+3:30NDT+2:30,M4.1.0/00:01:00,M10.5.0/00:01:00 - GMT-03:30 (Newfoundland Time) 
+# TZK+3 - GMT-03:00 (Greenland) 
+# BRST+3BRDT+2,M10.3.0,M2.3.0 - GMT-03:00 (Brazil, Sao Paulo) 
+# UTC+3 - GMT-02:00 (Argentina) 
+# TZL+2 - GMT-02:00 (Mid-Atlantic) 
+# TZM+1 - GMT-01:00 (Azores, Cape Verdi Is.) 
+# TZN+0 - GMT (Edinburgh, Casablanca, Monrovia) 
+# GMT+0BST-1,M3.5.0/01:00:00,M10.5.0/02:00:00 - GMT (London, Great Britain) 
+# WET-0WEST-1,M3.5.0/01:00:00,M10.5.0/02:00:00 - GMT (Lisbon, Portugal) 
+# GMT+0IST-1,M3.5.0/01:00:00,M10.5.0/02:00:00 - GMT (Dublin, Ireland) 
+# TZO-1 - GMT+01:00 (Paris, Vienna, Warsaw) 
+# CET-1CEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00 - GMT+01:00 (Roma, Paris, Madrid, Prague, Berlin, Budapest, Amsterdam, Barcelona) 
+# TZO-1 - GMT+01:00 (Brussels, Belgium) 
+# TZP-2 - GMT+02:00 (Israel, Cairo, Athens, Istanbul, Buchrest) 
+# EET-2EEST-3,M3.5.0/03:00:00,M10.5.0/04:00:00 - GMT+02:00 (Helsinki, Athens, Tallinn) 
+# EET-2EEST,M3.5.0/3,M10.5.0/4 - GMT+02:00 (Kyiv, Ukraine) 
+# TZQ-3 - GMT+03:00 (Kuwait, Baghdad, Tehran, Nairobi) 
+# MSK-3MSD,M3.5.0/2,M10.5.0/3 - GMT+03:00 (Moscow, Russia) 
+# MST-3MDT,M3.5.0/2,M10.5.0/3 - GMT+03:00 (St.Petersburg, Russia) 
+# TZR-4 - GMT+04:00 (Abu Dhabi, Baku) 
+# TZS-5 - GMT+05:00 (Islamabad, Ekaterinburg, Karachi, Tashkent) 
+# TZT-5:30 - GMT+05:30 (Chennai, New Delhi, Mumbai) 
+# TZU-5:45 - GMT+05:45 (Kathmandu) 
+# TZV-6 - GMT+06:00 (Almaty, Astana, Dhaka, Novosibirsk) 
+# TZW-6:30 - GMT+06:30 (Rangoon) 
+# TZX-7 - GMT+07:00 (Bankok, Hanoi, Krasnoyarsk) 
+# WIB-7 - GMT+07:00 (Jakarta) 
+# TZY-8 - GMT+08:00 (Beijing, Taipei, Kuala Lumpur, Irkutsk) 
+# SGT-8 - GMT+08:00 (Singapore) 
+# ULAT-8 - GMT+08:00 (Ulaanbaatar, Mongolia) 
+# WST-8 - GMT+08:00 (Perth) 
+# TZZ-9 - GMT+09:00 (Japan, Korea, Yakutsk) 
+# CST-9:30CDT-10:30,M10.5.0/02:00:00,M3.5.0/03:00:00 - GMT+09:30 (Adelaide) 
+# CST-9:30 - GMT+09:30 (Darwin) 
+# TZb-10 - GMT+10:00 (Guam) 
+# EST-10EDT-11,M10.1.0/02:00:00,M3.5.0/03:00:00 - GMT+10:00 (Hobart) 
+# EST-10EDT-11,M10.5.0/02:00:00,M3.5.0/03:00:00 - GMT+10:00 (Sydney, Melbourne, Canberra) 
+# EST-10 - GMT+10:00 (Brisbane) 
+# TZc-11 - GMT+11:00 (Magadan, Solomon Is., New Caledonia) 
+# NZST-12NZDT-13,M10.1.0/02:00:00,M3.3.0/03:00:00 - GMT+12:00 (Auckland, Wellington) 
+# TZd-12 - GMT+12:00 (Fiji) 
+# TZe-13 - GMT+13:00 (Nuku'alofa) 
+# customize - Self-Defined Time Zone
+P64 = %%param::time_timezone_grandstreamexec%%
+
+# Allow DHCP Option 2 to override Time Zone setting. 0 - No, 1 - Yes.
+# When set to Yes(1), it will override the configured Time Zone setting if available. 
+P143 = 0
+
+# Self Defined Time zone. Max length allowed is 64 characters.
+P246 = %%param::time_dst_start_month%%%2C%%param::time_dst_start_day%%%2C0%2C%%param::time_dst_start_hour%%%2C0%3B%%param::time_dst_end_month%%%2C%%param::time_dst_end_day%%%2C0%2C%%param::time_dst_end_hour%%%2C0%3B%%param::time_dst_saving_minutes%%
+
+# Weather Update
+# Enable Weather Update default disabled
+P1402 = 0
+# City Code
+# 0 - Use Self-Defined City Code, 1 - Automatic. Default is 1
+P1405 = 1
+
+# Self-Defined City Code
+P1377 =
+
+# Update Interval. (in minutes, between 1-360, default is 5)
+P1378 = 5
+
+# Degree Unit.  0 - Fahrenheit, 1 - Celsius
+P1379 =  0
+
+# Stock Update
+# Enable Stock Update default disabled
+P1403 = 0
+
+# Stock Code
+P1380 =  MSFT;YHOO;AOL;BIDU;AAPL;ORCL;NOK;EBAY;ADBE;IBM
+
+
+# Currency Update
+# Enable Currency Update default disabled
+P1404 = 0
+
+# Currency Code
+P1381 =  EUR/USD;GBP/USD;CAD/USD;AUD/USD;CNY/USD;JPY/USD
+
+
+
+# LCD Backlight Brightness. (0-8, where 0 is off and 8 is brightest)
+#Active
+P334 = 6
+
+# Idle
+P335 = 0
+
+# LCD Contrast (0-20)
+P1329 = 10
+# Date Display Format.
+# 0: yyyy-mm-dd      eg. 2011-10-31
+# 1: mm-dd-yyyy      eg. 10-31-2011
+# 2: dd-mm-yyyy      eg. 31-10-2011
+# 3: dddd, MMMM dd   eg. Monday, October 31
+# 4: MMMM dd, dddd   eg. October 31, Monday
+#(some options might not fit for the screen layout)
+P102 = 0
+
+# Time Display Format. 0 - 12 Hour, 1 - 24 Hour
+P122 = 0
+
+# Disable in-call DTMF display. 0 - no, 1 - yes
+P338 = 0
+
+# Disable Missed Call Backlight. 0 - no, 1 - yes
+P351 = 0
+
+# Always ring speaker. 0 - No, 1 - Yes
+P1439 = 0
+# Headset Key Mode. 0 = Default Mode, 1 = Toggle Headset/Speaker 
+P1312 = 0
+
+# Headset Port Type. 0 - 2.5mm, 1 - RJ22
+P1300 = 
+
+# Headset TX gain(db). 1 - -6, 0 - 0, 2 - +6
+P1301 = 0
+
+# Headset RX gain(db). 1 - -6, 0 - 0, 2 - +6
+P1302 = 0
+
+########################################################
+###                  BLF Settings                    ###
+########################################################
+# END USER MULTIPURPOSE KEYS 
+# ------------------------------------------------------------------------------------- 
+# Key Mode. 
+# 0 - Speed Dial
+# 1 - BLF
+# 2 - Presence Watcher
+# 3 - eventlist BLF 
+# 4 - Speed Dial via active account
+# 5 - DialDTMF
+# 7 - CallReturn
+
+{IF blf1}
+# Key 1 
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P323 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4 
+P301 = 0
+# Name
+P302 = %%blf1%%
+# UserID
+P303 = %%blf1%%
+{ELSE}
+P323 =0
+P301 =0
+P302 =
+P303 =
+{ENDIF}
+
+{IF blf2}
+# Key 2
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P324 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P304 = 0
+# Name
+P305 = %%blf2%%
+# UserID
+P306 = %%blf2%%
+{ELSE}
+P324 =0
+P304 =0
+P305 =
+P306 =
+{ENDIF}
+
+{IF blf3}
+# Key 3
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P325 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P307 = 0
+# Name
+P308 = %%blf3%%
+# UserID
+P309 = %%blf3%%
+{ELSE}
+P325 =0
+P307 =0
+P308 =
+P309 =
+{ENDIF}
+
+{IF blf4}
+# Key 4
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P326 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4  
+P310 = 0
+# Name
+P311 = %%blf4%%
+# UserID
+P312 = %%blf4%%
+{ELSE}
+P326 =0
+P310 =0
+P311 =
+P312 =
+{ENDIF}
+
+{IF blf5}
+# Key 5
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P327 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4
+P313 = 0
+# Name
+P314 = %%blf5%%
+# UserID
+P315 = %%blf5%%
+{ELSE}
+P327 =0
+P313 =0
+P314 =
+P315 =
+{ENDIF}
+
+{IF blf6}
+# Key 6
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P328 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4 
+P316 = 0
+# Name
+P317 = %%blf6%%
+# UserID
+P318 = %%blf6%%
+{ELSE}
+P328 =0
+P316 =0
+P317 =
+P318 =
+{ENDIF}
+
+{IF blf7}
+# Key 7
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P329 = %%value%%
+# Account. 0 - Account 1, 1 - Account 2, 2 - Account 3, 3 - Account 4 
+P319 = 0
+# Name
+P320 = %%blf7%%
+# UserID
+P321 = %%blf7%%
+{ELSE}
+P329 =0
+P319 =0
+P320 =
+P321 =
+{ENDIF}
+
+#--------------------------------------------------------------------------------------
+# Mutlipurpose Key 8 - 18 FOR GXP2110 and GXP2124 ONLY
+#--------------------------------------------------------------------------------------
+
+{IF blf8}
+# Key 8
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P353 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P354 = 0
+# Name
+P355 = %%blf8%%
+# UserID
+P356 = %%blf8%%
+{ELSE}
+P353 =0
+P354 =0
+P355 =
+P356 =
+{ENDIF}
+
+{IF blf9}
+# Key 9
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P357 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P358 = 0
+# Name
+P359 = %%blf9%%
+# UserID
+P360 = %%blf9%%
+{ELSE}
+P357 =0
+P358 =0
+P359 =
+P360 =
+{ENDIF}
+
+{IF blf10}
+# Key 10
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P361 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P362 = 0
+# Name
+P363 = %%blf10%%
+# UserID
+P364 = %%blf10%%
+{ELSE}
+P361 =0
+P362 =0
+P363 =
+P364 =
+{ENDIF}
+
+{IF blf11}
+# Key 11
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P365 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P366 = 0
+# Name
+P367 = %%blf11%%
+# UserID
+P368 = %%blf11%%
+{ELSE}
+P365 =0
+P366 =0
+P367 =
+P368 =
+{ENDIF}
+
+{IF blf12}
+# Key 12
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P369 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P370 = 0
+# Name
+P371 = %%blf12%%
+# UserID
+P372 = %%blf12%%
+{ELSE}
+P369 =0
+P370 =0
+P371 =
+P372 =
+{ENDIF}
+
+{IF blf13}
+# Key 13
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P373 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P374 = 0
+# Name
+P375 = %%blf13%%
+# UserID
+P376 = %%blf13%%
+{ELSE}
+P373 =0
+P374 =0
+P375 =
+P376 =
+{ENDIF}
+
+{IF blf14}
+# Key 14
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P377 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P378 = 0
+# Name
+P379 = %%blf14%%
+# UserID
+P380 = %%blf14%%
+{ELSE}
+P377 =0
+P378 =0
+P379 =
+P380 =
+{ENDIF}
+
+{IF blf15}
+# Key 15
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P381 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P382 = 0
+# Name
+P383 = %%blf15%%
+# UserID
+P384 = %%blf15%%
+{ELSE}
+P381 =0
+P382 =0
+P383 =
+P384 =
+{ENDIF}
+
+{IF blf16}
+# Key 16
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P385 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P386 = 0
+# Name
+P387 = %%blf16%%
+# UserID
+P388 = %%blf16%%
+{ELSE}
+P385 =0
+P386 =0
+P387 =
+P388 =
+{ENDIF}
+
+{IF blf17}
+# Key 17
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P389 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P390 = 0
+# Name
+P391 = %%blf17%%
+# UserID
+P392 = %%blf17%%
+{ELSE}
+P389 =0
+P390 =0
+P391 =
+P392 =
+{ENDIF}
+
+{IF blf18}
+# Key 18
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P393 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P394 = 0
+# Name
+P395 = %%blf18%%
+# UserID
+P396 = %%blf18%%
+{ELSE}
+P393 =0
+P394 =0
+P395 =
+P396 =
+{ENDIF}
+
+
+#--------------------------------------------------------------------------------------
+# Mutlipurpose Key 19 - 24 FOR GXP2124 ONLY
+#--------------------------------------------------------------------------------------
+
+{IF blf19}
+# Key 19
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1440 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1441 = 0
+# Name
+P1442 = %%blf19%%
+# UserID
+P1443 = %%blf19%%
+{ELSE}
+P1440 =0
+P1441 =0
+P1442 =
+P1443 =
+{ENDIF}
+
+
+{IF blf20}
+# Key 20
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1444 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1445 = 0
+# Name
+P1446 = %%blf20%%
+# UserID
+P1447 = %%blf20%%
+{ELSE}
+P1444 =0
+P1445 =0
+P1446 =
+P1447 =
+{ENDIF}
+
+{IF blf21}
+# Key 21
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1448 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1449 = 0
+# Name
+P1450 = %%blf21%%
+# UserID
+P1451 = %%blf21%%
+{ELSE}
+P1448 =0
+P1449 =0
+P1450 =
+P1451 =
+{ENDIF}
+
+{IF blf22}
+# Key 22
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1452 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1453 = 0
+# Name
+P1454 = %%blf22%%
+# UserID
+P1455 = %%blf22%%
+{ELSE}
+P1452 =0
+P1453 =0
+P1454 =
+P1455 =
+{ENDIF}
+
+{IF blf23}
+# Key 23
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1456 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1457 = 0
+# Name
+P1458 = %%blf23%%
+# UserID
+P1459 = %%blf23%%
+{ELSE}
+P1456 =0
+P1457 =0
+P1458 =
+P1459 =
+{ENDIF}
+
+{IF blf24}
+# Key 24
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P1460 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P1461 = 0
+# Name
+P1462 = %%blf24%%
+# UserID
+P1463 = %%blf24%%
+{ELSE}
+P1460 =0
+P1461 =0
+P1462 =
+P1463 =
+{ENDIF}
+
+#--------------------------------------------------------------------------------------
+# Mutlipurpose Key 8 onwards for Side cars
+#--------------------------------------------------------------------------------------
+
+{IF blf8}
+# Ext Key 1
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6001 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6201 = 0
+# Name
+P6401 = %%blf8%%
+# UserID
+P6601 = %%blf8%%
+{ELSE}
+P6001 =0
+P6201 =0
+P6401 =
+P6601 =
+{ENDIF}
+
+
+{IF blf9}
+# Ext Key 2
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6002 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6202 = 0
+# Name
+P6402 = %%blf9%%
+# UserID
+P6602 = %%blf9%%
+{ELSE}
+P6002 =0
+P6202 =0 
+P6402 = 
+P6602 =
+{ENDIF}
+
+
+{IF blf10}
+# Ext Key 3
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6003 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6203 = 0
+# Name
+P6403 = %%blf10%%
+# UserID
+P6603 = %%blf10%%
+{ELSE}
+P6003 =0 
+P6203 =0 
+P6403 = 
+P6603 = 
+{ENDIF}
+
+
+{IF blf11}
+# Ext Key 4
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6004 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6204 = 0
+# Name
+P6404 = %%blf11%%
+# UserID
+P6604 = %%blf11%%
+{ELSE}
+P6004 =0 
+P6204 =0 
+P6404 =
+P6604 = 
+{ENDIF}
+
+
+{IF blf12}
+# Ext Key 5
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6005 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6205 = 0
+# Name
+P6405 = %%blf12%%
+# UserID
+P6605 = %%blf12%%
+{ELSE}
+P6005 =0 
+P6205 =0 
+P6405 = 
+P6605 = 
+{ENDIF}
+
+
+{IF blf13}
+# Ext Key 6
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6006 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6206 = 0
+# Name
+P6406 = %%blf13%%
+# UserID
+P6606 = %%blf13%%
+{ELSE}
+P6006 =0 
+P6206 =0 
+P6406 = 
+P6606 = 
+{ENDIF}
+
+
+{IF blf14}
+# Ext Key 7
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6007 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6207 = 0
+# Name
+P6407 = %%blf14%%
+# UserID
+P6607 = %%blf14%%
+{ELSE}
+P6007 =0 
+P6207 =0 
+P6407 = 
+P6607 = 
+{ENDIF}
+
+
+{IF blf15}
+# Ext Key 8
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6008 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6208 = 0
+# Name
+P6408 = %%blf15%%
+# UserID
+P6608 = %%blf15%%
+{ELSE}
+P6008 =0
+P6208 =0 
+P6408 = 
+P6608 = 
+{ENDIF}
+
+
+{IF blf16}
+# Ext Key 9
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6009 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6209 = 0
+# Name
+P6409 = %%blf16%%
+# UserID
+P6609 = %%blf16%%
+{ELSE}
+P6009 =0 
+P6209 =0 
+P6409 = 
+P6609 = 
+{ENDIF}
+
+
+{IF blf17}
+# Ext Key 10
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6010 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6210 = 0
+# Name
+P6410 = %%blf17%%
+# UserID
+P6610 = %%blf17%%
+{ELSE}
+P6010 =0 
+P6210 =0 
+P6410 = 
+P6610 = 
+{ENDIF}
+
+
+{IF blf18}
+# Ext Key 11
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6011 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6211 = 0
+# Name
+P6411 = %%blf18%%
+# UserID
+P6611 = %%blf18%%
+{ELSE}
+P6011 =0 
+P6211 =0 
+P6411 =
+P6611 = 
+{ENDIF}
+
+
+{IF blf19}
+# Ext Key 12
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6012 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6212 = 0
+# Name
+P6412 = %%blf19%%
+# UserID
+P6612 = %%blf19%%
+{ELSE}
+P6012 =0 
+P6212 =0 
+P6412 = 
+P6612 = 
+{ENDIF}
+
+
+{IF blf20}
+# Ext Key 13
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6013 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6213 = 0
+# Name
+P6413 = %%blf20%%
+# UserID
+P6613 = %%blf20%%
+{ELSE}
+P6013 =0 
+P6213 =0 
+P6413 = 
+P6613 =
+{ENDIF}
+
+
+{IF blf21}
+# Ext Key 14
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6014 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6214 = 0
+# Name
+P6414 = %%blf21%%
+# UserID
+P6614 = %%blf21%%
+{ELSE}
+P6014 =0 
+P6214 =0 
+P6414 = 
+P6614 = 
+{ENDIF}
+
+
+{IF blf22}
+# Ext Key 15
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6015 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6215 = 0
+# Name
+P6415 = %%blf22%%
+# UserID
+P6615 = %%blf22%%
+{ELSE}
+P6015 =0 
+P6215 =0 
+P6415 = 
+P6615 = 
+{ENDIF}
+
+
+{IF blf23}
+# Ext Key 16
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6016 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6216 = 0
+# Name
+P6416 = %%blf23%%
+# UserID
+P6616 = %%blf23%%
+{ELSE}
+P6016 =0 
+P6216 =0 
+P6416 = 
+P6616 = 
+{ENDIF}
+
+
+{IF blf24}
+# Ext Key 17
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6017 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6217 = 0
+# Name
+P6417 = %%blf24%%
+# UserID
+P6617 = %%blf24%%
+{ELSE}
+P6017 =0 
+P6217 =0 
+P6417 = 
+P6617 = 
+{ENDIF}
+
+
+{IF blf25}
+# Ext Key 18
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6018 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6218 = 0
+# Name
+P6418 = %%blf25%%
+# UserID
+P6618 = %%blf25%%
+{ELSE}
+P6018 =0 
+P6218 =0 
+P6418 = 
+P6618 = 
+{ENDIF}
+
+
+{IF blf26}
+# Ext Key 19
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6019 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6219 = 0
+# Name
+P6419 = %%blf26%%
+# UserID
+P6619 = %%blf26%%
+{ELSE}
+P6019 =0 
+P6219 =0 
+P6419 = 
+P6619 = 
+{ENDIF}
+
+
+{IF blf27}
+# Ext Key 20
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6020 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6220 = 0
+# Name
+P6420 = %%blf27%%
+# UserID
+P6620 = %%blf27%%
+{ELSE}
+P6020 =0 
+P6220 =0 
+P6420 = 
+P6620 = 
+{ENDIF}
+
+
+{IF blf28}
+# Ext Key 21
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6021 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6221 = 0
+# Name
+P6421 = %%blf28%%
+# UserID
+P6621 = %%blf28%%
+{ELSE}
+P6021 =0 
+P6221 =0 
+P6421 = 
+P6621 = 
+{ENDIF}
+
+
+{IF blf29}
+# Ext Key 22
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6022 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6222 = 0
+# Name
+P6422 = %%blf29%%
+# UserID
+P6622 = %%blf29%%
+{ELSE}
+P6022 =0 
+P6222 =0 
+P6422 = 
+P6622 = 
+{ENDIF}
+
+
+{IF blf30}
+# Ext Key 23
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6023 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6223 = 0
+# Name
+P6423 = %%blf30%%
+# UserID
+P6623 = %%blf30%%
+{ELSE}
+P6023 =0 
+P6223 =0 
+P6423 = 
+P6623 = 
+{ENDIF}
+
+
+{IF blf31}
+# Ext Key 24
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6024 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6224 = 0
+# Name
+P6424 = %%blf31%%
+# UserID
+P6624 = %%blf31%%
+{ELSE}
+P6024 =0 
+P6224 =0 
+P6424 = 
+P6624 = 
+{ENDIF}
+
+
+{IF blf32}
+# Ext Key 25
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6025 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6225 = 0
+# Name
+P6425 = %%blf32%%
+# UserID
+P6625 = %%blf32%%
+{ELSE}
+P6025 =0 
+P6225 =0 
+P6425 = 
+P6625 = 
+{ENDIF}
+
+
+{IF blf33}
+# Ext Key 26
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6026 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6226 = 0
+# Name
+P6426 = %%blf33%%
+# UserID
+P6626 = %%blf33%%
+{ELSE}
+P6026 =0 
+P6226 =0 
+P6426 =
+P6626 = 
+{ENDIF}
+
+
+{IF blf34}
+# Ext Key 27
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6027 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6227 = 0
+# Name
+P6427 = %%blf34%%
+# UserID
+P6627 = %%blf34%%
+{ELSE}
+P6027 =0 
+P6227 =0 
+P6427 =
+P6627 = 
+{ENDIF}
+
+
+{IF blf35}
+# Ext Key 28
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6028 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6228 = 0
+# Name
+P6428 = %%blf35%%
+# UserID
+P6628 = %%blf35%%
+{ELSE}
+P6028 =0 
+P6228 =0 
+P6428 = 
+P6628 = 
+{ENDIF}
+
+
+{IF blf36}
+# Ext Key 29
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6029 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6229 = 0
+# Name
+P6429 = %%blf36%%
+# UserID
+P6629 = %%blf36%%
+{ELSE}
+P6029 =0 
+P6229 =0 
+P6429 = 
+P6629 = 
+{ENDIF}
+
+
+{IF blf37}
+# Ext Key 30
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6030 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6230 = 0
+# Name
+P6430 = %%blf37%%
+# UserID
+P6630 = %%blf37%%
+{ELSE}
+P6030 =0 
+P6230 =0 
+P6430 = 
+P6630 = 
+{ENDIF}
+
+
+{IF blf38}
+# Ext Key 31
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6031 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6231 = 0
+# Name
+P6431 = %%blf38%%
+# UserID
+P6631 = %%blf38%%
+{ELSE}
+P6031 =0 
+P6231 =0 
+P6431 = 
+P6631 = 
+{ENDIF}
+
+
+{IF blf39}
+# Ext Key 32
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6032 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6232 = 0
+# Name
+P6432 = %%blf39%%
+# UserID
+P6632 = %%blf39%%
+{ELSE}
+P6032 =0 
+P6232 =0 
+P6432 = 
+P6632 = 
+{ENDIF}
+
+
+{IF blf40}
+# Ext Key 33
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6033 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6233 = 0
+# Name
+P6433 = %%blf40%%
+# UserID
+P6633 = %%blf40%%
+{ELSE}
+P6033 =0 
+P6233 =0 
+P6433 =
+P6633 =
+{ENDIF}
+
+
+{IF blf41}
+# Ext Key 34
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6034 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6234 = 0
+# Name
+P6434 = %%blf41%%
+# UserID
+P6634 = %%blf41%%
+{ELSE}
+P6034 =0 
+P6234 =0 
+P6434 = 
+P6634 = 
+{ENDIF}
+
+
+{IF blf42}
+# Ext Key 35
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6035 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6235 = 0
+# Name
+P6435 = %%blf42%%
+# UserID
+P6635 = %%blf42%%
+{ELSE}
+P6035 =0 
+P6235 =0 
+P6435 = 
+P6635 = 
+{ENDIF}
+
+
+{IF blf43}
+# Ext Key 36
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6036 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6236 = 0
+# Name
+P6436 = %%blf43%%
+# UserID
+P6636 = %%blf43%%
+{ELSE}
+P6036 =0 
+P6236 =0 
+P6436 = 
+P6636 = 
+{ENDIF}
+
+
+{IF blf44}
+# Ext Key 37
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6037 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6237 = 0
+# Name
+P6437 = %%blf44%%
+# UserID
+P6637 = %%blf44%%
+{ELSE}
+P6037 =0 
+P6237 =0 
+P6437 = 
+P6637 = 
+{ENDIF}
+
+
+{IF blf45}
+# Ext Key 38
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6038 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6238 = 0
+# Name
+P6438 = %%blf45%%
+# UserID
+P6638 = %%blf45%%
+{ELSE}
+P6038 =0 
+P6238 =0 
+P6438 = 
+P6638 = 
+{ENDIF}
+
+
+{IF blf46}
+# Ext Key 39
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6039 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6239 = 0
+# Name
+P6439 = %%blf46%%
+# UserID
+P6639 = %%blf46%%
+{ELSE}
+P6039 =0
+P6239 =0 
+P6439 =
+P6639 =
+{ENDIF}
+
+
+{IF blf47}
+# Ext Key 40
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6040 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6240 = 0
+# Name
+P6440 = %%blf47%%
+# UserID
+P6640 = %%blf47%%
+{ELSE}
+P6040 =0 
+P6240 =0 
+P6440 = 
+P6640 = 
+{ENDIF}
+
+
+{IF blf48}
+# Ext Key 41
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6041 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6241 = 0
+# Name
+P6441 = %%blf48%%
+# UserID
+P6641 = %%blf48%%
+{ELSE}
+P6041 =0 
+P6241 =0 
+P6441 =
+P6641 = 
+{ENDIF}
+
+
+{IF blf49}
+# Ext Key 42
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6042 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6242 = 0
+# Name
+P6442 = %%blf49%%
+# UserID
+P6642 = %%blf49%%
+{ELSE}
+P6042 =0 
+P6242 =0 
+P6442 =
+P6642 =
+{ENDIF}
+
+
+{IF blf50}
+# Ext Key 43
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6043 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6243 = 0
+# Name
+P6443 = %%blf50%%
+# UserID
+P6643 = %%blf50%%
+{ELSE}
+P6043 =0 
+P6243 =0 
+P6443 = 
+P6643 =
+{ENDIF}
+
+
+{IF blf51}
+# Ext Key 44
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6044 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6244 = 0
+# Name
+P6444 = %%blf51%%
+# UserID
+P6644 = %%blf51%%
+{ELSE}
+P6044 =0 
+P6244 =0 
+P6444 = 
+P6644 = 
+{ENDIF}
+
+
+{IF blf52}
+# Ext Key 45
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6045 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6245 = 0
+# Name
+P6445 = %%blf52%%
+# UserID
+P6645 = %%blf52%%
+{ELSE}
+P6045 =0 
+P6245 =0 
+P6445 = 
+P6645 = 
+{ENDIF}
+
+
+{IF blf53}
+# Ext Key 46
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6046 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6246 = 0
+# Name
+P6446 = %%blf53%%
+# UserID
+P6646 = %%blf53%%
+{ELSE}
+P6046 =0
+P6246 =0 
+P6446 = 
+P6646 =
+{ENDIF}
+
+
+{IF blf54}
+# Ext Key 47
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6047 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6247 = 0
+# Name
+P6447 = %%blf54%%
+# UserID
+P6647 = %%blf54%%
+{ELSE}
+P6047 =0 
+P6247 =0 
+P6447 = 
+P6647 = 
+{ENDIF}
+
+
+{IF blf55}
+# Ext Key 48
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6048 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6248 = 0
+# Name
+P6448 = %%blf55%%
+# UserID
+P6648 = %%blf55%%
+{ELSE}
+P6048 =0 
+P6248 =0 
+P6448 = 
+P6648 = 
+{ENDIF}
+
+
+{IF blf56}
+# Ext Key 49
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6049 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6249 = 0
+# Name
+P6449 = %%blf56%%
+# UserID
+P6649 = %%blf56%%
+{ELSE}
+P6049 =0 
+P6249 =0 
+P6449 = 
+P6649 =
+{ENDIF}
+
+
+{IF blf57}
+# Ext Key 50
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6050 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6250 = 0
+# Name
+P6450 = %%blf57%%
+# UserID
+P6650 = %%blf57%%
+{ELSE}
+P6050 =0 
+P6250 =0 
+P6450 = 
+P6650 = 
+{ENDIF}
+
+
+{IF blf58}
+# Ext Key 51
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6051 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6251 = 0
+# Name
+P6451 = %%blf58%%
+# UserID
+P6651 = %%blf58%%
+{ELSE}
+P6051 =0 
+P6251 =0 
+P6451 = 
+P6651 = 
+{ENDIF}
+
+
+{IF blf59}
+# Ext Key 52
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6052 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6252 = 0
+# Name
+P6452 = %%blf59%%
+# UserID
+P6652 = %%blf59%%
+{ELSE}
+P6052 =0 
+P6252 =0 
+P6452 = 
+P6652 =
+{ENDIF}
+
+
+{IF blf60}
+# Ext Key 53
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6053 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6253 = 0
+# Name
+P6453 = %%blf60%%
+# UserID
+P6653 = %%blf60%%
+{ELSE}
+P6053 =0 
+P6253 =0 
+P6453 = 
+P6653 = 
+{ENDIF}
+
+
+{IF blf61}
+# Ext Key 54
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6054 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6254 = 0
+# Name
+P6454 = %%blf61%%
+# UserID
+P6654 = %%blf61%%
+{ELSE}
+P6054 =0 
+P6254 =0 
+P6454 = 
+P6654 = 
+{ENDIF}
+
+
+{IF blf62}
+# Ext Key 55
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6055 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6255 = 0
+# Name
+P6455 = %%blf62%%
+# UserID
+P6655 = %%blf62%%
+{ELSE}
+P6055 =0 
+P6255 =0 
+P6455 = 
+P6655 = 
+{ENDIF}
+
+
+{IF blf63}
+# Ext Key 56
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6056 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6256 = 0
+# Name
+P6456 = %%blf63%%
+# UserID
+P6656 = %%blf63%%
+{ELSE}
+P6056 =0 
+P6256 =0 
+P6456 = 
+P6656 = 
+{ENDIF}
+
+#########################################################################################
+# Extension Board 2 Settings.
+#########################################################################################
+
+
+{IF blf64}
+# Ext Key 57
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6057 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6257 = 0
+# Name
+P6457 = %%blf64%%
+# UserID
+P6657 = %%blf64%%
+{ELSE}
+P6057 =0 
+P6257 =0 
+P6457 = 
+P6657 = 
+{ENDIF}
+
+
+{IF blf65}
+# Ext Key 58
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6058 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6258 = 0
+# Name
+P6458 = %%blf65%%
+# UserID
+P6658 = %%blf65%%
+{ELSE}
+P6058 =0 
+P6258 =0 
+P6458 = 
+P6658 = 
+{ENDIF}
+
+
+{IF blf66}
+# Ext Key 59
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6059 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6259 = 0
+# Name
+P6459 = %%blf66%%
+# UserID
+P6659 = %%blf66%%
+{ELSE}
+P6059 =0 
+P6259 =0 
+P6459 = 
+P6659 = 
+{ENDIF}
+
+
+{IF blf67}
+# Ext Key 60
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6060 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6260 = 0
+# Name
+P6460 = %%blf67%%
+# UserID
+P6660 = %%blf67%%
+{ELSE}
+P6060 =0 
+P6260 =0 
+P6460 = 
+P6660 = 
+{ENDIF}
+
+
+{IF blf68}
+# Ext Key 61
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6061 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6261 = 0
+# Name
+P6461 = %%blf68%%
+# UserID
+P6661 = %%blf68%%
+{ELSE}
+P6061 =0 
+P6261 =0 
+P6461 = 
+P6661 = 
+{ENDIF}
+
+
+{IF blf69}
+# Ext Key 62
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6062 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6262 = 0
+# Name
+P6462 = %%blf69%%
+# UserID
+P6662 = %%blf69%%
+{ELSE}
+P6062 =0 
+P6262 =0 
+P6462 = 
+P6662 =
+{ENDIF}
+
+
+{IF blf70}
+# Ext Key 63
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6063 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6263 = 0
+# Name
+P6463 = %%blf70%%
+# UserID
+P6663 = %%blf70%%
+{ELSE}
+P6063 =0 
+P6263 =0 
+P6463  
+P6663 = 
+{ENDIF}
+
+
+{IF blf71}
+# Ext Key 64
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6064 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6264 = 0
+# Name
+P6464 = %%blf71%%
+# UserID
+P6664 = %%blf71%%
+{ELSE}
+P6064 =0 
+P6264 =0 
+P6464 = 
+P6664 = 
+{ENDIF}
+
+
+{IF blf72}
+# Ext Key 65
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6065 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6265 = 0
+# Name
+P6465 = %%blf72%%
+# UserID
+P6665 = %%blf72%%
+{ELSE}
+P6065 =0 
+P6265 =0 
+P6465 = 
+P6665 = 
+{ENDIF}
+
+
+{IF blf73}
+# Ext Key 66
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6066 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6266 = 0
+# Name
+P6466 = %%blf73%%
+# UserID
+P6666 = %%blf73%%
+{ELSE}
+P6066 =0
+P6266 =0 
+P6466 = 
+P6666 =
+{ENDIF}
+
+
+{IF blf74}
+# Ext Key 67
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6067 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6267 = 0
+# Name
+P6467 = %%blf74%%
+# UserID
+P6667 = %%blf74%%
+{ELSE}
+P6067 =0 
+P6267 =0 
+P6467 = 
+P6667 = 
+{ENDIF}
+
+
+{IF blf75}
+# Ext Key 68
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6068 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6268 = 0
+# Name
+P6468 = %%blf75%%
+# UserID
+P6668 = %%blf75%%
+{ELSE}
+P6068 =0 
+P6268 =0 
+P6468 = 
+P6668 = 
+{ENDIF}
+
+
+{IF blf76}
+# Ext Key 69
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6069 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6269 = 0
+# Name
+P6469 = %%blf76%%
+# UserID
+P6669 = %%blf76%%
+{ELSE}
+P6069 =0 
+P6269 =0
+P6469 = 
+P6669 = 
+{ENDIF}
+
+
+{IF blf77}
+# Ext Key 70
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6070 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6270 = 0
+# Name
+P6470 = %%blf77%%
+# UserID
+P6670 = %%blf77%%
+{ELSE}
+P6070 =0 
+P6270 =0 
+P6470 = 
+P6670 = 
+{ENDIF}
+
+
+{IF blf78}
+# Ext Key 71
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6071 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6271 = 0
+# Name
+P6471 = %%blf78%%
+# UserID
+P6671 = %%blf78%%
+{ELSE}
+P6071 =0 
+P6271 =0 
+P6471 = 
+P6671 = 
+{ENDIF}
+
+
+{IF blf79}
+# Ext Key 72
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6072 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6272 = 0
+# Name
+P6472 = %%blf79%%
+# UserID
+P6672 = %%blf79%%
+{ELSE}
+P6072 =0 
+P6272 =0 
+P6472 = 
+P6672 = 
+{ENDIF}
+
+
+{IF blf80}
+# Ext Key 73
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6073 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6273 = 0
+# Name
+P6473 = %%blf80%%
+# UserID
+P6673 = %%blf80%%
+{ELSE}
+P6073 =0 
+P6273 =0 
+P6473 = 
+P6673 =
+{ENDIF}
+
+
+{IF blf81}
+# Ext Key 74
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6074 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6274 = 0
+# Name
+P6474 = %%blf81%%
+# UserID
+P6674 = %%blf81%%
+{ELSE}
+P6074 =0 
+P6274 =0 
+P6474 = 
+P6674 = 
+{ENDIF}
+
+
+{IF blf82}
+# Ext Key 75
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6075 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6275 = 0
+# Name
+P6475 = %%blf82%%
+# UserID
+P6675 = %%blf82%%
+{ELSE}
+P6075 =0 
+P6275 =0 
+P6475 = 
+P6675 = 
+{ENDIF}
+
+
+{IF blf83}
+# Ext Key 76
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6076 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6276 = 0
+# Name
+P6476 = %%blf83%%
+# UserID
+P6676 = %%blf83%%
+{ELSE}
+P6076 =0 
+P6276 =0 
+P6476 = 
+P6676 = 
+{ENDIF}
+
+
+{IF blf84}
+# Ext Key 77
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6077 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6277 = 0
+# Name
+P6477 = %%blf84%%
+# UserID
+P6677 = %%blf84%%
+{ELSE}
+P6077 =0 
+P6277 =0 
+P6477 = 
+P6677 = 
+{ENDIF}
+
+
+{IF blf85}
+# Ext Key 78
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6078 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6278 = 0
+# Name
+P6478 = %%blf85%%
+# UserID
+P6678 = %%blf85%%
+{ELSE}
+P6078 =0 
+P6278 =0 
+P6478 = 
+P6678 = 
+{ENDIF}
+
+
+{IF blf86}
+# Ext Key 79
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6079 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6279 = 0
+# Name
+P6479 = %%blf86%%
+# UserID
+P6679 = %%blf86%%
+{ELSE}
+P6079 =0 
+P6279 =0 
+P6479 = 
+P6679 = 
+{ENDIF}
+
+
+{IF blf87}
+# Ext Key 80
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6080 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6280 = 0
+# Name
+P6480 = %%blf87%%
+# UserID
+P6680 = %%blf87%%
+{ELSE}
+P6080 =0 
+P6280 =0 
+P6480 = 
+P6680 = 
+{ENDIF}
+
+
+{IF blf88}
+# Ext Key 81
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6081 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6281 = 0
+# Name
+P6481 = %%blf88%%
+# UserID
+P6681 = %%blf88%%
+{ELSE}
+P6081 =0 
+P6281 =0 
+P6481 = 
+P6681 = 
+{ENDIF}
+
+
+{IF blf89}
+# Ext Key 82
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6082 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6282 = 0
+# Name
+P6482 = %%blf89%%
+# UserID
+P6682 = %%blf89%%
+{ELSE}
+P6082 =0 
+P6282 =0 
+P6482 = 
+P6682 = 
+{ENDIF}
+
+
+{IF blf90}
+# Ext Key 83
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6083 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6283 = 0
+# Name
+P6483 = %%blf90%%
+# UserID
+P6683 = %%blf90%%
+{ELSE}
+P6083 =0 
+P6283 =0 
+P6483 = 
+P6683 = 
+{ENDIF}
+
+
+{IF blf91}
+# Ext Key 84
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6084 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6284 = 0
+# Name
+P6484 = %%blf91%%
+# UserID
+P6684 = %%blf91%%
+{ELSE}
+P6084 =0 
+P6284 =0 
+P6484 = 
+P6684 =
+{ENDIF}
+
+
+{IF blf92}
+# Ext Key 85
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6085 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6285 = 0
+# Name
+P6485 = %%blf92%%
+# UserID
+P6685 = %%blf92%%
+{ELSE}
+P6085 =0 
+P6285 =0 
+P6485 = 
+P6685 = 
+{ENDIF}
+
+
+{IF blf93}
+# Ext Key 86
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6086 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6286 = 0
+# Name
+P6486 = %%blf93%%
+# UserID
+P6686 = %%blf93%%
+{ELSE}
+P6086 =0 
+P6286 =0 
+P6486 = 
+P6686 = 
+{ENDIF}
+
+
+{IF blf94}
+# Ext Key 87
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6087 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6287 = 0
+# Name
+P6487 = %%blf94%%
+# UserID
+P6687 = %%blf94%%
+{ELSE}
+P6087 =0 
+P6287 =0 
+P6487 = 
+P6687 = 
+{ENDIF}
+
+
+{IF blf95}
+# Ext Key 88
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6088 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6288 = 0
+# Name
+P6488 = %%blf95%%
+# UserID
+P6688 = %%blf95%%
+{ELSE}
+P6088 =0 
+P6288 =0 
+P6488 = 
+P6688 =
+{ENDIF}
+
+
+{IF blf96}
+# Ext Key 89
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6089 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6289 = 0
+# Name
+P6489 = %%blf96%%
+# UserID
+P6689 = %%blf96%%
+{ELSE}
+P6089 =0 
+P6289 =0 
+P6489 = 
+P6689 = 
+{ENDIF}
+
+
+{IF blf97}
+# Ext Key 90
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6090 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6290 = 0
+# Name
+P6490 = %%blf97%%
+# UserID
+P6690 = %%blf97%%
+{ELSE}
+P6090 =0 
+P6290 =0 
+P6490 = 
+P6690 = 
+{ENDIF}
+
+
+{IF blf98}
+# Ext Key 91
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6091 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6291 = 0
+# Name
+P6491 = %%blf98%%
+# UserID
+P6691 = %%blf98%%
+{ELSE}
+P6091 =0 
+P6291 =0 
+P6491 = 
+P6691 = 
+{ENDIF}
+
+
+{IF blf99}
+# Ext Key 92
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6092 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6292 = 0
+# Name
+P6492 = %%blf99%%
+# UserID
+P6692 = %%blf99%%
+{ELSE}
+P6092 =0 
+P6292 =0 
+P6492 = 
+P6692 = 
+{ENDIF}
+
+
+{IF blf100}
+# Ext Key 93
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6093 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6293 = 0
+# Name
+P6493 = %%blf100%%
+# UserID
+P6693 = %%blf100%%
+{ELSE}
+P6093 =0 
+P6293 =0 
+P6493 = 
+P6693 = 
+{ENDIF}
+
+
+{IF blf101}
+# Ext Key 94
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6094 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6294 = 0
+# Name
+P6494 = %%blf101%%
+# UserID
+P6694 = %%blf101%%
+{ELSE}
+P6094 =0 
+P6294 =0 
+P6494 = 
+P6694 = 
+{ENDIF}
+
+
+{IF blf102}
+# Ext Key 95
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6095 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6295 = 0
+# Name
+P6495 = %%blf102%%
+# UserID
+P6695 = %%blf102%%
+{ELSE}
+P6095 =0 
+P6295 =0 
+P6495 = 
+P6695 = 
+{ENDIF}
+
+
+{IF blf103}
+# Ext Key 96
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6096 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6296 = 0
+# Name
+P6496 = %%blf103%%
+# UserID
+P6696 = %%blf103%%
+{ELSE}
+P6096 =0 
+P6296 =0 
+P6496 = 
+P6696 =
+{ENDIF}
+
+
+{IF blf104}
+# Ext Key 97
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6097 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6297 = 0
+# Name
+P6497 = %%blf104%%
+# UserID
+P6697 = %%blf104%%
+{ELSE}
+P6097 =0 
+P6297 =0 
+P6497 = 
+P6697 =
+{ENDIF}
+
+
+{IF blf105}
+# Ext Key 98
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6098 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6298 = 0
+# Name
+P6498 = %%blf105%%
+# UserID
+P6698 = %%blf105%%
+{ELSE}
+P6098 =0 
+P6298 =0 
+P6498 = 
+P6698 =
+{ENDIF}
+
+
+{IF blf106}
+# Ext Key 99
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6099 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6299 = 0
+# Name
+P6499 = %%blf106%%
+# UserID
+P6699 = %%blf106%%
+{ELSE}
+P6099 =0 
+P6299 =0 
+P6499 =
+P6699 = 
+{ENDIF}
+
+
+{IF blf107}
+# Ext Key 100
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6100 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6300 = 0
+# Name
+P6500 = %%blf107%%
+# UserID
+P6700 = %%blf107%%
+{ELSE}
+P6100 =0 
+P6300 =0 
+P6500 = 
+P6700 = 
+{ENDIF}
+
+
+{IF blf108}
+# Ext Key 101
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6101 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6301 = 0
+# Name
+P6501 = %%blf108%%
+# UserID
+P6701 = %%blf108%%
+{ELSE}
+P6101 =0 
+P6301 =0 
+P6501 = 
+P6701 =
+{ENDIF}
+
+
+{IF blf109}
+# Ext Key 102
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6102 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6302 = 0
+# Name
+P6502 = %%blf109%%
+# UserID
+P6702 = %%blf109%%
+{ELSE}
+P6102 =0 
+P6302 =0 
+P6502 =
+P6702 =
+{ENDIF}
+
+
+{IF blf110}
+# Ext Key 103
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6103 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6303 = 0
+# Name
+P6503 = %%blf110%%
+# UserID
+P6703 = %%blf110%%
+{ELSE}
+P6103 =0 
+P6303 =0 
+P6503 = 
+P6703 = 
+{ENDIF}
+
+
+{IF blf111}
+# Ext Key 104
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6104 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6304 = 0
+# Name
+P6504 = %%blf111%%
+# UserID
+P6704 = %%blf111%%
+{ELSE}
+P6104 =0 
+P6304 =0 
+P6504 = 
+P6704 = 
+{ENDIF}
+
+
+{IF blf112}
+# Ext Key 105
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6105 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6305 = 0
+# Name
+P6505 = %%blf112%%
+# UserID
+P6705 = %%blf112%%
+{ELSE}
+P6105 =0 
+P6305 =0 
+P6505 = 
+P6705 = 
+{ENDIF}
+
+
+{IF blf113}
+# Ext Key 106
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6106 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6306 = 0
+# Name
+P6506 = %%blf113%%
+# UserID
+P6706 = %%blf113%%
+{ELSE}
+P6106 =0 
+P6306 =0 
+P6506 = 
+P6706 = 
+{ENDIF}
+
+
+{IF blf114}
+# Ext Key 107
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6107 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6307 = 0
+# Name
+P6507 = %%blf114%%
+# UserID
+P6707 = %%blf114%%
+{ELSE}
+P6107 =0 
+P6307 =0 
+P6507 = 
+P6707 = 
+{ENDIF}
+
+
+{IF blf115}
+# Ext Key 108
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6108 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6308 = 0
+# Name
+P6508 = %%blf115%%
+# UserID
+P6708 = %%blf115%%
+{ELSE}
+P6108 =0 
+P6308 =0 
+P6508 =
+P6708 = 
+{ENDIF}
+
+
+{IF blf116}
+# Ext Key 109
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6109 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6309 = 0
+# Name
+P6509 = %%blf116%%
+# UserID
+P6709 = %%blf116%%
+{ELSE}
+P6109 =0 
+P6309 =0 
+P6509 = 
+P6709 = 
+{ENDIF}
+
+
+{IF blf117}
+# Ext Key 110
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6110 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6310 = 0
+# Name
+P6510 = %%blf117%%
+# UserID
+P6710 = %%blf117%%
+{ELSE}
+P6110 =0 
+P6310 =0 
+P6510 = 
+P6710 = 
+{ENDIF}
+
+
+{IF blf118}
+# Ext Key 111
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6111 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6311 = 0
+# Name
+P6511 = %%blf118%%
+# UserID
+P6711 = %%blf118%%
+{ELSE}
+P6111 =0 
+P6311 =0 
+P6511 =
+P6711 = 
+{ENDIF}
+
+
+{IF blf119}
+# Ext Key 112
+# Key Mode. 0 - Speed Dial, 1 - BLF, 2 - Presence Watcher, 3 - eventlist BLF
+P6112 = %%value%%
+# Account: 0==Account1; 1==Account2; 2==Account3; 3==Account4; 4==Account5; 5==Account6
+P6312 = 0
+# Name
+P6512 = %%blf119%%
+# UserID
+P6712 = %%blf119%%
+{ELSE}
+P6112 =0 
+P6312 =0 
+P6512 = 
+P6712 = 
+{ENDIF}
+
+
+# ==========================User based custom settings================
+# ====================================================================
+# Phone Web Admin password
+# Uncomment and adjust the following field if you would like all your
+# provisioned phones (of this model) to have the same Admin Web
+# Interface password
+#
+# P2 = 12345
+# ====================================================================
+
+]]>
+   </deviceconfig>
+   
+   </device>
+</data>   
+</doc>

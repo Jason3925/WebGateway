@@ -1,0 +1,187 @@
+<div class="modal fade in  step-modal" tabindex="-1" style="display: block; overflow-y: auto" id="wizards-box">
+
+  <div class="modal-dialog" id="wizards-step1">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Step 1: Select the PBX  environment</h4>
+        <div class="example">
+          <div class="pearls pearls-xs row margin-bottom-0">
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">1</span>
+              <span class="pearl-title">Step 1</span>
+            </div>
+            <div class="pearl col-xs-4">
+              <span class="pearl-number">2</span>
+              <span class="pearl-title">Step 2</span>
+            </div>
+            <div class="pearl col-xs-4">
+              <span class="pearl-number">3</span>
+              <span class="pearl-title">Step 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body padding-top-0 padding-bottom-0">
+        <div class="tab-content">
+          <div class="tab-pane active" id="exampleLine1" role="tabpanel">
+            <div class="form-horizontal">
+              <hr class="margin-top-0"/>
+              <div class="form-group my-form-group">
+                <label class="col-sm-4 control-label">This PBX will run on</label>
+
+                <div class="col-sm-8 padding-left-0">
+                  <div class="col-sm-8">
+                    <select data-role="select" data-mark="default" id="step1-select">
+                      <option value="0">public network</option>
+                      <option value="1">private network</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group my-form-group">
+                <label class="col-sm-4 control-label" id="step1-ip-text">Public network IP</label>
+
+                <div class="col-sm-8 padding-left-0">
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" data-mark="default" placeholder="Public IP"
+                           autocomplete="off" id="step1-ip"
+                      />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <hr/>
+        <button type="button" class="btn btn-primary" id="wizards-step1-next">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-dialog" id="wizards-step2">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Step 2: Setup SIP Domain</h4>
+
+        <div class="example">
+          <div class="pearls pearls-xs row margin-bottom-0">
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">1</span>
+              <span class="pearl-title">Step 1</span>
+            </div>
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">2</span>
+              <span class="pearl-title">Step 2</span>
+            </div>
+            <div class="pearl col-xs-4">
+              <span class="pearl-number">3</span>
+              <span class="pearl-title">Step 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body padding-top-0 padding-bottom-0">
+        <div class="tab-content padding-top-10">
+          <div class="tab-pane active" role="tabpanel">
+            <div class="form-horizontal">
+              <p>Please setup your SIP domain(FQDN: Full Qualified Domain Name, i.e. mypbx.com) here. After the domain setup, the extension can make and receive calls with the domain. For example, call to extension 100 by: sip:100@mypbx.com
+              </p>
+
+              <p>The domain does not requires resolvable. You can also use PBX IP address to instead of it.</p>
+              <hr/>
+              <div class="form-group my-form-group margin-top-40">
+                <label class="col-sm-4 control-label">SIP Domain</label>
+
+                <div class="col-sm-8 padding-left-0">
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" data-mark="default"
+                           placeholder="SIP Domain" autocomplete="off"
+                           id="step2Domain"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <hr/>
+        <button type="button" class="btn btn-default" id="wizards-step2-previous">Previous</button>
+        <button type="button" class="btn btn-primary" id="wizards-step2-next">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-dialog" id="wizards-step3">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalTabs">Step 3: Setup Transport</h4>
+
+        <div class="example">
+          <div class="pearls pearls-xs row margin-bottom-0">
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">1</span>
+              <span class="pearl-title">Step 1</span>
+            </div>
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">2</span>
+              <span class="pearl-title">Step 2</span>
+            </div>
+            <div class="pearl current col-xs-4">
+              <span class="pearl-number">3</span>
+              <span class="pearl-title">Step 3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body padding-top-0 padding-bottom-0">
+        <div class="tab-content padding-top-10">
+          <div class="tab-pane active" role="tabpanel">
+            <div class="form-horizontal">
+              <p>SIP communication commonly uses UDP/TCP on port 5060/5061 for nonencrypted SIP sessions and the port
+                5063 for SIP sessions encrypted with TLS(Transport Layer Security).</p>
+
+              <p>PortSIP PBX supports many network transports for the SIP session, please choose one in below.</p>
+
+              <p>You can also add more transport such as TLS, WS, WSS in management console after completed Setup
+                Wizard.</p>
+              <hr/>
+              <div class="form-group my-form-group">
+                <label class="col-sm-4 control-label">Transport Protocol</label>
+
+                <div class="col-sm-8 padding-left-0">
+                  <div class="col-sm-8">
+                    <select data-role="select" data-mark="default" id="step3-select">
+                      <option value="UDP">UDP</option>
+                      <option value="TCP">TCP</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group my-form-group">
+                <label class="col-sm-4 control-label">Transport port</label>
+
+                <div class="col-sm-8 padding-left-0">
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" data-mark="default"
+                           placeholder="Transport port" autocomplete="off"
+                           id="step3-port"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <hr/>
+        <button type="button" class="btn btn-default" id="wizards-step3-previous">Previous</button>
+        <button type="button" class="btn btn-primary" id="wizards-step3-next">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop fade in"></div>

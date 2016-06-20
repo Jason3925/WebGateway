@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-10-20 15:00:00</time>
+    <name>Fanvil DoorPhone</name>
+    <url>http://www.fanvil.com/</url>
+    <models>
+	  <model ua="Fanvil I20">Fanvil i20</model>
+      <model ua="Fanvil i21">Fanvil i21/i21T</model>
+    </models>
+    <!--Firmware version Fanvil I20 2.3.628.324-->
+	<!--Firmware version Fanvil i21/i21T 2.3.547.297-->
+    <description>Fanvil DoorPhone</description>
+    <parsers>
+      <parser>BLF</parser>
+    </parsers>
+    <rebootParams>
+      <event-name>check-sync;reboot=true</event-name>
+    </rebootParams>
+    <resyncParams>
+      <event-name>check-sync;reboot=false</event-name>
+    </resyncParams>
+    <firmwareParams>
+      <event-name>check-sync;reboot=false</event-name>
+    </firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+       <!-- <option value="REMOTESPM">1</option> -->
+		<option value="SBC">0</option>
+    </AllowedNetworkConfig>
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+    <dst variableName="dstEnableDisable" enable="1" disable="0">
+    </dst>
+    <languages>
+      <!--The first entry is the selected entry in management console-->
+      <option value="English">
+        <item name="langwebUI">1</item>
+		<item name="langfile">English</item>
+      </option>
+      <option value="Chinese">
+        <item name="langwebUI">2</item>
+		<item name="langfile">Chinese</item>
+	  </option>
+	  <option value="German">
+        <item name="langwebUI">3</item>
+		<item name="langfile">German</item>
+	  </option>
+	  <option value="Tra-Chinese">
+        <item name="langwebUI">4</item>
+		<item name="langfile">Tra-Chinese</item>
+	  </option>
+	  <option value="French">
+        <item name="langwebUI">5</item>
+		<item name="langfile">French</item>
+	  </option>
+	  <option value="Spanish">
+        <item name="langwebUI">6</item>
+		<item name="langfile">Spanish</item>
+	  </option>
+	  <option value="Italian">
+        <item name="langwebUI">7</item>
+		<item name="langfile">Italy</item>
+	  </option>
+	  <option value="Portuguese">
+        <item name="langwebUI">8</item>
+		<item name="langfile">Portugal</item>
+	  </option>
+	  <option value="Russian">
+        <item name="langwebUI">12</item>
+		<item name="langfile">Russian</item>
+	  </option>
+	  <option value="Polish">
+        <item name="langwebUI">15</item>
+		<item name="langfile">Polish</item>
+	  </option>
+	  <option value="Turkish">
+        <item name="langwebUI">14</item>
+		<item name="langfile">Turkish</item>
+	  </option>
+    </languages>
+    <timezoneParams param="time_timezone_fanvil">
+      <!--The first entry is the selected entry in management console-->
+      <option value="0" displaytext="GMT-12:00 International Date Line West" id="121" zone="-12:00">
+        <item name="TimeZoneName">UCT_-12</item>
+      </option>
+      <option value="1" displaytext="GMT-11:00 Samoa" id="120" zone="-11:00">
+        <item name="TimeZoneName">UCT_-11</item>
+      </option>
+      <option value="2" displaytext="GMT-10:00 United States-Hawaii-Aleutian" id="1" zone="-10:00">
+        <item name="TimeZoneName">UCT_-10</item>
+      </option>
+      <option value="3" displaytext="GMT-9:00 United States-Alaska Time" id="3" zone="-9:00">
+        <item name="TimeZoneName">NAS_-09</item>
+      </option>
+      <option value="4" displaytext="GMT-8:00 Mexico(Tijuana,Mexicali)" id="5" zone="-8:00">
+        <item name="TimeZoneName">PST_-08</item>
+      </option>
+      <option value="5" displaytext="GMT-7:00 Canada(Edmonton,Calgary)" id="7" zone="-7:00">
+        <item name="TimeZoneName">MST_-07</item>
+      </option>
+      <option value="6" displaytext="GMT-7:00 United States-Mountain Time" id="9" zone="-7:00">
+        <item name="TimeZoneName">MST_-07</item>
+      </option>
+      <option value="7" displaytext="GMT-7:00 Mexico(Mazatlan,Chihuahua)" id="8" zone="-7:00">
+        <item name="TimeZoneName">MST_-07</item>
+      </option>
+      <option value="8" displaytext="GMT-6:00 Saskarchewan" id="11" zone="-6:00">
+        <item name="TimeZoneName">UCT_-06</item>
+      </option>
+      <option value="9" displaytext="GMT-6:00 United States-Central Time" id="14" zone="-6:00">
+        <item name="TimeZoneName">UCT_-06</item>
+      </option>
+      <option value="10" displaytext="GMT-6:00 United States-Central Time" zone="-6:00">
+        <item name="TimeZoneName">UCT_-06</item>
+      </option>
+      <option value="11" displaytext="GMT-6:00 Mexico(Mexico City,Acapulco)" id="13" zone="-6:00">
+        <item name="TimeZoneName">UCT_-06</item>
+      </option>
+      <option value="12" displaytext="GMT-5:00 Bogota, Lima, Quito" zone="-5:00">
+        <item name="TimeZoneName">UCT_-05</item>
+      </option>
+      <option value="13" displaytext="GMT-5:00 Canada(Montreal,Ottawa,Quebec)" id="16" zone="-5:00">
+        <item name="TimeZoneName">UCT_-05</item>
+      </option>
+      <option value="14" displaytext="GMT-5:00 Indiana(East)" zone="-5:00">
+        <item name="TimeZoneName">UCT_-05</item>
+      </option>
+      <option value="15" displaytext="GMT-4 Canada(Halifax,Saint John)" id="19" zone="-4:00">
+        <item name="TimeZoneName">AST_-04</item>
+      </option>
+      <option value="16" displaytext="GMT-4 Caracas, La Paz" zone="-4:00">
+        <item name="TimeZoneName">AST_-04</item>
+      </option>
+      <option value="17" displaytext="GMT-4 Chile(Santiago)" id="20" zone="-4:00">
+        <item name="TimeZoneName">AST_-04</item>
+      </option>
+      <option value="18" displaytext="GMT-3:30 Canada-New Foundland(St.Johns)" id="25" zone="-3:30">
+        <item name="TimeZoneName">EBS_-03:30</item>
+      </option>
+      <option value="19" displaytext="GMT-3 Brazil" id="28" zone="-3:00">
+        <item name="TimeZoneName">EBS_-03</item>
+      </option>
+      <option value="20" displaytext="GMT-3 Buenos Aires, Georgetown" id="27" zone="-3:00">
+        <item name="TimeZoneName">EBS_-03</item>
+      </option>
+      <option value="21" displaytext="GMT-3 Greenland" id="26" zone="-3:00">
+        <item name="TimeZoneName">EBS_-03</item>
+      </option>
+      <option value="22" displaytext="GMT-2 Mid-Atlantic" id="123" zone="-2:00">
+        <item name="TimeZoneName">NOR_-02</item>
+      </option>
+      <option value="23" displaytext="GMT-1 Cape Verde Is." zone="-1:00">
+        <item name="TimeZoneName">EUT_-01</item>
+      </option>
+      <option value="24" displaytext="GMT-1 Portugal(Azores)" id="31" zone="-1:00">
+        <item name="TimeZoneName">EUT_-01</item>
+      </option>
+      <option value="25" displaytext="GMT, London, Dublin, Porto, Faroe Islands" id="36" zone="0:00">
+        <item name="TimeZoneName">UCT_000</item>
+      </option>
+      <option value="26" displaytext="0 Casablanca, Monrovia" zone="0:00">
+        <item name="TimeZoneName">UCT_000</item>
+      </option>
+      <option value="27" displaytext="GMT+1 Amsterdam, Vienna, Berlin, Rome, Stockholm" id="38" zone="1:00">
+        <item name="TimeZoneName">MET_001</item>
+      </option>
+      <option value="28" displaytext="GMT+1 Prague, Budapest, Belgrade" id="43" zone="1:00">
+        <item name="TimeZoneName">MET_001</item>
+      </option>
+      <option value="29" displaytext="GMT+1 Brussels, Copenhagen, Madrid, Paris" id="39" zone="1:00">
+        <item name="TimeZoneName">MET_001</item>
+      </option>
+      <option value="30" displaytext="GMT+1 Sarajevo, Sopje, Warsaw, Zagreb" id="54" zone="1:00">
+        <item name="TimeZoneName">MET_001</item>
+      </option>
+      <option value="31" displaytext="GMT+1 West Central Africa" id="61" zone="1:00">
+        <item name="TimeZoneName">MET_001</item>
+      </option>
+      <option value="32" displaytext="GMT+2 Romania(Bucharest)" id="77" zone="2:00">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="33" displaytext="GMT+2 Harare, Pretoria" zone="2:00" id="65">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="34" displaytext="GMT+2 Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius" id="68" zone="2:00">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="35" displaytext="GMT+2 Gaza Cairo" zone="2:00" id="69">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="36" displaytext="GMT+2 Athens, Beirut, Istanbul, Minsk" id="70" zone="2:00">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="37" displaytext="GMT+2 Israel(Tel Aviv)" id="71" zone="2:00">
+        <item name="TimeZoneName">EET_002</item>
+      </option>
+      <option value="38" displaytext="GMT+3 Iraq(Baghdad)" id="82" zone="3:00">
+        <item name="TimeZoneName">IST_003</item>
+      </option>
+      <option value="39" displaytext="GMT+3 Kuwait, Riyadh" id="81" zone="3:00">
+        <item name="TimeZoneName">IST_003</item>
+      </option>
+      <option value="40" displaytext="GMT+3 Russia(Moscow)" id="83" zone="3:00">
+        <item name="TimeZoneName">IST_003</item>
+      </option>
+      <option value="41" displaytext="GMT+3 Nairobi" zone="3:00">
+        <item name="TimeZoneName">IST_003</item>
+      </option>
+      <option value="42" displaytext="GMT+3:30 Iran(Teheran)" id="84" zone="3:30">
+        <item name="TimeZoneName">MSK_003</item>
+      </option>
+      <option value="43" displaytext="GMT+4 Abu Dhabi, Muscat" id="90" zone="4:00">
+        <item name="TimeZoneName">UCT_004</item>
+      </option>
+      <option value="44" displaytext="GMT+4 Yerevan, Tbilisi, Baku" id="85" zone="4:00">
+        <item name="TimeZoneName">UCT_004</item>
+      </option>
+      <option value="45" displaytext="GMT+4:30 Kabul" id="91" zone="4:30">
+        <item name="TimeZoneName">UCT_004:30</item>
+      </option>
+      <option value="46" displaytext="GMT+5 Russia(Chelyabinsk, Ekaterinburg)" id="95" zone="5:00">
+        <item name="TimeZoneName">UCT_005</item>
+      </option>
+      <option value="47" displaytext="GMT+5 Islamabad, Karachi, Tashkent" id="94" zone="5:00">
+        <item name="TimeZoneName">UCT_005</item>
+      </option>
+      <option value="48" displaytext="GMT+5:30 India(Calcutta)" id="96" zone="5:30">
+        <item name="TimeZoneName">UCT_005:30</item>
+      </option>
+      <option value="49" displaytext="GMT+5:45 Katmandu" id="97" zone="5:45">
+        <item name="TimeZoneName">UCT_005:45</item>
+      </option>
+      <option value="50" displaytext="GMT+6 Almaty, Novosibirsk" id="99" zone="6:00">
+        <item name="TimeZoneName">UCT_006</item>
+      </option>
+      <option value="51" displaytext="GMT+6 Astana, Dhaka" id="98" zone="6:00">
+        <item name="TimeZoneName">UCT_006</item>
+      </option>
+      <option value="52" displaytext="GMT+6 Sri Jayawardenepura" zone="6:00">
+        <item name="TimeZoneName">UCT_006</item>
+      </option>
+      <option value="53" displaytext="GMT+6:30 Rangoon" id="100" zone="6:30">
+        <item name="TimeZoneName">UCT_006:30</item>
+      </option>
+      <option value="54" displaytext="GMT+7 Russia(Krasnoyarsk)" id="101" zone="7:00">
+        <item name="TimeZoneName">UCT_007</item>
+      </option>
+      <option value="55" displaytext="GMT+7 Thailand(Bangkok)" id="102" zone="7:00">
+        <item name="TimeZoneName">UCT_007</item>
+      </option>
+      <option value="56" displaytext="GMT+8 China(Beijing)" id="103" zone="8:00">
+        <item name="TimeZoneName">CST_008</item>
+      </option>
+      <option value="57" displaytext="GMT+8 Singapore(Singapore)" id="104" zone="8:00">
+        <item name="TimeZoneName">CST_008</item>
+      </option>
+      <option value="58" displaytext="GMT+8 Australia(Perth)" id="105" zone="8:00">
+        <item name="TimeZoneName">CST_008</item>
+      </option>
+      <option value="59" displaytext="GMT+8 Taipei" zone="8:00">
+        <item name="TimeZoneName">CST_008</item>
+      </option>
+      <option value="60" displaytext="GMT+8 Irkutsk, Ulaan Bataar" zone="8:00">
+        <item name="TimeZoneName">CST_008</item>
+      </option>
+      <option value="61" displaytext="GMT+9 Japan(Tokyo)" id="107" zone="9:00">
+        <item name="TimeZoneName">JST_009</item>
+      </option>
+      <option value="62" displaytext="GMT+9 Korea(Seoul)" id="106" zone="9:00">
+        <item name="TimeZoneName">JST_009</item>
+      </option>
+      <option value="63" displaytext="GMT+9 Yakutsk" zone="9:00">
+        <item name="TimeZoneName">JST_009</item>
+      </option>
+      <option value="64" displaytext="GMT+9:30 Adelaide" id="108" zone="9:30">
+        <item name="TimeZoneName">KST_009:30</item>
+      </option>
+      <option value="65" displaytext="GMT+9:30 Australia(Darwin)" id="109" zone="9:30">
+        <item name="TimeZoneName">KST_009:30</item>
+      </option>
+      <option value="66" displaytext="GMT+10 Australia(Brisbane)" id="111" zone="10:00">
+        <item name="TimeZoneName">UCT_010</item>
+      </option>
+      <option value="67" displaytext="GMT+10 Russia(Vladivostok)" id="113" zone="10:00">
+        <item name="TimeZoneName">UCT_010</item>
+      </option>
+      <option value="68" displaytext="GMT+10 Guam, Port Moresby" zone="10:00">
+        <item name="TimeZoneName">UCT_010</item>
+      </option>
+      <option value="69" displaytext="GMT+10 Australia(Hobart)" id="112" zone="10:00">
+        <item name="TimeZoneName">UCT_010</item>
+      </option>
+      <option value="70" displaytext="GMT+10 Australia(Sydney,Melbourne,Canberra)" id="110" zone="10:00">
+        <item name="TimeZoneName">UCT_010</item>
+      </option>
+      <option value="71" displaytext="GMT+11 Magadan, Solomon Is., New Caledonia" id="115" zone="11:00">
+        <item name="TimeZoneName">UCT_011</item>
+      </option>
+      <option value="72" displaytext="GMT+12 Fiji, Kamchatka, Marshal Is." id="117" zone="12:00">
+        <item name="TimeZoneName">UCT_012</item>
+      </option>
+      <option value="73" displaytext="GMT+12 New Zeland(Wellington,Auckland)" id="116" zone="12:00">
+        <item name="TimeZoneName">UCT_012</item>
+      </option>
+    </timezoneParams>
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" PayloadTypeName="payload1" priority="1">
+        <!--The first entry is the selected entry in management console. codec1 will be replaced by value, payload1 will be replaced by payload-->
+        <option value="G711U" payload="payload=0">PCMU</option>
+        <option value="G711A" payload="payload=8">PCMA</option>
+        <option value="G729" payload="payload=18;annexb=no">G729</option>
+        <option value="G722" payload="payload=9">G722</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" PayloadTypeName="payload2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="G711A" payload="payload=8">PCMA</option>
+        <option value="G711U" payload="payload=0">PCMU</option>
+        <option value="G729" payload="payload=18;annexb=no">G729</option>
+        <option value="G722" payload="payload=9">G722</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" PayloadTypeName="payload3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="G722" payload="payload=9">G722</option>
+        <option value="G711U" payload="payload=0">PCMU</option>
+        <option value="G711A" payload="payload=8">PCMA</option>
+        <option value="G729" payload="payload=18;annexb=no">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" PayloadTypeName="payload4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="G729" payload="payload=18;annexb=no">G729</option>
+        <option value="G711U" payload="payload=0">PCMU</option>
+        <option value="G711A" payload="payload=8">PCMA</option>
+        <option value="G722" payload="payload=9">G722</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+    <data>
+    <device>
+      <type>phone</type>
+      <!-- Friendly Name -->
+      <field name="Name">Fanvil DoorPhone</field>
+      <deviceconfig filename="%%mac_address%%.cfg"><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<VOIP_CONFIG_FILE>
+<version>2.0003</version>
+<GLOBAL_CONFIG_MODULE>
+<WAN_Mode>DHCP</WAN_Mode>
+<WAN_IP>192.168.1.179</WAN_IP>
+<WAN_Subnet_Mask>255.255.255.0</WAN_Subnet_Mask>
+<WAN_Gateway>192.168.1.1</WAN_Gateway>
+<Default_Protocol>2</Default_Protocol>
+<Primary_DNS>202.96.134.133</Primary_DNS>
+<Secondary_DNS>202.96.128.68</Secondary_DNS>
+<Enable_DHCP>1</Enable_DHCP>
+<Use_Vendor_Class_ID>0</Use_Vendor_Class_ID>
+{IF ua=Fanvil i20}
+<Vendor_Class_ID>Fanvil i20T</Vendor_Class_ID>
+{ENDIF}
+{IF ua=Fanvil i21}
+<Vendor_Class_ID>Fanvil i21/i21T</Vendor_Class_ID>
+{ENDIF}
+<DHCP_Auto_DNS>1</DHCP_Auto_DNS>
+<DHCP_Auto_Time>0</DHCP_Auto_Time>
+<Domain_Name></Domain_Name>
+<Host_Name>VOIP</Host_Name>
+<Enable_PPPoE>0</Enable_PPPoE>
+<RTP_Initial_Port>10000</RTP_Initial_Port>
+<RTP_Port_Quantity>200</RTP_Port_Quantity>
+<SNTP_Server>%%param::time_ntp_server%%</SNTP_Server>
+<Second_SNTP_Server>%%param::time_ntp_server%%</Second_SNTP_Server>
+<Enable_SNTP>1</Enable_SNTP>
+<Time_Zone>%%param::time_timezone_fanvil%%</Time_Zone>
+<Time_Zone_Name>%%TimeZoneName%%</Time_Zone_Name>
+<Enable_DST>2</Enable_DST>
+<SNTP_Timeout>60</SNTP_Timeout>
+<DST_Min_Offset>%%param::time_utc_offset_minutes%%</DST_Min_Offset>
+<DST_Start_Mon>%%param::time_dst_start_month%%</DST_Start_Mon>
+<DST_Start_Week>5</DST_Start_Week>
+<DST_Start_Wday>0</DST_Start_Wday>
+<DST_Start_Hour>%%param::time_dst_start_hour%%</DST_Start_Hour>
+<DST_Start_Min>00</DST_Start_Min>
+<DST_End_Mon>%%param::time_dst_end_month%%</DST_End_Mon>
+<DST_End_Week>5</DST_End_Week>
+<DST_End_Wday>0</DST_End_Wday>
+<DST_End_Hour>%%param::time_dst_end_hour%%</DST_End_Hour>
+<DST_End_Min>00</DST_End_Min>
+<Default_UI>%%langwebUI%%</Default_UI>
+<MTU_Length>1500</MTU_Length>
+<Push_XML_IP></Push_XML_IP>
+<Enable_Call_History>1</Enable_Call_History>
+<Active_Uri_IP></Active_Uri_IP>
+<Boot_Completed_Url></Boot_Completed_Url>
+<Reg_On_Url></Reg_On_Url>
+<Reg_Off_Url></Reg_Off_Url>
+<Reg_Failed_Url></Reg_Failed_Url>
+<Offhook_Url></Offhook_Url>
+<Onhook_Uri></Onhook_Uri>
+<Incmoing_Call_Url></Incmoing_Call_Url>
+<Outgoing_Call_Url></Outgoing_Call_Url>
+<Call_Active_Url></Call_Active_Url>
+<Call_Stop_Url></Call_Stop_Url>
+<DND_On_Url></DND_On_Url>
+<DND_Off_Url></DND_Off_Url>
+<Always_FWD_On_Url></Always_FWD_On_Url>
+<Always_FWD_Off_Url></Always_FWD_Off_Url>
+<Busy_FWD_On_Url></Busy_FWD_On_Url>
+<Busy_FWD_Off_Url></Busy_FWD_Off_Url>
+<No_Ans_FWD_On_Url></No_Ans_FWD_On_Url>
+<No_Ans_FWD_Off_Url></No_Ans_FWD_Off_Url>
+<Transfer_Url></Transfer_Url>
+<B_Transfer_Url></B_Transfer_Url>
+<A_Transfer_Url></A_Transfer_Url>
+<Hold_Url></Hold_Url>
+<Unhold_Url></Unhold_Url>
+<Mute_Url></Mute_Url>
+<Unmute_Url></Unmute_Url>
+<Missed_call_Url></Missed_call_Url>
+<IP_Change_Url></IP_Change_Url>
+<Idle_to_Busy_Url></Idle_to_Busy_Url>
+<Busy_to_Idle_Url></Busy_to_Idle_Url>
+</GLOBAL_CONFIG_MODULE>
+<LAN_CONFIG_MODULE>
+<LAN_IP>192.169.10.1</LAN_IP>
+<LAN_SubNetMask>255.255.0.0</LAN_SubNetMask>
+<Enable_Bridge_Mode>1</Enable_Bridge_Mode>
+<Enable_Port_Mirror>1</Enable_Port_Mirror>
+</LAN_CONFIG_MODULE>
+<TELE_CONFIG_MODULE>
+<Dial_by_Pound>1</Dial_by_Pound>
+<BTransfer_by_Pound>1</BTransfer_by_Pound>
+<Onhook_to_BXfer>0</Onhook_to_BXfer>
+<Onhook_to_AXfer>0</Onhook_to_AXfer>
+<Memory_Key_to_BXfer>0</Memory_Key_to_BXfer>
+<Dial_Fixed_Length>0</Dial_Fixed_Length>
+<Fixed_Length_Nums>11</Fixed_Length_Nums>
+<Dial_by_Timeout>1</Dial_by_Timeout>
+<Dial_Timeout_value>5</Dial_Timeout_value>
+<Dialpeer_With_Line>0</Dialpeer_With_Line>
+<Port_Sequence>0</Port_Sequence>
+<Accept_Any_Call>1</Accept_Any_Call>
+<Main_Digit_Prefix></Main_Digit_Prefix>
+<IP_Dial_Prefix>.</IP_Dial_Prefix>
+<Port_Config>
+<Port_Config_Entry>
+<ID>P1</ID>
+<Enable_DND>0</Enable_DND>
+<Mute_Ringing>0</Mute_Ringing>
+<CWaiting_Tone>1</CWaiting_Tone>
+<Ban_Dial_Out>0</Ban_Dial_Out>
+<Ban_Empty_CID>0</Ban_Empty_CID>
+<Enable_CLIP>1</Enable_CLIP>
+<CallWaiting>1</CallWaiting>
+<CallTransfer>1</CallTransfer>
+<CallSemiXfer>1</CallSemiXfer>
+<CallConference>1</CallConference>
+<AutoAnswer>1</AutoAnswer>
+<No_Answer_Time>0</No_Answer_Time>
+<Warm_Line_Time>0</Warm_Line_Time>
+<Port_Ext_Num></Port_Ext_Num>
+<Hotline_Num></Hotline_Num>
+<SRV_Record_Num></SRV_Record_Num>
+<Use_SRV_Record>0</Use_SRV_Record>
+<Auto_PickupNext>0</Auto_PickupNext>
+<Busy_No_Line>0</Busy_No_Line>
+<Auto_Onhook>1</Auto_Onhook>
+<Auto_Onhook_Time>1</Auto_Onhook_Time>
+<DND_Code>1</DND_Code>
+<Busy_Code>2</Busy_Code>
+<Reject_Code>3</Reject_Code>
+<Enable_Intercom>1</Enable_Intercom>
+<Intercom_Mute>0</Intercom_Mute>
+<Intercom_Tone>1</Intercom_Tone>
+<Intercom_Barge>1</Intercom_Barge>
+<Use_Auto_Redial>0</Use_Auto_Redial>
+<AutoRedial_Delay>10</AutoRedial_Delay>
+<AutoRedial_Times>10</AutoRedial_Times>
+<Call_Complete>0</Call_Complete>
+<Hide_DTMF_Type>0</Hide_DTMF_Type>
+<Talk_DTMF_Tone>1</Talk_DTMF_Tone>
+<Dial_DTMF_Tone>1</Dial_DTMF_Tone>
+<Psw_Dial_Mode>0</Psw_Dial_Mode>
+<Psw_Dial_Length>0</Psw_Dial_Length>
+<Psw_Dial_Prefix></Psw_Dial_Prefix>
+<Enable_MultiLine>1</Enable_MultiLine>
+<Allow_IP_Call>1</Allow_IP_Call>
+</Port_Config_Entry>
+</Port_Config>
+<Default_Ext_line>0</Default_Ext_line>
+<Default_Ans_mode>0</Default_Ans_mode>
+<Default_Dial_mode>0</Default_Dial_mode>
+</TELE_CONFIG_MODULE>
+<DSP_CONFIG_MODULE>
+<Signal_Standard>11</Signal_Standard>
+<Enable_MWI_Tone>1</Enable_MWI_Tone>
+<Onhook_Time>200</Onhook_Time>
+<G729_Payload_Len>1</G729_Payload_Len>
+<G723_Bit_Rate>1</G723_Bit_Rate>
+<G722_Timestamps>0</G722_Timestamps>
+<VAD>0</VAD>
+<Ring_Type>1</Ring_Type>
+<Dtmf_Payload_Type>101</Dtmf_Payload_Type>
+<RTP_Probe>0</RTP_Probe>
+<HD_Voice>1</HD_Voice>
+<TX_AGC>0</TX_AGC>
+<RX_AGC>0</RX_AGC>
+<Handsfree_MIC__GAIN>7</Handsfree_MIC__GAIN>
+<Handsfree_SPRK_GAIN>4</Handsfree_SPRK_GAIN>
+<Handset_MIC__GAIN>8</Handset_MIC__GAIN>
+<Handset_SPRK_GAIN>5</Handset_SPRK_GAIN>
+<Headset_MIC__GAIN>8</Headset_MIC__GAIN>
+<Headset_SPRK_GAIN>5</Headset_SPRK_GAIN>
+<Port_Config>
+<Port_Config_Entry>
+<ID>P1</ID>
+<General_Spk_Vol>8</General_Spk_Vol>
+<General_Mic_Vol>8</General_Mic_Vol>
+<HandFree_Vol>6</HandFree_Vol>
+<RingTone_Vol>7</RingTone_Vol>
+<Voice_Codec1>PCMU/8000</Voice_Codec1>
+<Voice_Codec2>PCMA/8000</Voice_Codec2>
+<Voice_Codec3>G729/8000</Voice_Codec3>
+<Voice_Codec4>G722/8000</Voice_Codec4>
+<Voice_Codec5></Voice_Codec5>
+<Voice_Codec6></Voice_Codec6>
+</Port_Config_Entry>
+</Port_Config>
+<Codec_Config>
+<Codec_Config_Entry>
+<ID>Codec1</ID>
+<Format>PCMU/8000;payload=0;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec2</ID>
+<Format>PCMA/8000;payload=8;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec3</ID>
+<Format>G722/8000;payload=9;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec4</ID>
+<Format>G729/8000;payload=18;annexb=no;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec5</ID>
+<Format>G723/8000;payload=4;bitrate=6.3;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec6</ID>
+<Format>G726-32/8000;payload=2;</Format>
+</Codec_Config_Entry>
+<Codec_Config_Entry>
+<ID>Codec7</ID>
+<Format>telephone-event/8000;payload=101;</Format>
+</Codec_Config_Entry>
+</Codec_Config>
+</DSP_CONFIG_MODULE>
+<SIP_CONFIG_MODULE>
+<SIP__Port>5060</SIP__Port>
+<STUN_Server>%%pbx_ip%%</STUN_Server>
+<STUN_Port>%%param::sipport%%</STUN_Port>
+<STUN_Refresh_Time>30</STUN_Refresh_Time>
+<SIP_Wait_Stun_Time>800</SIP_Wait_Stun_Time>
+<Extern_NAT_Addrs></Extern_NAT_Addrs>
+<Reg_Fail_Interval>32</Reg_Fail_Interval>
+<SIP_Pswd_Encryption>0</SIP_Pswd_Encryption>
+<Strict_BranchPrefix>0</Strict_BranchPrefix>
+<Video_Mute_Attr>0</Video_Mute_Attr>
+<Enable_Group_Backup>0</Enable_Group_Backup>
+<SIP_Line_List>
+<SIP_Line_List_Entry>
+<ID>SIP1</ID>
+<Phone_Number>%%extension_number%%</Phone_Number>
+<Display_Name>%%extension_first_name%% %%extension_last_name%%</Display_Name>
+<Sip_Name></Sip_Name>
+<Register_Addr>%%pbx_ip%%</Register_Addr>
+<Register_Port>%%param::sipport%%</Register_Port>
+<Register_User>%%extension_auth_id%%</Register_User>
+<Register_Pswd>%%extension_auth_pw%%</Register_Pswd>
+<Register_TTL>120</Register_TTL>
+<Enable_Reg>1</Enable_Reg>
+<Proxy_Addr></Proxy_Addr>
+<Proxy_Port></Proxy_Port>
+<Proxy_User>%%extension_auth_id%%</Proxy_User>
+<Proxy_Pswd>%%extension_auth_pw%%</Proxy_Pswd>
+<BakProxy_Addr></BakProxy_Addr>
+<BakProxy_Port>5060</BakProxy_Port>
+<Signal_Crypto>0</Signal_Crypto>
+<SigCrypto_Key></SigCrypto_Key>
+<Media_Crypto>0</Media_Crypto>
+<MedCrypto_Key></MedCrypto_Key>
+<SRTP_Auth-Tag>0</SRTP_Auth-Tag>
+<Local_Domain></Local_Domain>
+<Always_FWD>0</Always_FWD>
+<Busy_FWD>0</Busy_FWD>
+<No_Answer_FWD>0</No_Answer_FWD>
+<Always_FWD_Num></Always_FWD_Num>
+<Busy_FWD_Num></Busy_FWD_Num>
+<NoAnswer_FWD_N></NoAnswer_FWD_N>
+<FWD_Timer>60</FWD_Timer>
+<Ring_Type>0</Ring_Type>
+<Hotline_Num></Hotline_Num>
+<Enable_Hotline>0</Enable_Hotline>
+<WarmLine_Time>0</WarmLine_Time>
+<Pickup_Num>0</Pickup_Num>
+<Join_Num>0</Join_Num>
+<NAT_UDPUpdate>1</NAT_UDPUpdate>
+<UDPUpdate_TTL>60</UDPUpdate_TTL>
+<Server_Type>31</Server_Type>
+<User_Agent></User_Agent>
+<PRACK>0</PRACK>
+<Keep_AUTH>0</Keep_AUTH>
+<Session_Timer>0</Session_Timer>
+<S.Timer_Expire>0</S.Timer_Expire>
+<Enable_GRUU>0</Enable_GRUU>
+<DTMF_Mode>1</DTMF_Mode>
+<DTMF_Info_Mode>0</DTMF_Info_Mode>
+<NAT_Type>0</NAT_Type>
+<Enable_Rport>0</Enable_Rport>
+<Subscribe>0</Subscribe>
+<Sub_Expire>900</Sub_Expire>
+<Single_Codec>0</Single_Codec>
+<CLIR>0</CLIR>
+<Strict_Proxy>1</Strict_Proxy>
+<Direct_Contact>1</Direct_Contact>
+<History_Info>0</History_Info>
+<DNS_SRV>0</DNS_SRV>
+<XFER_Expire>0</XFER_Expire>
+<Ban_Anonymous>0</Ban_Anonymous>
+<Dial_Off_Line>0</Dial_Off_Line>
+<Quota_Name>0</Quota_Name>
+<Presence_Mode>0</Presence_Mode>
+<RFC_Ver>1</RFC_Ver>
+<Signal_Port>0</Signal_Port>
+<Transport>0</Transport>
+<Use_SRV_Mixer>0</Use_SRV_Mixer>
+<SRV_Mixer_Uri></SRV_Mixer_Uri>
+<Long_Contact>0</Long_Contact>
+<Auto_TCP>0</Auto_TCP>
+<Uri_Escaped>1</Uri_Escaped>
+<Click_to_Talk>0</Click_to_Talk>
+<MWI_Num></MWI_Num>
+<CallPark_Num></CallPark_Num>
+<Retrieve_Num></Retrieve_Num>
+<MSRPHelp_Num></MSRPHelp_Num>
+<User_Is_Phone>1</User_Is_Phone>
+<Auto_Answer>0</Auto_Answer>
+<NoAnswerTime>60</NoAnswerTime>
+<MissedCallLog>1</MissedCallLog>
+<SvcCode_Mode>1</SvcCode_Mode>
+<DNDOn_SvcCode></DNDOn_SvcCode>
+<DNDOff_SvcCode></DNDOff_SvcCode>
+<CFUOn_SvcCode></CFUOn_SvcCode>
+<CFUOff_SvcCode></CFUOff_SvcCode>
+<CFBOn_SvcCode></CFBOn_SvcCode>
+<CFBOff_SvcCode></CFBOff_SvcCode>
+<CFNOn_SvcCode></CFNOn_SvcCode>
+<CFNOff_SvcCode></CFNOff_SvcCode>
+<ANCOn_SvcCode></ANCOn_SvcCode>
+<ANCOff_SvcCode></ANCOff_SvcCode>
+<VoiceCodecMap>%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%,G723,G726-32</VoiceCodecMap>
+<BLFList_Uri></BLFList_Uri>
+<BLF_Server></BLF_Server>
+<Respond_182>0</Respond_182>
+<Enable_BLFList>0</Enable_BLFList>
+<Caller_Id_Type>1</Caller_Id_Type>
+<Syn_Clock_Time>0</Syn_Clock_Time>
+<Use_VPN>1</Use_VPN>
+<Enable_DND>0</Enable_DND>
+<Update_Reg_Exp>1</Update_Reg_Exp>
+<Enable_SCA>0</Enable_SCA>
+<Sub_CallPark>0</Sub_CallPark>
+<Hoteling_Event>0</Hoteling_Event>
+<Sub_CC_Status>0</Sub_CC_Status>
+<Feature_Sync>0</Feature_Sync>
+</SIP_Line_List_Entry>
+</SIP_Line_List>
+</SIP_CONFIG_MODULE>
+<IAX2_CONFIG_MODULE>
+<Server_Address></Server_Address>
+<Server_Port>4569</Server_Port>
+<User_Name></User_Name>
+<User_Password></User_Password>
+<User_Number></User_Number>
+<Voice_Number>0</Voice_Number>
+<Voice_Text>mail</Voice_Text>
+<EchoTest_Number>1</EchoTest_Number>
+<EchoTest_Text>echo</EchoTest_Text>
+<Local_Port>4569</Local_Port>
+<Enable_Register>0</Enable_Register>
+<Refresh_Time>60</Refresh_Time>
+<Enable_G.729>0</Enable_G.729>
+</IAX2_CONFIG_MODULE>
+<MCAST_CFG_MODULE>
+<Priority>0</Priority>
+<Enbale_Priority>0</Enbale_Priority>
+<Mcast_Addr>
+<Mcast_Addr_Entry>
+<ID>MCAST1</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST2</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST3</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST4</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST5</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST6</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST7</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST8</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST9</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+<Mcast_Addr_Entry>
+<ID>MCAST10</ID>
+<Port>0</Port>
+<Name></Name>
+<Host></Host>
+</Mcast_Addr_Entry>
+</Mcast_Addr>
+</MCAST_CFG_MODULE>
+<PPPoE_CONFIG_MODULE>
+<PPPoE_User>user123</PPPoE_User>
+<PPPoE_Password>password</PPPoE_Password>
+<PPPoE_Svc_Name>ANY</PPPoE_Svc_Name>
+<PPPoE_IP_Address></PPPoE_IP_Address>
+</PPPoE_CONFIG_MODULE>
+<MMI_CONFIG_MODULE>
+<Telnet_Port>23</Telnet_Port>
+<Web_Port>80</Web_Port>
+<Web_Server_Type>0</Web_Server_Type>
+<Https_Web_Port>443</Https_Web_Port>
+<Remote_Control>1</Remote_Control>
+<Enable_MMI_Filter>0</Enable_MMI_Filter>
+<Telnet_Prompt></Telnet_Prompt>
+<MMI_Account>
+<MMI_Account_Entry>
+<ID>Account1</ID>
+<Name>admin</Name>
+<Password>%%DESKPHONE_PASSWORD%%</Password>
+<Level>10</Level>
+</MMI_Account_Entry>
+<MMI_Account_Entry>
+<ID>Account2</ID>
+<Name></Name>
+<Password></Password>
+<Level>5</Level>
+</MMI_Account_Entry>
+</MMI_Account>
+</MMI_CONFIG_MODULE>
+<QOS_CONFIG_MODULE>
+<Enable_VLAN>0</Enable_VLAN>
+<Enable_diffServ>0</Enable_diffServ>
+<LLDP_Transmit>0</LLDP_Transmit>
+<LLDP_Refresh_Time>60</LLDP_Refresh_Time>
+<LLDP_Learn_Policy>0</LLDP_Learn_Policy>
+<Singalling_DSCP>-1</Singalling_DSCP>
+<Voice_DSCP>46</Voice_DSCP>
+<VLAN_ID>256</VLAN_ID>
+<Signalling_Priority>0</Signalling_Priority>
+<Voice_Priority>0</Voice_Priority>
+<VLAN_Recv_Check>1</VLAN_Recv_Check>
+<Enable_PVID>0</Enable_PVID>
+<PVID_Value>254</PVID_Value>
+</QOS_CONFIG_MODULE>
+<DEBUG_CONFIG_MODULE>
+<MGR_Trace_Level>0</MGR_Trace_Level>
+<SIP_Trace_Level>0</SIP_Trace_Level>
+<IAX_Trace_Level>0</IAX_Trace_Level>
+<Trace_File_Info>0</Trace_File_Info>
+<Enable_Watch_Dog>0</Enable_Watch_Dog>
+</DEBUG_CONFIG_MODULE>
+<AAA_CONFIG_MODULE>
+<Enable_Syslog>0</Enable_Syslog>
+<Syslog_address>0.0.0.0</Syslog_address>
+<Syslog_port>514</Syslog_port>
+</AAA_CONFIG_MODULE>
+<ACCESS_CONFIG_MODULE>
+<Enable_In_Access>0</Enable_In_Access>
+<Enable_Out_Access>0</Enable_Out_Access>
+</ACCESS_CONFIG_MODULE>
+<DHCP_CONFIG_MODULE>
+<DHCP_Server_Type>0</DHCP_Server_Type>
+<DHCP_Relay_IP></DHCP_Relay_IP>
+<Enable_DNS_Relay>1</Enable_DNS_Relay>
+<Update_SRV_Mode>0</Update_SRV_Mode>
+<Update_TFTP_SRV_IP>0.0.0.0</Update_TFTP_SRV_IP>
+</DHCP_CONFIG_MODULE>
+<NAT_CONFIG_MODULE>
+<Enable_Nat>1</Enable_Nat>
+<Enable_Ftp_ALG>1</Enable_Ftp_ALG>
+<Enable_H323_ALG>0</Enable_H323_ALG>
+<Enable_PPTP_ALG>1</Enable_PPTP_ALG>
+<Enable_IPSec_ALG>1</Enable_IPSec_ALG>
+</NAT_CONFIG_MODULE>
+<PHONE_CONFIG_MODULE>
+<Menu_Password>123</Menu_Password>
+<KeyLock_Password>123</KeyLock_Password>
+<Fast_Keylock_Code></Fast_Keylock_Code>
+<Enable_KeyLock>0</Enable_KeyLock>
+<Emergency_Call>110</Emergency_Call>
+<LCD_Title>VOIP PHONE</LCD_Title>
+<LCD_Constrast>5</LCD_Constrast>
+<LCD_Luminance>1</LCD_Luminance>
+<Backlight_Off_Time>30</Backlight_Off_Time>
+<Enable_Power_LED>0</Enable_Power_LED>
+<Time_Display_Style>0</Time_Display_Style>
+<Enable_TimeDisplay>1</Enable_TimeDisplay>
+<Phone_Model>i21</Phone_Model>
+<About_Info></About_Info>
+<Missed_Call_LED>1</Missed_Call_LED>
+<FuncKey_Page_Num>5</FuncKey_Page_Num>
+<Alarm__Clock>0,,1</Alarm__Clock>
+<Date_Display_Style>0</Date_Display_Style>
+<Date_Separator>0</Date_Separator>
+<Enable_Pre-Dial>1</Enable_Pre-Dial>
+<Default_Line>1</Default_Line>
+<Enable_Default_Line>1</Enable_Default_Line>
+<Enable_Auto_SelLine>1</Enable_Auto_SelLine>
+<Agent_Username></Agent_Username>
+<Agent_Password></Agent_Password>
+<Agent_Number></Agent_Number>
+<Agent_Sipline>0</Agent_Sipline>
+<Agent_Status>0</Agent_Status>
+<Agent_Status_Reason></Agent_Status_Reason>
+<BW_Calllogs_Conf_:>
+<BW_Calllogs_Conf_:_Entry>
+<ID>BWCLog1</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Calllogs_Conf_:_Entry>
+<BW_Calllogs_Conf_:_Entry>
+<ID>BWCLog2</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Calllogs_Conf_:_Entry>
+<BW_Calllogs_Conf_:_Entry>
+<ID>BWCLog3</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Calllogs_Conf_:_Entry>
+</BW_Calllogs_Conf_:>
+<BW_Directory_Conf:>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir1</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir2</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir3</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir4</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir5</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+<BW_Directory_Conf:_Entry>
+<ID>BWDir6</ID>
+<Title></Title>
+<URL></URL>
+<Username></Username>
+<Password></Password>
+</BW_Directory_Conf:_Entry>
+</BW_Directory_Conf:>
+<Xml_PhoneBook>
+<Xml_PhoneBook_Entry>
+<ID>XML-PBook1</ID>
+<Name></Name>
+<Addr></Addr>
+<Auth></Auth>
+<Policy>0</Policy>
+<Sipline>0</Sipline>
+</Xml_PhoneBook_Entry>
+<Xml_PhoneBook_Entry>
+<ID>XML-PBook2</ID>
+<Name></Name>
+<Addr></Addr>
+<Auth></Auth>
+<Policy>0</Policy>
+<Sipline>0</Sipline>
+</Xml_PhoneBook_Entry>
+<Xml_PhoneBook_Entry>
+<ID>XML-PBook3</ID>
+<Name></Name>
+<Addr></Addr>
+<Auth></Auth>
+<Policy>0</Policy>
+<Sipline>0</Sipline>
+</Xml_PhoneBook_Entry>
+<Xml_PhoneBook_Entry>
+<ID>XML-PBook4</ID>
+<Name></Name>
+<Addr></Addr>
+<Auth></Auth>
+<Policy>0</Policy>
+<Sipline>0</Sipline>
+</Xml_PhoneBook_Entry>
+</Xml_PhoneBook>
+<Phonebook_Groups>friend,home,work,business,classmate,colleague</Phonebook_Groups>
+<Function_Key>
+<Function_Key_Entry>
+<ID>Fkey1</ID>
+<Type>3</Type>
+<Value>F_OK</Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey2</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey3</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey4</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey5</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey6</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey7</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey8</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey9</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey10</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey11</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey12</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+<Function_Key_Entry>
+<ID>Fkey13</ID>
+<Type>0</Type>
+<Value></Value>
+<Title></Title>
+</Function_Key_Entry>
+</Function_Key>
+</PHONE_CONFIG_MODULE>
+<AUTOUPDATE_CONFIG_MODULE>
+<Auto_Pbook_Url></Auto_Pbook_Url>
+<Auto_Image_Url>%%PROVLINKLOCAL%%/firmware/fanvil/%%firmware%%</Auto_Image_Url>
+<Auto_Logo_Url></Auto_Logo_Url>
+<Auto_Mmiset_Url>%%PROVLINKLOCAL%%/firmware/fanvil/mmiset_%%langfile%%.z</Auto_Mmiset_Url>
+<Clr_PB_B4_Import>1</Clr_PB_B4_Import>
+<X_SYS_Upgrade_Url1></X_SYS_Upgrade_Url1>
+<X_SYS_Upgrade_Url2></X_SYS_Upgrade_Url2>
+<Download_Username>user</Download_Username>
+<Download_Password>pass</Download_Password>
+<Config_File_Name>%%mac_address%%.cfg</Config_File_Name>
+<Config_File_Key></Config_File_Key>
+<Common_Cfg_File_Key></Common_Cfg_File_Key>
+<Download_Server_IP>%%PROVLINKLOCAL%%</Download_Server_IP>
+<Download_Protocol>4</Download_Protocol>
+<Download_Mode>1</Download_Mode>
+<Download_Interval>1</Download_Interval>
+<DHCP_Option>0</DHCP_Option>
+<PNP_Enable>1</PNP_Enable>
+<PNP_IP>%%pbx_ip%%</PNP_IP>
+<PNP_Port>%%param::sipport%%</PNP_Port>
+<PNP_Transport>0</PNP_Transport>
+<PNP_Interval>1</PNP_Interval>
+<Save_Provision_Info>0</Save_Provision_Info>
+</AUTOUPDATE_CONFIG_MODULE>
+<VPN_CONFIG_MODULE>
+<VPN_mode>2</VPN_mode>
+<L2TP_LNS_IP></L2TP_LNS_IP>
+<L2TP_User_Name></L2TP_User_Name>
+<L2TP_Password></L2TP_Password>
+<Enable_VPN_Tunnel>0</Enable_VPN_Tunnel>
+<VPN_Server_IP>0.0.0.0</VPN_Server_IP>
+<VPN_Server_Port>80</VPN_Server_Port>
+<Server_Group_ID>VPN</Server_Group_ID>
+<Server_Area_Code>12345</Server_Area_Code>
+</VPN_CONFIG_MODULE>
+<DOT1X_CONFIG_MODULE>
+<Xsup_User>admin</Xsup_User>
+<Xsup_Password>admin</Xsup_Password>
+<Xsup_Enable>0</Xsup_Enable>
+<Xsup_AuthMac>01:80:C2:00:00:03</Xsup_AuthMac>
+<Xsup_UseDefaultMac>0</Xsup_UseDefaultMac>
+</DOT1X_CONFIG_MODULE>
+<TR069_CONFIG_MODULE>
+<ACS_Server_Type>1</ACS_Server_Type>
+<ACS_URL>0.0.0.0</ACS_URL>
+<ACS_UserName>admin</ACS_UserName>
+<ACS_Password>admin</ACS_Password>
+<CPE_UserName>dps</CPE_UserName>
+<CPE_Password>dps</CPE_Password>
+<CPE_SerialNumber>000000000000000000000c383e10cb3c</CPE_SerialNumber>
+<TR069_Auto_Login>0</TR069_Auto_Login>
+<Enable_TR069>0</Enable_TR069>
+<Periodix_Interval>3600</Periodix_Interval>
+<Area_Code>020</Area_Code>
+</TR069_CONFIG_MODULE>
+</VOIP_CONFIG_FILE>
+
+]]></deviceconfig>
+    </device>
+  </data>
+</doc>

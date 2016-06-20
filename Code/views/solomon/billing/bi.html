@@ -1,0 +1,88 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Billing
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default" id="add-rate">
+              Add Rate
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Number Prefix</th>
+                <th>Rate</th>
+                <th>Currency Unit</th>
+                <th>Timing Unit</th>
+                <th>Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <%
+              if(data && data.bsData && data.bsData.call_rates) {
+              data.bsData.call_rates.forEach(function(data, key){
+              %>
+
+              <tr>
+                <td><%=(key+1)%></td>
+                <td><%=data.name %></td>
+                <td><%=data.call_prefix %></td>
+                <td><%=data.rate %></td>
+                <td><%=data.currency_unit %></td>
+                <td><%=data.timing_unit %></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Edit" name="bi-btn-update"
+                          data-name="<%=data.name%>" data-call-prifix="<%=data.call_prefix%>"
+                          data-rate="<%=data.rate%>" data-currency-unit="<%=data.currency_unit%>"
+                          data-timing-unit="<%=data.timing_unit%>"
+                    >
+                    <i class="icon wb-wrench" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" data-toggle="tooltip"
+                          data-original-title="Delete" data-value="<%=data.call_prefix%>" name="te-btn-delete">
+                    <i class="icon wb-close" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <%
+              });
+              }
+              %>
+
+
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->

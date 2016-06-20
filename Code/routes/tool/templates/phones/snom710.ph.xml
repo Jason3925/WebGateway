@@ -1,0 +1,1605 @@
+﻿<?xml version="1.0"?>
+<doc xmlns:tcx="http://www.3cx.com">
+  <header>
+    <type>phone-template</type>
+    <version>49169</version>
+    <time>2015-05-27 19:00:00</time>
+    <name>Snom 710</name>
+    <url>http://www.snom.com</url>
+    <image>snom.png</image>
+    <models>
+      <model ua="snom710">Snom 710</model>
+	  <model ua="snom715">Snom 715/D715</model>
+    </models>
+    <description>Snom Phones</description>
+    <parsers>
+        <parser>BLF</parser>
+    </parsers>
+	<rebootParams>
+      <event-name>reboot</event-name>
+    </rebootParams>
+	<resyncParams>
+		<event-name>check-sync;reboot=false</event-name>
+	</resyncParams>
+	<firmwareParams>
+	  <event-name>check-sync;reboot=true</event-name>
+	</firmwareParams>
+	<AllowedNetworkConfig>
+        <option value="LOCALLAN">1</option>
+        <option value="REMOTESTUN">1</option>
+        <option value="REMOTESPM">0</option>
+		<option value="SBC">1</option>
+	</AllowedNetworkConfig>
+	<AllowWebPasswordChange>1</AllowWebPasswordChange>
+	<AllowSSLProvisioning>1</AllowSSLProvisioning>
+	<languages>
+	<!--The first entry is the selected entry in management console--> 
+	<option value="English">
+		<item name = "langwebUI">English</item>
+	</option>   
+	<option value="Čeština">
+	<item name = "langwebUI">Čeština</item>
+	</option>
+	<option value="Dansk">
+	<item name = "langwebUI">Dansk</item>
+	</option>
+	<option value="Deutsch">
+	<item name = "langwebUI">Deutsch</item>
+	</option>
+	<option value="Español">
+	<item name = "langwebUI">Español</item>
+	</option>
+	<option value="Francais">
+	<item name = "langwebUI">Francais</item>
+	</option>
+	<option value="Hebrew">
+	<item name = "langwebUI">Hebrew</item>
+	</option>
+	<option value="Italiano">
+	<item name = "langwebUI">Italiano</item>
+	</option>
+	<option value="Nederlands">
+	<item name = "langwebUI">Nederlands</item>
+	</option>
+	<option value="Norsk">
+	<item name = "langwebUI">Norsk</item>
+	</option>
+	<option value="Português">
+	<item name = "langwebUI">Português</item>
+	</option>
+	<option value="Russian">
+	<item name = "langwebUI">Russian</item>
+	</option>
+	<option value="Suomi">
+	<item name = "langwebUI">Suomi</item>
+	</option>
+	<option value="Svenska">
+	<item name = "langwebUI">Svenska</item>
+	</option>
+	<option value="Turkce">
+	<item name = "langwebUI">Turkce</item>
+	</option>
+	</languages>
+    <timezoneParams param="time_timezone_snom">
+      <!--The first entry is the selected entry in management console-->
+      <option value="USA-5" id="0" zone="-5:00">-5 United States - Eastern Time</option>
+      <option value="USA-10" id="1" zone="-10:00">-10 United States - Hawaii-Aleutian</option>
+      <option value="USA2-10" id="2" zone="-10:00">-10 United States - Alaska-Aleutian</option>
+      <option value="USA-9" id="3" zone="-9:00">-9 United States - Alaska Time</option>
+      <option value="CAN-8" id="4" zone="-8:00">-8 Canada (Vancouver, Whitehorse)</option>
+      <option value="MEX-8" id="5" zone="-8:00">-8 Mexico (Tijuana, Mexicali)</option>
+      <option value="USA-8" id="6" zone="-8:00">-8 United States - Pacific Time</option>
+      <option value="CAN-7" id="7" zone="-7:00">-7 Canada (Edmonton, Calgary)</option>
+      <option value="MEX-7" id="8" zone="-7:00">-7 Mexico (Mazatlan, Chihuahua)</option>
+      <option value="USA-7" id="9" zone="-7:00">-7 United States - Mountain Time</option>
+      <option value="USA2-7" id="10" zone="-7:00">-7 United States - MST no DST </option>
+      <option value="CAN-6" id="11" zone="-6:00">-6 Canada - Manitoba (Winnipeg)</option>
+      <option value="CHL-6" id="12" zone="-6:00">-6 Chile (Easter Islands)</option>
+      <option value="MEX-6" id="13" zone="-6:00">-6 Mexico (Mexico City, Acapulco)</option>
+      <option value="USA-6" id="14" zone="-6:00">-6 United States - Central Time</option>
+      <option value="BHS-5" id="15" zone="-5:00">-5 Bahamas (Nassau)</option>
+      <option value="CAN-5" id="16" zone="-5:00">-5 Canada (Montreal, Ottawa, Quebec)</option>
+      <option value="CUB-5" id="17" zone="-5:00">-5 Cuba (Havana)</option>
+      <option value="VEN-4.5" id="18" zone="-4:30">-4.5 Venezuela (Caracas)</option>
+      <option value="CAN-4" id="19" zone="-4:00">-4 Canada (Halifax, Saint John)</option>
+      <option value="CHL-4" id="20" zone="-4:00">-4 Chile (Santiago)</option>
+      <option value="PRY-4" id="21" zone="-4:00">-4 Paraguay (Asunc cedilion)</option>
+      <option value="BMU-4" id="22" zone="-4:00">-4 United Kingdom - Bermuda (Bermuda)</option>
+      <option value="FLK-4" id="23" zone="-4:00">-4 United Kingdom (Falkland Islands)</option>
+      <option value="TTB-4" id="24" zone="-4:00">-4 Trinidad Tobago</option>
+      <option value="CAN-3.5" id="25" zone="-3:30">-3.5 Canada - New Foundland (St. Johns)</option>
+      <option value="GRL-3" id="26" zone="-3:00">-3 Denmark - Greenland (Nuuk)</option>
+      <option value="ARG-3" id="27" zone="-3:00">-3 Argentina (Buenos Aires)</option>
+      <option value="BRA2-3" id="28" zone="-3:00">-3 Brazil (no DST)</option>
+      <option value="BRA1-3" id="29" zone="-3:00">-3 Brazil (DST)</option>
+      <option value="BRA-2" id="30" zone="-2:00">-2 Brazil (no DST)</option>
+      <option value="PRT-1" id="31" zone="-1:00">-1 Portugal (Azores)</option>
+      <option value="FRO-0" id="32" zone="0:00">0 Denmark - Faroe Islands (Torshaven)</option>
+      <option value="IRL-0" id="33" zone="0:00">0 Ireland (Dublin)</option>
+      <option value="PRT-0" id="34" zone="0:00">0 Portugal (Lisboa, Porto, Funchal)</option>
+      <option value="ESP-0" id="35" zone="0:00">0 Spain - Canary Islands (Las Palmas)</option>
+      <option value="GBR-0" id="36" zone="0:00">0 United Kingdom (London)</option>
+      <option value="ALB+1" id="37" zone="1:00"> 1 Albania (Tirane)</option>
+      <option value="AUT+1" id="38" zone="1:00"> 1 Austria (Vienna)</option>
+      <option value="BEL+1" id="39" zone="1:00"> 1 Belgium (Brussels)</option>
+      <option value="CAI+1" id="40" zone="1:00"> 1 Caicos</option>
+      <option value="CHA+1" id="41" zone="1:00"> 1 Chatam</option>
+      <option value="HRV+1" id="42" zone="1:00"> 1 Croatia (Zagreb)</option>
+      <option value="CZE+1" id="43" zone="1:00"> 1 Czech Republic (Prague)</option>
+      <option value="DNK+1" id="44" zone="1:00"> 1 Denmark (Kopenhaven)</option>
+      <option value="FRA+1" id="45" zone="1:00"> 1 France (Nice)</option>
+      <option value="GER+1" id="46" zone="1:00"> 1 Germany (Berlin)</option>
+      <option value="HUN+1" id="47" zone="1:00"> 1 Hungary (Budapest)</option>
+      <option value="ITA+1" id="48" zone="1:00"> 1 Italy (Rome)</option>
+      <option value="LUX+1" id="49" zone="1:00"> 1 Luxembourg (Luxembourg)</option>
+      <option value="MAK+1" id="50" zone="1:00"> 1 Makedonia (Skopje)</option>
+      <option value="NLD+1" id="51" zone="1:00"> 1 Netherlands (Amsterdam)</option>
+      <option value="NAM+1" id="52" zone="1:00"> 1 Namibia (Windhoek)</option>
+      <option value="NOR+1" id="53" zone="1:00"> 1 Norway (Oslo)</option>
+      <option value="POL+1" id="54" zone="1:00"> 1 Poland (Warszawa)</option>
+      <option value="SVK+1" id="55" zone="1:00"> 1 Slovak Republic (Bratislava)</option>
+      <option value="ESP+1" id="56" zone="1:00"> 1 Spain (Madrid, Palma)</option>
+      <option value="SWE+1" id="57" zone="1:00"> 1 Sweden (Stockholm)</option>
+      <option value="CHE+1" id="58" zone="1:00"> 1 Swiss (Bern)</option>
+      <option value="GIB+1" id="59" zone="1:00"> 1 United Kingdom (Gibraltar)</option>
+      <option value="YUG+1" id="60" zone="1:00"> 1 Serbia (Beograd)</option>
+      <option value="WAT+1" id="61" zone="1:00"> 1 West Africa Time</option>
+      <option value="BLR+2" id="62" zone="2:00"> 2 Belarus (Minsk)</option>
+      <option value="BGR+2" id="63" zone="2:00"> 2 Bulgaria (Sofia)</option>
+      <option value="CYP+2" id="64" zone="2:00"> 2 Cyprus (Nicosia)</option>
+      <option value="CAT+2" id="65" zone="2:00"> 2 Central Africa Time</option>
+      <option value="EGY+2" id="66" zone="2:00"> 2 Egypt (Cairo)</option>
+      <option value="EST+2" id="67" zone="2:00"> 2 Estonia (Tallinn)</option>
+      <option value="FIN+2" id="68" zone="2:00"> 2 Finland (Helsinki)</option>
+      <option value="GAZ+2" id="69" zone="2:00"> 2 Gaza Strip (Gaza)</option>
+      <option value="GRC+2" id="70" zone="2:00"> 2 Greece (Athens)</option>
+      <option value="ISR+2" id="71" zone="2:00"> 2 Israel (Tel Aviv)</option>
+      <option value="JOR+2" id="72" zone="2:00"> 2 Jordan (Amman)</option>
+      <option value="LVA+2" id="73" zone="2:00"> 2 Latvia (Riga)</option>
+      <option value="LBN+2" id="74" zone="2:00"> 2 Lebanon (Beirut)</option>
+      <option value="MDA+2" id="75" zone="2:00"> 2 Moldova (Kishinev)</option>
+      <option value="RUS+2" id="76" zone="2:00"> 2 Russia (Kaliningrad)</option>
+      <option value="ROU+2" id="77" zone="2:00"> 2 Romania (Bucharest)</option>
+      <option value="SYR+2" id="78" zone="2:00"> 2 Syria (Damascus)</option>
+      <option value="TUR+2" id="79" zone="2:00"> 2 Turkey (Ankara)</option>
+      <option value="UKR+2" id="80" zone="2:00"> 2 Ukraine (Kyiv, Odessa)</option>
+      <option value="EAT+3" id="81" zone="3:00"> 3 East Africa Time</option>
+      <option value="IRQ+3" id="82" zone="3:00"> 3 Iraq (Baghdad)</option>
+      <option value="RUS+3" id="83" zone="3:00"> 3 Russia (Moscow)</option>
+      <option value="IRN+3.5" id="84" zone="3:30"> 3.5 Iran (Teheran)</option>
+      <option value="ARM+4" id="85" zone="4:00"> 4 Armenia (Yerevan)</option>
+      <option value="AZE+4" id="86" zone="4:00"> 4 Azerbaijan (Baku)</option>
+      <option value="GEO+4" id="87" zone="4:00"> 4 Georgia (Tbilisi)</option>
+      <option value="KAZ+4" id="88" zone="4:00"> 4 Kazakstan (Aqtau)</option>
+      <option value="RUS+4" id="89" zone="4:00"> 4 Russia (Samara)</option>
+      <option value="UAE+4" id="90" zone="4:00"> 4 United Arab Emirates (Dubai)</option>
+      <option value="KAZ+5" id="92" zone="5:00"> 5 Kazakstan (Aqtobe)</option>
+      <option value="KGZ+5" id="93" zone="5:00"> 5 Kyrgyzstan (Bishkek)</option>
+      <option value="PAK+5" id="94" zone="5:00"> 5 Pakistan (Islamabad)</option>
+      <option value="RUS+5" id="95" zone="5:00"> 5 Russia (Chelyabinsk)</option>
+      <option value="IND+5.5" id="96" zone="5:30"> 5.5 India (Calcutta)</option>
+      <option value="KAZ+6" id="98" zone="6:00"> 6 Kazakstan (Astana, Almaty)</option>
+      <option value="RUS+6" id="99" zone="6:00"> 6 Russia (Novosibirsk, Omsk)</option>
+      <option value="RUS+7" id="101" zone="7:00"> 7 Russia (Krasnoyarsk)</option>
+      <option value="THA+7" id="102" zone="7:00"> 7 Thailand (Bangkok)</option>
+      <option value="CHN+8" id="103" zone="8:00"> 8 China (Beijing)</option>
+      <option value="SGP+8" id="104" zone="8:00"> 8 Singapore (Singapore)</option>
+      <option value="AUS+8" id="105" zone="8:00"> 8 Australia (Perth)</option>
+      <option value="KOR+9" id="106" zone="9:00"> 9 Korea (Seoul)</option>
+      <option value="JPN+9" id="107" zone="9:00"> 9 Japan (Tokyo)</option>
+      <option value="AUS+9.5" id="108" zone="9:30"> 9.5 Australia (Adelaide)</option>
+      <option value="AUS2+9.5" id="109" zone="9:30"> 9.5 Australia (Darwin)</option>
+      <option value="AUS+10" id="110" zone="10:00"> 10 Australia (Sydney, Melbourne, Canberra)</option>
+      <option value="AUS2+10" id="111" zone="10:00"> 10 Australia (Brisbane)</option>
+      <option value="AUS3+10" id="112" zone="10:00"> 10 Australia (Hobart)</option>
+      <option value="RUS+10" id="113" zone="10:00"> 10 Russia (Vladivostok)</option>
+      <option value="AUS+10.5" id="114" zone="10:30"> 10.5 Australia (Lord Howe Islands)</option>
+      <option value="NCL+11" id="115" zone="11:00"> 11 New Caledonia (Noumea)</option>
+      <option value="NZL+12" id="116" zone="12:00"> 12 New Zeland (Wellington, Auckland)</option>
+      <option value="RUS+12" id="117" zone="12:00"> 12 Russia (Anadyr, Kamchatka)</option>
+      <option value="NZL+12.75" id="118" zone="12:45"> 12.75 New Zeland (Chatham Islands)</option>
+      <option value="TON+13" id="119" zone="13:00"> 13 Tonga (Nukualofa)</option>
+    </timezoneParams>
+    <Codecspriorities>
+      <Codecspriority variableName="codec1" priority="1">
+        <!--The first entry is the selected entry in management console-->
+        <option value="pcmu">G711u</option>
+        <option value="gsm">GSM</option>
+        <option value="pcma">G711a</option>
+        <option value="g722">G722</option>
+		<option value="g729-annexb=no">G729</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec2" priority="2">
+        <!--The first entry is the selected entry in management console-->
+        <option value="pcma">G711a</option>
+		<option value="pcmu">G711u</option>
+        <option value="gsm">GSM</option>
+        <option value="g722">G722</option>
+		<option value="g729-annexb=no">G729</option>
+		<option value="">DISABLED</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec3" priority="3">
+        <!--The first entry is the selected entry in management console-->
+        <option value="g722">G722</option>
+		<option value="pcmu">G711u</option>
+        <option value="gsm">GSM</option>
+        <option value="pcma">G711a</option>
+		<option value="g729-annexb=no">G729</option>
+		<option value="">DISABLED</option>
+      </Codecspriority>
+      <Codecspriority variableName="codec4" priority="4">
+        <!--The first entry is the selected entry in management console-->
+        <option value="g729-annexb=no">G729</option>
+		<option value="pcmu">G711u</option>
+        <option value="gsm">GSM</option>
+        <option value="pcma">G711a</option>
+        <option value="g722">G722</option>
+		<option value="">DISABLED</option>
+      </Codecspriority>
+    </Codecspriorities>
+  </header>
+  
+	<blftype>
+      <extension>
+        <value>dest</value>
+		<userphone>;user=phone</userphone>
+		<!-- <pickupcode>|*20*</pickupcode> -->
+      </extension>
+	  <speeddial>
+	    <value>speed</value>
+		<userphone>;user=phone</userphone>
+      </speeddial>		
+	  <customspeeddial>
+	    <value>speed</value>
+		<userphone>;user=phone</userphone>
+      </customspeeddial>
+      <queuelogin>
+        <value>speed</value>
+		<userphone>;user=phone</userphone>
+      </queuelogin>
+	  <profilestatus>
+        <value>speed</value>
+		<userphone>;user=phone</userphone>
+      </profilestatus>
+      <parkextension>
+        <value>orbit</value>
+		<userphone></userphone>
+		<!-- <pickupcode></pickupcode> -->
+      </parkextension>
+	</blftype>
+  <data>
+    <device>
+      <type>phone</type>
+  
+	    <!-- Friendly Name -->
+      <field name="Name">Snom 3x0, 8x0</field>
+      <deviceconfig filename="cfg%%mac_address%%">
+<![CDATA[<?xml version="1.0" encoding="utf-8" ?> 
+<settings>
+  <setting-files>
+
+    <!--########################################################-->
+    <!--###               Phonebook Settings                 ###-->
+    <!--########################################################-->
+    
+    <!--# The "url" paramater of the "file" field specifies the filename which contains the Company Directory (3CXPS System-Wide Phonebook). The provisioning template sets this value to "%%PROVLINK%%/snom_phonebook.xml", which is path for the phonebook generated by 3CXPS in Snom compatible format.-->
+	{IF network=LOCALLAN}
+	<file url="%%PROVLINKLOCAL%%/snom_phonebook.xml"/>
+	{ELSE}
+	<file url="%%PROVLINK%%/snom_phonebook.xml"/>
+	{ENDIF}
+	
+	<!--########################################################-->
+    <!--###               Language Settings                  ###-->
+    <!--########################################################-->
+	
+	<!--# Not needed as PUI and GUI interface is MUI by default -->
+	<!--# <file url="http://fox.snom.com/config/settings_8.7.xml"/> -->
+	
+  </setting-files>
+  
+  <phone-settings e="2">
+    
+    <!--########################################################-->
+    <!--###       SIP Settings for Identity 1 (idx="1")      ###-->
+    <!--########################################################-->
+    
+    <!--# The Extension Number must be specified in the "user_name" field. The "extension_number" variable will be replaced by the Extension's Extension Number.-->
+    <user_name idx="1" perm="">%%extension_number%%</user_name>
+    
+    <!--# The Authentication ID must be specified in the "user_pname" field. The "extension_auth_id" variable will be replaced by the Extension's Authentication ID.-->
+    <user_pname idx="1" perm="">%%extension_auth_id%%</user_pname>
+    
+    <!--# The Authentication Password must be specified in the "user_pass" field. The "extension_auth_pw" variable will be replaced by the Extension's Authentication Password.-->
+    <user_pass idx="1" perm="">%%extension_auth_pw%%</user_pass>
+    
+    <!--# The "user_realname" field contains the Caller Name which the phone will send to 3CXPS, and also the name which will be displayed on the phone's LCD. The "extension_first_name" and "extension_last_name" variables will be replaced by the Extension's First Name and Last Name.-->
+    <user_realname idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_realname>
+     
+    <!--# The "user_remove_all_bindings" field specifies whether to unregister the phone, when requested to reboot, for example. Valid values are "on"==Unregister On Reboot, "off"==Do Not Unregister On Reboot. The provisioning template sets the value to "on"==Unregister On Reboot.-->
+    <user_remove_all_bindings idx="1" perm="">off</user_remove_all_bindings>
+    
+	<!--# DisplayName for phone in IDLE Staus, default is the Username of the EXT.-->
+	<user_idle_text idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_idle_text>
+	
+	<!--# When this option is enabled, the phone receiving a SIP INVITE message adds the „display name“ -->
+	<user_send_local_name idx="1" perm="">on</user_send_local_name>
+	
+	<!--########################################################-->
+	<!--###     Network Location Setting for Identity 1      ###-->
+	<!--########################################################-->
+
+	<!--######################### LAN  #########################-->
+	{IF network=LOCALLAN}
+	
+	<!--# IP Adress of the 3CX PhoneSystem to register to (SIP) #-->
+	<!--# The "user_host" field contains the ip address and SIP port of the SIP Registrar and Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.-->
+    <user_host idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</user_host>
+		
+	<!--# Local SIP Port for the phone (SIP) #-->
+	<!--# The "network_id_port" field specifies the phone's listening SIP Port. By default this field is left blank so the phone can select a port at random.-->
+    <network_id_port perm=""></network_id_port>
+
+	<!--# Audio Default Port Range (SDP/RTP) #-->
+	<rtp_port_start perm="">49152</rtp_port_start>
+	<rtp_port_end perm="">65534</rtp_port_end>
+
+	<!--# STUN Server Default Sertting #-->
+	<stun_server idx="1" perm=""></stun_server>
+	<stun_binding_interval idx="1" perm=""></stun_binding_interval>
+	<keepalive_interval idx="1" perm=""></keepalive_interval>
+
+	<!--# SPM Default Sertting #-->
+	<user_outbound idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</user_outbound>
+	
+	<!--# Provisioning Update Link #-->
+	<!--# The "setting_server" field specifies the URL from where the phone will retrieve its configuration file-->
+    <setting_server perm="">%%PROVLINKLOCAL%%/cfg{mac}</setting_server>
+    
+    <!--# the "update_policy" field specifies the update policy for the phone. Valid values are "auto_update"==Update Without Prompting User, "ask_for_update"==Prompt User To Allow Update, "settings_only"==Retrieve Settings Only, "never_update"==Do Not Retrieve Settings. The provisioning template sets the value to "auto_update"==Update Without Prompting User.-->
+    <update_policy perm="">auto_update</update_policy>
+    
+    <!--# the "settings_refresh_timer" field specifies the frequency (in seconds) with which the phone will refresh its configuration and phonebook settings. Valid values are any positive integer, or "0" if you want to restrict the phone to refresh settings only upon reboot. The default value is "0".-->
+    <settings_refresh_timer perm="">86400</settings_refresh_timer>
+	
+	<!--# Registraion and Subscribtion timerouts/renewal #-->
+	<!--# The "user_expiry" field specifies the length of time (in seconds) the phone will be registered with 3CXPS. The phone will attempt to re-register with 3CXPS before this time expires. The provisioning template sets the value to 120 sec (2 minutes). Valid values are any positive integer.-->
+    <user_expiry idx="1" perm="">120</user_expiry>
+    <!--# The "user_subscrption_expiry" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for MWI and BLF notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.-->
+    <user_subscription_expiry idx="1" perm="">900</user_subscription_expiry>
+	
+	<!--# Rport and Received handing for invalid NAT configuration #-->
+	<enable_rport_rfc3581 perm="">on</enable_rport_rfc3581>
+	
+	<!--# Other optional Parameter #-->
+	<ip_frag_enable perm="">off</ip_frag_enable>
+	<user_descr_contact idx="1" perm="">on</user_descr_contact>
+    
+	<!--# Support Broken Registrar set to off #-->
+	<user_sipusername_as_line idx="1" perm="">off</user_sipusername_as_line>
+	
+	<!--# Filter Packets from Registrar set to off #-->
+	<filter_registrar perm="">on</filter_registrar>
+	
+	<!--# Firmware and Logo path #-->
+	<firmware_status perm="">!%%PROVLINKLOCAL%%/firmware/snom/$(phone_type).xml</firmware_status>
+	<user_idle_text idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_idle_text>
+    	
+	{ENDIF}
+
+	<!--######################### STUN  #########################-->
+	{IF network=REMOTESTUN}
+	
+	<!--# IP Adress of the 3CX PhoneSystem to register to (SIP) #-->
+	<!--# The "user_host" field contains the ip address and SIP port of the SIP Registrar and Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.-->
+    <user_host idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</user_host>
+		
+	<!--# Local SIP Port for the phone (SIP) #-->
+	<!--# The "network_id_port" field specifies the phone's listening SIP Port. By default this field is left blank so the phone can select a port at random.-->
+    <network_id_port perm="">%%phonesipport%%</network_id_port>
+
+	<!--# Audio Default Port Range (SDP/RTP) #-->
+	<rtp_port_start perm="">%%rtp_port_min%%</rtp_port_start>
+	<rtp_port_end perm="">%%rtp_port_max%%</rtp_port_end>
+
+	<!--# STUN Server Default Sertting #-->
+	<stun_server idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</stun_server>
+	<stun_binding_interval idx="1" perm="">300</stun_binding_interval>
+	<keepalive_interval idx="1" perm="">15</keepalive_interval>
+
+	<!--# SPM Default Sertting #-->
+	<user_outbound idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</user_outbound>
+	
+	<!--# Provisioning Update Link #-->
+	<!--# The "setting_server" field specifies the URL from where the phone will retrieve its configuration file-->
+    <setting_server perm="">%%PROVLINK%%/cfg{mac}</setting_server>
+    
+    <!--# the "update_policy" field specifies the update policy for the phone. Valid values are "auto_update"==Update Without Prompting User, "ask_for_update"==Prompt User To Allow Update, "settings_only"==Retrieve Settings Only, "never_update"==Do Not Retrieve Settings. The provisioning template sets the value to "auto_update"==Update Without Prompting User.-->
+    <update_policy perm="">auto_update</update_policy>
+    
+    <!--# the "settings_refresh_timer" field specifies the frequency (in seconds) with which the phone will refresh its configuration and phonebook settings. Valid values are any positive integer, or "0" if you want to restrict the phone to refresh settings only upon reboot. The default value is "0".-->
+    <settings_refresh_timer perm="">86400</settings_refresh_timer>
+	
+	<!--# Registraion and Subscribtion timerouts/renewal #-->
+	<!--# The "user_expiry" field specifies the length of time (in seconds) the phone will be registered with 3CXPS. The phone will attempt to re-register with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.-->
+    <user_expiry idx="1" perm="">120</user_expiry>
+    <!--# The "user_subscrption_expiry" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for MWI and BLF notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.-->
+    <user_subscription_expiry idx="1" perm="">300</user_subscription_expiry>
+	
+	<!--# Rport and Received handing for invalid NAT configuration #-->
+	<enable_rport_rfc3581 perm="">on</enable_rport_rfc3581>
+	
+	<!--# Other optional Parameter #-->
+	<ip_frag_enable perm="">off</ip_frag_enable>
+	<user_descr_contact idx="1" perm="">off</user_descr_contact>
+	
+	<!--# Support Broken Registrar set to off #-->
+	<user_sipusername_as_line idx="1" perm="">off</user_sipusername_as_line>
+	
+	<!--# Filter Packets from Registrar set to off #-->
+	<filter_registrar perm="">on</filter_registrar>
+	
+	<!--# Firmware and Logo path #-->
+	<firmware_status perm="">!%%PROVLINK%%/firmware/snom/$(phone_type)_external.xml</firmware_status>
+	<user_idle_text idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_idle_text>
+	
+	{ENDIF}
+
+	<!--######################### SPM  #########################-->
+	{IF network=REMOTESPM}
+
+	<!--# IP Adress of the 3CX PhoneSystem to register to (SIP) #-->
+	<!--# The "user_host" field contains the ip address and SIP port of the SIP Registrar and Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.-->
+    <user_host idx="1" perm="">%%pbx_ip%%:%%param::sipport%%</user_host>
+		
+	<!--# Local SIP Port for the phone (SIP) #-->
+	<!--# The "network_id_port" field specifies the phone's listening SIP Port. By default this field is left blank so the phone can select a port at random.-->
+    <network_id_port perm=""></network_id_port>
+
+	<!--# Audio Default Port Range (SDP/RTP) #-->
+	<rtp_port_start perm="">49152</rtp_port_start>
+	<rtp_port_end perm="">65534</rtp_port_end>
+
+	<!--# STUN Server Default Sertting #-->
+	<stun_server idx="1" perm=""></stun_server>
+	<stun_binding_interval idx="1" perm=""></stun_binding_interval>
+	<keepalive_interval idx="1" perm=""></keepalive_interval>
+
+	<!--# SPM Default Sertting #-->
+	<user_outbound idx="1" perm="">%%local_spm_ip%%:%%local_spm_port%%</user_outbound>
+	
+	<!--# Provisioning Update Link #-->
+	<!--# The "setting_server" field specifies the URL from where the phone will retrieve its configuration file-->
+    <setting_server perm="">%%PROVLINK%%/cfg{mac}</setting_server>
+    
+    <!--# the "update_policy" field specifies the update policy for the phone. Valid values are "auto_update"==Update Without Prompting User, "ask_for_update"==Prompt User To Allow Update, "settings_only"==Retrieve Settings Only, "never_update"==Do Not Retrieve Settings. The provisioning template sets the value to "auto_update"==Update Without Prompting User.-->
+    <update_policy perm="">auto_update</update_policy>
+    
+    <!--# the "settings_refresh_timer" field specifies the frequency (in seconds) with which the phone will refresh its configuration and phonebook settings. Valid values are any positive integer, or "0" if you want to restrict the phone to refresh settings only upon reboot. The default value is "0".-->
+    <settings_refresh_timer perm="">86400</settings_refresh_timer>
+	
+	<!--# Registraion and Subscribtion timerouts/renewal #-->
+	<!--# The "user_expiry" field specifies the length of time (in seconds) the phone will be registered with 3CXPS. The phone will attempt to re-register with 3CXPS before this time expires. The provisioning template sets the value to 120 sec (2 minutes). Valid values are any positive integer.-->
+    <user_expiry idx="1" perm="">120</user_expiry>
+    <!--# The "user_subscrption_expiry" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for MWI and BLF notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.-->
+    <user_subscription_expiry idx="1" perm="">300</user_subscription_expiry>
+	
+	<!--# Rport and Received handing for invalid NAT configuration #-->
+	<enable_rport_rfc3581 perm="">on</enable_rport_rfc3581>
+
+	<!--# Other optional parameter #-->
+	<ip_frag_enable perm="">off</ip_frag_enable>
+	<user_descr_contact idx="1" perm="">off</user_descr_contact>
+	
+	<!--# Support Broken Registrar set to off #-->
+	<user_sipusername_as_line idx="1" perm="">off</user_sipusername_as_line>
+	
+	<!--# Filter Packets from Registrar set to off #-->
+	<filter_registrar perm="">on</filter_registrar>
+	
+	<!--# Firmware and Logo path #-->
+	<firmware_status perm="">!%%PROVLINK%%/firmware/snom/$(phone_type)_external.xml</firmware_status>
+	<user_idle_text idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_idle_text>
+	
+	{ENDIF}
+	
+	<!--######################### SBC  #########################-->
+	{IF network=SBC}
+
+	<!--# IP Adress of the 3CX PhoneSystem to register to (SIP) #-->
+	<!--# The "user_host" field contains the ip address and SIP port of the SIP Registrar and Proxy - in this case 3CXPS. The "pbx_ip" and "param::sipport" variables will be replaced by the IP Address and SIP Port of 3CXPS.-->
+    <user_host idx="1" perm="">%%local_sbc_ip%%:%%local_sbc_port%%</user_host>
+		
+	<!--# Local SIP Port for the phone (SIP) #-->
+	<!--# The "network_id_port" field specifies the phone's listening SIP Port. By default this field is left blank so the phone can select a port at random.-->
+    <network_id_port perm=""></network_id_port>
+
+	<!--# Audio Default Port Range (SDP/RTP) #-->
+	<rtp_port_start perm="">49152</rtp_port_start>
+	<rtp_port_end perm="">65534</rtp_port_end>
+
+	<!--# STUN Server Default Sertting #-->
+	<stun_server idx="1" perm=""></stun_server>
+	<stun_binding_interval idx="1" perm=""></stun_binding_interval>
+	<keepalive_interval idx="1" perm=""></keepalive_interval>
+
+	<!--# SPM Default Sertting #-->
+	<user_outbound idx="1" perm="">%%local_sbc_ip%%:%%local_sbc_port%%</user_outbound>
+	
+	<!--# Provisioning Update Link #-->
+	<!--# The "setting_server" field specifies the URL from where the phone will retrieve its configuration file-->
+    <setting_server perm="">%%PROVLINK%%/cfg{mac}</setting_server>
+    
+    <!--# the "update_policy" field specifies the update policy for the phone. Valid values are "auto_update"==Update Without Prompting User, "ask_for_update"==Prompt User To Allow Update, "settings_only"==Retrieve Settings Only, "never_update"==Do Not Retrieve Settings. The provisioning template sets the value to "auto_update"==Update Without Prompting User.-->
+    <update_policy perm="">auto_update</update_policy>
+    
+    <!--# the "settings_refresh_timer" field specifies the frequency (in seconds) with which the phone will refresh its configuration and phonebook settings. Valid values are any positive integer, or "0" if you want to restrict the phone to refresh settings only upon reboot. The default value is "0".-->
+    <settings_refresh_timer perm="">86400</settings_refresh_timer>
+	
+	<!--# Registraion and Subscribtion timerouts/renewal #-->
+	<!--# The "user_expiry" field specifies the length of time (in seconds) the phone will be registered with 3CXPS. The phone will attempt to re-register with 3CXPS before this time expires. The provisioning template sets the value to 120 sec (2 minutes). Valid values are any positive integer.-->
+    <user_expiry idx="1" perm="">120</user_expiry>
+    <!--# The "user_subscrption_expiry" field specifies the length of time (in seconds) the phone will be subscribed with 3CXPS for MWI and BLF notifications. The phone will attempt to re-subscribe with 3CXPS before this time expires. The provisioning template sets the value to 900 (15 minutes). Valid values are any positive integer.-->
+    <user_subscription_expiry idx="1" perm="">300</user_subscription_expiry>
+	
+	<!--# Rport and Received handing for invalid NAT configuration #-->
+	<enable_rport_rfc3581 perm="">on</enable_rport_rfc3581>
+
+	<!--# Other optional parameter #-->
+	<ip_frag_enable perm="">off</ip_frag_enable>
+	<user_descr_contact idx="1" perm="">off</user_descr_contact>
+	
+	<!--# Support Broken Registrar set to off #-->
+	<user_sipusername_as_line idx="1" perm="">off</user_sipusername_as_line>
+	
+	<!--# Filter Packets from Registrar set to off to allow check-sync and reprovioning to work #-->
+	<filter_registrar perm="">off</filter_registrar>
+	
+	<!--# Firmware and Logo path #-->
+	<firmware_status perm="">!%%PROVLINK%%/firmware/snom/$(phone_type)_external.xml</firmware_status>
+	<user_idle_text idx="1" perm="">%%extension_first_name%% %%extension_last_name%%</user_idle_text>
+	
+	{ENDIF}
+
+    <!--########################################################-->
+    <!--###          Generic SIP Or Phone Settings           ###-->
+    <!--########################################################-->
+    
+    <!--# The "active_line" field specifies which will be the identity selected for making calls. The provisioning template sets the value to 1-->
+    <active_line perm="">1</active_line>
+
+    <!--# The "answer_after_policy" field specifies the behaviour of the the phone for incoming intercom calls (if the phone is a member of a "Paging" Ring Group, for example). Valid values are "off"==Do Not Allow Auto-Answer, "idle"==Auto-Answer if No Active Calls (treat as a normal call is active calls are present), "always"==Force Auto-Answer (put current calls on hold if any). The provisioning template sets the value to "idle"==Auto-Answer if No Active Calls (treat as a normal call is active calls are present).-->
+    <answer_after_policy perm="">idle</answer_after_policy>
+    
+    <!--# The "auto_connect_type" field specifies how to deliver audio for intercom calls. Valid values are "auto_connect_type_handsfree"==Deliver audio using the external speakerphone, "auto_connect_type_handset"==Deliver audio using the handset, "auto_connect_type_headset"==Deliver audio using the connected headset.-->
+    <auto_connect_type perm="">auto_connect_type_handsfree</auto_connect_type>
+    
+    <!--# The "auto_connect_indication" field enables or disables a warning tone to play when the phone receives an intercom call. Valid values are "on"==Play Warning Tone, "off"==Do Not Play Warning Tone. The provisioning template sets the value to "on"==Play Warning Tone.-->
+    <auto_connect_indication perm="">on</auto_connect_indication>
+    
+    <!--# The "privacy_in" field specifies whether to reject anonymous incoming calls. Valid values are "on"==Reject Anonymous Incoming Calls, "off"==Allow Anonymous Incoming Calls. The provisioning template sets the value to "off"==Allow Anonymous Incoming Calls.-->
+    <privacy_in perm="">off</privacy_in>
+    
+    <!--# The "privacy_out" field specifies whether to hide the Callers Number for outgoing calls. Valid values are "on"==Hide Caller Number For Outgoing Calls, "off"==Do Not Hide Caller Number For Outgoing Calls. The provisioning template sets the value to "off"==Allow Anonymous Incoming Calls.-->
+    <privacy_out perm="">off</privacy_out>
+    
+    <!--# The "time_24_format" field specifies whether to display the time in 24-hour format or in AM/PM format. Valid values are "on"==24-hour Format, "off"==AM/PM Format. The provisioning template sets the valut to "on"==24-Hour Format.-->
+    <time_24_format perm="">on</time_24_format>
+    
+    <!--# The "with_flash" field specifies whether the phone's Home Page (in its web interface) will actively show incoming and outgoing calls as they happen if the viewing browser supports Macromedia Flash. Valid values are "on"==Enable Live Update, "off"=="Disable Live Update". The provisioning template sets the value to "on"==Enable Live Update.-->
+    <with_flash perm="">off</with_flash>
+    
+    <!--# The "keyboard_lock" field specifies whether the phone's keyboard will start up locked or unlocked. If the phone's keyboard can be locked/unlocked by pressing the star key for a few seconds. Valid values are "on"==Keyboard Locked, "off"==Keyboard Unlocked. The provisioning template sets the value to "off"==Keyboard Unlocked.-->
+    <keyboard_lock perm="">off</keyboard_lock>
+
+	<!--# Enable/disable the SIP PUBLISH messages that the phone sends to look up potential numbers to dial on a remote server -->
+	<use_proxy_number_guessing idx="1" perm="">off</use_proxy_number_guessing>
+	
+	<!--INVITE Requests without SDP should not change the state of the SDP. However, in the case of transfer via 3CX Bridges a sendrecv in the response is required.-->
+	<sip_force_sendrecv_on_invite_wo_sdp idx="1" perm="">on</sip_force_sendrecv_on_invite_wo_sdp>
+    
+    <!--########################################################-->
+    <!--###       RTP Settings for Identity 1 (idx="1")      ###-->
+    <!--########################################################-->
+    
+    <!--# The fields "codec1_name", "codec2_name", "codec3_name", and codec4_name" specify the codec preference order (with "codec1_name" being the first preference). Valid values are 0==G711u, 2==G726-32, 3==GSM, 4==G723, 8==G711a, 9==G722, 18==G729. The provisioning template sets the preference order to G711u, G711a, G729, GSM.-->
+	<codec_priority_list idx="1" perm="">%%codec1%%,%%codec2%%,%%codec3%%,%%codec4%%,telephone-event</codec_priority_list>
+    
+    <!--# The "user_srtp" field enables or disables the use of RTP Encryption. Valid values are "on"==Enable RTP Encrytion and "off"==Disable RTP Encryption". The provisioning template sets the value to "on"==Enable RTP Encryption to ensure correct interaction with 3CXPS.-->
+    <user_srtp idx="1" perm="">off</user_srtp>
+    
+    <!--# The "codec_size" field specifies the packetization rate for each RTP packet delivering audio. Valid values for common for the common codecs (G711u, G711a, G729, GSM) are 20, 40, and 60. The provisioning template sets the value to 20 to ensure correct interaction with other phones, gateways, and voip providers which do not support non-standard values.-->
+    <codec_size idx="1" perm="">20</codec_size>
+     
+    <!--########################################################-->
+    <!--### VoiceMail and Message Waiting Indicator Settings ###-->
+    <!--########################################################-->
+    
+    <!--# The "mwi_notification" field specifies whether to notify the user with a beep when a new message arrives. Valid values are "silent"==No Beep, "beep"==Single Beep when a new message arrives, "reminder"==Beep at Regular Intervals when a new message arrives. The provisioning template sets the value to "silent"==No Beep.-->
+    <mwi_notification perm="">silent</mwi_notification>
+    
+    <!--# The "user_mailbox" field contains the destination number for the VoiceMail service. The "vm_number" variable will be replacd by the 3CXPS VoiceMail Menu Extension Number.-->
+    <user_mailbox idx="1" perm="">%%vm_number%%</user_mailbox>
+	
+    <!--########################################################-->
+    <!--###       Distinctive ringing                        ###-->
+    <!--########################################################-->
+	
+	<!--# Setting for distinctive ringing base on altert info -->  
+	<!--# info=external call from external line (no reformatting has been applied)-->
+	<!--# info=international call from external line, reformatting detected international call-->
+	<!--# info=national call from external line, reformatting detected national call-->
+	<!--# info=local call from external line, reformatting detected local call-->
+	<!--# info=queue call from queue-->
+	<!--# info=ivr call from IVR-->
+	
+	<!--# Internal Calls-->
+	<alert_internal_ring_text perm="">internal</alert_internal_ring_text> 
+	<alert_internal_ring_sound perm="">Ringer1</alert_internal_ring_sound> 
+	
+	<!--# Calls from Exernal-->
+	<alert_external_ring_text perm="">external</alert_external_ring_text> 
+	<alert_external_ring_sound perm="">Ringer2</alert_external_ring_sound> 
+	
+	<!--# Calls from Queues-->
+	<alert_group_ring_text perm="">queue</alert_group_ring_text> 
+	<alert_group_ring_sound perm="">Ringer3</alert_group_ring_sound> 
+	
+    <!--# Calls from IVR-->
+	<internal_ringer_text0 perm="">ivr</internal_ringer_text0>
+	<internal_ringer_file0 perm="">Ringer4</internal_ringer_file0>
+	
+    <!--# Calls from local-->
+	<internal_ringer_text1 perm="">local</internal_ringer_text1>
+	<internal_ringer_file1 perm="">Ringer5</internal_ringer_file1>
+	
+    <!--# Calls from national-->
+	<internal_ringer_text2 perm="">national</internal_ringer_text2>
+	<internal_ringer_file2 perm="">Ringer6</internal_ringer_file2> 
+	
+    <!--# Calls from international-->
+	<internal_ringer_text3 perm="">international</internal_ringer_text3>
+	<internal_ringer_file3 perm="">Ringer7</internal_ringer_file3> 
+	
+	<!--########################################################-->
+    <!--###       Language Settings                          ###-->
+    <!--########################################################-->
+	
+	<language perm="">%%langwebUI%%</language>
+	<web_language perm="">%%langwebUI%%</web_language>
+	<!-- Not set value by 3CX is the Tone Schema, valid options are: AUS,AUT,CHN,DNK,FRA,GER,GBR,IND,ITA,JPN,MEX,NLD,NOR,NZL,ESP,SWE,SWI,USA -->
+	<!-- <tone_scheme>GER</tone_scheme> -->
+    
+    <!--########################################################-->
+    <!--###           Phone LCD Backlight Settings           ###-->
+    <!--########################################################-->
+    
+    <!--# The "use_backight" field specifies whether the LCD Backlight is always off, or whether the LCD Backlight turns off Automatically after a period of inactivity. Valid values are "on"==On but turns off after 20 seconds of inactivity, "off"==Always Off, "always"==Always On. The provisioning template sets the value to "on"==On but turns off after 20 seconds of inactivity.-->
+    <use_backlight perm="">on</use_backlight>
+    
+    <!--########################################################-->
+    <!--###              Time and DST Settings               ###-->
+    <!--########################################################-->
+
+    <ntp_server perm="">%%param::time_ntp_server%%</ntp_server>
+    <timezone perm="">%%param::time_timezone_snom%%</timezone>
+	
+	<!--# Here, you can select either U.S. (month/day) or European (day.month) format for displaying the time and date. -->
+	<date_us_format perm="">off</date_us_format>
+	
+	<!--# When you select “on”, the timestamps will be formatted in 24-hour format, otherwise in 12-hour format. -->
+	<time_24_format perm="">on</time_24_format>
+	
+	<!--# Here, you can select the U.S. dialnumber format during entering a number -->
+	<dialnumber_us_format perm="">off</dialnumber_us_format>
+
+	<!--########################################################-->
+	<!--###              Networking V-LAN                    ###-->
+	<!--########################################################-->	
+	
+	<!--#VLAN ID (0..4095) and Priority (0..7) separated by a space. Which means the first number is the VLAN number (802.1q) and the second number is the priority (802.1p).#-->	
+	<vlan perm=""></vlan>
+	<!--#Priority (802.1p) has to be set properly before the phone is able to connect to anything residing in a specific VLAN (0..7)! Only the phone is residing in the specified VLAN, it has no effect to e.g. a PC connected with the second ethernet socket (PC).#-->
+	<vlan_qos perm=""></vlan_qos>
+	<!--#If set to “on”, packets are tagged with the tags given in the corresponding ports.#-->
+	<vlan_port_tagging perm="">off</vlan_port_tagging>
+	<!--#Any incoming packet on the NET port is tagged with this VLAN Id.(0..4095) #-->
+	<vlan_net_id perm=""></vlan_net_id>
+	<!--#This is the priority of the VLAN NET Port.(0..7) #-->
+	<vlan_net_priority perm=""></vlan_net_priority>
+	<!--#Any incoming packet on the PC port is tagged with this VLAN Id.(0..4095) #-->
+	<vlan_pc_id perm=""></vlan_pc_id>
+	<!--#This is the priority of the VLAN PC Port.(0..7) #-->
+	<vlan_pc_priority perm=""></vlan_pc_priority>
+	
+    <!--########################################################-->
+    <!--###              Caller ID Display Settings          ###-->
+    <!--########################################################-->
+	
+	<!--# Specifies how incoming and outgoing calls are displayed -->	
+	<display_method perm="">display_name</display_method>
+	
+	<!--# Prioritise which source for looking up details (names) to show in PUI takes priority. First one in list has highest priority. -->
+	<contact_source_priority perm="">Sip Ldap InternalTbook Memory</contact_source_priority>
+	
+	<!--# This settings is used to deactivate the caching of specific contact details beyond call boundaries -->	
+	<cache_contact_details idx="1" perm="">off</cache_contact_details>
+
+    <!--########################################################-->
+    <!--###                 Other Settings                   ###-->
+    <!--########################################################-->
+
+
+	<!--# The "dnd on-off" field specifies the dial string to be sent to the PBX to enable / disable the dnd at pbx level to allow the extension busy rules to kick in#-->	
+	<dnd_on_code perm="">%%param::DIALCODEPROFILE%%2</dnd_on_code>
+	<dnd_off_code perm="">%%param::DIALCODEPROFILE%%0</dnd_off_code>
+    
+	<!--# Removed with FW 8.7.X.X - This field enables the Dialog Info for Monitored BLF EXT. U will see how is calling a BLF but not ring-->
+    <!--# <callpickup_dialoginfo prem="">on</callpickup_dialoginfo>-->
+	
+	<!--# When this feature is set to “on”, the phone sends PUBLISH SIP messages showing the phone’s status-->
+	<publish_presence perm="">off</publish_presence>
+	
+	<!--# Change the hostname of the phone here-->
+	<phone_name perm="">Snom-%%extension_first_name%%-%%extension_last_name%%-%%extension_number%%</phone_name>
+	
+	<!--# When one of the virtual p-keys shows a monitored line that is not idle, the phone will automatically show the virtual key state. (8X0 Phones)-->
+	<goto_virtual_keys_state_on_activity perm="">off</goto_virtual_keys_state_on_activity>
+	
+	<!--# This setting distinguishes whether an Advertisement page is displayed on the snom phone WebUI home page -->
+	<advertisement perm="">off</advertisement>
+	
+	<!--# This setting controls whether digits pressed during a connected call are shown on the display or not. -->
+	<show_ivr_digits perm="">on</show_ivr_digits>
+	
+	<!--# The specified space separated numbers can be dialled via keyboard even if the keyboard lock is enabled. -->
+	<keyboard_lock_emergency perm=""></keyboard_lock_emergency>
+	
+	<!--# Prevent user from dialing other charaters then numbers. First button off hook becomes blank whith this setting -->
+	<block_url_dialing perm="">on</block_url_dialing>	
+	
+	<!--########################################################-->
+    <!--###                 Admin Security                   ###-->
+    <!--########################################################-->
+	
+	<admin_mode perm="">off</admin_mode>
+	<admin_mode_password perm="">%%DESKPHONE_PASSWORD%%</admin_mode_password>
+	<admin_mode_upon_http_login perm="">on</admin_mode_upon_http_login>
+	<service_mode_login perm="">admin</service_mode_login>
+	<service_mode_password perm="">%%DESKPHONE_PASSWORD%%</service_mode_password>
+	<ignore_security_warning perm="">on</ignore_security_warning>
+	<http_user perm="">admin</http_user> 
+	<http_pass perm="">%%DESKPHONE_PASSWORD%%</http_pass>
+	
+	<!--########################################################-->
+    <!--###                 User Security                   ###-->
+    <!--########################################################-->
+	
+	<!--# Allows the user to lock the keyboard of the phone by holding down the * key -->
+	<enable_keyboard_lock perm="">on</enable_keyboard_lock>
+	<!--# User need to unlock the phone with  the voicemail pin of the 3cx phone system -->
+	<keyboard_lock_pw perm="">%%VMPIN%%</keyboard_lock_pw>
+	<!--# Auto Locking of the phones keyboard after X seconds (0 for disabled) -->
+	<keyboard_lock_timeout perm="">0</keyboard_lock_timeout>
+
+	<!--########################################################-->
+    <!--###           Transfer Settings                      ###-->
+    <!--########################################################-->
+	
+	<!-- If you want to transfer two calls by placing the handset onhook (one incoming call and one outgoing call) -->
+	<transfer_on_hangup perm="">on</transfer_on_hangup>
+	
+	<!-- If you want to transfer two calls by placing the handset onhook (independent of call direction (incoming / outgoing) -->
+	<transfer_on_hangup_non_pots perm="">on</transfer_on_hangup_non_pots>
+	
+	<!-- If setting 'transfer on hangup' is set to on and the first call was picked up with a PBX starcode then the transfer will be done if this setting is set to on. -->
+	<transfer_on_hangup_with_starcode perm="">on</transfer_on_hangup_with_starcode>
+	
+	<!-- This settings specifies at which point the transferring party will release the transferred call. -->
+	<release_xferred_call_on perm="">100</release_xferred_call_on>
+	
+	<!-- This settings specifies at which point the transferring party will deem the transfer failed and retrieve the transferred call. -->
+	<retrieve_xferred_call_on perm="">400</retrieve_xferred_call_on>
+	
+	<!-- When this option is set to ‘off’, a call on hold cannot be cancelled by pressing the CANCEL button , but has to be taken up again and then canceled. This prevents the accidental cancellation of calls on hold. -->
+	<cancel_on_hold perm="">on</cancel_on_hold>
+	
+	<!-- Semi Attendant Transfer Solution for early hand off -->
+	<attended_transfer_on_ringing perm="">off</attended_transfer_on_ringing>
+
+	<!--########################################################-->
+    <!--###           Conference Gateway                    ###-->
+    <!--########################################################-->
+	
+	{IF network=SBC}
+	<conferencing idx="1" perm="">%%param::DIALCODECONFGATEWAY%%*%%extension_number%%@%%local_sbc_ip%%:%%local_sbc_port%%</conferencing>
+	{ELSE}
+	<conferencing idx="1" perm="">%%param::DIALCODECONFGATEWAY%%*%%extension_number%%@%%pbx_ip%%:%%param::sipport%%</conferencing>
+	{ENDIF}
+	<user_replaces_when_referring_to_conference_server idx="1" perm="">off</user_replaces_when_referring_to_conference_server>
+      
+  </phone-settings>
+  
+  <!--########################################################-->
+  <!--###                  BLF Settings                    ###-->
+  <!--########################################################-->
+  
+  <!--# The different BLF keys are referred to using the "idx" paramer, which can have a value between 0 and 11. The first 2 BLF keys are programmed only for line operation to allow the phone to retain Hold, Resume, and Call Transfer functionality.-->
+  <!--# The "fkey" field for all keys from idx="2" to idx="11" must contain a string value to specify which extension number to monitor. The provisioning template sets the value to "blf&lt;sip:blf1@%%pbx_ip%%;user=phone&gt;|*20*" for the first usable key (idx="2"), "blf&lt;sip:blf2@%%pbx_ip%%;user=phone&gt;|*20*" for the second usable key (idx="3"), and so on - where the variables "blf1" to "blf10" will be replaced by the extension number chosen from the 3CX Management Console for that extension-->
+  
+
+  <functionkeys e="2">
+
+	<fkey idx="0" context="active" perm="">line</fkey>
+	<fkey idx="1" context="active" perm="">line</fkey>
+	<fkey idx="2" context="active" perm="">keyevent F_REDIAL</fkey>
+	{IF blf1}
+		<fkey idx="3" context="active" label="%%blffirstname1%% %%blflastname1%%" perm="">%%value%% &lt;sip:%%blf1%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="3" context="active" perm="">none</fkey>
+	{ENDIF}
+	{IF blf2}
+		<fkey idx="4" context="active" label="%%blffirstname2%% %%blflastname2%%" perm="">%%value%% &lt;sip:%%blf2%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="4" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf3}
+		<fkey idx="5" context="active" label="%%blffirstname3%% %%blflastname3%%" perm="">%%value%% &lt;sip:%%blf3%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="5" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf4}
+		<fkey idx="6" context="active" label="%%blffirstname4%% %%blflastname4%%" perm="">%%value%% &lt;sip:%%blf4%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="6" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf5}
+		<fkey idx="7" context="active" label="%%blffirstname5%% %%blflastname5%%" perm="">%%value%% &lt;sip:%%blf5%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="7" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf6}
+		<fkey idx="8" context="active" label="%%blffirstname6%% %%blflastname6%%" perm="">%%value%% &lt;sip:%%blf6%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="8" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf7}
+		<fkey idx="9" context="active" label="%%blffirstname7%% %%blflastname7%%" perm="">%%value%% &lt;sip:%%blf7%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="9" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf8}
+		<fkey idx="10" context="active" label="%%blffirstname8%% %%blflastname8%%" perm="">%%value%% &lt;sip:%%blf8%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="10" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf9}
+		<fkey idx="11" context="active" label="%%blffirstname9%% %%blflastname9%%" perm="">%%value%% &lt;sip:%%blf9%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="11" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf10}
+		<fkey idx="12" context="active" label="%%blffirstname10%% %%blflastname10%%" perm="">%%value%% &lt;sip:%%blf10%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="12" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf11}
+		<fkey idx="13" context="active" label="%%blffirstname11%% %%blflastname11%%" perm="">%%value%% &lt;sip:%%blf11%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="13" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf12}
+		<fkey idx="14" context="active" label="%%blffirstname12%% %%blflastname12%%" perm="">%%value%% &lt;sip:%%blf12%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="14" context="active" perm="">none</fkey>
+	{ENDIF}	
+	
+	{IF blf13}
+		<fkey idx="15" context="active" label="%%blffirstname13%% %%blflastname13%%" perm="">%%value%% &lt;sip:%%blf13%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="15" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf14}
+		<fkey idx="16" context="active" label="%%blffirstname14%% %%blflastname14%%" perm="">%%value%% &lt;sip:%%blf14%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="16" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf15}
+		<fkey idx="17" context="active" label="%%blffirstname15%% %%blflastname15%%" perm="">%%value%% &lt;sip:%%blf15%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="17" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf16}
+		<fkey idx="18" context="active" label="%%blffirstname16%% %%blflastname16%%" perm="">%%value%% &lt;sip:%%blf16%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="18" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf17}
+		<fkey idx="19" context="active" label="%%blffirstname17%% %%blflastname17%%" perm="">%%value%% &lt;sip:%%blf17%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="19" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf18}
+		<fkey idx="20" context="active" label="%%blffirstname18%% %%blflastname18%%" perm="">%%value%% &lt;sip:%%blf18%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="20" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf19}
+		<fkey idx="21" context="active" label="%%blffirstname19%% %%blflastname19%%" perm="">%%value%% &lt;sip:%%blf19%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="21" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf20}
+		<fkey idx="22" context="active" label="%%blffirstname20%% %%blflastname20%%" perm="">%%value%% &lt;sip:%%blf20%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="22" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf21}
+		<fkey idx="23" context="active" label="%%blffirstname21%% %%blflastname21%%" perm="">%%value%% &lt;sip:%%blf21%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="23" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf22}
+		<fkey idx="24" context="active" label="%%blffirstname22%% %%blflastname22%%" perm="">%%value%% &lt;sip:%%blf22%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="24" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf23}
+		<fkey idx="25" context="active" label="%%blffirstname23%% %%blflastname23%%" perm="">%%value%% &lt;sip:%%blf23%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="25" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf24}
+		<fkey idx="26" context="active" label="%%blffirstname24%% %%blflastname24%%" perm="">%%value%% &lt;sip:%%blf24%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="26" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf25}
+		<fkey idx="27" context="active" label="%%blffirstname25%% %%blflastname25%%" perm="">%%value%% &lt;sip:%%blf25%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="27" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf26}
+		<fkey idx="28" context="active" label="%%blffirstname26%% %%blflastname26%%" perm="">%%value%% &lt;sip:%%blf26%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="28" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf27}
+		<fkey idx="29" context="active" label="%%blffirstname27%% %%blflastname27%%" perm="">%%value%% &lt;sip:%%blf27%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="29" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf28}
+		<fkey idx="30" context="active" label="%%blffirstname28%% %%blflastname28%%" perm="">%%value%% &lt;sip:%%blf28%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="30" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf29}
+		<fkey idx="31" context="active" label="%%blffirstname29%% %%blflastname29%%" perm="">%%value%% &lt;sip:%%blf29%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="31" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf30}
+		<fkey idx="32" context="active" label="%%blffirstname30%% %%blflastname30%%" perm="">%%value%% &lt;sip:%%blf30%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="32" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf31}
+		<fkey idx="33" context="active" label="%%blffirstname31%% %%blflastname31%%" perm="">%%value%% &lt;sip:%%blf31%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="33" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf32}
+		<fkey idx="34" context="active" label="%%blffirstname32%% %%blflastname32%%" perm="">%%value%% &lt;sip:%%blf32%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="34" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf33}
+		<fkey idx="35" context="active" label="%%blffirstname33%% %%blflastname33%%" perm="">%%value%% &lt;sip:%%blf33%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="35" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf34}
+		<fkey idx="36" context="active" label="%%blffirstname34%% %%blflastname34%%" perm="">%%value%% &lt;sip:%%blf34%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="36" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf35}
+		<fkey idx="37" context="active" label="%%blffirstname35%% %%blflastname35%%" perm="">%%value%% &lt;sip:%%blf35%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="37" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf36}
+		<fkey idx="38" context="active" label="%%blffirstname36%% %%blflastname36%%" perm="">%%value%% &lt;sip:%%blf36%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="38" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf37}
+		<fkey idx="39" context="active" label="%%blffirstname37%% %%blflastname37%%" perm="">%%value%% &lt;sip:%%blf37%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="39" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf38}
+		<fkey idx="40" context="active" label="%%blffirstname38%% %%blflastname38%%" perm="">%%value%% &lt;sip:%%blf38%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="40" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf39}
+		<fkey idx="41" context="active" label="%%blffirstname39%% %%blflastname39%%" perm="">%%value%% &lt;sip:%%blf39%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="41" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf40}
+		<fkey idx="42" context="active" label="%%blffirstname40%% %%blflastname40%%" perm="">%%value%% &lt;sip:%%blf40%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="42" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf41}
+		<fkey idx="43" context="active" label="%%blffirstname41%% %%blflastname41%%" perm="">%%value%% &lt;sip:%%blf41%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="43" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf42}
+		<fkey idx="44" context="active" label="%%blffirstname42%% %%blflastname42%%" perm="">%%value%% &lt;sip:%%blf42%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="44" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf43}
+		<fkey idx="45" context="active" label="%%blffirstname43%% %%blflastname43%%" perm="">%%value%% &lt;sip:%%blf43%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="45" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf44}
+		<fkey idx="46" context="active" label="%%blffirstname44%% %%blflastname44%%" perm="">%%value%% &lt;sip:%%blf44%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="46" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf45}
+		<fkey idx="47" context="active" label="%%blffirstname45%% %%blflastname45%%" perm="">%%value%% &lt;sip:%%blf45%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="47" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf46}
+		<fkey idx="48" context="active" label="%%blffirstname46%% %%blflastname46%%" perm="">%%value%% &lt;sip:%%blf46%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="48" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf47}
+		<fkey idx="49" context="active" label="%%blffirstname47%% %%blflastname47%%" perm="">%%value%% &lt;sip:%%blf47%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="49" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf48}
+		<fkey idx="50" context="active" label="%%blffirstname48%% %%blflastname48%%" perm="">%%value%% &lt;sip:%%blf48%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="50" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf49}
+		<fkey idx="51" context="active" label="%%blffirstname49%% %%blflastname49%%" perm="">%%value%% &lt;sip:%%blf49%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="51" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf50}
+		<fkey idx="52" context="active" label="%%blffirstname50%% %%blflastname50%%" perm="">%%value%% &lt;sip:%%blf50%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="52" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf51}
+		<fkey idx="53" context="active" label="%%blffirstname51%% %%blflastname51%%" perm="">%%value%% &lt;sip:%%blf51%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="53" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf52}
+		<fkey idx="54" context="active" label="%%blffirstname52%% %%blflastname52%%" perm="">%%value%% &lt;sip:%%blf52%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="54" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf53}
+		<fkey idx="55" context="active" label="%%blffirstname53%% %%blflastname53%%" perm="">%%value%% &lt;sip:%%blf53%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="55" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf54}
+		<fkey idx="56" context="active" label="%%blffirstname54%% %%blflastname54%%" perm="">%%value%% &lt;sip:%%blf54%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="56" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf55}
+		<fkey idx="57" context="active" label="%%blffirstname55%% %%blflastname55%%" perm="">%%value%% &lt;sip:%%blf55%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="57" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf56}
+		<fkey idx="58" context="active" label="%%blffirstname56%% %%blflastname56%%" perm="">%%value%% &lt;sip:%%blf56%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="58" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf57}
+		<fkey idx="59" context="active" label="%%blffirstname57%% %%blflastname57%%" perm="">%%value%% &lt;sip:%%blf57%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="59" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf58}
+		<fkey idx="60" context="active" label="%%blffirstname58%% %%blflastname58%%" perm="">%%value%% &lt;sip:%%blf58%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="60" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf59}
+		<fkey idx="61" context="active" label="%%blffirstname59%% %%blflastname59%%" perm="">%%value%% &lt;sip:%%blf59%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="61" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf60}
+		<fkey idx="62" context="active" label="%%blffirstname60%% %%blflastname60%%" perm="">%%value%% &lt;sip:%%blf60%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="62" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf61}
+		<fkey idx="63" context="active" label="%%blffirstname61%% %%blflastname61%%" perm="">%%value%% &lt;sip:%%blf61%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="63" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf62}
+		<fkey idx="64" context="active" label="%%blffirstname62%% %%blflastname62%%" perm="">%%value%% &lt;sip:%%blf62%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="64" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf63}
+		<fkey idx="65" context="active" label="%%blffirstname63%% %%blflastname63%%" perm="">%%value%% &lt;sip:%%blf63%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="65" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf64}
+		<fkey idx="66" context="active" label="%%blffirstname64%% %%blflastname64%%" perm="">%%value%% &lt;sip:%%blf64%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="66" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf65}
+		<fkey idx="67" context="active" label="%%blffirstname65%% %%blflastname65%%" perm="">%%value%% &lt;sip:%%blf65%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="67" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf66}
+		<fkey idx="68" context="active" label="%%blffirstname66%% %%blflastname66%%" perm="">%%value%% &lt;sip:%%blf66%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="68" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf67}
+		<fkey idx="69" context="active" label="%%blffirstname67%% %%blflastname67%%" perm="">%%value%% &lt;sip:%%blf67%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="69" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf68}
+		<fkey idx="70" context="active" label="%%blffirstname68%% %%blflastname68%%" perm="">%%value%% &lt;sip:%%blf68%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="70" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf69}
+		<fkey idx="71" context="active" label="%%blffirstname69%% %%blflastname69%%" perm="">%%value%% &lt;sip:%%blf69%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="71" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf70}
+		<fkey idx="72" context="active" label="%%blffirstname70%% %%blflastname70%%" perm="">%%value%% &lt;sip:%%blf70%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="72" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf71}
+		<fkey idx="73" context="active" label="%%blffirstname71%% %%blflastname71%%" perm="">%%value%% &lt;sip:%%blf71%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="73" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf72}
+		<fkey idx="74" context="active" label="%%blffirstname72%% %%blflastname72%%" perm="">%%value%% &lt;sip:%%blf72%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="74" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf73}
+		<fkey idx="75" context="active" label="%%blffirstname73%% %%blflastname73%%" perm="">%%value%% &lt;sip:%%blf73%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="75" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf74}
+		<fkey idx="76" context="active" label="%%blffirstname74%% %%blflastname74%%" perm="">%%value%% &lt;sip:%%blf74%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="76" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf75}
+		<fkey idx="77" context="active" label="%%blffirstname75%% %%blflastname75%%" perm="">%%value%% &lt;sip:%%blf75%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="77" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf76}
+		<fkey idx="78" context="active" label="%%blffirstname76%% %%blflastname76%%" perm="">%%value%% &lt;sip:%%blf76%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="78" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf77}
+		<fkey idx="79" context="active" label="%%blffirstname77%% %%blflastname77%%" perm="">%%value%% &lt;sip:%%blf77%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="79" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf78}
+		<fkey idx="80" context="active" label="%%blffirstname78%% %%blflastname78%%" perm="">%%value%% &lt;sip:%%blf78%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="80" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf79}
+		<fkey idx="81" context="active" label="%%blffirstname79%% %%blflastname79%%" perm="">%%value%% &lt;sip:%%blf79%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="81" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf80}
+		<fkey idx="82" context="active" label="%%blffirstname80%% %%blflastname80%%" perm="">%%value%% &lt;sip:%%blf80%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="82" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf81}
+		<fkey idx="83" context="active" label="%%blffirstname81%% %%blflastname81%%" perm="">%%value%% &lt;sip:%%blf81%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="83" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf82}
+		<fkey idx="84" context="active" label="%%blffirstname82%% %%blflastname82%%" perm="">%%value%% &lt;sip:%%blf82%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="84" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf83}
+		<fkey idx="85" context="active" label="%%blffirstname83%% %%blflastname83%%" perm="">%%value%% &lt;sip:%%blf83%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="85" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf84}
+		<fkey idx="86" context="active" label="%%blffirstname84%% %%blflastname84%%" perm="">%%value%% &lt;sip:%%blf84%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="86" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf85}
+		<fkey idx="87" context="active" label="%%blffirstname85%% %%blflastname85%%" perm="">%%value%% &lt;sip:%%blf85%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="87" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf86}
+		<fkey idx="88" context="active" label="%%blffirstname86%% %%blflastname86%%" perm="">%%value%% &lt;sip:%%blf86%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="88" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf87}
+		<fkey idx="89" context="active" label="%%blffirstname87%% %%blflastname87%%" perm="">%%value%% &lt;sip:%%blf87%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="89" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf88}
+		<fkey idx="90" context="active" label="%%blffirstname88%% %%blflastname88%%" perm="">%%value%% &lt;sip:%%blf88%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="90" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf89}
+		<fkey idx="91" context="active" label="%%blffirstname89%% %%blflastname89%%" perm="">%%value%% &lt;sip:%%blf89%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="91" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf90}
+		<fkey idx="92" context="active" label="%%blffirstname90%% %%blflastname90%%" perm="">%%value%% &lt;sip:%%blf90%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="92" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf91}
+		<fkey idx="93" context="active" label="%%blffirstname91%% %%blflastname91%%" perm="">%%value%% &lt;sip:%%blf91%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="93" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf92}
+		<fkey idx="94" context="active" label="%%blffirstname92%% %%blflastname92%%" perm="">%%value%% &lt;sip:%%blf92%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="94" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf93}
+		<fkey idx="95" context="active" label="%%blffirstname93%% %%blflastname93%%" perm="">%%value%% &lt;sip:%%blf93%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="95" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf94}
+		<fkey idx="96" context="active" label="%%blffirstname94%% %%blflastname94%%" perm="">%%value%% &lt;sip:%%blf94%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="96" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf95}
+		<fkey idx="97" context="active" label="%%blffirstname95%% %%blflastname95%%" perm="">%%value%% &lt;sip:%%blf95%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="97" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf96}
+		<fkey idx="98" context="active" label="%%blffirstname96%% %%blflastname96%%" perm="">%%value%% &lt;sip:%%blf96%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="98" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf97}
+		<fkey idx="99" context="active" label="%%blffirstname97%% %%blflastname97%%" perm="">%%value%% &lt;sip:%%blf97%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="99" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf98}
+		<fkey idx="100" context="active" label="%%blffirstname98%% %%blflastname98%%" perm="">%%value%% &lt;sip:%%blf98%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="100" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf99}
+		<fkey idx="101" context="active" label="%%blffirstname99%% %%blflastname99%%" perm="">%%value%% &lt;sip:%%blf99%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="101" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf100}
+		<fkey idx="102" context="active" label="%%blffirstname100%% %%blflastname100%%" perm="">%%value%% &lt;sip:%%blf100%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="102" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf101}
+		<fkey idx="103" context="active" label="%%blffirstname101%% %%blflastname101%%" perm="">%%value%% &lt;sip:%%blf101%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="103" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf102}
+		<fkey idx="104" context="active" label="%%blffirstname102%% %%blflastname102%%" perm="">%%value%% &lt;sip:%%blf102%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="104" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf103}
+		<fkey idx="105" context="active" label="%%blffirstname103%% %%blflastname103%%" perm="">%%value%% &lt;sip:%%blf103%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="105" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf104}
+		<fkey idx="106" context="active" label="%%blffirstname104%% %%blflastname104%%" perm="">%%value%% &lt;sip:%%blf104%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="106" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf105}
+		<fkey idx="107" context="active" label="%%blffirstname105%% %%blflastname105%%" perm="">%%value%% &lt;sip:%%blf105%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="107" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf106}
+		<fkey idx="108" context="active" label="%%blffirstname106%% %%blflastname106%%" perm="">%%value%% &lt;sip:%%blf106%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="108" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf107}
+		<fkey idx="109" context="active" label="%%blffirstname107%% %%blflastname107%%" perm="">%%value%% &lt;sip:%%blf107%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="109" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf108}
+		<fkey idx="110" context="active" label="%%blffirstname108%% %%blflastname108%%" perm="">%%value%% &lt;sip:%%blf108%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="110" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf109}
+		<fkey idx="111" context="active" label="%%blffirstname109%% %%blflastname109%%" perm="">%%value%% &lt;sip:%%blf109%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="111" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf110}
+		<fkey idx="112" context="active" label="%%blffirstname110%% %%blflastname110%%" perm="">%%value%% &lt;sip:%%blf110%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="112" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf111}
+		<fkey idx="113" context="active" label="%%blffirstname111%% %%blflastname111%%" perm="">%%value%% &lt;sip:%%blf111%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="113" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf112}
+		<fkey idx="114" context="active" label="%%blffirstname112%% %%blflastname112%%" perm="">%%value%% &lt;sip:%%blf112%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="114" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf113}
+		<fkey idx="115" context="active" label="%%blffirstname113%% %%blflastname113%%" perm="">%%value%% &lt;sip:%%blf113%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="115" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf114}
+		<fkey idx="116" context="active" label="%%blffirstname114%% %%blflastname114%%" perm="">%%value%% &lt;sip:%%blf114%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="116" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf115}
+		<fkey idx="117" context="active" label="%%blffirstname115%% %%blflastname115%%" perm="">%%value%% &lt;sip:%%blf115%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="117" context="active" perm="">none</fkey>
+	{ENDIF}
+
+	{IF blf116}
+		<fkey idx="118" context="active" label="%%blffirstname116%% %%blflastname116%%" perm="">%%value%% &lt;sip:%%blf116%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="118" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf117}
+		<fkey idx="119" context="active" label="%%blffirstname117%% %%blflastname117%%" perm="">%%value%% &lt;sip:%%blf117%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="119" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf118}
+		<fkey idx="120" context="active" label="%%blffirstname118%% %%blflastname118%%" perm="">%%value%% &lt;sip:%%blf118%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="120" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf119}
+		<fkey idx="121" context="active" label="%%blffirstname119%% %%blflastname119%%" perm="">%%value%% &lt;sip:%%blf119%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="121" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf120}
+		<fkey idx="122" context="active" label="%%blffirstname120%% %%blflastname120%%" perm="">%%value%% &lt;sip:%%blf120%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="122" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf121}
+		<fkey idx="123" context="active" label="%%blffirstname121%% %%blflastname121%%" perm="">%%value%% &lt;sip:%%blf121%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="123" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf122}
+		<fkey idx="124" context="active" label="%%blffirstname122%% %%blflastname122%%" perm="">%%value%% &lt;sip:%%blf122%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="124" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf123}
+		<fkey idx="125" context="active" label="%%blffirstname123%% %%blflastname123%%" perm="">%%value%% &lt;sip:%%blf123%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="125" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf124}
+		<fkey idx="126" context="active" label="%%blffirstname124%% %%blflastname124%%" perm="">%%value%% &lt;sip:%%blf124%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="126" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf125}
+		<fkey idx="127" context="active" label="%%blffirstname125%% %%blflastname125%%" perm="">%%value%% &lt;sip:%%blf125%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="127" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf126}
+		<fkey idx="128" context="active" label="%%blffirstname126%% %%blflastname126%%" perm="">%%value%% &lt;sip:%%blf126%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="128" context="active" perm="">none</fkey>
+	{ENDIF}
+	
+	{IF blf127}
+		<fkey idx="129" context="active" label="%%blffirstname127%% %%blflastname127%%" perm="">%%value%% &lt;sip:%%blf127%%@%%pbx_ip%%:%%param::sipport%%%%userphone%%&gt;</fkey>
+	{ELSE}
+		<fkey idx="129" context="active" perm="">none</fkey>
+	{ENDIF}
+
+  </functionkeys>
+</settings>
+
+]]>
+   </deviceconfig>
+
+   </device>
+</data>   
+</doc>

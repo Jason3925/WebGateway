@@ -1,0 +1,101 @@
+<!-- Page -->
+<div class="page animsition">
+
+  <div class="page-header">
+    <h1 class="page-title">
+      Phones
+    </h1>
+  </div>
+  <div class="page-content container-fluid">
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel-body">
+        <!-- Example Responsive -->
+        <div class="example-wrap">
+          <div class="btn-group hide" aria-label="Button group with nested dropdown" role="group">
+            <button type="button" class="btn btn-outline btn-default">
+              Refresh
+            </button>
+          </div>
+          <!--
+          <h4 class="example-title">Basic</h4>
+          -->
+          <!-- Table -->
+          <div class="example table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Phone Model and Firmware Version</th>
+                <th>Name</th>
+                <th>Extension</th>
+                <th>Extension Password</th>
+                <th>IP of Phone</th>
+                <th>MAC Address</th>
+                <th>Status</th>
+                <th style="text-align: center;">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+              <%
+              if (data && data.count>0) {
+              data.phones.map(function(phone, key){
+
+
+
+
+              %>
+              <tr>
+                <td><%=key%></td>
+                <td><%=phone.phone_model%></td>
+                <td><%=phone.name%></td>
+                <td><%=phone.extension_number%></td>
+                <td><%=phone.password%></td>
+                <td><%=phone.ip%></td>
+                <td><%=phone.mac_address%></td>
+                <td><%=phone.status%></td>
+                <td>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Add Extension"
+                          id="ph-add-extension">
+                    <i class="icon wb-user-add" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Assign Extension">
+                    <i class="icon wb-user-circle" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Reboot">
+                    <i class="icon wb-loop" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Launch Phone Interface">
+                    <i class="icon wb-upload" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Reprovision">
+                    <i class="icon wb-plus" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Upload Firmware">
+                    <i class="icon wb-add-file" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Upgrade Firmware">
+                    <i class="icon wb-copy" aria-hidden="true"></i>
+                  </button>
+                  <button type="button" class="btn btn-sm btn-icon btn-flat btn-default" title="Show Password">
+                    <i class="icon wb-eye" aria-hidden="true"></i>
+                  </button>
+                </td>
+              </tr>
+              <%
+              });
+              }
+              %>
+              </tbody>
+            </table>
+
+          </div>
+
+        </div>
+        <!-- End Example Responsive -->
+      </div>
+    </div>
+    <!-- End Panel -->
+  </div>
+</div>
+<!-- End Page -->
