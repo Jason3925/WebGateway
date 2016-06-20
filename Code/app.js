@@ -164,7 +164,8 @@ try {
   });
 } catch (err) {
   console.log('Https Server Boot Failure : 8887');
-  console.log(err);
+  // 屏蔽这个报错，以为会引起守护进程的判断，然后无限重启
+  // console.log(err);
 }
 
 
