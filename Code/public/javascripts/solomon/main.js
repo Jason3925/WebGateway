@@ -4047,6 +4047,7 @@ $.components.register("mMenu", {
             {id: 'cq-ring-time', describe: 'ring_time', type: 'Number'},
             {id: 'cq-polling-strategy', describe: 'polling_strategy', type: 'Number'},
             {id: 'cq-music-on-hold', describe: 'music_on_hold'},
+            {id: 'cq-busy-member', describe: 'enable_skip_busy_member'},
             {id: 'cq-members-active', describe: 'members'},
             {
               name: "cq-radio-answer",

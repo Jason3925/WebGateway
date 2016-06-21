@@ -30,7 +30,6 @@
                 <th>Room PIN</th>
                 <th>Admin PIN</th>
                 <th>Mode</th>
-                <th>Participants</th>
                 <th>Status</th>
                 <th>Action</th>
               </tr>
@@ -48,7 +47,6 @@
                 <td><%=data.room_pin %></td>
                 <td><%=data.admin_pin %></td>
                 <td><%=data.mode===1?'Audio Conference':data.mode===2?'Video Conference':data.mode %></td>
-                <td><%=data.participants %></td>
                 <td>
                   <% if(data.status=='Online'){ %>
                   <span class="label label-primary">Online</span>
