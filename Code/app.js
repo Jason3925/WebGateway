@@ -153,20 +153,20 @@ var server = app.listen(addressConfig.httpConfig.httpPort, function() {
   log.info('启动成功，地址为: http://%s:%s', host, port);
 });
 
-// try {
-//   var https = require('https'),
-//     fs = require("fs");
+try {
+   var https = require('https'),
+    fs = require("fs");
 
-//   var options = {
-//     key: fs.readFileSync('./../web_server.key'),
-//     cert: fs.readFileSync('./../web_server.crt')
-//   };
+   var options = {
+     key: fs.readFileSync('./../web_server.key'),
+     cert: fs.readFileSync('./../web_server.crt')
+   };
 
-//   https.createServer(options, app).listen(addressConfig.httpConfig.httpsPort, function() {
-//     console.log('Https server listening on port ' + 8887);
-//   });
-// } catch (err) {
-//   console.log('Https Server Boot Failure : 8887');
+  https.createServer(options, app).listen(addressConfig.httpConfig.httpsPort, function() {
+     console.log('Https server listening on port %s', addressConfig.httpConfig.httpsPort);
+   });
+ } catch (err) {
+  console.log('Https Server Boot Failure : %s', addressConfig.httpConfig.httpsPort);
 //   // 屏蔽这个报错，以为会引起守护进程的判断，然后无限重启
 //   // console.log(err);
 // }
