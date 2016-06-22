@@ -141,8 +141,6 @@ app.use(function(err, req, res, next) {
  * 启动
  */
 
-log.info('开始执行启动脚本');
-log.info('加载端口配置文件');
 var addressConfig = require('./config/serverAddress');
 var server = app.listen(addressConfig.httpConfig.httpPort, function() {
 
@@ -150,26 +148,26 @@ var server = app.listen(addressConfig.httpConfig.httpPort, function() {
   var port = server.address().port;
 
   console.log('Example app listening at http://%s:%s', host, port);
-  log.info('启动成功，地址为: http://%s:%s', host, port);
 });
 
 try {
-   var https = require('https'),
+  var https = require('https'),
     fs = require("fs");
 
-   var options = {
-     key: fs.readFileSync('./../web_server.key'),
-     cert: fs.readFileSync('./../web_server.crt')
-   };
+  var options = {
+    key: fs.readFileSync('./../web_server.key'),
+    cert: fs.readFileSync('./../web_server.crt')
+  };
 
   https.createServer(options, app).listen(addressConfig.httpConfig.httpsPort, function() {
-     console.log('Https server listening on port %s', addressConfig.httpConfig.httpsPort);
-   });
- } catch (err) {
-  console.log('Https Server Boot Failure : %s', addressConfig.httpConfig.httpsPort);
-//   // 屏蔽这个报错，以为会引起守护进程的判断，然后无限重启
-//   // console.log(err);
-// }
+    console.log('Https server listening on port ' + addressConfig.httpConfig.httpsPort);
+  });
+} catch (err) {
+  var httpsPort = addressConfig.httpConfig.httpsPort;
+  console.log('Https Server Boot Failure : %s', httpsPort);
+  // 屏蔽这个报错，以为会引起守护进程的判断，然后无限重启
+  // console.log(err);
+}
 
 
 
