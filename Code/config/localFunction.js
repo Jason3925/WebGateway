@@ -60,7 +60,9 @@ exports.initLocalFunction = function(app) {
     }
     return moment(result * 1000).format(fmt);
   };
-
+  app.locals.trimDateGap = function (data) {
+    return moment.utc(data).format("HH:mm:ss");
+  };
   app.locals.trimLook = function (role, status) {
     var result = false;
     if (Array.isArray(status) && status.length > 0) {

@@ -22,7 +22,7 @@
                 <dt>End Time:</dt>
                 <dd><%=detail.end_time>0?trimDate(detail,['end_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
                 <dt>Talk Time:</dt>
-                <dd><%=detail.talk_time>0?trimDate(detail,['talk_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></dd>
+                <dd><%=trimDateGap(detail.answer_time - detail.end_time)%></dd>
                 <dt>End Reason:</dt>
                 <dd><%=detail.end_reason%></dd>
                 <dt>Fail Code:</dt>
