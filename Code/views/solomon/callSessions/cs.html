@@ -47,7 +47,7 @@
                 <td><%=data.session_id %></td>
                 <td><%=data.start_time>0?trimDate(data, ['start_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></td>
                 <td><%=data.answered_time>0?trimDate(data, ['answered_time'], 'YYYY-MM-DD HH:mm:ss'):'0'%></td>
-                <td><%=data.duration %></td>
+                <td><%=trimDateGap(data.duration) %></td>
                 <td>
                   <button type="button" class="btn btn-sm btn-icon btn-flat btn-default"
                           data-toggle="tooltip" data-original-title="Delete" title="End Session"
