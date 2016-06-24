@@ -1554,6 +1554,14 @@ $.components.register("mMenu", {
       }
       return moment(result * 1000).format(fmt);
     },
+    trimDateGap: function (data) {
+      if (data > 0 ) {
+        return moment.utc(data).format("HH:mm:ss");
+      }else {
+        return '0';
+      }
+
+    },
   },
   backs: {
     extension: function(data, content, back) {
@@ -5306,7 +5314,9 @@ $.components.register("mMenu", {
           url = _this.util.parseURLGet(url,[{key: 'call_id', value: $(this).attr('data-value')}]);
           _this.AJAXGet(url).success(function(data) {
             // data.trimData = _this.util.trimData;
-            var modelHTML = ejs.render(data.modelHTML, {data: data.crData, trimDate: _this.util.trimDate});
+            var modelHTML = ejs.render(data.modelHTML,
+              {data: data.crData, trimDate: _this.util.trimDate, trimDateGap : _this.util.trimDateGap}
+            );
             $('#model-box .modal-body', contentBox).html(modelHTML);
             return true;
           });

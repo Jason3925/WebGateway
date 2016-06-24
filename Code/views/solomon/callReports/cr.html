@@ -54,7 +54,7 @@
                 <td><%=data.start_time>0?trimDate(data, ['start_time'], 'YYYY-MM-DD HH:mm:ss'): '0' %></td>
                 <td><%=data.answer_time>0?trimDate(data, ['answer_time'], 'YYYY-MM-DD HH:mm:ss'):'0' %></td>
                 <td><%=data.end_time>0?trimDate(data, ['end_time'], 'YYYY-MM-DD HH:mm:ss'):'0' %></td>
-                <td><%=data.duration %></td>
+                <td><%=trimDateGap(data.duration) %></td>
                 <td><%=data.call_prefix%></td>
                 <td><%=data.rate_value %></td>
                 <td><%=data.cost %></td>
