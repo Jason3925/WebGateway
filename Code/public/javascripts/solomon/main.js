@@ -1556,7 +1556,7 @@ $.components.register("mMenu", {
     },
     trimDateGap: function (data) {
       if (data > 0 ) {
-        return moment.utc(data).format("HH:mm:ss");
+        return moment.utc(data * 1000).format("HH:mm:ss");
       }else {
         return '0';
       }
