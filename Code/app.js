@@ -54,6 +54,7 @@ app.use(function(req, res, next) {
     '/callManager/inbound/create',
     '/callManager/ringGroups/ringGroup',
     '/callSessions',
+    '/callManager/systemExtensions',
   ];
   var curUrl = req.originalUrl;
   curUrl = curUrl.substr(0, curUrl.indexOf('?'));
