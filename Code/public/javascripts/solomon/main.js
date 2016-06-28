@@ -6007,8 +6007,8 @@ $.components.register("mMenu", {
           $('[data-time-remove]', contentBox).on('click', function () {
             var timeId = $(this).attr('data-time-remove');
             $('#' + timeId).val('');
-            $('#' + timeId + '-begin').attr('data-mark', 'default').val('');
-            $('#' + timeId + '-end').attr('data-mark', 'default').val('');
+            $('#' + timeId + '-begin').attr('data-mark', 'default').val('').attr('data-mark', 'update');
+            $('#' + timeId + '-end').attr('data-mark', 'default').val('').attr('data-mark', 'update');
 
           });
         }
