@@ -120,7 +120,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off" id="te-tuesday"
-                     data-time-show="default" readonly="readonly"/>
+                     data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'tuesday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'tuesday_to'])%>" />
             </td>
           </tr>
           <tr>
@@ -165,7 +167,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off" id="te-wednesday"
-                     data-time-show="default" readonly="readonly"/>
+                     data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'wednesday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'wednesday_to'])%>" />
             </td>
           </tr>
           <tr>
@@ -210,7 +214,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off" id="te-thursday"
-                     data-time-show="default" readonly="readonly">
+                     data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'thursday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'thursday_to'])%>" />
             </td>
           </tr>
           <tr>
@@ -255,7 +261,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off" id="te-friday"
-                     data-time-show="default" readonly="readonly">
+                     data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'friday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'friday_to'])%>"/>
             </td>
           </tr>
           <tr>
@@ -300,7 +308,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off"
-                     id="te-saturday" data-time-show="default" readonly="readonly">
+                     id="te-saturday" data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'saturday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'saturday_to'])%>"/>
             </td>
           </tr>
           <tr>
@@ -345,7 +355,9 @@
             </td>
             <td class="col-sm-5">
               <input type="text" class="form-control" placeholder="" autocomplete="off"
-                     id="te-sunday" data-time-show="default" readonly="readonly">
+                     id="te-sunday" data-time-show="default" readonly="readonly"
+                     value="<%=trimValue(data.teData, ['office_hours', 'sunday_from']) + ' - ' +
+                     trimValue(data.teData, ['office_hours', 'sunday_to'])%>" />
             </td>
           </tr>
           </tbody>
